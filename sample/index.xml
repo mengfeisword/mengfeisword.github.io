@@ -5,7 +5,7 @@
     <link>https://mengfeisword.github.io/sample/</link>
     <description>Recent content in Sample Document on Hugo Techdoc Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="https://mengfeisword.github.io/sample/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown Syntax</title>
@@ -24,7 +24,7 @@
       
       <guid>https://mengfeisword.github.io/sample/build-in-shortcodes/</guid>
       <description>See https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes
-figure 2 People Sitting With View of Yellow Flowers during Daytime gist highlight &amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;#34;summary&amp;#34;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt; </description>
+figure 2 People Sitting With View of Yellow Flowers during Daytime gist highlight &amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;#34;summary&amp;#34;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt; vimeo youtube </description>
     </item>
     
     <item>
