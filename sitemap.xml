@@ -2,211 +2,211 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/getting-started/</loc>
+    <loc>https://mengfeisword.github.io/getting-started/</loc>
     <lastmod>2018-12-08T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/sample/markdown-syntax/</loc>
+    <loc>https://mengfeisword.github.io/sample/markdown-syntax/</loc>
     <lastmod>2020-11-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/sample/build-in-shortcodes/</loc>
+    <loc>https://mengfeisword.github.io/sample/build-in-shortcodes/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter2/3/</loc>
+    <loc>https://mengfeisword.github.io/chapter2/3/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/sample/custom-shortcodes/</loc>
+    <loc>https://mengfeisword.github.io/sample/custom-shortcodes/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/getting-started/installation/</loc>
+    <loc>https://mengfeisword.github.io/getting-started/installation/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/sample/</loc>
+    <loc>https://mengfeisword.github.io/sample/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/sample/table-of-contents/</loc>
+    <loc>https://mengfeisword.github.io/sample/table-of-contents/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/post/creating-a-new-theme/</loc>
+    <loc>https://mengfeisword.github.io/post/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/post/migrate-from-jekyll/</loc>
+    <loc>https://mengfeisword.github.io/post/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/hello_world/</loc>
+    <loc>https://mengfeisword.github.io/hello_world/</loc>
     <lastmod>2017-10-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/hello_world/</loc>
+    <loc>https://mengfeisword.github.io/posts/hello_world/</loc>
     <lastmod>2017-10-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter1/</loc>
+    <loc>https://mengfeisword.github.io/chapter1/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter2/4/</loc>
+    <loc>https://mengfeisword.github.io/chapter2/4/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/getting-started/configuration/</loc>
+    <loc>https://mengfeisword.github.io/getting-started/configuration/</loc>
     <lastmod>2019-10-26T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/getting-started/screenshot/</loc>
+    <loc>https://mengfeisword.github.io/getting-started/screenshot/</loc>
     <lastmod>2019-10-26T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter2/</loc>
+    <loc>https://mengfeisword.github.io/chapter2/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter2/2/</loc>
+    <loc>https://mengfeisword.github.io/chapter2/2/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter2/1/</loc>
+    <loc>https://mengfeisword.github.io/chapter2/1/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter3/</loc>
+    <loc>https://mengfeisword.github.io/chapter3/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter4/</loc>
+    <loc>https://mengfeisword.github.io/chapter4/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/sample/search-shortcode/</loc>
+    <loc>https://mengfeisword.github.io/sample/search-shortcode/</loc>
     <lastmod>2020-03-30T18:49:06+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/archives/</loc>
+    <loc>https://mengfeisword.github.io/archives/</loc>
     <lastmod>2017-12-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/blog/</loc>
+    <loc>https://mengfeisword.github.io/blog/</loc>
     <lastmod>2017-12-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/entry/</loc>
+    <loc>https://mengfeisword.github.io/entry/</loc>
     <lastmod>2017-12-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/archives/hello_world2/</loc>
+    <loc>https://mengfeisword.github.io/archives/hello_world2/</loc>
     <lastmod>2017-12-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/blog/hello_world2/</loc>
+    <loc>https://mengfeisword.github.io/blog/hello_world2/</loc>
     <lastmod>2017-12-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/entry/hello_world2/</loc>
+    <loc>https://mengfeisword.github.io/entry/hello_world2/</loc>
     <lastmod>2017-12-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/archives/hello_world1/</loc>
+    <loc>https://mengfeisword.github.io/archives/hello_world1/</loc>
     <lastmod>2017-11-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/blog/hello_world1/</loc>
+    <loc>https://mengfeisword.github.io/blog/hello_world1/</loc>
     <lastmod>2017-11-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/entry/hello_world1/</loc>
+    <loc>https://mengfeisword.github.io/entry/hello_world1/</loc>
     <lastmod>2017-11-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/</loc>
+    <loc>https://mengfeisword.github.io/</loc>
     <lastmod>2019-10-26T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter1/1/</loc>
+    <loc>https://mengfeisword.github.io/chapter1/1/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter1/2/</loc>
+    <loc>https://mengfeisword.github.io/chapter1/2/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter1/3/</loc>
+    <loc>https://mengfeisword.github.io/chapter1/3/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter1/4/</loc>
+    <loc>https://mengfeisword.github.io/chapter1/4/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter2/5/</loc>
+    <loc>https://mengfeisword.github.io/chapter2/5/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter3/1/</loc>
+    <loc>https://mengfeisword.github.io/chapter3/1/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter3/chapter3-2/</loc>
+    <loc>https://mengfeisword.github.io/chapter3/chapter3-2/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter3/chapter3-2/1/</loc>
+    <loc>https://mengfeisword.github.io/chapter3/chapter3-2/1/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter3/chapter3-2/2/</loc>
+    <loc>https://mengfeisword.github.io/chapter3/chapter3-2/2/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter3/chapter3-2/3/</loc>
+    <loc>https://mengfeisword.github.io/chapter3/chapter3-2/3/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter3/chapter3-2/4/</loc>
+    <loc>https://mengfeisword.github.io/chapter3/chapter3-2/4/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter3/3/</loc>
+    <loc>https://mengfeisword.github.io/chapter3/3/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter3/4/</loc>
+    <loc>https://mengfeisword.github.io/chapter3/4/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter4/chapter4-1/</loc>
+    <loc>https://mengfeisword.github.io/chapter4/chapter4-1/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter4/chapter4-1/chapter4-1-1/</loc>
+    <loc>https://mengfeisword.github.io/chapter4/chapter4-1/chapter4-1-1/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter4/chapter4-1/chapter4-1-1/chapter4-1-1-1/</loc>
+    <loc>https://mengfeisword.github.io/chapter4/chapter4-1/chapter4-1-1/chapter4-1-1-1/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter4/chapter4-1/chapter4-1-1/chapter4-1-1-1/chapter4-1-1-1-1/</loc>
+    <loc>https://mengfeisword.github.io/chapter4/chapter4-1/chapter4-1-1/chapter4-1-1-1/chapter4-1-1-1-1/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter4/chapter4-1/chapter4-1-1/chapter4-1-1-1/chapter4-1-1-1-1/chapter4-1-1-1-1-1/</loc>
+    <loc>https://mengfeisword.github.io/chapter4/chapter4-1/chapter4-1-1/chapter4-1-1-1/chapter4-1-1-1-1/chapter4-1-1-1-1-1/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/chapter4/chapter4-1/chapter4-1-1/chapter4-1-1-1/chapter4-1-1-1-1/chapter4-1-1-1-1-1/chapter4-1-1-1-1-1-1/</loc>
+    <loc>https://mengfeisword.github.io/chapter4/chapter4-1/chapter4-1-1/chapter4-1-1-1/chapter4-1-1-1-1/chapter4-1-1-1-1-1/chapter4-1-1-1-1-1-1/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/archives/hello_world/</loc>
+    <loc>https://mengfeisword.github.io/archives/hello_world/</loc>
     <lastmod>2017-10-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/blog/hello_world/</loc>
+    <loc>https://mengfeisword.github.io/blog/hello_world/</loc>
     <lastmod>2017-10-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/entry/hello_world/</loc>
+    <loc>https://mengfeisword.github.io/entry/hello_world/</loc>
     <lastmod>2017-10-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/</loc>
+    <loc>https://mengfeisword.github.io/posts/</loc>
     <lastmod>2017-10-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/post/</loc>
+    <loc>https://mengfeisword.github.io/post/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/about/</loc>
+    <loc>https://mengfeisword.github.io/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/post/goisforlovers/</loc>
+    <loc>https://mengfeisword.github.io/post/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/</loc>
+    <loc>https://mengfeisword.github.io/categories/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/development/</loc>
+    <loc>https://mengfeisword.github.io/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/development/</loc>
+    <loc>https://mengfeisword.github.io/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/post/hugoisforlovers/</loc>
+    <loc>https://mengfeisword.github.io/post/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/go/</loc>
+    <loc>https://mengfeisword.github.io/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/golang/</loc>
+    <loc>https://mengfeisword.github.io/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/golang/</loc>
+    <loc>https://mengfeisword.github.io/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/hugo/</loc>
+    <loc>https://mengfeisword.github.io/tags/hugo/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://mengfeisword.github.io/tags/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/templates/</loc>
+    <loc>https://mengfeisword.github.io/tags/templates/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/themes/</loc>
+    <loc>https://mengfeisword.github.io/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
 </urlset>
