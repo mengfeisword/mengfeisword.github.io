@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redis on DocDock Documentation</title>
+    <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/</link>
+    <description>Recent content in redis on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>参考资料</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>Redis思维导图 Redis命令参考 Redis中文站 Redis中文 Redis教程 Redis5.0数据淘汰策略详解（最新版本，面试常问） Redis 教程
+通过思维导图整理redis的重要知识点 Redis思维导图 redis知识点最详细的总结，&amp;ndash;数据类型，相关配置 一个能看懂的Redis思维导图 Redis校招面经知识整理 133条目！很全！（xmind思维导图格式，便于记忆和理解）下载
+Redis思维导图
+Redis学习笔记
+redis知识点总结
+#缓存 缓存穿透、缓存击穿、缓存雪崩区别和解决方案 应对缓存击穿的解决方法 帮你解读什么是Redis缓存穿透和缓存雪崩(包含解决方案)
+Redis知识点本文就够 降低redis内存使用与减少请求延迟
+#面试题 Redis面试题(2020最新版) Redis常见面试题 50道Redis面试题及答案整理，史上最全！ 史上最全Redis面试题及答案 Redis面试题和答案完全解读 史上最全redis面试题及答案吊打面试官
+#应用场景 Redis 的 8 大应用场景！ Redis常见的应用场景解析 Redis应用场景 redis应用场景及实例 Redis的7个应用场景 redis文档 Redis 命令参考 思维导图学 Redis —— 《Redis设计与实现》 #Redis# 利用思维导图整理的redis重要知识点 Redis好资料 Redis 设计与实现</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on DocDock Documentation</title>
+    <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/</link>
+    <description>Recent content in hugo on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/json%E6%8F%92%E4%BB%B6/%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/json%E6%8F%92%E4%BB%B6/%E6%8F%92%E4%BB%B6/</guid>
+      <description>#json json库 Golang使用标签表达式校验结构体字段的有效性 GO&amp;ndash;Json tag标签的作用，json用法讲解</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>开源主地址 swaggo源码
+swag简体中文说明
+#要详细查看使用方法
+Golang – Gin &amp;amp; Swaggo 使用方法</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E8%AF%B4%E6%98%8E/</guid>
+      <description>#安装swag命令行 $ go get -u github.com/swaggo/swag/cmd/swag
+1.16 及以上版本 $ go install github.com/swaggo/swag/cmd/swag@latest
+#运行swag init 查询参数 swag init -h
+#支持的Web框架 gin echo buffalo net/http
+#与Gin集成 ##1.导入包 import &amp;ldquo;github.com/swaggo/gin-swagger&amp;rdquo; // gin-swagger middleware import &amp;ldquo;github.com/swaggo/files&amp;rdquo; // swagger embed files
+##2.在main.go源代码中添加通用的API注释： ##3.在Handler代码中添加API操作注释： ##4.swag init ##5.运行程序，然后在浏览器中访问 http://localhost:8080/swagger/index.html
+#声明式注释格式
+通用API信息
+注释 说明 示例 title 必填 应用程序的名称。 // @title Swagger Example API version 必填 提供应用程序API的版本。 // @version 1.0 description 应用程序的简短描述。 // @description This is a sample server celler server.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%85%B3%E9%94%AE%E5%AD%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%85%B3%E9%94%AE%E5%AD%97/</guid>
+      <description>#json
+json: &amp;quot;-&amp;quot; // 表示不进行序列化，该字段总是在序列化被省略。 json: &amp;quot;xxx,omitempty&amp;quot; //表示如果字段具有空值则该字段应从编码中省略
+go中json序列化使用标签来进行拓展： 1、忽略空值： type Person struct { Id int64 json:&amp;quot;id, omitempty&amp;quot; }
+2、忽略字段（不论是否为空值）： type Person struct { Id int64 json:&amp;quot;-&amp;quot; }
+3、指定数据类型： type Person struct { Id int64 json:&amp;quot;id,string&amp;quot; }
+#xml
+#Protobuf</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>聊一聊golang的结构体标签
+Go 结构体标签详解
+Golang使用标签表达式校验结构体字段的有效性
+Go语言结构体标签
+go json 标签 默认值_Go Gin 系列三：开发标签模块
+go encoding/json包数据处理详解
+golang 如何验证struct字段的数据格式
+golang数据校验</description>
+    </item>
+    
+  </channel>
+</rss>

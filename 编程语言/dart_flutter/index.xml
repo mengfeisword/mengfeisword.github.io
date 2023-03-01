@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dart_flutter on DocDock Documentation</title>
+    <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/</link>
+    <description>Recent content in dart_flutter on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/dart%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/dart%E5%9F%BA%E7%A1%80/</guid>
+      <description>dart官网 Flutter学习笔记&amp;ndash;Dart基础
+一.数据类型 Dart中所有东西都是对象, 包括数字、函数等 它们都继承自Object, 并且默认值都是null(包括数字)因此数字、字符串都可以调用各种方法
+注意： 默认值 dart中未初始化的值都是null，即使是数字也是一个对象。 fianl 和 const 当你不想让变量可以再次改变的时候用final或const修饰，如下：
+String 一组UTF-16单元序列. 字符串赋值的时候, 可以使用单引号, 也可以使用双引号 使用三个单引号或者三个双引号可以多行字符串赋值
+Number int：整数值不大于64位 double：64位双精度浮点数
+Boolean 使用bool类型表示布尔值.
+List 列表, 也叫数组, 常见的添加、索引、删除等方法
+Set 集合在Dart中无序的, 并且每个元素具有唯一性, 因为它是无序的, 因此不能像List那样用索引来访问元素
+Map 映射, 也称之为字典, Map是一个无序的键值对容器
+7.Runes UTF-32字符集的字符串对象
+8.符号 Symbols 在Dart程序中，Symbol对象表示声明运算符或标识符。您可能从来不会使用到Symbol，但是它们在按名字引用标识符的API非常有用，因为缩小到改变标识符名称而不更改标识符。 获取标识符的symbol，使用sybol表达式，只需#号后跟标识符：
+二.函数
+函数定义 函数也是对象, 当没有指定返回值的时候, 函数返回null
+函数别名 普通的函数定义. 在赋值之后, 会丢失函数签名信息
+可选参数 Dart中支持两种可选参数: 命名可选参数和位置可选参数, 但是两种可选参数不能同时使用 命名可选参数使用大括号{}, 大括号外的参数是必填参数, 大括号内的参数可以指定0个或多个, 并与顺序无关, 在调用函数的时候需要指明参数名, 没有赋值的参数为null 位置可选参数使用中括号[], 在位置可选参数的函数中, 中括号内的参数可以指定0个或多个, 在调用的时候, 参数值会依次按顺序赋值
+4.闭包 特性： 1、一个 闭包 是一个方法对象。 2、闭包定义在其他方法的内部，一般通过return将其作为返回值返回。 3、不管闭包对象（方法返回的）在何处被调用，该对象都可以访问其（即闭包所在的方法）作用域内的变量，并持有其状态。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/flutter%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/flutter%E5%AE%89%E8%A3%85/</guid>
+      <description>1. [!] Android toolchain - develop for Android devices (Android SDK 28.0.3)问题解决
+解决办法
+cd 到自己sdk的路径 例如 cd /Users/admin/dev/Android/sdk cd tools cd bin // 以上三行是进入到自己到sdk目录文件夹下 //执行这句才是关键，它会提示你去允许认证 sdkmanager &amp;ndash;licenses 然后一路按y
+還需要在用户环境变量下把 路径为 自己 sdk路径 名字为 ANDROID_HOME
+然后重启 再创建一个模拟器 ，这样四项都为 - [ ✔ ] 最后在检查下flutter doctor 就ok了
+vim ~/.zshrc source ~/.zshrc
+#AndroidSdk export ANDROID_HOME=/Volumes/macdata/andriod/sdk
+2. ✗ CocoaPods not installed. sudo gem install cocoapods
+3. ERROR: Error installing cocoapods:
+iOS：解决pod的Insecure world writable dir问题 sudo chmod go-w /Volumes/macdata/go</description>
+    </item>
+    
+  </channel>
+</rss>

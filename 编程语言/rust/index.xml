@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rust on DocDock Documentation</title>
+    <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/</link>
+    <description>Recent content in rust on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>#文档
+Rust布道者张汉东倾授，入门Rust初学者都要攻破哪些难点？ Rust 程序设计语言 简体中文版 Rust宏编程新手指南
+区块链技术书单推荐，最后一本值得推荐给所有程序员阅读
+通过例子学 Rust</description>
+    </item>
+    
+  </channel>
+</rss>

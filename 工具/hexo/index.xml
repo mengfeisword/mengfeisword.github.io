@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hexo on DocDock Documentation</title>
+    <link>/%E5%B7%A5%E5%85%B7/hexo/</link>
+    <description>Recent content in hexo on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/%E5%B7%A5%E5%85%B7/hexo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hexo</title>
+      <link>/%E5%B7%A5%E5%85%B7/hexo/hexo/</link>
+      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      
+      <guid>/%E5%B7%A5%E5%85%B7/hexo/hexo/</guid>
+      <description>Hexo 官网文档</description>
+    </item>
+    
+    <item>
+      <title>hexo安装</title>
+      <link>/%E5%B7%A5%E5%85%B7/hexo/hexo%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      
+      <guid>/%E5%B7%A5%E5%85%B7/hexo/hexo%E5%AE%89%E8%A3%85/</guid>
+      <description>安装 1.Node.js 官网
+验证 node -v npm -v
+2.Git 官网
+tips：Git Bash 相当于Linux中的终端窗口
+验证 git version
+3.hexo npm install -g hexo-cli 验证 hexo -v 4.创建案例 hexo init blog cd blog npm install
+5.运行测试 hexo clean #用来清理缓存文件 hexo g #生成文件 hexo s #运行本地服务器 hexo d #上传到服务器
+运行 hexo g hexo s
+打开网站 localhost:4000</description>
+    </item>
+    
+    <item>
+      <title>部署到git</title>
+      <link>/%E5%B7%A5%E5%85%B7/hexo/hexo%E9%83%A8%E7%BD%B2%E5%88%B0git/</link>
+      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      
+      <guid>/%E5%B7%A5%E5%85%B7/hexo/hexo%E9%83%A8%E7%BD%B2%E5%88%B0git/</guid>
+      <description>部署到git 1.安装 hexo-deployer-git npm install hexo-deployer-git --save 验证 npm list hexo-deployer-git
+2.修改配置 deploy: type: git repo: https://github.com/mengfeirun/mengfeirun.github.io.git branch: [branch] message: [message] </description>
+    </item>
+    
+  </channel>
+</rss>

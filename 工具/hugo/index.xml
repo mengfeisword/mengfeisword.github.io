@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on DocDock Documentation</title>
+    <link>/%E5%B7%A5%E5%85%B7/hugo/</link>
+    <description>Recent content in hugo on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/%E5%B7%A5%E5%85%B7/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo</title>
+      <link>/%E5%B7%A5%E5%85%B7/hugo/hugo/</link>
+      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      
+      <guid>/%E5%B7%A5%E5%85%B7/hugo/hugo/</guid>
+      <description>官网 下载 主题 1.安装 1.解压 2.添加到环境变量 3.验证 hugo version 2.新建站点 hugo new site myblog 3.下载主题 git到theme文件夹 启动 hugo server -t hugo-theme-techdoc http://localhost:1313 hugo server -t hugo-theme-techdoc 4.修改配置 发布 hugo</description>
+    </item>
+    
+  </channel>
+</rss>

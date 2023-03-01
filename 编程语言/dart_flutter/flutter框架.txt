@@ -1,0 +1,43 @@
+https://flutter.cn/
+
+可以热重载
+控件,布局(树型结构)
+   可见部件添加到布局部件
+   讲部件添加到页面
+
+状态改变(改变之后才会引起刷新,可以使局部的)  使用的是skia引擎
+
+
+
+布局约束
+首先，上层 widget 向下层 widget 传递约束条件；
+然后，下层 widget 向上层 widget 传递大小信息。
+最后，上层 widget 决定下层 widget 的位置。
+
+指定资源
+路由和导航
+
+
+状态 (State) 管理参考
+https://flutter.cn/docs/development/data-and-backend/state-mgmt/options
+
+dart:ffi
+使用dart:ffi调用原生代码
+
+双端代码
+架构概述：平台通道
+消息使用平台通道在客户端（UI）和宿主（平台）之间传递  （注意类型之间的对应）
+
+混淆dart代码
+https://flutter.cn/docs/deployment/obfuscate
+
+资源
+
+flutter实战
+https://book.flutterchina.club/
+
+dart单线程模型
+Dart 在单线程中是以消息循环机制来运行的，其中包含两个任务队列，
+一个是“微任务队列” microtask queue，
+另一个叫做“事件队列” event queue。从图中可以发现，
+微任务队列的执行优先级高于事件队列。

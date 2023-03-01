@@ -1,0 +1,666 @@
+[
+{
+	"uri": "/content-organisation/logo/",
+	"title": "Logo placeholder",
+	"tags": [],
+	"description": "",
+	"content": "Create a _header.md page in content folder. Its content is what you get in the logo placeholder (top left of the screen).\nTip : you can add a image, a combobox with links to other documentation\u0026hellip;.\rTip 2 : look at extra static menu if you want to add links to other website in this sidebar\r"
+},
+{
+	"uri": "/getting-start/",
+	"title": "Getting started",
+	"tags": [],
+	"description": "",
+	"content": "Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\nInstallation\nHUGO v0.32 minimum required to use this theme\rThe following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.\nConfiguration\nWhen building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.\n"
+},
+{
+	"uri": "/getting-start/installation/",
+	"title": "Installation",
+	"tags": [],
+	"description": "",
+	"content": "HUGO v0.32 minimum required to use this theme\rThe following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.\nInstallation We assume that all changes to Hugo content and customizations are going to be tracked by git (GitHub, Bitbucket etc.). Develop locally, build on remote system.\nBefore start real work:\nInitialize Hugo Install DocDock theme Configure DocDock and Hugo Prepare empty Hugo site Create empty directory, which will be root of your Hugo project. Navigate there and let Hugo to create minimal required directory structure:\n$ hugo new site . AFTER that, initialize this as git directory where to track further changes\n$ git init Next, there are at least three ways to install DocDock (first recommended):\nAs git submodule As git clone As direct copy (from ZIP) Navigate to your themes folder in your Hugo site and use perform one of following scenarios.\n1. Install DocDock as git submodule DocDock will be added like a dependency repo to original project. When using CI tools like Netlify, Jenkins etc., submodule method is required, or you will get theme not found issues. Same applies when building site on remote server trough SSH.\nIf submodule is no-go, use 3rd option.\nOn your root of Hugo execute:\n$ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock Next initialize submodule for parent git repo:\n$ git submodule init\r$ git submodule update Now you are ready to add content and customize looks. Do not change any file inside theme directory.\nIf you want to freeze changes to DocDock theme itself and use still submodules, fork private copy of DocDock and use that as submodule. When you are ready to update theme, just pull changes from origin to your private fork.\n2. Install DocDock simply as git clone This method results that files are checked out locally, but won\u0026rsquo;t be visible from parent git repo. Probably you will build site locally with hugo command and use result from public/ on your own.\n$ git clone https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock 3. Install DocDock from ZIP All files from theme will be tracked inside parent repo, to update it, have to override files in theme. download following zip and extract inside themes/.\nhttps://github.com/vjeantet/hugo-theme-docdock/archive/master.zip Name of theme in next step will be hugo-theme-docdock-master, can rename as you wish.\nConfiguration Follow instructions here\n"
+},
+{
+	"uri": "/content-organisation/extramenu/",
+	"title": "Extra menu entries",
+	"tags": [],
+	"description": "",
+	"content": "You can define additional menu entries in the navigation menu without any link to content.\nEdit the website configuration config.toml and add a [[menu.shortcuts]] entry for each link your want to add.\nExample from the current website, note the pre param which allows you to insert HTML code and used here to separate content\u0026rsquo;s menu from this \u0026ldquo;static\u0026rdquo; menu\n[[menu.shortcuts]]\rpre = \u0026quot;\u0026lt;h3\u0026gt;More\u0026lt;/h3\u0026gt;\u0026quot;\rname = \u0026quot;\u0026lt;i class='fa fa-github'\u0026gt;\u0026lt;/i\u0026gt; Github repo\u0026quot;\ridentifier = \u0026quot;ds\u0026quot;\rurl = \u0026quot;https://github.com/vjeantet/hugo-theme-docdock\u0026quot;\rweight = 1\r[[menu.shortcuts]]\rname = \u0026quot;\u0026lt;i class='fa fa-bookmark'\u0026gt;\u0026lt;/i\u0026gt; Hugo Documentation\u0026quot;\ridentifier = \u0026quot;hugodoc\u0026quot;\rurl = \u0026quot;https://gohugo.io/\u0026quot;\rweight = 2\rRead more about hugo and menu here\n"
+},
+{
+	"uri": "/getting-start/configuration/",
+	"title": "Configuration",
+	"tags": [],
+	"description": "",
+	"content": "When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.\nImport sample config from sample site to Hugo root:\n$ cp themes/docdock/exampleSite/config.toml . Change following config.toml line as needed, depending on method above:\ntheme = \u0026#34;\u0026lt;hugo-theme-docdock-dir-name\u0026gt;\u0026#34; Comment out following line, so default themes/ will be used:\n# themesdir = \u0026#34;../..\u0026#34; Activate search If not already present, add the follow lines to the config.toml file.\n[outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] LUNRJS search index file will be generated on content changes.\n(Bonus) Create empty file .gitkeep inside public/ and add following to .gitignore. This way it will keep repo smaller and won\u0026rsquo;t bring build result files and errors to remote checkout places:\n/public/*\r!/public/.gitkeep Preview site $ hugo server to browse site on http://localhost:1313\nYour website\u0026rsquo;s content Find out how to create and organize your content quickly and intuitively.\n"
+},
+{
+	"uri": "/content-organisation/customize-style/",
+	"title": "Customize website look and feel",
+	"tags": [],
+	"description": "",
+	"content": "You can change the style and behavior of the theme without touching it.\ninject your own html, css or js into the page overide existing css or js with your own files No needs to copy the entire theme to customize some parts Bellow are solutions to avoid copying the entire theme into your own codebase.\nAdd custom CSS and JS or HTML into the \u0026lt;head\u0026gt; part of each page : Create a custom header partial layouts/partials/custom-head.html\ncontent/ layouts/ partials/ custom-head.html write your own content like (an example from @nzbart):\n\u0026lt;link rel=\u0026#34;stylesheet\u0026#34; href=\u0026#34;/css/custom.css\u0026#34;\u0026gt; \u0026lt;script src=\u0026#34;/js/custom.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; Then overrode the style your want to change in static/css/custom.css (in this case, to avoid altering the casing of titles):\nh2 { text-transform: none; } And executed some additional JavaScript from static/js/custom.js (note that jQuery is already loaded by the theme):\nfunction tweakPage() { // make some changes here } $(tweakPage) now feel free to add the JS, CSS, HTML code you want :)\nAdd custom HTML at the end of the body part of each page : Create a custom-footer.html into a layouts/partials folder next to the content folder\ncontent/ layouts/ partials/ custom-footer.html now feel free to add the JS, CSS, HTML code you want :)\nOveride existing CSS or JS Create the matching file in your static folder, hugo will use yours instead of the theme\u0026rsquo;s one. Example :\ncreate a theme.css and place it into static/css/ to fully overide docdock\u0026rsquo;s theme.css\n"
+},
+{
+	"uri": "/create-page/",
+	"title": "Create Page",
+	"tags": ["tag1", "tag2"],
+	"description": "",
+	"content": "Hugo-theme-docdock defines two types of pages. Default and Slide.\nDefault is the common page like the current one you are reading. Slide is a page that use the full screen to display its markdown content as a reveals.js presentation. HomePage is a special content that will be displayed as home page content. To tell Hugo-theme-docdock to consider a page as a slide, just add a type=\u0026quot;slide\u0026quot;in then frontmatter of your file. read more on page as slide\nHugo-theme-docdock provides archetypes to help you create this kind of pages.\nFront Matter Each Hugo page has to define a Front Matter in yaml, toml or json.\nHugo-theme-docdock uses the following parameters on top of the existing ones :\n+++\r# Type of content, set \u0026quot;slide\u0026quot; to display it fullscreen with reveal.js\rtype=\u0026quot;page\u0026quot;\r# Creator's Display name\rcreatordisplayname = \u0026quot;Valere JEANTET\u0026quot;\r# Creator's Email\rcreatoremail = \u0026quot;valere.jeantet@gmail.com\u0026quot;\r# LastModifier's Display name\rlastmodifierdisplayname = \u0026quot;Valere JEANTET\u0026quot;\r# LastModifier's Email\rlastmodifieremail = \u0026quot;valere.jeantet@gmail.com\u0026quot;\r+++\rOrdering Hugo provides a flexible way to handle order for your pages.\nThe simplest way is to use weight parameter in the front matter of your page.\nRead more on content organization\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/",
+	"title": "C",
+	"tags": [],
+	"description": "",
+	"content": "C语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/",
+	"title": "dart_flutter",
+	"tags": [],
+	"description": "",
+	"content": "dart_flutter语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/",
+	"title": "golang",
+	"tags": [],
+	"description": "",
+	"content": "golang语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/",
+	"title": "golang",
+	"tags": [],
+	"description": "",
+	"content": "dart_flutter语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/",
+	"title": "golang",
+	"tags": [],
+	"description": "",
+	"content": "dart_flutter语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E5%B7%A5%E5%85%B7/hexo/",
+	"title": "hexo",
+	"tags": [],
+	"description": "",
+	"content": "各类编程语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E5%B7%A5%E5%85%B7/hexo/hexo/",
+	"title": "hexo",
+	"tags": [],
+	"description": "",
+	"content": "Hexo 官网文档\n"
+},
+{
+	"uri": "/%E5%B7%A5%E5%85%B7/hexo/hexo%E5%AE%89%E8%A3%85/",
+	"title": "hexo安装",
+	"tags": [],
+	"description": "",
+	"content": "安装 1.Node.js 官网\n验证 node -v npm -v\n2.Git 官网\ntips：Git Bash 相当于Linux中的终端窗口\n验证 git version\n3.hexo npm install -g hexo-cli 验证 hexo -v 4.创建案例 hexo init blog cd blog npm install\n5.运行测试 hexo clean #用来清理缓存文件 hexo g #生成文件 hexo s #运行本地服务器 hexo d #上传到服务器\n运行 hexo g hexo s\n打开网站 localhost:4000\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/",
+	"title": "html",
+	"tags": [],
+	"description": "",
+	"content": "html语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E5%B7%A5%E5%85%B7/hugo/",
+	"title": "hugo",
+	"tags": [],
+	"description": "",
+	"content": "各类编程语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E5%B7%A5%E5%85%B7/hugo/hugo/",
+	"title": "hugo",
+	"tags": [],
+	"description": "",
+	"content": " 官网 下载 主题 1.安装 1.解压 2.添加到环境变量 3.验证 hugo version 2.新建站点 hugo new site myblog 3.下载主题 git到theme文件夹 启动 hugo server -t hugo-theme-techdoc http://localhost:1313 hugo server -t hugo-theme-techdoc 4.修改配置 发布 hugo\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/_index-copy/",
+	"title": "hugo",
+	"tags": [],
+	"description": "",
+	"content": "各类编程语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/",
+	"title": "hugo",
+	"tags": [],
+	"description": "",
+	"content": "各类编程语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/tl/",
+	"title": "hugo",
+	"tags": [],
+	"description": "",
+	"content": "各类编程语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/",
+	"title": "hugo",
+	"tags": [],
+	"description": "",
+	"content": "各类编程语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/",
+	"title": "rust",
+	"tags": [],
+	"description": "",
+	"content": "rust语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/",
+	"title": "Vue",
+	"tags": [],
+	"description": "",
+	"content": "各类编程语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E5%B7%A5%E5%85%B7/",
+	"title": "工具",
+	"tags": [],
+	"description": "",
+	"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/",
+	"title": "编程语言",
+	"tags": [],
+	"description": "",
+	"content": "各类编程语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E5%B7%A5%E5%85%B7/hexo/hexo%E9%83%A8%E7%BD%B2%E5%88%B0git/",
+	"title": "部署到git",
+	"tags": [],
+	"description": "",
+	"content": "部署到git 1.安装 hexo-deployer-git npm install hexo-deployer-git --save 验证 npm list hexo-deployer-git\n2.修改配置 deploy: type: git repo: https://github.com/mengfeirun/mengfeirun.github.io.git branch: [branch] message: [message] "
+},
+{
+	"uri": "/content-organisation/",
+	"title": "Content Organisation",
+	"tags": [],
+	"description": "",
+	"content": "With Hugo, pages are the core of your site. Organize your site like any other Hugo project. Magic occurs with the nested sections implemention done in v0.22 of hugo (congrats @bep).\nWith docdock, Each content page composes the menu, they shape the structure of your website.\nTo link pages to each other, place them in a folders hierarchy\ncontent\r├── level-one\r│ ├── level-two\r│ │ ├── level-three\r│ │ │ ├── level-four\r│ │ │ │ ├── _index.md\r│ │ │ │ ├── page-4-a.md\r│ │ │ │ ├── page-4-b.md\r│ │ │ │ └── page-4-c.md\r│ │ │ ├── _index.md\r│ │ │ ├── page-3-a.md\r│ │ │ ├── page-3-b.md\r│ │ │ └── page-3-c.md\r│ │ ├── _index.md\r│ │ ├── page-2-a.md\r│ │ ├── page-2-b.md\r│ │ └── page-2-c.md\r│ ├── _index.md\r│ ├── page-1-a.md\r│ ├── page-1-b.md\r│ └── page-1-c.md\r├── _index.md\r└── page-top.md _index.md is required in each folder, it\u0026rsquo;s your \u0026ldquo;folder home page\u0026rdquo;\rAdd header to a menu entry in the page frontmatter, add a head param to insert any HTML code before the menu entry:\nexample to display a \u0026ldquo;Hello\u0026rdquo;\n+++\rtitle = \u0026quot;Github repo\u0026quot;\rhead =\u0026quot;\u0026lt;label\u0026gt;Hello\u0026lt;/label\u0026gt; \u0026quot;\r+++\rAdd icon to a menu entry in the page frontmatter, add a pre param to insert any HTML code before the menu label:\nexample to display a github icon\n+++\rtitle = \u0026quot;Github repo\u0026quot;\rpre =\u0026quot;\u0026lt;i class='fa fa-github'\u0026gt;\u0026lt;/i\u0026gt; \u0026quot;\r+++\rOrder sibling menu/page entries in your frontmatter add weight param with a number to order.\n+++\rtitle=\u0026quot;My page\u0026quot;\rweight = 4\r+++\radd `ordersectionsby = \"title\"` in your config.toml to order menu entries by title\rHide a menu entry in your frontmatter add hidden=true param.\n+++\rtitle=\u0026quot;My page\u0026quot;\rhidden = true\r+++\rUnfolded menu entry by default One or more menuentries can be displayed unfolded by default. (like the \u0026ldquo;Getting start\u0026rdquo; menu entry in this website)\nin your frontmatter add alwaysopen=true param. example :\ntitle = \u0026#34;Getting start\u0026#34;\rdescription = \u0026#34;\u0026#34;\rweight = 1\ralwaysopen = true Folder structure and file name Content organization is your content folder structure.\nHomepage Find out how to customize homepage\n"
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/",
+	"title": "redis",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/",
+	"title": "参考资料",
+	"tags": [],
+	"description": "",
+	"content": "Redis思维导图 Redis命令参考 Redis中文站 Redis中文 Redis教程 Redis5.0数据淘汰策略详解（最新版本，面试常问） Redis 教程\n通过思维导图整理redis的重要知识点 Redis思维导图 redis知识点最详细的总结，\u0026ndash;数据类型，相关配置 一个能看懂的Redis思维导图 Redis校招面经知识整理 133条目！很全！（xmind思维导图格式，便于记忆和理解）下载\nRedis思维导图\nRedis学习笔记\nredis知识点总结\n#缓存 缓存穿透、缓存击穿、缓存雪崩区别和解决方案 应对缓存击穿的解决方法 帮你解读什么是Redis缓存穿透和缓存雪崩(包含解决方案)\nRedis知识点本文就够 降低redis内存使用与减少请求延迟\n#面试题 Redis面试题(2020最新版) Redis常见面试题 50道Redis面试题及答案整理，史上最全！ 史上最全Redis面试题及答案 Redis面试题和答案完全解读 史上最全redis面试题及答案吊打面试官\n#应用场景 Redis 的 8 大应用场景！ Redis常见的应用场景解析 Redis应用场景 redis应用场景及实例 Redis的7个应用场景 redis文档 Redis 命令参考 思维导图学 Redis —— 《Redis设计与实现》 #Redis# 利用思维导图整理的redis重要知识点 Redis好资料 Redis 设计与实现\n"
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/",
+	"title": "数据库",
+	"tags": [],
+	"description": "",
+	"content": "数据库知识\n"
+},
+{
+	"uri": "/shortcodes/",
+	"title": "Shortcodes",
+	"tags": [],
+	"description": "",
+	"content": "A bunch of Shortcodes are available with this theme :\nalert\nThe alert shortcode allows you to highlight information in your page.\nattachments\nThe Attachments shortcode displays a list of files attached to a page.\nbutton\nDisplay an actionable button in your page.\nchildren\nList the child pages of a page\nexcerpt\nThe Excerpt shortcode is used to mark a part of a page\u0026#39;s content for re-use.\nexcerpt-include\nThe Excerpt Include shortcode is used to display \u0026rsquo;excerpted\u0026rsquo; (that is, a segment of) content from one page in another. Before you can use this shortcode, the excerpt must have been defined using the Excerpt shortcode. Note that you can have more than one Excerpt Include shortcode on a page (although you can have only one Excerpt shortcode on a page).\rUsage Parameter Default Description filename required Type the filename of the page that contains the excerpt to be displayed.\nexpand\nDisplays an expandable/collapsible section of text on your page\nicon\nDisplay an icon.\nmermaid\nFlowchart example Show code ...\r{{}}\rgraph LR;\rA[Hard edge] --\u003e|Link text| B(Round edge)\rB --\u003e C{Decision}\rC --\u003e|One| D[Result one]\rC --\u003e|Two| E[Result two]\r{{\u003c /mermaid \u003e}}\rgraph LR;\rA[Hard edge] --\u003e|Link text| B(Round edge)\rB --\u003e C{Decision}\rC --\u003e|One| D[Result one]\rC --\u003e|Two| E[Result two]\rWith sub-graphs and some style Show code...\r{{}}\rgraph LR;\rX --\u003e Y\rlinkStyle 0 stroke:#f00,stroke-width:4px;\rY --\u003e Z\rZ --\u003e X\rlinkStyle 1,2 interpolate basis stroke:#0f0,stroke-width:2px;\rX --\u003e A1\rsubgraph right\rA2 --\u003e B2\rB2 --\u003e C2\rend\rsubgraph left\rA1 --\u003e B1\rB1 --\u003e C1\rend\rC1 --\u003e X\rZ --\u003e A2\rC2 --\u003e Z\rstyle Y fill:#f9f,stroke:#333,stroke-width:4px\rclassDef left fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5\rclass A1,B1,C1 left\r{{\u0026lt; /mermaid \u0026gt;}}\rgraph LR;\rX --\u003e Y\rlinkStyle 0 stroke:#f00,stroke-width:4px;\rY --\u003e Z\rZ --\u003e X\rlinkStyle 1,2 interpolate basis stroke:#0f0,stroke-width:2px;\rX --\u003e A1\rsubgraph right\rA2 --\u003e B2\rB2 --\u003e C2\rend\rsubgraph left\rA1 --\u003e B1\rB1 --\u003e C1\rend\rC1 --\u003e X\rZ --\u003e A2\rC2 --\u003e Z\rstyle Y fill:#f9f,stroke:#333,stroke-width:4px\rclassDef left fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5\rclass A1,B1,C1 left\rSequence example Show code .\nnotice\nDisclaimers to help you structure your page\npanel\nAllow you to highlight information or put it in a box.\nrevealjs\npresent content as a reveal.js slide\n"
+},
+{
+	"uri": "/search/",
+	"title": "About the Search Engine",
+	"tags": [],
+	"description": "",
+	"content": "\rActivate search If not already present, add the follow lines to the config.toml file.\n[outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] Docdock theme uses the last improvement available in hugo version 20+ to generate a json index file ready to be consumed by lunr.js javascript search engine.\nhugo generate lunrjs index.json at the root of `public` folder if the site only has one language or within each language subfolder. When you build the site with `hugo server`, hugo generates it internally and of course it don't show up in the filesystem\r"
+},
+{
+	"uri": "/",
+	"title": "DocDock Theme for Hugo",
+	"tags": [],
+	"description": "",
+	"content": "Hugo docDock theme Hugo-theme-docdock is a theme for Hugo, a fast and modern static website engine written in Go. Hugo is often used for blogs, this theme is fully designed for documentation.\nThis theme is a partial porting of the Learn theme of matcornic . and its default style \u0026ldquo;flex\u0026rdquo; comes from facette.io\u0026rsquo;s documentation.\ndocDock works with a \u0026ldquo;page tree structure\u0026rdquo; to organize content : All contents are pages, which belong to other pages. read more about this\rMain features Automatic Search Unlimited menu levels Generate RevealJS presentation from markdown (embededed or fullscreen page) Automatic next/prev buttons to navigate through menu entries Image resizing, shadow\u0026hellip; Attachments files List child pages Excerpt ! Include segment of content from one page in another Mermaid diagram (flowchart, sequence, gantt) Icons, Buttons, Alerts, Panels, Tip/Note/Info/Warning boxes, Expand customizable look and feel, theme style, theme variants Layout styles This theme comes with two distinctive layout styles: Flex and Original. The main documentation is built with Flex, though available also in Original style\nStyle \u0026ldquo;Flex\u0026rdquo; (default) Style \u0026ldquo;Original\u0026rdquo; Contribute to this documentation Feel free to update this content, just click the Edit this page link displayed on top right of each page, and pullrequest it Your modification will be deployed automatically when merged !\rDocumentation website This current documentation has been statically generated with Hugo with a simple command : hugo -t docdock \u0026ndash; source code is available here at GitHub Automated deploymentsAutomatically published and hosted thanks to Netlify.\nRead more about Automated HUGO deployments with Netlify\nNetlify builds, deploys, and hosts frontends.\r"
+},
+{
+	"uri": "/create-page/homepage/",
+	"title": "Home page",
+	"tags": ["tag1", "tag2"],
+	"description": "",
+	"content": "To tell Hugo-theme-docdock to consider a page as homepage\u0026rsquo;s content, just create a content file named _index.md in content folder.\n"
+},
+{
+	"uri": "/tags/tag1/",
+	"title": "tag1",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/tag2/",
+	"title": "tag2",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/create-page/page-images/",
+	"title": "About images",
+	"tags": [],
+	"description": "",
+	"content": "Images have a similar syntax to links but include a preceding exclamation point.\n![agence](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg)\rResizing image Add HTTP parameters width and/or height to the link image to resize the image. Values are CSS values (default is auto).\n![Hackathon](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg?height=80px)\rAdd CSS classes Add a HTTP classes parameter to the link image to add CSS classes. shadow and border are available but you could define other ones.\n![s](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg?classes=border,shadow)\r"
+},
+{
+	"uri": "/create-page/myslide/",
+	"title": "My Slide ! fullscreen",
+	"tags": [],
+	"description": "",
+	"content": "In the morning Getting up Turn off alarm Get out of bed Breakfast Eat eggs Drink coffee In the evening Dinner Eat spaghetti Drink wine Going to sleep Get in bed Count sheep "
+},
+{
+	"uri": "/create-page/page-slide/",
+	"title": "Present a Slide",
+	"tags": [],
+	"description": "",
+	"content": "A basic md content page can be rendered as a reveal.js presentation full screen.\nYou can, also, embed presentation in a page as a small box, using the revealjs shortcode in your md file.\rFormating Use your common Markdown syntax you use in Hugo, don\u0026rsquo;t forget, you can put html tags too.\nSpecial syntax (in html comment) is available for adding attributes to Markdown elements. This is useful for fragments, amongst other things.\nPlease read the doc from hakimel\nOptions In the frontmatter of your page file, set type and revealOptions params\nYour content will be served as a fullscreen revealjs presentation and revealOptions will be used to ajust its behaviour.\n+++\rtitle = \u0026quot;Test slide\u0026quot;\rtype=\u0026quot;slide\u0026quot;\rtheme = \u0026quot;league\u0026quot;\r[revealOptions]\rtransition= 'concave'\rcontrols= true\rprogress= true\rhistory= true\rcenter= true\r+++\rread more about reveal options here\nSlide Delimiters When creating the content for your slideshow presentation within content markdown file you need to be able to distinguish between one slide and the next. This is achieved very simply using a convention within Markdown that indicates the start of each new slide.\nAs both horizontal and vertical slides are supported by reveal.js each has it\u0026rsquo;s own unique delimiter.\nTo denote the start of a horizontal slide simply add the following delimiter (dashes) in your Markdown:\n---\rTo denote the start of a vertical slide simply add the following delimiter (underscores) in your Markdown:\n___\rBy using a combination of horizontal and vertical slides you can customize the navigation within your slideshow presentation. Typically vertical slides are used to present information below a top-level horizontal slide.\nFor example, a very simple slideshow presentation can be created as follows\n+++\rtitle = \u0026#34;test\u0026#34;\rdate = \u0026#34;2017-04-24T18:36:24+02:00\u0026#34;\rtype=\u0026#34;slide\u0026#34;\rtheme = \u0026#34;league\u0026#34;\r[revealOptions]\rtransition= \u0026#39;concave\u0026#39;\rcontrols= true\rprogress= true\rhistory= true\rcenter= true\r+++\r# In the morning\r___\r## Getting up\r- Turn off alarm\r- Get out of bed\r___\r## Breakfast\r- Eat eggs\r- Drink coffee\r---\r# In the evening\r___\r## Dinner\r- Eat spaghetti\r- Drink wine\r___\r## Going to sleep\r- Get in bed\r- Count sheep click here to view this page rendered\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/readme/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/dart%E5%9F%BA%E7%A1%80/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "dart官网 Flutter学习笔记\u0026ndash;Dart基础\n一.数据类型 Dart中所有东西都是对象, 包括数字、函数等 它们都继承自Object, 并且默认值都是null(包括数字)因此数字、字符串都可以调用各种方法\n注意： 默认值 dart中未初始化的值都是null，即使是数字也是一个对象。 fianl 和 const 当你不想让变量可以再次改变的时候用final或const修饰，如下：\nString 一组UTF-16单元序列. 字符串赋值的时候, 可以使用单引号, 也可以使用双引号 使用三个单引号或者三个双引号可以多行字符串赋值\nNumber int：整数值不大于64位 double：64位双精度浮点数\nBoolean 使用bool类型表示布尔值.\nList 列表, 也叫数组, 常见的添加、索引、删除等方法\nSet 集合在Dart中无序的, 并且每个元素具有唯一性, 因为它是无序的, 因此不能像List那样用索引来访问元素\nMap 映射, 也称之为字典, Map是一个无序的键值对容器\n7.Runes UTF-32字符集的字符串对象\n8.符号 Symbols 在Dart程序中，Symbol对象表示声明运算符或标识符。您可能从来不会使用到Symbol，但是它们在按名字引用标识符的API非常有用，因为缩小到改变标识符名称而不更改标识符。 获取标识符的symbol，使用sybol表达式，只需#号后跟标识符：\n二.函数\n函数定义 函数也是对象, 当没有指定返回值的时候, 函数返回null\n函数别名 普通的函数定义. 在赋值之后, 会丢失函数签名信息\n可选参数 Dart中支持两种可选参数: 命名可选参数和位置可选参数, 但是两种可选参数不能同时使用 命名可选参数使用大括号{}, 大括号外的参数是必填参数, 大括号内的参数可以指定0个或多个, 并与顺序无关, 在调用函数的时候需要指明参数名, 没有赋值的参数为null 位置可选参数使用中括号[], 在位置可选参数的函数中, 中括号内的参数可以指定0个或多个, 在调用的时候, 参数值会依次按顺序赋值\n4.闭包 特性： 1、一个 闭包 是一个方法对象。 2、闭包定义在其他方法的内部，一般通过return将其作为返回值返回。 3、不管闭包对象（方法返回的）在何处被调用，该对象都可以访问其（即闭包所在的方法）作用域内的变量，并持有其状态。\n三.操作符和流程控制语句\n类型检测运算符 as,is和is!运算符用来检测运行时类型\n运算符 意思 as 类型转换（也经常用来指定类库前缀） is 对象是否有指定的类型 is! 和上面相反 as 强转类型， is 类型判断\n您可以使用下面的任意Dart代码控制流程\nif 和 else for 循环 while 和 do-while循环 break 和 continue switch 和 case assert 您也可以可以通过try-catch和throw影响流程，详细介绍在异常\n取整 /除法操作符, 两数相除得出的结果是double类型的, 要取两数相除的整数部分, 需要用到取整操作符~/\n级联 当你要对一个单一的对象进行一系列的操作的时候, 可以使级联操作符**..**\nif语句 if语句的判断条件为bool值, 用法和大多语言一样 Dart的判断条件必须是布尔值, 不能是其他类型\n循环 如果迭代的对象是容器, 那么可以使用forEach或者for-in\nSwitch 和 Case switch的参数可以是num, 或者String 如果分句的内容为空, 想要fall-through(落空), 可以省略break, 如果分句的内容不为空, 那么必须加break, 否则抛出异常 如果想要落空, case语句内容又不为空, 而又不是按顺序落空, 那么可以使用continue和标签\n异常处理 在Dart中可以抛出非空对象(不仅仅是Exception和Error)作为异常\n四.类和对象 Dart是一门使用类和单集成的面向对象语言, 所有的对象都是类的实例, 并且所有的类都是Object的子类\n定义 类的定义用class关键字 如果为显示定义构造函数, 会默认一个无参构造函数 创建对象时 new 关键字不是必须的\n构造函数 如果只是简单的参数传递, 可以在构造函数的参数前加this关键字, 或者参数后加: 再赋值 如果要创建一个不可变的对象, 可以定义编译时常量对象 需要在构造函数前加const\nGetters 和 Setters get和set是用来读写一个对象属性的方法 每个字段都对应一个隐式的Getter和Setter, 但是调用的时候是obj.x, 而不是obj.x() 可以使用get和set关键字扩展功能 如果字段为final或者const的话, 那么它只有一个getter方法\n抽象类 在Dart中类和接口是统一的, 类就是接口 如果你想重写部分功能, 那么你可以继承一个类 如果你想实现某些功能, 那么你也可以实现一个类 使用abstract关键字来定义抽象类, 并且抽象类不能被实例化 抽象方法不需要关键字, 直接以分好结束即可\n工厂构造函数 Factory单独拿出来讲, 因为这不仅仅是构造函数, 更是一种模式 有时候为了返回一个之前已经创建的缓存对象, 原始的狗仔方法已经不能满足要求 那么可以使用工厂模式来定义构造函数 并且用关键字new来获取之前已经创建的缓存对象\n6、接口 定义 一个类通过使用关键字implements 来实现一个或者多个接口。 说明 1、类和接口是统一的，类就是接口。 2、一个类实现了某个接口，就要实现此接口的每个成员。 3、如果是复用已有类的接口，使用继承（extends）。 4、如果只是使用已有类的外在行为，使用接口（implements）。 5、每个类都隐式的定义了一个包含所有实例成员的接口\n7、枚举类 定义 使用关键字enum 来定义一个枚举类型。\n8、Mixins 定义 使用 with 关键字后面为一个或者多个 mixin 名字来使用 mixin。\n五.异步支持 Dart中包含许多返回Future或Stream对象的函数. 这些函数在设置完耗时任务(I/O操作)后, 就立即返回了, 不会等待耗时任务完成. 使用async和await关键字实现异步编程.\n处理Future 可以通过下面两种方式, 获得Future执行完成的结果: 使用async和await 使用Future API 使用async和await关键字的代码是异步的. 虽然看起来有点像同步代码 要使用await, 代码必须在异步函数(使用async标记函数)中:\n使用try, catch, 和finally来处理代码中使用await导致的错误 在await表达式中, 表达式的值通常是一个Future对象; 如果不是, 这时表达式的值会被自动包装成一个Future对象. await表达式执行的结果为这个返回的对象. await表达式会阻塞代码的执行, 直到需要的对象返回为止\n处理Stream 当需要从Stream中获取数据值时, 可以通过以下两种方式: 使用async和一个异步循环(await for) 使用Stream API\n以下是异步for循环的使用形式: await for(varOrType indentifier in expression){}\n上面表达式返回的值必须是Stream类型. 执行流程如下:\n等待, 知道流发出一个值 执行for循环体, 将变量设置为该发出的值 重复1和2, 直到关闭流\n使用break 或者 return语句可以停止接收stream的数据, 这样就跳出了for循环, 并且从stream上取消注册. 如果在实现异步for循环时遇到编译错误,请检查确保 await for 处于异步函数中。\n七、泛型 1、定义 方式 1、使用 \u0026lt;…\u0026gt; 来声明泛型 2、通常情况下，使用一个字母来代表类型参数， 例如 E, T, S, K, 和 V 等。 3、List 是一个 泛型 (或者 参数化) 类型，定义为List。\n使用泛型的原因 1、在 Dart 中类型是可选的，可以通过泛型来限定类型。 2、使用泛型可以有效地减少重复的代码。 泛型可以在多种类型之间定义同一个实现，同时还可以继续使用检查模式和静态分析工具提供的代码分析功能。 3、如果你需要更加安全的类型检查，则可以使用 参数化定义。\n八、库和可见性 1、简介 Dart中的可见性以library 为单位 默认情况下，每一个Dart文件就是一个库 使用_ 表示库的私有性。 使用import 关键字导入库\n九、异常 1、简介 代码中可以出现异常和捕获异常。 异常表示一些未知的错误情况。 如果异常没有捕获，则异常会抛出，导致抛出异常的代码终止执行。 和 Java 不同的是，所有的 Dart 异常是非检查异常。 方法不一定声明了他们所抛出的异常， 并且你不要求捕获任何异常。 详情请参考 Exceptions 部分。\n十、元数据 1、简介： 使用元数据可以给你的代码添加其他额外信息。 元数据可以在 library、 class、 typedef、 type parameter、 constructor、 factory、 function、 field、 parameter、或者 variable 声明之前使用，也可以在 import 或者 export 指令之前使用。 使用反射可以在运行时获取元数据 信息。\n2、定义： 元数据注解是以 @ 字符开头，后面是一个编译时常量(例如 deprecated)。 调用一个常量构造函数。 形如：@deprecated，@override\n3、类型： Dart内置元数据注解: @deprecated @override @proxy\n十一.核心库\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/flutter%E5%AE%89%E8%A3%85/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "1. [!] Android toolchain - develop for Android devices (Android SDK 28.0.3)问题解决\n解决办法\ncd 到自己sdk的路径 例如 cd /Users/admin/dev/Android/sdk cd tools cd bin // 以上三行是进入到自己到sdk目录文件夹下 //执行这句才是关键，它会提示你去允许认证 sdkmanager \u0026ndash;licenses 然后一路按y\n還需要在用户环境变量下把 路径为 自己 sdk路径 名字为 ANDROID_HOME\n然后重启 再创建一个模拟器 ，这样四项都为 - [ ✔ ] 最后在检查下flutter doctor 就ok了\nvim ~/.zshrc source ~/.zshrc\n#AndroidSdk export ANDROID_HOME=/Volumes/macdata/andriod/sdk\n2. ✗ CocoaPods not installed. sudo gem install cocoapods\n3. ERROR: Error installing cocoapods:\niOS：解决pod的Insecure world writable dir问题 sudo chmod go-w /Volumes/macdata/go\nhttps://www.jianshu.com/p/43aa50b0ed70\nhttps://www.jianshu.com/p/c2f2c7aa5cf6\n4.\nFailed to connect to raw.githubusercontent.com port 443 解决方案 原因 由于某些你懂的因素，导致GitHub的raw.githubusercontent.com域名解析被污染了。\n查询真实IP\n在https://www.ipaddress.com/查询raw.githubusercontent.com的真实IP。\n通过修改hosts解决此问题\n1 199.232.28.133 raw.githubusercontent.com\n5.解决国内上github https://blog.csdn.net/weixin_42121805/article/details/107711983\n2021 升级Big Sur后cocoapods的安装方法\nexport PATH=/Users/用户名/Documents/flutter/flutter/bin:$PATH export ANDROID_HOME=\u0026quot;/Users/用户名/Documents/android_sdk\u0026quot; //android sdk目录，替换为你自己的即可 export PATH=${PATH}:${ANDROID_HOME}/tools export PATH=${PATH}:${ANDROID_HOME}/platform-tools export PUB_HOSTED_URL=https://pub.flutter-io.cn export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "#1.GoWorld – 用Golang写一个分布式可扩展、可热更的游戏服务器 https://github.com/xiaonanln/goworld\n2.golang Leaf 游戏服务器框架简介 https://blog.csdn.net/kaitiren/article/details/78442454 https://github.com/name5566/leafserver\n3.cellnet cellnet好像使用callback回调方式, 直接pass. https://studygolang.com/p/cellnet\n4.mqant mqant使用了mqtt协议, 感觉写了太多, 有点复杂, 也pass了. https://golangtc.com/t/58b4e772b09ecc2e18000305 http://www.mqant.com/topic/58d4c895cf36add6408d2c0e https://github.com/liangdas/mqantserver\n5.nano https://github.com/lonng/nano nanoserver 有房卡麻将例子 https://github.com/lonng/nanoserver\n6.中小型手机棋牌网络游戏服务端架构设计 https://github.com/panshiqu/framework https://blog.csdn.net/panshiqu/article/details/74572133 https://blog.csdn.net/panshiqu/article/details/70160325\n7.基于Go语言的棋牌游戏框架 https://github.com/gochenzl/chess\n8.房卡麻将棋牌解决方案 https://github.com/shuimuliang https://my.oschina.net/u/3653577/blog/1512057 https://github.com/shuimuliang/qnmahjongserver https://github.com/shuimuliang/qnmahjongclient\n9.railgun https://blog.csdn.net/easy_mind/article/details/53260574 https://github.com/3zheng/railgun\n10.为互联网IT人打造的中文版awesome-go https://github.com/hackstoic/golang-open-source-projects\n11.网络框架之-thrift http://thrift.apache.org/tutorial/go\n12.awesome-go:一个很全的go语言框架，库，软件合集 http://hao.jobbole.com/awesome-go/\n13. https://github.com/yinjimmy/chessAndCard-2dx https://github.com/shuimuliang/qnmahjongserver\nagones agones 源码 官网网站 agones 中文文档 gaming-agones-demo agones\ngo 开源游戏服务器框架 Agones 浅谈Go语言自研的分布式游戏服务器架构 云原生项目实践DevOps(GitOps)+K8S+BPF+SRE，从0到1使用Golang开发生产级麻将游戏服务器—第2篇 go-mahjong-server\ngolang Leaf 游戏服务器框架简介\nmy-github-repos 一些开源库 Go netpoller 原生网络模型之源码全面揭秘 gnet\n独自创建一个多用户游戏服务器。 建筑与安装\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E7%9F%A5%E8%AF%86%E7%82%B9/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " 系统中断信号注册 通道接收多个返回值 go context reflect 通过反射，我们可以获取一个结构体类型的字段,也可以获取一个类型的导出方法，这样我们就可以在运行时了解一个类型的结构，这是一个非常强大的功能。 另外 Golang 有一些特别先进的特性，需要说道说道。\n✔ 用户态线程 / 绿色线程 / 协程（goroutine） ✔ 语言级多路复用（select） ✔ 信道（channel） ✔ 通信顺序进程 (CSP) ✔ 读写锁（RWMutex） ✔ context、defer ✔ 组合继承 ✔ 函数多返回值\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E8%AF%AD%E8%A8%80%E5%87%A0%E4%B8%AA%E6%9C%80%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9%E7%9A%84%E6%80%BB%E7%BB%93/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "3.channel channel通道主要是为了进行同步，当一个资源需要共享时用channel就可以在goroutine之间确保同步交换数据。 channel有两种：无缓冲通道和有缓冲通道，区别还得从它的创建开始讲。\n在go中使用到make函数的地方主要就是： 1：slice的创建 2：map的创建 3：channel的创建\n无缓冲通道只有在发送，接受同时准备好的时侯才能实现操作，否则会导致先执行的操作阻塞等待。\n互斥锁 读写互斥锁\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "知识体系可以从字段，函数，结构体入手，再到详细编码的逻辑结构，也就是面向过程进行加深。然后是指针，异常机制，IO，并发等。有了基本架构之后才是网络，后台等高级特性。\n字段： 1.数据操作。包括基本数据类型的定义以及操作，运算，切片等。注意指针。 2.字段在结构体中可以是匿名字段。 3.array，map，slice是高级结构体。array是数组，而slice针对数组进行的切片处理。map是映射。使用range遍历。 4.平行赋值i,j=i+1,j+1.这个一般用在if中。\n结构体： 1.结构体的定义。在go中类是结构体与函数叠加而成。而结构体就是算法与结构中的“结构”。 2.type用于重定义数据，定义结构体，接口。 3.go更加接近理论，所以在go中类，方法，变量，被叫做结构体，函数，字段。.\n函数： 1.函数的定义。在go中都是函数，而属于结构体的函数可以称为方法。 2.函数有匿名函数。 3.func funcName(input1 type1, input2 type2) (output1 type1, output2 type2) { //这里是处理逻辑代码 //返回多个值 return value1, value2 } 字段和返回字段可以简化。如input1,input2 type。这其实就是如果当前没有就往后面找。 4.注意变参func（arg\u0026hellip;int）\n流程控制： 1.if参照了for，可以使用；分号隔开，前面的是变量声明。 2.switch的case后面自带break，想要往下执行需要使用fallthrough。switch跟的语句如果没有添加，那么就是true。 3.for格式如果省略了分号，那么就相当于while。for range可以用于读取slice和map的数据。 4.goto是跳转语句。\n指针： 1.string,slice,map都是基于指针的机制了，可以直接传递，不需要再取地址传指针操作。但是注意slice的长度发生变化的话，仍需取地址传指针。 2.结构体指针函数的使用需要注意。\n表达式： 1.go不支持三元表达式。也就是说一个n:=expr?trueV:falseV在这里不能使用。\n异常： 1.go中，异常处理使用panic()，recover()，defer联合使用。panic抛出异常中断，如果想要回复，可以在defer中使用recover恢复。但是go中，尽量少用异常处理。\nIO： 1.go中使用make()创建切片，映射，程道。返回对象，而new()返回的是指针。 2.chan分为有缓冲和无缓冲两种。 3.chan作为线程件通信的IO通道。 4.常使用select，case，default组合chan进行操作。\n并发： 1.并发里面主要是多线程以及常用的辅助类等。 2.并发的内容一般包含： （1）线程的初始化。线程的实现是go xxx，这个过程叫做gorutine。 （2）线程的通信。通过channel进行通信。注意，这里channel本身是具有锁功能的，往往作为最简单常用的锁进行使用 （3）线程对于资源的操作。这里主要是同步异步，阻塞和非阻塞等概念。 同步异步的关键在于互斥，而阻塞和非阻塞关键在于锁。但是两者其实很接近。 所以往往出现的是互斥锁。这里常用的是sync.Mutext.Lock()实现互斥锁。使用lock.Lock()实现锁。runtime模块往往用于运行时候的一些操作，帮助线程实现让出时间片，线程退出等操作。atomic模块是原子操作。其他的一些类和函数是基于这些概念进行的扩展。 （4）defer使用 defer func_name(param-list) 当一个函数调用前有关键字 defer 时, 那么这个函数的执行会推迟到包含这个 defer 语句的函数即将返回前才执行 defer 调用的函数参数的值在 defer 定义时就确定了, 而 defer 函数内部所使用的变量的值需要在这个函数运行时才确定。defer 函数调用的执行时机是外层函数设置返回值之后, 并且在即将返回之前\n（5）sync mutex互斥锁 有两个方法，lock()和unlock() 上锁和解锁 对数据进行上锁，防止数据被其它线程更改。Mutex是一个互斥锁，可以作为struct的一部分，这样这个struct就会防止被多线程更改数据。 注意：执行加锁后，在执行完操作后记得解锁，不然会有错误。常常defer关键字与解锁共用。\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "Golang面试题41道 1.什么是golang? go是一个开源的编程语言，由谷歌开发的。这门语言是设计用来做系统级的编程的。\n2.为什么要用golang? 简单点说就是go是一个开源的编程语言，它很容易用来编写简单, 可靠，有效的软件。\n3.是谁开发了go语言？ Robert Griesemer, Rob Pike, Ken Thompson.\n4.go编程中的packages是什么？ Go语言的最小集合就是package，它的程序入口是main package。\nGo语言是否支持generic编程? 不支持。\ngo语言是大小写敏感的编程语言吗？ 是的。\n7.go语言里面字符串的语法是怎样的？ go语言里有两种字符串语法。 一种是原始字符串语法raw string literals。使用back quotes来包含一系列的字符集。支持多行。 另一种是interpreted string literals。用双引号括起来。不支持多行。\nGo语言的work space是指什么? Work space用来包含go语言的代码，有三个主要的文件目录, src, pkg, bin。 9.go语言中布尔类型的缺省值是什么？ false\n10.Gopath环境变量是什么? Gopath来指定工作空间的位置。在做go语言编程的时候，这个变量设置是必须的。\n第11题，go语言编程的好处是什么？ 编译和运行都很快。 在语言层级支持并行操作。 有垃圾处理器。 内置字符串和maps。 函数是go语言的最基本编程单位。 第12题，go语言里比较常用的功能模块。 Container, container list, container heap. Web server, net/http Cryptography, Crypto/md5, crypto/sha1. Compression, compress/gzip. Database, database/sql. 第13题，goroutine是什么？ 一个goroutine是可以跟其他函数并行运行的函数。如果想停止一个goroutine，你可以通过一个signal channel传值进去。 第14题，如何写多行的字符串？ raw string literal 第15题, go语言里的break是干什么用的？\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "golang面试题整理\n1.go的调度 2.go struct能不能比较 因为是强类型语言，所以不同类型的结构不能作比较，但是同一类型的实例值是可以比较的，实例不可以比较，因为是指针类型 3.go defer（for defer），先进后出，后进先出 func b() { for i := 0; i \u0026lt; 4; i++ { defer fmt.Print(i) } } 4.select可以用于什么，常用语gorotine的完美退出 golang 的 select 就是监听 IO 操作，当 IO 操作发生时，触发相应的动作每个case语句里必须是一个IO操作，确切的说，应该是一个面向channel的IO操作\n5.context包的用途 Context通常被译作上下文，它是一个比较抽象的概念，其本质，是【上下上下】存在上下层的传递，上会把内容传递给下。在Go语言中，程序单元也就指的是Goroutine\n6.client如何实现长连接 server是设置超时时间，for循环遍历的\n7.主协程如何等其余协程完再操作 使用channel进行通信，context,select\n8.slice，len，cap，共享，扩容 append函数，因为slice底层数据结构是，由数组、len、cap组成，所以，在使用append扩容时，会查看数组后面有没有连续内存快，有就在后面添加，没有就重新生成一个大的素组\n9.map如何顺序读取 map不能顺序读取，是因为他是无序的，想要有序读取，首先的解决的问题就是，把ｋｅｙ变为有序，所以可以把key放入切片，对切片进行排序，遍历切片，通过key取值。\n10.实现set\n11.实现消息队列（多生产者，多消费者） 使用切片加锁可以实现\n12.大文件排序 归并排序，分而治之,拆分为小文件，在排序\n13.基本排序，哪些是稳定的\n14.http get跟head HEAD和GET本质是一样的，区别在于HEAD不含有呈现数据，而仅仅是HTTP头信息。有的人可能觉得这个方法没什么用，其实不是这样的。想象一个业务情景：欲判断某个资源是否存在，我们通常使用GET，但这里用HEAD则意义更加明确。\n15.http 401,403 400 bad request，请求报文存在语法错误 401 unauthorized，表示发送的请求需要有通过 HTTP 认证的认证信息 403 forbidden，表示对请求资源的访问被服务器拒绝 404 not found，表示在服务器上没有找到请求的资源\n16.http keep-alive client发出的HTTP请求头需要增加Connection:keep-alive字段 Web-Server端要能识别Connection:keep-alive字段，并且在http的response里指定Connection:keep-alive字段，告诉client，我能提供keep-alive服务，并且\u0026quot;应允\u0026quot;client我暂时不会关闭socket连接\n17.http能不能一次连接多次请求，不等后端返回 http本质上市使用socket连接，因此发送请求，接写入tcp缓冲，是可以多次进行的，这也是http是无状态的原因\n18.tcp与udp区别，udp优点，适用场景 tcp传输的是数据流，而udp是数据包，tcp会进过三次握手，udp不需要\n１９、time-wait的作用\n２０、数据库如何建索引\n２１、孤儿进程，僵尸进程 ２２、死锁条件，如何避免 ２３、linux命令，查看端口占用，cpu负载，内存占用，如何发送信号给一个进程 ２４、git文件版本，使用顺序，merge跟rebase\n２６、Slice与数组区别，Slice底层结构 ２７、项目里的微信支付这块，在支付完微信通知这里，收到两次微信相同的支付通知，怎么防止重复消费（类似接口的幂等性），说了借助Redis或者数据库的事务 ２８、项目里的消息推送怎么做的（业务有关） ２９、Go的反射包怎么找到对应的方法（这里忘记怎么问的，直接说不会，只用了DeepEqual，简单讲了DeepEqual） ３０、Redis基本数据结构 ３１、Redis的List用过吗？底层怎么实现的？知道但是没用过，不知道怎么实现 ３２、Mysql的索引有几种，时间复杂度 ３３、InnoDb是表锁还是行锁，为什么（这里答不出来为什么，只说了行锁） ３４、Go的channel（有缓冲和无缓冲） ３５、退出程序时怎么防止channel没有消费完，这里一开始有点没清楚面试官问的，然后说了监听中断信号，做退出前的处理，然后面试官说不是这个意思，然后说发送前先告知长度，长度要是不知道呢？close channel下游会受到0值，可以利用这点（这里也有点跟面试官说不明白） ３６、用过什么消息中间件之类吗？没有 ３７、有什么问题吗？评价？后面还有面试，后面再问吧\n３８、生产者消费者模式，手写代码（Go直接使用channel实现很简单，还想着面试官会不会不让用channel实现，不用channel的可以使用数组加条件变量），channel缓冲长度怎么决定，怎么控制上游生产速度过快，这里没说出解决方案，只是简单说了channel长度可以与上下游的速度比例成线性关系，面试官说这是一种解决方案 ３９、手写循环队列 ４０、写的循环队列是不是线程安全，不是，怎么保证线程安全，加锁，效率有点低啊，然后面试官就提醒Go推崇原子操作和channel ４１、写完代码面试官说后面问的问题回答就可以，不知道的话没关系 ４２、Linux会不会，只会几个命令，面试官就说一共也就一百多个命令 ４３、TimeWait和CloseWait原因 ４４、线段树了解吗？不了解，字典树？了解 ４５、看过啥源码，nsq（Go的消息中间件），简单问了我里面的waitgroup包证明我看过 ４６、sync.Pool用过吗，为什么使用，对象池，避免频繁分配对象（GC有关），那里面的对象是固定的吗？不清楚，没看过这个的源码 ４７、有什么问题吗？评价？基础不错，Linux尚缺，Go的理解不够深入，高级数据结构不了解，优点是看源码 ４８、后面面试官讲了他们做的东西，主要是广告部分，说日均数据量至少百万以上，多达上亿，高并发使用Go支撑，有微服务，服务治理，说我需要学的东西挺多的\n４９、证明二叉树的叶子节点跟度数为2的节点的关系 ５０、唯一索引和主键索引 ５１、智能指针 ５２、字符串解析为数字（考虑浮点型）\n５３、单点登录，tcp粘包 ５４、手写洗牌 ５５、处理粘包断包实现，面试官以为是negle算法有关，解释了下negle跟糊涂窗口综合征有关，然后面试官觉得其他项目是crud就没问了 ５６、goroutine调度用了什么系统调用，这个不会，面试官想从go问到操作系统，然后以为***作系统基础不好，就问了操作系统问题 ５７、进程虚拟空间分布，全局变量放哪里？答上来了，操作系统就不问了 ５８、有没有网络编程，有，怎么看连接状态？netstat，有哪些？ESTABLISHED，LISTEN等等，有异常情况吗？TIME_WAIT很多，为什么？大量短链接 ５９、几种基本排序算法说一下，问了堆的时间复杂度，稳定性，为什么不稳定 ６０、 topk问题，海量数据topk（回答成切分多次加载内存，然后用维持k长度的有序链表，然后被说时间复杂度不好，提示说还是用堆，然后哦哦哦对） 最长连续字串和，这里我说的解决方案没用dp（对dp不熟），面试官一直引导我dp，还是不会 ６１、什么是主键 ６２、联合索引和唯一索引 ６２、越多的索引越好吗？ ６３、建立索引要注意什么？ ６４、进程和线程区别？ ６５、死锁？ ６６、tcp三次握手 ６７、http，https ６８、状态码401,301,302,201 ６９、项目我说只有一台机子，所以用的单机部署，面试官说单机也可以部署多个，有什么方法吗？我说docker，问docker有哪些网络，不熟，dockerfile关键字，只答几个。顺便扯了下nginx转发。\n７０、数据库隔离级别，提交读会造成什么 ７１、go调度 ７２、 goroutine泄漏有没有处理，设置timeout，select加定时器\n７３、mysql高可用的方案 ７４、进程线程区别\n７５、排序算法以及时间复杂度 ７６、怎么学习go ７７、go的线程，给他讲了跟goroutine调度 ７８、io模型，同步阻塞，同步非阻塞，异步 ７９、cookie和session\n８０、接口kps测试 ８１、redis排行榜数据结构（跳跃表），查询时间复杂度 ８２、redis分布式，如何减少同步延迟 ８３、mysql能实现redis的功能吗 ８４、平时怎么学习？ ８５、看什么书？ ８６、兴趣爱好 ８７、看过google四篇分布式论文吗，没看过 ８９、cap理论，举例 ９０、LRU算法，LFU ９１、讲讲怎么理解网络编程\n９２、go使用踩过什么坑（for range，数据库连接defer close） ９３、go优缺点 ９５、go的值传递和引用 ９６、慢查询 ９７、为什么使用pg ９８、redis的数据类型\n９９、所有左叶子节点的和 １００、m个n大小的有序数组求并集，一开始是2路归并，求时间复杂度，后来在面试官提醒直接m路归并，求时间复杂度 １０１、static关键字，还有其他关键字吗 １０２、hash表设计，线程安全？ １０３、 线程自己独享什么 １０４、网络编程过程 １０５、select、epoll １０６、看什么书\n１０７、排行榜怎么实现 １０８、go的锁如何实现，用了什么cpu指令 １０９、go的runtime如何实现 １１０、看过sql的连接池实现吗 １１１、ctx包了解吗？有什么用？ １１２、go什么情况下会发生内存泄漏？（他说ctx没有cancel的时候，这个真不知道） １１３、怎么实现协程完美退出？ １１４、智力题：1000瓶酒中有1瓶毒酒，10只老鼠，7天后毒性才发作，第8天要卖了，怎么求那瓶毒酒？ １１５、简单dp题，n*n矩阵从左上角到右下角有多少种走法（只限往下和往右走） １１６、用channel实现定时器？（实际上是两个协程同步） １１７、go为什么高并发好？讲了go的调度模型\n１１８、操作系统内存管理？进程通讯，为什么共享存储区效率最高 １１９、实现一个hashmap，解决hash冲突的方法，解决hash倾斜的方法 １２０、怎么理解go的interface １２１、100亿个数选top5，小根堆 １２２、数组和为n的数组对 １２３、最大连续子数组和 １２４、redis容灾，备份，扩容 １２５、跳跃表，为什么使用跳跃表而不使用红黑树 １２６、输入url后涉及什么 １２７、tcp怎么找到哪个套接字 １２８、ipc方式，共享存储区原理 １３０、进程虚拟空间布局 １３１、进程状态转换 １３２、线程的栈在哪里分配 １３３、多个线程读，一个线程写一个int32会不会有问题，int64呢（这里面试官后来说了要看数据总线的位数，32位的话写int32没问题，int64就有问题） １３４、判断二叉树是否为满二叉树 １３５、lru实现 １３６、一个大整数（字符串形式表示的），移动字符求比它大的数中最小的 １３７、点赞系统设计\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "#基础 go基础 地鼠文档 Go 语言设计与实现 Go 语言中文开源图书、资料或文档 go语言中文文档 基础视频教学 Go 语言高性能编程 Golang应该掌握哪些必要的知识点才能算掌握golang这门语言？\n#sync Go 语言设计与实现-6.2 同步原语与锁 sync - 处理同步需求 golang的sync包 浅谈 Golang sync 包的相关使用方法\ngo开源仓库\n#面试题 golang面试题整理 Golang面试题41道 golang 面试题整理 Go 语言笔试面试题汇总 golang 关键知识点 golang知识点整理(持续更新)\n#好的站点 综合博客\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/ants/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "#ants ##地址:https://github.com/panjf2000/ants https://github.com/panjf2000\n📖 简介 高性能的 goroutine 池 ##文件\n文件 描述 说明 ants.go 主结构 主要是配置 pool.go 工作池结构 工作主入口，管理池 pool_func.go 带函数池 管理带函数的池子 worker_func.go 带函数工作接口 管理带函数的工作 worker_array.go 工作组接口 创建方式为栈或队列，返回的是接口 worker.go 工作接口 处理工作函数 worker_stack.go 工作栈 栈的实现方式，使用的二分法 worker_loop_queue.go 工作池队列 队列方式实现 ##经验 1.sync 包的使用 2.goroutine 池的管理和设计(带函数和不带函数)\n#技术包 ##技术包 ###技术包 #####技术包 ######技术包 #######技术包\n技术包\n但是发 发发发撒发\n阿但是发撒都发撒啊阿啊\n第一项 第二项 第三项 sdfa sdfa sdfa sdfa sdfa dfsaa asdf\ndsfasdaf\rsdfa\rsdfadsaff\radfsfa\rasdffasfda\rfsadf\rhttps://www.runoob.com 表头 表头 都发撒 单元格 单元格 sdffas 单元格 都发撒发撒 sdfsafas graph LR\rA[方形] --\u0026gt;B(圆角)\rB --\u0026gt; C{条件a}\rC --\u0026gt;|a=1| D[结果1]\rC --\u0026gt;|a=2| E[结果2]\rF[横向流程图] Title: 标题：复杂使用\r对象A-\u0026gt;对象B: 对象B你好吗?（请求）\rNote right of 对象B: 对象B的描述\rNote left of 对象A: 对象A的描述(提示)\r对象B--\u0026gt;对象A: 我很好(响应)\r对象B-\u0026gt;小三: 你好吗\r小三--\u0026gt;\u0026gt;对象A: 对象B找我了\r对象A-\u0026gt;对象B: 你真的好吗？\rNote over 小三,对象B: 我们是朋友\rparticipant C\rNote right of C: 没人陪我玩 表头1 表头2 表头3 dfsafa dfsafa 左对齐 居中对齐 右对齐 sdfa "
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/bytebufferpool/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "#ants ##地址:https://github.com/valyala/bytebufferpool\n📖 简介 字节缓冲池\n文件 描述 说明 bytebuffer.go 字节缓存 字符串，IO，数组等的写入缓存 pool.go 缓存管理 缓存空间管理 ##文件\n##经验 1.切片的使用 2.sync.Pool使用\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gev/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "gev 地址:https://github.com/Allenxuxu/gev.git Go 网络库并发对比 https://blog.csdn.net/meiyoudao_jiushidao/article/details/102657231\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gnet/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "gnet 地址:https://github.com/panjf2000/gnet 📖 简介 字节缓冲池\n文件 描述 说明 ringbuffer 循环缓冲 构造循环缓冲基本 pool 线程池 缓存池的使用 internal 内部 缓存空间管理 acceptor 接收 接受连接 codec 编解码 编解码 connection 连接 网络连接 errors.go 错误处理 eventloop_group 事件循环组 gnet.go 主结构 listener 监听 loop 循环事件 reactor server 服务 网络服务器 文件 经验 1.循环池的设计使用 2.sync.Pool 使用\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/json%E6%8F%92%E4%BB%B6/%E6%8F%92%E4%BB%B6/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "#json json库 Golang使用标签表达式校验结构体字段的有效性 GO\u0026ndash;Json tag标签的作用，json用法讲解\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "开源主地址 swaggo源码\nswag简体中文说明\n#要详细查看使用方法\nGolang – Gin \u0026amp; Swaggo 使用方法\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E8%AF%B4%E6%98%8E/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "#安装swag命令行 $ go get -u github.com/swaggo/swag/cmd/swag\n1.16 及以上版本 $ go install github.com/swaggo/swag/cmd/swag@latest\n#运行swag init 查询参数 swag init -h\n#支持的Web框架 gin echo buffalo net/http\n#与Gin集成 ##1.导入包 import \u0026ldquo;github.com/swaggo/gin-swagger\u0026rdquo; // gin-swagger middleware import \u0026ldquo;github.com/swaggo/files\u0026rdquo; // swagger embed files\n##2.在main.go源代码中添加通用的API注释： ##3.在Handler代码中添加API操作注释： ##4.swag init ##5.运行程序，然后在浏览器中访问 http://localhost:8080/swagger/index.html\n#声明式注释格式\n通用API信息\n注释 说明 示例 title 必填 应用程序的名称。 // @title Swagger Example API version 必填 提供应用程序API的版本。 // @version 1.0 description 应用程序的简短描述。 // @description This is a sample server celler server. tag.name 标签的名称。 // @tag.name This is the name of the tag tag.description 标签的描述。 // @tag.description Cool Description tag.docs.url 标签的外部文档的URL。 // @tag.docs.url https://example.com tag.docs.description 标签的外部文档说明。 // @tag.docs.description Best example documentation termsOfService API的服务条款。 // @termsOfService http://swagger.io/terms/ contact.name 公开的API的联系信息。 // @contact.name API Support contact.url 联系信息的URL。 必须采用网址格式。 // @contact.url http://www.swagger.io/support contact.email 联系人/组织的电子邮件地址。 必须采用电子邮件地址的格式。 // @contact.email support@swagger.io license.name 必填 用于API的许可证名称。 // @license.name Apache 2.0 license.url 用于API的许可证的URL。 必须采用网址格式。 // @license.url http://www.apache.org/licenses/LICENSE-2.0.html host 运行API的主机（主机名或IP地址）。 // @host localhost:8080 BasePath 运行API的基本路径。 // @BasePath /api/v1 query.collection.format 请求URI query里数组参数的默认格式：csv，multi，pipes，tsv，ssv。 如果未设置，则默认为csv。 // @query.collection.format multi schemes 用空格分隔的请求的传输协议。 // @schemes http https x-name 扩展的键必须以x-开头，并且只能使用json值 // @x-example-key {\u0026ldquo;key\u0026rdquo;: \u0026ldquo;value\u0026rdquo;} 使用Markdown描述 如果文档中的短字符串不足以完整表达，或者需要展示图片，代码示例等类似的内容，则可能需要使用Markdown描述。要使用Markdown描述，请使用一下注释。\n注释 说明 示例 title 必填 应用程序的名称。 // @title Swagger Example API version 必填 提供应用程序API的版本。 // @version 1.0 description.markdown 应用程序的简短描述。 从api.md文件中解析。 这是@description的替代用法。 // @description.markdown No value needed, this parses the description from api.md tag.name 标签的名称。 // @tag.name This is the name of the tag tag.description.markdown 标签说明，这是tag.description的替代用法。 该描述将从名为tagname.md的文件中读取。 // @tag.description.markdown API操作 Example celler/controller\n注释 描述 description 操作行为的详细说明。 description.markdown 应用程序的简短描述。该描述将从名为endpointname.md的文件中读取。 id 用于标识操作的唯一字符串。在所有API操作中必须唯一。 tags 每个API操作的标签列表，以逗号分隔。 summary 该操作的简短摘要。 accept API可以使用的MIME类型的列表。值必须如“Mime类型”中所述。 produce API可以生成的MIME类型的列表。值必须如“Mime类型”中所述。 param 用空格分隔的参数。param name,param type,data type,is mandatory?,comment attribute(optional) security success 以空格分隔的成功响应。return code,{param type},data type,comment failure 以空格分隔的故障响应。return code,{param type},data type,comment response 与success、failure作用相同 header 以空格分隔的头字段。 return code,{param type},data type,comment router 以空格分隔的路径定义。 path,[httpMethod] x-name 扩展字段必须以x-开头，并且只能使用json值。 "
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%85%B3%E9%94%AE%E5%AD%97/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "#json\njson: \u0026quot;-\u0026quot; // 表示不进行序列化，该字段总是在序列化被省略。 json: \u0026quot;xxx,omitempty\u0026quot; //表示如果字段具有空值则该字段应从编码中省略\ngo中json序列化使用标签来进行拓展： 1、忽略空值： type Person struct { Id int64 json:\u0026quot;id, omitempty\u0026quot; }\n2、忽略字段（不论是否为空值）： type Person struct { Id int64 json:\u0026quot;-\u0026quot; }\n3、指定数据类型： type Person struct { Id int64 json:\u0026quot;id,string\u0026quot; }\n#xml\n#Protobuf\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "聊一聊golang的结构体标签\nGo 结构体标签详解\nGolang使用标签表达式校验结构体字段的有效性\nGo语言结构体标签\ngo json 标签 默认值_Go Gin 系列三：开发标签模块\ngo encoding/json包数据处理详解\ngolang 如何验证struct字段的数据格式\ngolang数据校验\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/ziyuan/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "https://gowalker.org/\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "学习路线 GO每日一库 Golang分类 一些插件案例 一些源码析\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%9D%82%E9%A1%B9%E8%B5%84%E6%BA%90/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "#资源 基于gnet网络框架编写的各种常见服务端server程序，可以用来学习和快速使用 一款基于gnet开发的RPC微服务框架 rpc服务在游戏中的简单运用 大型多人在线游戏服务器架构设计 大型多人在线游戏服务器架构设计 origin 一个协议驱动的游戏服务器架构设计 开源游戏服务器框架NoahFrame分享：第一章 游戏服务器的进化 游戏服务端究竟解决了什么问题？ 游戏通信协议设计文档 游戏服务器设计 游戏开发—协议设计\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/css/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "#CSS讲解 CSS 教程 看这一篇就够了,css选择器知识汇总 前端 -＞ js原生选择器,jQuery选择器 基本选择器(ID选择器,元素选择器,类名选择器,复合选择器,通配符选择器) css思维导图及简单知识点 CSS思维导图 CSS思维导图(自己梳理)\n##JS JS所有类型选择器,包括父子兄弟等\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "#文档\nRust布道者张汉东倾授，入门Rust初学者都要攻破哪些难点？ Rust 程序设计语言 简体中文版 Rust宏编程新手指南\n区块链技术书单推荐，最后一本值得推荐给所有程序员阅读\n通过例子学 Rust\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "#参考文档\n官方网站 vue.js_v3教程 视频教程\n"
+},
+{
+	"uri": "/shortcodes/alert/",
+	"title": "alert",
+	"tags": [],
+	"description": "The alert shortcode allows you to highlight information in your page.",
+	"content": "The alert shortcode allow you to highlight information in your page. They create a colored box surrounding your text, like this:\nThis is an alert !\rUsage Parameter Default Description theme info success, info,warning,danger Tips : setting only the theme as argument works too : {{%alert warning%}} instead of {{%alert theme=\u0026quot;warning\u0026quot;%}}\nBasic examples {{% alert theme=\u0026quot;info\u0026quot; %}}**this** is a text{{% /alert %}}\r{{% alert theme=\u0026quot;success\u0026quot; %}}**Yeahhh !** is a text{{% /alert %}}\r{{% alert theme=\u0026quot;warning\u0026quot; %}}**Be carefull** is a text{{% /alert %}}\r{{% alert theme=\u0026quot;danger\u0026quot; %}}**Beware !** is a text{{% /alert %}}\rthis is an info\rYeahhh ! is an success\rBe carefull is a warning\rBeware ! is a danger\r"
+},
+{
+	"uri": "/shortcodes/attachments/",
+	"title": "attachments",
+	"tags": [],
+	"description": "The Attachments shortcode displays a list of files attached to a page.",
+	"content": "The Attachments shortcode displays a list of files attached to a page. Example : Attachments\rBachGavotteShort.mp3\r(357 kB)\rCarroll_AliceAuPaysDesMerveilles.pdf\r(175 kB)\radivorciarsetoca00cape.pdf\r(361 kB)\rhugo.png\r(17 kB)\rmovieselectricsheep-flock-244-32500-2.mp4\r(340 kB)\rUsage The shortcurt lists files found in a specific folder. Currently, it support two implementations for pages\nIf your page is a markdown file, attachements must be place in a folder named like your page and ending with .files.\ncontent _index.md page.files attachment.pdf page.md If your page is a folder, attachements must be place in a nested \u0026lsquo;files\u0026rsquo; folder.\ncontent _index.md page index.md files attachment.pdf That\u0026rsquo;s all !\nTip : Look at this documentation source code on github\rparameters Parameter Default Description title \u0026ldquo;Attachments\u0026rdquo; List\u0026rsquo;s title pattern \u0026ldquo;.*\u0026rdquo; A regular expressions, used to filter the attachments by file name. The pattern parameter value must be regular expressions.\nFor example:\nTo match a file suffix of \u0026lsquo;jpg\u0026rsquo;, use *.jpg (not *.jpg). To match file names ending in \u0026lsquo;jpg\u0026rsquo; or \u0026lsquo;png\u0026rsquo;, use .*(jpg|png) Demo List of attachments ending in pdf or mp4 {{%attachments title=\u0026quot;Related files\u0026quot; pattern=\u0026quot;.*(pdf|mp4)\u0026quot;/%}}\rrenders as\nRelated files\rCarroll_AliceAuPaysDesMerveilles.pdf\r(175 kB)\radivorciarsetoca00cape.pdf\r(361 kB)\rmovieselectricsheep-flock-244-32500-2.mp4\r(340 kB)\r"
+},
+{
+	"uri": "/shortcodes/button/",
+	"title": "button",
+	"tags": [],
+	"description": "Display an actionable button in your page.",
+	"content": "Display an actionable button in your page.\nThis is a warning button Usage Parameter Default Description href \u0026quot;\u0026quot; The location href to link to align \u0026ldquo;center\u0026rdquo; horizontal align button on page theme primary default, primary , success,info,warning,danger The inner text you place in short code will be displayed as the button text\nDemo {{\u0026lt; button href=\u0026quot;https://google.com\u0026quot; \u0026gt;}} go to google {{\u0026lt; /button \u0026gt;}}\r{{\u0026lt; button href=\u0026quot;https://google.com\u0026quot; theme=\u0026quot;success\u0026quot; \u0026gt;}} Success {{\u0026lt; /button \u0026gt;}}\r{{\u0026lt; button href=\u0026quot;https://google.com\u0026quot; theme=\u0026quot;info\u0026quot; \u0026gt;}} Info {{\u0026lt; /button \u0026gt;}}\r{{\u0026lt; button href=\u0026quot;https://google.com\u0026quot; theme=\u0026quot;warning\u0026quot; \u0026gt;}} Warning {{\u0026lt; /button \u0026gt;}}\r{{\u0026lt; button href=\u0026quot;https://google.com\u0026quot; theme=\u0026quot;danger\u0026quot; \u0026gt;}} Danger ! {{\u0026lt; /button \u0026gt;}}\r{{\u0026lt; button href=\u0026quot;https://google.com\u0026quot; theme=\u0026quot;default\u0026quot; \u0026gt;}} Danger ! {{\u0026lt; /button \u0026gt;}}\rgo to google Success Info Warning Danger ! Danger ! "
+},
+{
+	"uri": "/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/shortcodes/children/",
+	"title": "children",
+	"tags": [],
+	"description": "List the child pages of a page",
+	"content": "Use the children shortcode to list the child pages of a page and the further descendants (children\u0026rsquo;s children). By default, the shortcode displays links to the child pages.\nUsage Parameter Default Description page current Specify the page name (section name) to display children for style \u0026ldquo;li\u0026rdquo; Choose the style used to display descendants. It could be any HTML tag name, use \u0026ldquo;card\u0026rdquo; to display children pages as cards showhidden \u0026ldquo;false\u0026rdquo; When true, child pages hidden from the menu will be displayed description \u0026ldquo;false\u0026rdquo; Allows you to include a short text under each page in the list.when no description exists for the page, children shortcode takes the first 70 words of your content. read more info about summaries on gohugo.io depth 1 Enter a number to specify the depth of descendants to display. For example, if the value is 2, the shortcode will display 2 levels of child pages. Tips: set 999 to get all descendants\rsort none Sort Children By\nWeight - to sort on menu orderName - to sort alphabetically on menu labelIdentifier - to sort alphabetically on identifier set in frontmatterURL - URL Demo {{% children %}}\rpage 1 page 2 page 3 page test {{% children description=\u0026quot;true\u0026quot; %}}\rpage 1\nThis is a demo child page\npage 2\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\npage 3\nThis is a demo child page\npage test\nThis is a page test\n{{% children depth=\u0026quot;3\u0026quot; showhidden=\u0026quot;true\u0026quot; %}}\rpage 1 page 1-1 page 1-1-1 page 2 page test 3 page 3 page 4 page test {{% children style=\u0026quot;h2\u0026quot; depth=\u0026quot;3\u0026quot; description=\u0026quot;true\u0026quot; %}}\rpage 1\nThis is a demo child page\npage 1-1\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\npage 1-1-1\nThis is a demo child page\npage 2\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\npage test 3\nThis is a page test\npage 3\nThis is a demo child page\npage test\nThis is a page test\n{{% children style=\u0026quot;div\u0026quot; depth=\u0026quot;999\u0026quot; %}}\rpage 1 page 1-1 page 1-1-1 page 1-1-1-1 page 1-1-1-1-1 page 2 page test 3 page 3 page test {{% children style=\u0026quot;card\u0026quot; depth=\u0026quot;2\u0026quot; description=\u0026quot;true\u0026quot; %}}\rpage 1\nThis is a demo child page\npage 1-1\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\npage 2\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\npage test 3\nThis is a page test\npage 3\nThis is a demo child page\npage test\nThis is a page test\n"
+},
+{
+	"uri": "/credits/",
+	"title": "Credits",
+	"tags": [],
+	"description": "contributors and packages used by hugo-theme-docdock",
+	"content": "github contributors @vjeantet\r247 commits\r@matcornic\r45 commits\r@W-Floyd\r24 commits\r@Pilskalns\r24 commits\r@lierdakil\r16 commits\r@Marthym\r13 commits\r@gwleclerc\r9 commits\r@jose-oc\r8 commits\r@siamkreative\r6 commits\r@Xipas\r5 commits\r@FMuro\r2 commits\r@joepvd\r2 commits\r@EnigmaCurry\r2 commits\r@Yoann-M\r2 commits\r@aral\r2 commits\r@adamlamar\r1 commits\r@byzheng\r1 commits\r@zivbk1\r1 commits\r@danielfbm\r1 commits\r@damoon\r1 commits\r@vielmetti\r1 commits\r@erikjasiak\r1 commits\r@giuliov\r1 commits\r@farmergreg\r1 commits\r@JOduMonT\r1 commits\r@tarpdalton\r1 commits\r@jamestharpe\r1 commits\r@JohnBlood\r1 commits\r@kamilchm\r1 commits\r@lgfischer\r1 commits\r@ripienaar\r1 commits\r@rsanderscybraics\r1 commits\r@shazic\r1 commits\r@viertaxa\r1 commits\r@uweschaefer\r1 commits\r@rabadiw\r1 commits\r@wshayes\r1 commits\r@eyoder\r1 commits\r@ivan-danilov\r1 commits\r@karlmacklin\r1 commits\r@petzi53\r1 commits\r@remi31000\r1 commits\r@tonivj5\r1 commits\rOther contribution @bep\rsupports and advices\r@facette.io\rFlex style based on facette documentation theme, Thanks to @vbatoufflet\rPackages and libraries Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services\u0026hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester. clipboard.js - copy text to clipboard highlight.js - Javascript syntax highlighter modernizr - A JavaScript toolkit that allows web developers to use new CSS3 and HTML5 features while maintaining a fine level of control over browsers that don\u0026rsquo;t support reveal-js - The HTML Presentation Framework Tooling Netlify - Continuous deployement and hosting of this documentation Hugo "
+},
+{
+	"uri": "/content-organisation/customize-style/disable/",
+	"title": "Disable features",
+	"tags": [],
+	"description": "",
+	"content": "You can disable feature in docdock by changing some params in config.toml\nhide Next / Prev Chevrons [params]\rdisableNavChevron = true hide Search box in side menu [params]\rdisableSearch = true hide the icon in side bar [params]\rdisableHomeIcon = true "
+},
+{
+	"uri": "/showcase/",
+	"title": "Docdock-built Sites",
+	"tags": [],
+	"description": "Hugo-built Sites with docdock theme",
+	"content": "https://invincible.site/ by @shazic https://bitfan.io/ by @vjeantet "
+},
+{
+	"uri": "/shortcodes/excerpt/",
+	"title": "excerpt",
+	"tags": [],
+	"description": "The Excerpt shortcode is used to mark a part of a page&#39;s content for re-use.",
+	"content": "The Excerpt shortcode is used to mark a part of a page\u0026rsquo;s content for re-use. Defining an excerpt enables other shortcodes, such as the excerpt-include shortcode, to display the marked content elsewhere.\nYou can only define one excerpt per page. In other words, you can only add the Excerpt shortcode once to a page.\rUsage Parameter Default Description hidden \u0026ldquo;false\u0026rdquo; Controls whether the page content contained in the Excerpt shortcode placeholder is displayed on the page.\rNote that this option affects only the page that contains the Excerpt shortcode. It does not affect any pages where the content is reused.\rDemo {{%excerpt%}}\rLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\rtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\rquis nostrud exercitation **ullamco** laboris nisi ut aliquip ex ea commodo\rconsequat. Duis aute irure dolor in _reprehenderit in voluptate_\rcillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\rproident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r{{% /excerpt%}}\rLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nSee re use example with excerpt-include shortcode\r"
+},
+{
+	"uri": "/shortcodes/excerpt-include/",
+	"title": "excerpt-include",
+	"tags": [],
+	"description": "",
+	"content": "The Excerpt Include shortcode is used to display \u0026rsquo;excerpted\u0026rsquo; (that is, a segment of) content from one page in another. Before you can use this shortcode, the excerpt must have been defined using the Excerpt shortcode. Note that you can have more than one Excerpt Include shortcode on a page (although you can have only one Excerpt shortcode on a page).\rUsage Parameter Default Description filename required Type the filename of the page that contains the excerpt to be displayed.Path is relative to the content folder panel none Determines whether docDock will display a panel around the excerpted content. The panel includes the given panel\u0026rsquo;s value and the border of the panel. By default, the panel and title are not shown. Demo The paragraph below shows an example of an Excerpt Include shortcode, containing content from an excerpt which we have defined on the Excerpt shortcode page. On the Excerpt Include shortcode below, we have set the options to show both the title of the page and the panel surrounding the content.\n{{%excerpt-include filename=\u0026quot;shortcodes/excerpt.md\u0026quot; panel=\u0026quot;From excerpt page\u0026quot; /%}}\rFrom excerpt page\rLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\rDon\u0026rsquo;t create an excerpt file in the /layouts/shortcodes/ folder. In this example, shortcodes/filename.md is part of the exampleSite/content folder, and shortcodes is just a path in the /content.\n"
+},
+{
+	"uri": "/shortcodes/expand/",
+	"title": "expand",
+	"tags": [],
+	"description": "Displays an expandable/collapsible section of text on your page",
+	"content": "The Expand shortcode displays an expandable/collapsible section of text on your page. Here is an example\nExpand me...\rLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\rtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\rquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\rconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\rcillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\rproident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nUsage this shortcode takes exactly one optional parameter to define the text that appears next to the expand/collapse icon. (default is \u0026ldquo;Expand me\u0026hellip;\u0026rdquo;)\n{{%expand \u0026quot;Is this docdock theme rocks ?\u0026quot; %}}Yes !.{{% /expand%}}\rIs this docdock theme rocks ?\rYes !\nDemo {{%expand%}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\rtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\rquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\rconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\rcillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\rproident, sunt in culpa qui officia deserunt mollit anim id est laborum.{{% /expand%}}\rExpand me...\rLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\rtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\rquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\rconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\rcillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\rproident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
+},
+{
+	"uri": "/shortcodes/icon/",
+	"title": "icon",
+	"tags": [],
+	"description": "Display an icon.",
+	"content": "Display an icon like It uses :\nglyphicons library (bootstrap).more info here fontawesome library more info here This icon shortcode will display an icon in your page.\nUsage Parameter Default Description name required name of icon (see bellow) size none size of icon, medium, xx-small, x-small, small, large, x-large, xx-large, 11px, 2em, 20%\u0026hellip;. Tips : setting only the name as argument works too : {{\u0026lt;icon film\u0026gt;}} instead of {{\u0026lt;icon name=\u0026quot;film\u0026quot;\u0026gt;}}\nDemo {{\u0026lt; icon name=\u0026quot;film\u0026quot; size=\u0026quot;large\u0026quot; \u0026gt;}}\r.\nicons available asterisk plus euro eur minus cloud envelope pencil glass music search heart star star-empty user film th-large th th-list ok remove zoom-in zoom-out off signal cog trash home file time road download-alt download upload inbox play-circle repeat refresh list-alt lock flag headphones volume-off volume-down volume-up qrcode barcode tag tags book bookmark print camera font bold italic text-height text-width align-left align-center align-right align-justify list indent-left indent-right facetime-video picture map-marker adjust tint edit share check move step-backward fast-backward backward play pause stop forward fast-forward step-forward eject chevron-left chevron-right plus-sign minus-sign remove-sign ok-sign question-sign info-sign screenshot remove-circle ok-circle ban-circle arrow-left arrow-right arrow-up arrow-down share-alt resize-full resize-small exclamation-sign gift leaf fire eye-open eye-close warning-sign plane calendar random comment magnet chevron-up chevron-down retweet shopping-cart folder-close folder-open resize-vertical resize-horizontal hdd bullhorn bell certificate thumbs-up thumbs-down hand-right hand-left hand-up hand-down circle-arrow-right circle-arrow-left circle-arrow-up circle-arrow-down globe wrench tasks filter briefcase fullscreen dashboard paperclip heart-empty link phone pushpin usd gbp sort sort-by-alphabet sort-by-alphabet-alt sort-by-order sort-by-order-alt sort-by-attributes sort-by-attributes-alt unchecked expand collapse-down collapse-up log-in flash log-out new-window record save open saved import export send floppy-disk floppy-saved floppy-remove floppy-save floppy-open credit-card transfer cutlery header compressed earphone phone-alt tower stats sd-video hd-video subtitles sound-stereo sound-dolby sound-5-1 sound-6-1 sound-7-1 copyright-mark registration-mark cloud-download cloud-upload tree-conifer tree-deciduous cd save-file open-file level-up copy paste alert equalizer king queen pawn bishop knight baby-formula tent blackboard bed apple erase hourglass lamp duplicate piggy-bank scissors bitcoin btc xbt yen jpy ruble rub scale ice-lolly ice-lolly-tasted education option-horizontal option-vertical menu-hamburger modal-window oil grain sunglasses text-size text-color text-background object-align-top object-align-bottom object-align-horizontal object-align-left object-align-vertical object-align-right triangle-right triangle-left triangle-bottom triangle-top console superscript subscript menu-left menu-right menu-down menu-up Web Application Icons fa-address-book fa-address-book-o fa-address-card fa-address-card-o fa-adjust fa-american-sign-language-interpreting fa-anchor fa-archive fa-area-chart fa-arrows fa-arrows-h fa-arrows-v fa-asl-interpreting (alias) fa-assistive-listening-systems fa-asterisk fa-at fa-audio-description fa-automobile (alias) fa-balance-scale fa-ban fa-bank (alias) fa-bar-chart fa-bar-chart-o (alias) fa-barcode fa-bars fa-bath fa-bathtub (alias) fa-battery (alias) fa-battery-0 (alias) fa-battery-1 (alias) fa-battery-2 (alias) fa-battery-3 (alias) fa-battery-4 (alias) fa-battery-empty fa-battery-full fa-battery-half fa-battery-quarter fa-battery-three-quarters fa-bed fa-beer fa-bell fa-bell-o fa-bell-slash fa-bell-slash-o fa-bicycle fa-binoculars fa-birthday-cake fa-blind fa-bluetooth fa-bluetooth-b fa-bolt fa-bomb fa-book fa-bookmark fa-bookmark-o fa-braille fa-briefcase fa-bug fa-building fa-building-o fa-bullhorn fa-bullseye fa-bus fa-cab (alias) fa-calculator fa-calendar fa-calendar-check-o fa-calendar-minus-o fa-calendar-o fa-calendar-plus-o fa-calendar-times-o fa-camera fa-camera-retro fa-car fa-caret-square-o-down fa-caret-square-o-left fa-caret-square-o-right fa-caret-square-o-up fa-cart-arrow-down fa-cart-plus fa-cc fa-certificate fa-check fa-check-circle fa-check-circle-o fa-check-square fa-check-square-o fa-child fa-circle fa-circle-o fa-circle-o-notch fa-circle-thin fa-clock-o fa-clone fa-close (alias) fa-cloud fa-cloud-download fa-cloud-upload fa-code fa-code-fork fa-coffee fa-cog fa-cogs fa-comment fa-comment-o fa-commenting fa-commenting-o fa-comments fa-comments-o fa-compass fa-copyright fa-creative-commons fa-credit-card fa-credit-card-alt fa-crop fa-crosshairs fa-cube fa-cubes fa-cutlery fa-dashboard (alias) fa-database fa-deaf fa-deafness (alias) fa-desktop fa-diamond fa-dot-circle-o fa-download fa-drivers-license (alias) fa-drivers-license-o (alias) fa-edit (alias) fa-ellipsis-h fa-ellipsis-v fa-envelope fa-envelope-o fa-envelope-open fa-envelope-open-o fa-envelope-square fa-eraser fa-exchange fa-exclamation fa-exclamation-circle fa-exclamation-triangle fa-external-link fa-external-link-square fa-eye fa-eye-slash fa-eyedropper fa-fax fa-feed (alias) fa-female fa-fighter-jet fa-file-archive-o fa-file-audio-o fa-file-code-o fa-file-excel-o fa-file-image-o fa-file-movie-o (alias) fa-file-pdf-o fa-file-photo-o (alias) fa-file-picture-o (alias) fa-file-powerpoint-o fa-file-sound-o (alias) fa-file-video-o fa-file-word-o fa-file-zip-o (alias) fa-film fa-filter fa-fire fa-fire-extinguisher fa-flag fa-flag-checkered fa-flag-o fa-flash (alias) fa-flask fa-folder fa-folder-o fa-folder-open fa-folder-open-o fa-frown-o fa-futbol-o fa-gamepad fa-gavel fa-gear (alias) fa-gears (alias) fa-gift fa-glass fa-globe fa-graduation-cap fa-group (alias) fa-hand-grab-o (alias) fa-hand-lizard-o fa-hand-paper-o fa-hand-peace-o fa-hand-pointer-o fa-hand-rock-o fa-hand-scissors-o fa-hand-spock-o fa-hand-stop-o (alias) fa-handshake-o fa-hard-of-hearing (alias) fa-hashtag fa-hdd-o fa-headphones fa-heart fa-heart-o fa-heartbeat fa-history fa-home fa-hotel (alias) fa-hourglass fa-hourglass-1 (alias) fa-hourglass-2 (alias) fa-hourglass-3 (alias) fa-hourglass-end fa-hourglass-half fa-hourglass-o fa-hourglass-start fa-i-cursor fa-id-badge fa-id-card fa-id-card-o fa-image (alias) fa-inbox fa-industry fa-info fa-info-circle fa-institution (alias) fa-key fa-keyboard-o fa-language fa-laptop fa-leaf fa-legal (alias) fa-lemon-o fa-level-down fa-level-up fa-life-bouy (alias) fa-life-buoy (alias) fa-life-ring fa-life-saver (alias) fa-lightbulb-o fa-line-chart fa-location-arrow fa-lock fa-low-vision fa-magic fa-magnet fa-mail-forward (alias) fa-mail-reply (alias) fa-mail-reply-all (alias) fa-male fa-map fa-map-marker fa-map-o fa-map-pin fa-map-signs fa-meh-o fa-microchip fa-microphone fa-microphone-slash fa-minus fa-minus-circle fa-minus-square fa-minus-square-o fa-mobile fa-mobile-phone (alias) fa-money fa-moon-o fa-mortar-board (alias) fa-motorcycle fa-mouse-pointer fa-music fa-navicon (alias) fa-newspaper-o fa-object-group fa-object-ungroup fa-paint-brush fa-paper-plane fa-paper-plane-o fa-paw fa-pencil fa-pencil-square fa-pencil-square-o fa-percent fa-phone fa-phone-square fa-photo (alias) fa-picture-o fa-pie-chart fa-plane fa-plug fa-plus fa-plus-circle fa-plus-square fa-plus-square-o fa-podcast fa-power-off fa-print fa-puzzle-piece fa-qrcode fa-question fa-question-circle fa-question-circle-o fa-quote-left fa-quote-right fa-random fa-recycle fa-refresh fa-registered fa-remove (alias) fa-reorder (alias) fa-reply fa-reply-all fa-retweet fa-road fa-rocket fa-rss fa-rss-square fa-s15 (alias) fa-search fa-search-minus fa-search-plus fa-send (alias) fa-send-o (alias) fa-server fa-share fa-share-alt fa-share-alt-square fa-share-square fa-share-square-o fa-shield fa-ship fa-shopping-bag fa-shopping-basket fa-shopping-cart fa-shower fa-sign-in fa-sign-language fa-sign-out fa-signal fa-signing (alias) fa-sitemap fa-sliders fa-smile-o fa-snowflake-o fa-soccer-ball-o (alias) fa-sort fa-sort-alpha-asc fa-sort-alpha-desc fa-sort-amount-asc fa-sort-amount-desc fa-sort-asc fa-sort-desc fa-sort-down (alias) fa-sort-numeric-asc fa-sort-numeric-desc fa-sort-up (alias) fa-space-shuttle fa-spinner fa-spoon fa-square fa-square-o fa-star fa-star-half fa-star-half-empty (alias) fa-star-half-full (alias) fa-star-half-o fa-star-o fa-sticky-note fa-sticky-note-o fa-street-view fa-suitcase fa-sun-o fa-support (alias) fa-tablet fa-tachometer fa-tag fa-tags fa-tasks fa-taxi fa-television fa-terminal fa-thermometer (alias) fa-thermometer-0 (alias) fa-thermometer-1 (alias) fa-thermometer-2 (alias) fa-thermometer-3 (alias) fa-thermometer-4 (alias) fa-thermometer-empty fa-thermometer-full fa-thermometer-half fa-thermometer-quarter fa-thermometer-three-quarters fa-thumb-tack fa-thumbs-down fa-thumbs-o-down fa-thumbs-o-up fa-thumbs-up fa-ticket fa-times fa-times-circle fa-times-circle-o fa-times-rectangle (alias) fa-times-rectangle-o (alias) fa-tint fa-toggle-down (alias) fa-toggle-left (alias) fa-toggle-off fa-toggle-on fa-toggle-right (alias) fa-toggle-up (alias) fa-trademark fa-trash fa-trash-o fa-tree fa-trophy fa-truck fa-tty fa-tv (alias) fa-umbrella fa-universal-access fa-university fa-unlock fa-unlock-alt fa-unsorted (alias) fa-upload fa-user fa-user-circle fa-user-circle-o fa-user-o fa-user-plus fa-user-secret fa-user-times fa-users fa-vcard (alias) fa-vcard-o (alias) fa-video-camera fa-volume-control-phone fa-volume-down fa-volume-off fa-volume-up fa-warning (alias) fa-wheelchair fa-wheelchair-alt fa-wifi fa-window-close fa-window-close-o fa-window-maximize fa-window-minimize fa-window-restore fa-wrench Accessibility Icons fa-american-sign-language-interpreting fa-asl-interpreting (alias) fa-assistive-listening-systems fa-audio-description fa-blind fa-braille fa-cc fa-deaf fa-deafness (alias) fa-hard-of-hearing (alias) fa-low-vision fa-question-circle-o fa-sign-language fa-signing (alias) fa-tty fa-universal-access fa-volume-control-phone fa-wheelchair fa-wheelchair-alt Hand Icons fa-hand-grab-o (alias) fa-hand-lizard-o fa-hand-o-down fa-hand-o-left fa-hand-o-right fa-hand-o-up fa-hand-paper-o fa-hand-peace-o fa-hand-pointer-o fa-hand-rock-o fa-hand-scissors-o fa-hand-spock-o fa-hand-stop-o (alias) fa-thumbs-down fa-thumbs-o-down fa-thumbs-o-up fa-thumbs-up Transportation Icons fa-ambulance fa-automobile (alias) fa-bicycle fa-bus fa-cab (alias) fa-car fa-fighter-jet fa-motorcycle fa-plane fa-rocket fa-ship fa-space-shuttle fa-subway fa-taxi fa-train fa-truck fa-wheelchair fa-wheelchair-alt Gender Icons fa-genderless fa-intersex (alias) fa-mars fa-mars-double fa-mars-stroke fa-mars-stroke-h fa-mars-stroke-v fa-mercury fa-neuter fa-transgender fa-transgender-alt fa-venus fa-venus-double fa-venus-mars File Type Icons fa-file fa-file-archive-o fa-file-audio-o fa-file-code-o fa-file-excel-o fa-file-image-o fa-file-movie-o (alias) fa-file-o fa-file-pdf-o fa-file-photo-o (alias) fa-file-picture-o (alias) fa-file-powerpoint-o fa-file-sound-o (alias) fa-file-text fa-file-text-o fa-file-video-o fa-file-word-o fa-file-zip-o (alias) Spinner Icons fa-circle-o-notch fa-cog fa-gear (alias) fa-refresh fa-spinner Form Control Icons fa-check-square fa-check-square-o fa-circle fa-circle-o fa-dot-circle-o fa-minus-square fa-minus-square-o fa-plus-square fa-plus-square-o fa-square fa-square-o Payment Icons fa-cc-amex fa-cc-diners-club fa-cc-discover fa-cc-jcb fa-cc-mastercard fa-cc-paypal fa-cc-stripe fa-cc-visa fa-credit-card fa-credit-card-alt fa-google-wallet fa-paypal Chart Icons fa-area-chart fa-bar-chart fa-bar-chart-o (alias) fa-line-chart fa-pie-chart Currency Icons fa-bitcoin (alias) fa-btc fa-cny (alias) fa-dollar (alias) fa-eur fa-euro (alias) fa-gbp fa-gg fa-gg-circle fa-ils fa-inr fa-jpy fa-krw fa-money fa-rmb (alias) fa-rouble (alias) fa-rub fa-ruble (alias) fa-rupee (alias) fa-shekel (alias) fa-sheqel (alias) fa-try fa-turkish-lira (alias) fa-usd fa-won (alias) fa-yen (alias) Text Editor Icons fa-align-center fa-align-justify fa-align-left fa-align-right fa-bold fa-chain (alias) fa-chain-broken fa-clipboard fa-columns fa-copy (alias) fa-cut (alias) fa-dedent (alias) fa-eraser fa-file fa-file-o fa-file-text fa-file-text-o fa-files-o fa-floppy-o fa-font fa-header fa-indent fa-italic fa-link fa-list fa-list-alt fa-list-ol fa-list-ul fa-outdent fa-paperclip fa-paragraph fa-paste (alias) fa-repeat fa-rotate-left (alias) fa-rotate-right (alias) fa-save (alias) fa-scissors fa-strikethrough fa-subscript fa-superscript fa-table fa-text-height fa-text-width fa-th fa-th-large fa-th-list fa-underline fa-undo fa-unlink (alias) Directional Icons fa-angle-double-down fa-angle-double-left fa-angle-double-right fa-angle-double-up fa-angle-down fa-angle-left fa-angle-right fa-angle-up fa-arrow-circle-down fa-arrow-circle-left fa-arrow-circle-o-down fa-arrow-circle-o-left fa-arrow-circle-o-right fa-arrow-circle-o-up fa-arrow-circle-right fa-arrow-circle-up fa-arrow-down fa-arrow-left fa-arrow-right fa-arrow-up fa-arrows fa-arrows-alt fa-arrows-h fa-arrows-v fa-caret-down fa-caret-left fa-caret-right fa-caret-square-o-down fa-caret-square-o-left fa-caret-square-o-right fa-caret-square-o-up fa-caret-up fa-chevron-circle-down fa-chevron-circle-left fa-chevron-circle-right fa-chevron-circle-up fa-chevron-down fa-chevron-left fa-chevron-right fa-chevron-up fa-exchange fa-hand-o-down fa-hand-o-left fa-hand-o-right fa-hand-o-up fa-long-arrow-down fa-long-arrow-left fa-long-arrow-right fa-long-arrow-up fa-toggle-down (alias) fa-toggle-left (alias) fa-toggle-right (alias) fa-toggle-up (alias) Video Player Icons fa-arrows-alt fa-backward fa-compress fa-eject fa-expand fa-fast-backward fa-fast-forward fa-forward fa-pause fa-pause-circle fa-pause-circle-o fa-play fa-play-circle fa-play-circle-o fa-random fa-step-backward fa-step-forward fa-stop fa-stop-circle fa-stop-circle-o fa-youtube-play Brand Icons fa-500px fa-adn fa-amazon fa-android fa-angellist fa-apple fa-bandcamp fa-behance fa-behance-square fa-bitbucket fa-bitbucket-square fa-bitcoin (alias) fa-black-tie fa-bluetooth fa-bluetooth-b fa-btc fa-buysellads fa-cc-amex fa-cc-diners-club fa-cc-discover fa-cc-jcb fa-cc-mastercard fa-cc-paypal fa-cc-stripe fa-cc-visa fa-chrome fa-codepen fa-codiepie fa-connectdevelop fa-contao fa-css3 fa-dashcube fa-delicious fa-deviantart fa-digg fa-dribbble fa-dropbox fa-drupal fa-edge fa-eercast fa-empire fa-envira fa-etsy fa-expeditedssl fa-fa (alias) fa-facebook fa-facebook-f (alias) fa-facebook-official fa-facebook-square fa-firefox fa-first-order fa-flickr fa-font-awesome fa-fonticons fa-fort-awesome fa-forumbee fa-foursquare fa-free-code-camp fa-ge (alias) fa-get-pocket fa-gg fa-gg-circle fa-git fa-git-square fa-github fa-github-alt fa-github-square fa-gitlab fa-gittip (alias) fa-glide fa-glide-g fa-google fa-google-plus fa-google-plus-circle (alias) fa-google-plus-official fa-google-plus-square fa-google-wallet fa-gratipay fa-grav fa-hacker-news fa-houzz fa-html5 fa-imdb fa-instagram fa-internet-explorer fa-ioxhost fa-joomla fa-jsfiddle fa-lastfm fa-lastfm-square fa-leanpub fa-linkedin fa-linkedin-square fa-linode fa-linux fa-maxcdn fa-meanpath fa-medium fa-meetup fa-mixcloud fa-modx fa-odnoklassniki fa-odnoklassniki-square fa-opencart fa-openid fa-opera fa-optin-monster fa-pagelines fa-paypal fa-pied-piper fa-pied-piper-alt fa-pied-piper-pp fa-pinterest fa-pinterest-p fa-pinterest-square fa-product-hunt fa-qq fa-quora fa-ra (alias) fa-ravelry fa-rebel fa-reddit fa-reddit-alien fa-reddit-square fa-renren fa-resistance (alias) fa-safari fa-scribd fa-sellsy fa-share-alt fa-share-alt-square fa-shirtsinbulk fa-simplybuilt fa-skyatlas fa-skype fa-slack fa-slideshare fa-snapchat fa-snapchat-ghost fa-snapchat-square fa-soundcloud fa-spotify fa-stack-exchange fa-stack-overflow fa-steam fa-steam-square fa-stumbleupon fa-stumbleupon-circle fa-superpowers fa-telegram fa-tencent-weibo fa-themeisle fa-trello fa-tripadvisor fa-tumblr fa-tumblr-square fa-twitch fa-twitter fa-twitter-square fa-usb fa-viacoin fa-viadeo fa-viadeo-square fa-vimeo fa-vimeo-square fa-vine fa-vk fa-wechat (alias) fa-weibo fa-weixin fa-whatsapp fa-wikipedia-w fa-windows fa-wordpress fa-wpbeginner fa-wpexplorer fa-wpforms fa-xing fa-xing-square fa-y-combinator fa-y-combinator-square (alias) fa-yahoo fa-yc (alias) fa-yc-square (alias) fa-yelp fa-yoast fa-youtube fa-youtube-play fa-youtube-square "
+},
+{
+	"uri": "/shortcodes/mermaid/",
+	"title": "mermaid",
+	"tags": [],
+	"description": "",
+	"content": "Flowchart example Show code ...\r{{}}\rgraph LR;\rA[Hard edge] --\u003e|Link text| B(Round edge)\rB --\u003e C{Decision}\rC --\u003e|One| D[Result one]\rC --\u003e|Two| E[Result two]\r{{\u003c /mermaid \u003e}}\rgraph LR;\rA[Hard edge] --\u003e|Link text| B(Round edge)\rB --\u003e C{Decision}\rC --\u003e|One| D[Result one]\rC --\u003e|Two| E[Result two]\rWith sub-graphs and some style Show code...\r{{}}\rgraph LR;\rX --\u003e Y\rlinkStyle 0 stroke:#f00,stroke-width:4px;\rY --\u003e Z\rZ --\u003e X\rlinkStyle 1,2 interpolate basis stroke:#0f0,stroke-width:2px;\rX --\u003e A1\rsubgraph right\rA2 --\u003e B2\rB2 --\u003e C2\rend\rsubgraph left\rA1 --\u003e B1\rB1 --\u003e C1\rend\rC1 --\u003e X\rZ --\u003e A2\rC2 --\u003e Z\rstyle Y fill:#f9f,stroke:#333,stroke-width:4px\rclassDef left fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5\rclass A1,B1,C1 left\r{{\u0026lt; /mermaid \u0026gt;}}\rgraph LR;\rX --\u003e Y\rlinkStyle 0 stroke:#f00,stroke-width:4px;\rY --\u003e Z\rZ --\u003e X\rlinkStyle 1,2 interpolate basis stroke:#0f0,stroke-width:2px;\rX --\u003e A1\rsubgraph right\rA2 --\u003e B2\rB2 --\u003e C2\rend\rsubgraph left\rA1 --\u003e B1\rB1 --\u003e C1\rend\rC1 --\u003e X\rZ --\u003e A2\rC2 --\u003e Z\rstyle Y fill:#f9f,stroke:#333,stroke-width:4px\rclassDef left fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5\rclass A1,B1,C1 left\rSequence example Show code ...\r{{}}\rsequenceDiagram\rparticipant Alice\rparticipant Bob\rAlice-\u003e\u003eJohn: Hello John, how are you?\rloop Healthcheck\rJohn-\u003eJohn: Fight against hypochondria\rend\rNote right of John: Rational thoughts prevail...\rJohn--\u003eAlice: Great!\rJohn-\u003eBob: How about you?\rBob--\u003eJohn: Jolly good!\r{{\u003c /mermaid \u003e}}\rsequenceDiagram\rparticipant Alice\rparticipant Bob\rAlice-\u003e\u003eJohn: Hello John, how are you?\rloop Healthcheck\rJohn-\u003eJohn: Fight against hypochondria\rend\rNote right of John: Rational thoughts prevail...\rJohn--\u003eAlice: Great!\rJohn-\u003eBob: How about you?\rBob--\u003eJohn: Jolly good!\rGANTT Example Show code ...\r{{}}\rgantt\rdateFormat YYYY-MM-DD\rtitle Adding GANTT diagram functionality to mermaid\rsection A section\rCompleted task :done, des1, 2014-01-06,2014-01-08\rActive task :active, des2, 2014-01-09, 3d\rFuture task : des3, after des2, 5d\rFuture task2 : des4, after des3, 5d\rsection Critical tasks\rCompleted task in the critical line :crit, done, 2014-01-06,24h\rImplement parser and jison :crit, done, after des1, 2d\rCreate tests for parser :crit, active, 3d\rFuture task in critical line :crit, 5d\rCreate tests for renderer :2d\rAdd to mermaid :1d\r{{\u003c /mermaid \u003e}}\rgantt\rdateFormat YYYY-MM-DD\rtitle Adding GANTT diagram functionality to mermaid\rsection A section\rCompleted task :done, des1, 2014-01-06,2014-01-08\rActive task :active, des2, 2014-01-09, 3d\rFuture task : des3, after des2, 5d\rFuture task2 : des4, after des3, 5d\rsection Critical tasks\rCompleted task in the critical line :crit, done, 2014-01-06,24h\rImplement parser and jison :crit, done, after des1, 2d\rCreate tests for parser :crit, active, 3d\rFuture task in critical line :crit, 5d\rCreate tests for renderer :2d\rAdd to mermaid :1d\r"
+},
+{
+	"uri": "/shortcodes/notice/",
+	"title": "notice",
+	"tags": [],
+	"description": "Disclaimers to help you structure your page",
+	"content": "The notice shortcode shows 4 types of disclaimers to help you structure your page.\nNote {{% notice note %}}\rA notice disclaimer\r{{% /notice %}}\rrenders as\nA notice disclaimer\nInfo {{% notice info %}}\rAn information disclaimer\r{{% /notice %}}\rrenders as\nAn information disclaimer\nTip {{% notice tip %}}\rA tip disclaimer\r{{% /notice %}}\rrenders as\nA tip disclaimer\nWarning {{% notice warning %}}\rAn warning disclaimer\r{{% /notice %}}\rrenders as\nAn warning disclaimer\n"
+},
+{
+	"uri": "/shortcodes/children/children-1/",
+	"title": "page 1",
+	"tags": [],
+	"description": "This is a demo child page",
+	"content": "This is a demo child page\n"
+},
+{
+	"uri": "/shortcodes/children/children-1/children-1-1/",
+	"title": "page 1-1",
+	"tags": [],
+	"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
+	"content": "This is a demo child page\n"
+},
+{
+	"uri": "/shortcodes/children/children-1/children-1-1/children-1-1-1/",
+	"title": "page 1-1-1",
+	"tags": [],
+	"description": "This is a demo child page",
+	"content": "This is a demo child page\n"
+},
+{
+	"uri": "/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/",
+	"title": "page 1-1-1-1",
+	"tags": [],
+	"description": "This is a demo child page",
+	"content": "This is a demo child page\n"
+},
+{
+	"uri": "/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/",
+	"title": "page 1-1-1-1-1",
+	"tags": [],
+	"description": "This is a demo child page",
+	"content": "This is a demo child page\n"
+},
+{
+	"uri": "/shortcodes/children/children-2/",
+	"title": "page 2",
+	"tags": [],
+	"description": "",
+	"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
+},
+{
+	"uri": "/shortcodes/children/children-3/",
+	"title": "page 3",
+	"tags": [],
+	"description": "This is a demo child page",
+	"content": "This is a demo child page\n"
+},
+{
+	"uri": "/shortcodes/children/children-4/",
+	"title": "page 4",
+	"tags": [],
+	"description": "This is a demo child page",
+	"content": "This is a demo child page, not displayed in the menu\n"
+},
+{
+	"uri": "/shortcodes/children/test/",
+	"title": "page test",
+	"tags": [],
+	"description": "This is a page test",
+	"content": "This is a test demo child page\n"
+},
+{
+	"uri": "/shortcodes/children/children-2/test3/",
+	"title": "page test 3",
+	"tags": [],
+	"description": "This is a page test",
+	"content": "This is a test 3 demo child page\n"
+},
+{
+	"uri": "/shortcodes/panel/",
+	"title": "panel",
+	"tags": [],
+	"description": "Allow you to highlight information or put it in a box.",
+	"content": "\rThe panel shortcodeAllow you to highlight information or put it in a box. They create a colored box surrounding your text\rUsage Parameter Default Description header none The title of the panel. If specified, this title will be displayed in its own header row. footer none the footer of the panel. If specified, this text will be displayed in its own row theme primary default,primary,info,success,warning,danger Basic example By default :\n{{% panel %}}this is a panel text{{% /panel %}}\rthis is a panel text\rPanel with heading Easily add a heading container to your panel with header parameter. You may apply any theme.\n{{% panel theme=\u0026quot;danger\u0026quot; header=\u0026quot;panel title\u0026quot; %}}this is a panel text{{% /panel %}}\rpanel titlethis is a panel text\r{{% panel theme=\u0026quot;success\u0026quot; header=\u0026quot;panel title\u0026quot; %}}this is a panel text{{% /panel %}}\rpanel titlethis is a panel text\rPanel with footer Wrap a secondary text in footer.\n{{% panel footer=\u0026quot;panel footer\u0026quot; %}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{{% /panel %}}\rLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\npanel footer\rThemes Success themethis is a panel text\rdefault themethis is a panel text\rprimary themethis is a panel text\rinfo themethis is a panel text\rwarning themethis is a panel text\rdanger themethis is a panel text\r"
+},
+{
+	"uri": "/shortcodes/revealjs/",
+	"title": "revealjs",
+	"tags": [],
+	"description": "present content as a reveal.js slide",
+	"content": "This shortcode will format the enclosed markdow to render it with reveal.js at runtime (client-side)\nRead more on revealjs github repo.\nUsage revealjs can use the following named parameters :\ntheme\ntransition\ncontrols\nprogress\nhistory\ncenter\nImportant\rEven if the enclosed content is a mardown, use `\u003c` shortcode notation instead of the `%` notation Content formating and slide delimiters read more on this here\nDemo # In the morning\r___\r## Getting up\r- Turn off alarm\r- Get out of bed\r___\r## Breakfast\r- Eat eggs\r- Drink coffee\r---\r# In the evening\r___\r## Dinner\r- Eat spaghetti\r- Drink wine\r___\r## Going to sleep\r- Get in bed\r- Count sheep\rSee it fullscreen\rSource : Show code ...\r{{\u0026lt;revealjs theme=\u0026#34;moon\u0026#34; progress=\u0026#34;true\u0026#34;\u0026gt;}}\r# In the morning\r___\r## Getting up\r- Turn off alarm\r- Get out of bed\r___\r## Breakfast\r- Eat eggs\r- Drink coffee\r---\r# In the evening\r___\r## Dinner\r- Eat spaghetti\r- Drink wine\r___\r## Going to sleep\r- Get in bed\r- Count sheep\r{{\u0026lt;revealjs\u0026gt;}} click here to view raw content "
+},
+{
+	"uri": "/content-organisation/customize-style/themestyle/",
+	"title": "Theme styles",
+	"tags": [],
+	"description": "change theme style",
+	"content": "In site configuration file, you can set a subtheme name of this theme to load a specific css.\nadd a param themeStyle = \u0026quot;STYLE_NAME\u0026quot; in the [params] part of config.toml file.\nStyle \u0026ldquo;original\u0026rdquo; [params]\rthemeStyle = \u0026#34;original\u0026#34; Style \u0026ldquo;flex\u0026rdquo; (work in progress) [params]\rthemeStyle = \u0026#34;flex\u0026#34; "
+},
+{
+	"uri": "/content-organisation/customize-style/theme-variants/",
+	"title": "Theme variants",
+	"tags": [],
+	"description": "change theme style/colors",
+	"content": "In site configuration file, you can set a variant name of this theme to load a specific css, with different color specifications.\nadd a param themeVariant = \u0026quot;VARIANT_NAME\u0026quot; in the [params] part of config.toml file.\nAvailable variants change only colors at this moment\rVariant \u0026ldquo;gray\u0026rdquo; [params]\rthemeVariant = \u0026#34;gray\u0026#34; Variant \u0026ldquo;gold\u0026rdquo; [params]\rthemeVariant = \u0026#34;gold\u0026#34; Variant \u0026ldquo;green\u0026rdquo; [params]\rthemeVariant = \u0026#34;green\u0026#34;` "
+}]

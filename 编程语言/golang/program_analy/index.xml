@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on DocDock Documentation</title>
+    <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/</link>
+    <description>Recent content in golang on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/ants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/ants/</guid>
+      <description>#ants ##地址:https://github.com/panjf2000/ants https://github.com/panjf2000
+📖 简介 高性能的 goroutine 池 ##文件
+文件 描述 说明 ants.go 主结构 主要是配置 pool.go 工作池结构 工作主入口，管理池 pool_func.go 带函数池 管理带函数的池子 worker_func.go 带函数工作接口 管理带函数的工作 worker_array.go 工作组接口 创建方式为栈或队列，返回的是接口 worker.go 工作接口 处理工作函数 worker_stack.go 工作栈 栈的实现方式，使用的二分法 worker_loop_queue.go 工作池队列 队列方式实现 ##经验 1.sync 包的使用 2.goroutine 池的管理和设计(带函数和不带函数)
+#技术包 ##技术包 ###技术包 #####技术包 ######技术包 #######技术包
+技术包
+但是发 发发发撒发
+阿但是发撒都发撒啊阿啊
+第一项 第二项 第三项 sdfa sdfa sdfa sdfa sdfa dfsaa asdf
+dsfasdafsdfasdfadsaffadfsfaasdffasfdafsadfhttps://www.runoob.com 表头 表头 都发撒 单元格 单元格 sdffas 单元格 都发撒发撒 sdfsafas graph LRA[方形] --&amp;gt;B(圆角)B --&amp;gt; C{条件a}C --&amp;gt;|a=1| D[结果1]C --&amp;gt;|a=2| E[结果2]F[横向流程图] Title: 标题：复杂使用对象A-&amp;gt;对象B: 对象B你好吗?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/bytebufferpool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/bytebufferpool/</guid>
+      <description>#ants ##地址:https://github.com/valyala/bytebufferpool
+📖 简介 字节缓冲池
+文件 描述 说明 bytebuffer.go 字节缓存 字符串，IO，数组等的写入缓存 pool.go 缓存管理 缓存空间管理 ##文件
+##经验 1.切片的使用 2.sync.Pool使用</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gev/</guid>
+      <description>gev 地址:https://github.com/Allenxuxu/gev.git Go 网络库并发对比 https://blog.csdn.net/meiyoudao_jiushidao/article/details/102657231</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gnet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gnet/</guid>
+      <description>gnet 地址:https://github.com/panjf2000/gnet 📖 简介 字节缓冲池
+文件 描述 说明 ringbuffer 循环缓冲 构造循环缓冲基本 pool 线程池 缓存池的使用 internal 内部 缓存空间管理 acceptor 接收 接受连接 codec 编解码 编解码 connection 连接 网络连接 errors.go 错误处理 eventloop_group 事件循环组 gnet.go 主结构 listener 监听 loop 循环事件 reactor server 服务 网络服务器 文件 经验 1.循环池的设计使用 2.sync.Pool 使用</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,411 +1,712 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home title on Hugo Techdoc Theme</title>
-    <link>https://mengfeisword.github.io/</link>
-    <description>Recent content in Home title on Hugo Techdoc Theme</description>
+    <title>DocDock Theme for Hugo on DocDock Documentation</title>
+    <link>/</link>
+    <description>Recent content in DocDock Theme for Hugo on DocDock Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 19 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="https://mengfeisword.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown Syntax</title>
-      <link>https://mengfeisword.github.io/sample/markdown-syntax/</link>
-      <pubDate>Tue, 17 Nov 2020 15:26:15 +0000</pubDate>
+      <title>Logo placeholder</title>
+      <link>/content-organisation/logo/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>https://mengfeisword.github.io/sample/markdown-syntax/</guid>
-      <description>Headings # Heading level 1 ## Heading level 2 ### Heading level 3 #### Heading level 4 ##### Heading level 5 ###### Heading level 6 Emphasis *Italic* **Bold** ~~Strikethrough~~ Horizontal Rule --- Lists Unordered Lists - First item - Second item - Third item - Fourth item or
-* First item * Second item * Third item * Fourth item Ordered Lists 1. First item 2. Second item 3. Third item 4.</description>
-    </item>
-    
-    <item>
-      <title>Build-in Shortcodes</title>
-      <link>https://mengfeisword.github.io/sample/build-in-shortcodes/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/sample/build-in-shortcodes/</guid>
-      <description>See https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes
-figure 2 People Sitting With View of Yellow Flowers during Daytime gist highlight &amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;#34;summary&amp;#34;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt; vimeo youtube </description>
-    </item>
-    
-    <item>
-      <title>Chapter 2-3 (weight: 10)</title>
-      <link>https://mengfeisword.github.io/chapter2/3/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/chapter2/3/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
-    </item>
-    
-    <item>
-      <title>Custom Shortcodes</title>
-      <link>https://mengfeisword.github.io/sample/custom-shortcodes/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/sample/custom-shortcodes/</guid>
-      <description>Code highlight with clipboard sample/custom-shortcodes.html Copy{{&amp;lt; highlight html &amp;gt;}} &amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Pages }} {{ .Render &amp;#34;summary&amp;#34;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt; {{&amp;lt; /highlight &amp;gt;}} Alert panel Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
+      <guid>/content-organisation/logo/</guid>
+      <description>Create a _header.md page in content folder. Its content is what you get in the logo placeholder (top left of the screen).
+Tip : you can add a image, a combobox with links to other documentation&amp;hellip;.Tip 2 : look at extra static menu if you want to add links to other website in this sidebar</description>
     </item>
     
     <item>
       <title>Installation</title>
-      <link>https://mengfeisword.github.io/getting-started/installation/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      <link>/getting-start/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/getting-started/installation/</guid>
-      <description>Install Hugo theme on your project If you have git installed, you can include hugo-theme-techdoc repository into your core repository as submodule using git submodule within your project directory.
-cd your_projectgit submodule add https://github.com/thingsym/hugo-theme-techdoc.git themes/hugo-theme-techdoc For more information read the Hugo documentation.
-Or download Hugo theme on your project If you have git installed, you can do the following at the command-line-interface within your project directory.
-cd your_project/themesgit clone https://github.</description>
+      <guid>/getting-start/installation/</guid>
+      <description>&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;HUGO &lt;strong&gt;v0.32&lt;/strong&gt; minimum required to use this theme&lt;/div&gt;
+
+&lt;p&gt;The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;great documentation for beginners&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Table of Contents</title>
-      <link>https://mengfeisword.github.io/sample/table-of-contents/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      <title>Extra menu entries</title>
+      <link>/content-organisation/extramenu/</link>
+      <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>https://mengfeisword.github.io/sample/table-of-contents/</guid>
-      <description>&amp;nbsp;NoteThe TableOfContents field with true in your content’s front matter will render a table of contents.
-TableOfContents: true Setting the built-in .TableOfContents variables can configure what heading levels you want to include in TOC. See the built-in .TableOfContents variables settings
-Section 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
-    </item>
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>https://mengfeisword.github.io/post/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/post/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>https://mengfeisword.github.io/post/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/post/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/▾ images/logo.pngshould become
-▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.pngAdditionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-    <item>
-      <title>Hello world!</title>
-      <link>https://mengfeisword.github.io/hello_world/</link>
-      <pubDate>Tue, 17 Oct 2017 14:00:45 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/hello_world/</guid>
-      <description>Hello world!</description>
-    </item>
-    
-    <item>
-      <title>Hello_world</title>
-      <link>https://mengfeisword.github.io/posts/hello_world/</link>
-      <pubDate>Tue, 17 Oct 2017 14:00:45 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/posts/hello_world/</guid>
-      <description>aaaaaa
-vvvv
-aaa</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2-4 (weight: 20)</title>
-      <link>https://mengfeisword.github.io/chapter2/4/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/chapter2/4/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/content-organisation/extramenu/</guid>
+      <description>You can define additional menu entries in the navigation menu without any link to content.
+Edit the website configuration config.toml and add a [[menu.shortcuts]] entry for each link your want to add.
+Example from the current website, note the pre param which allows you to insert HTML code and used here to separate content&amp;rsquo;s menu from this &amp;ldquo;static&amp;rdquo; menu
+[[menu.shortcuts]]pre = &amp;quot;&amp;lt;h3&amp;gt;More&amp;lt;/h3&amp;gt;&amp;quot;name = &amp;quot;&amp;lt;i class=&#39;fa fa-github&#39;&amp;gt;&amp;lt;/i&amp;gt; Github repo&amp;quot;identifier = &amp;quot;ds&amp;quot;url = &amp;quot;https://github.</description>
     </item>
     
     <item>
       <title>Configuration</title>
-      <link>https://mengfeisword.github.io/getting-started/configuration/</link>
+      <link>/getting-start/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/getting-start/configuration/</guid>
+      <description>&lt;p&gt;When building the website, you can set a theme by using &lt;code&gt;--theme&lt;/code&gt; option. We suggest you to edit your configuration file and set the theme by default. Example with &lt;code&gt;config.toml&lt;/code&gt; format.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hexo</title>
+      <link>/%E5%B7%A5%E5%85%B7/hexo/hexo/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/getting-started/configuration/</guid>
-      <description>You may specify options in config.toml (or config.yaml/config.json) of your site to make use of this theme’s features.
-For an example of config.toml, see config.toml in exampleSite.
-Params # Source Code repository sectiondescription = &amp;quot;put your description&amp;quot;github_repository = &amp;quot;https://github.com/thingsym/hugo-theme-techdoc&amp;quot;version = &amp;quot;0.9.9&amp;quot;# Documentation repository section# documentation repository (set edit link to documentation repository)github_doc_repository = &amp;quot;https://github.com/thingsym/hugo-theme-techdoc&amp;quot;github_doc_repository_path = &amp;quot;&amp;quot;# Analytic sectiongoogle_analytics_id = &amp;quot;&amp;quot; # Your Google Analytics tracking idtag_manager_container_id = &amp;quot;&amp;quot; # Your Google Tag Manager container idgoogle_site_verification = &amp;quot;&amp;quot; # Your Google Site Verification for Search Console# Open Graph and Twitter Cards settings section# Open Graph settings for each page are set on the front matter.</description>
+      <guid>/%E5%B7%A5%E5%85%B7/hexo/hexo/</guid>
+      <description>Hexo 官网文档</description>
     </item>
     
     <item>
-      <title>Screenshot</title>
-      <link>https://mengfeisword.github.io/getting-started/screenshot/</link>
-      <pubDate>Sat, 26 Oct 2019 15:26:15 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/getting-started/screenshot/</guid>
-      <description>Theme color Menu style Open Menu Slide Menu Edit link </description>
-    </item>
-    
-    <item>
-      <title>Chapter 2-2 (weight: 30)</title>
-      <link>https://mengfeisword.github.io/chapter2/2/</link>
+      <title>hexo安装</title>
+      <link>/%E5%B7%A5%E5%85%B7/hexo/hexo%E5%AE%89%E8%A3%85/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/chapter2/2/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/%E5%B7%A5%E5%85%B7/hexo/hexo%E5%AE%89%E8%A3%85/</guid>
+      <description>安装 1.Node.js 官网
+验证 node -v npm -v
+2.Git 官网
+tips：Git Bash 相当于Linux中的终端窗口
+验证 git version
+3.hexo npm install -g hexo-cli 验证 hexo -v 4.创建案例 hexo init blog cd blog npm install
+5.运行测试 hexo clean #用来清理缓存文件 hexo g #生成文件 hexo s #运行本地服务器 hexo d #上传到服务器
+运行 hexo g hexo s
+打开网站 localhost:4000</description>
     </item>
     
     <item>
-      <title>Chapter 2-1 (weight: 40)</title>
-      <link>https://mengfeisword.github.io/chapter2/1/</link>
+      <title>hugo</title>
+      <link>/%E5%B7%A5%E5%85%B7/hugo/hugo/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/chapter2/1/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/%E5%B7%A5%E5%85%B7/hugo/hugo/</guid>
+      <description>官网 下载 主题 1.安装 1.解压 2.添加到环境变量 3.验证 hugo version 2.新建站点 hugo new site myblog 3.下载主题 git到theme文件夹 启动 hugo server -t hugo-theme-techdoc http://localhost:1313 hugo server -t hugo-theme-techdoc 4.修改配置 发布 hugo</description>
     </item>
     
     <item>
-      <title>Search Shortcode</title>
-      <link>https://mengfeisword.github.io/sample/search-shortcode/</link>
-      <pubDate>Mon, 30 Mar 2020 18:49:06 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/sample/search-shortcode/</guid>
-      <description>&amp;nbsp;NoteSearch Shortcode powered by Algolia
-You can create a search page just by adding search shortcode.</description>
-    </item>
-    
-    <item>
-      <title>Hello_world2</title>
-      <link>https://mengfeisword.github.io/archives/hello_world2/</link>
-      <pubDate>Sun, 17 Dec 2017 14:00:45 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/archives/hello_world2/</guid>
-      <description>aaaaaa
-vvvv
-aaa</description>
-    </item>
-    
-    <item>
-      <title>Hello_world2</title>
-      <link>https://mengfeisword.github.io/blog/hello_world2/</link>
-      <pubDate>Sun, 17 Dec 2017 14:00:45 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/blog/hello_world2/</guid>
-      <description>aaaaaa
-vvvv
-aaa</description>
-    </item>
-    
-    <item>
-      <title>Hello_world2</title>
-      <link>https://mengfeisword.github.io/entry/hello_world2/</link>
-      <pubDate>Sun, 17 Dec 2017 14:00:45 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/entry/hello_world2/</guid>
-      <description>aaaaaa
-vvvv
-aaa</description>
-    </item>
-    
-    <item>
-      <title>Hello_world1</title>
-      <link>https://mengfeisword.github.io/archives/hello_world1/</link>
-      <pubDate>Fri, 17 Nov 2017 14:00:45 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/archives/hello_world1/</guid>
-      <description>aaaaaa
-vvvv
-aaa</description>
-    </item>
-    
-    <item>
-      <title>Hello_world1</title>
-      <link>https://mengfeisword.github.io/blog/hello_world1/</link>
-      <pubDate>Fri, 17 Nov 2017 14:00:45 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/blog/hello_world1/</guid>
-      <description>aaaaaa
-vvvv
-aaa</description>
-    </item>
-    
-    <item>
-      <title>Hello_world1</title>
-      <link>https://mengfeisword.github.io/entry/hello_world1/</link>
-      <pubDate>Fri, 17 Nov 2017 14:00:45 +0000</pubDate>
-      
-      <guid>https://mengfeisword.github.io/entry/hello_world1/</guid>
-      <description>aaaaaa
-vvvv
-aaa</description>
-    </item>
-    
-    <item>
-      <title>Chapter 1-1</title>
-      <link>https://mengfeisword.github.io/chapter1/1/</link>
+      <title>hugo</title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/_index-copy/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/chapter1/1/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/_index-copy/</guid>
+      <description>各类编程语言的总结和复习资料</description>
     </item>
     
     <item>
-      <title>Chapter 1-2</title>
-      <link>https://mengfeisword.github.io/chapter1/2/</link>
+      <title>部署到git</title>
+      <link>/%E5%B7%A5%E5%85%B7/hexo/hexo%E9%83%A8%E7%BD%B2%E5%88%B0git/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/chapter1/2/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/%E5%B7%A5%E5%85%B7/hexo/hexo%E9%83%A8%E7%BD%B2%E5%88%B0git/</guid>
+      <description>部署到git 1.安装 hexo-deployer-git npm install hexo-deployer-git --save 验证 npm list hexo-deployer-git
+2.修改配置 deploy: type: git repo: https://github.com/mengfeirun/mengfeirun.github.io.git branch: [branch] message: [message] </description>
     </item>
     
     <item>
-      <title>Chapter 1-3</title>
-      <link>https://mengfeisword.github.io/chapter1/3/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      <title>参考资料</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/chapter1/3/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>Redis思维导图 Redis命令参考 Redis中文站 Redis中文 Redis教程 Redis5.0数据淘汰策略详解（最新版本，面试常问） Redis 教程
+通过思维导图整理redis的重要知识点 Redis思维导图 redis知识点最详细的总结，&amp;ndash;数据类型，相关配置 一个能看懂的Redis思维导图 Redis校招面经知识整理 133条目！很全！（xmind思维导图格式，便于记忆和理解）下载
+Redis思维导图
+Redis学习笔记
+redis知识点总结
+#缓存 缓存穿透、缓存击穿、缓存雪崩区别和解决方案 应对缓存击穿的解决方法 帮你解读什么是Redis缓存穿透和缓存雪崩(包含解决方案)
+Redis知识点本文就够 降低redis内存使用与减少请求延迟
+#面试题 Redis面试题(2020最新版) Redis常见面试题 50道Redis面试题及答案整理，史上最全！ 史上最全Redis面试题及答案 Redis面试题和答案完全解读 史上最全redis面试题及答案吊打面试官
+#应用场景 Redis 的 8 大应用场景！ Redis常见的应用场景解析 Redis应用场景 redis应用场景及实例 Redis的7个应用场景 redis文档 Redis 命令参考 思维导图学 Redis —— 《Redis设计与实现》 #Redis# 利用思维导图整理的redis重要知识点 Redis好资料 Redis 设计与实现</description>
     </item>
     
     <item>
-      <title>Chapter 1-4</title>
-      <link>https://mengfeisword.github.io/chapter1/4/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      <title>Home page</title>
+      <link>/create-page/homepage/</link>
+      <pubDate>Fri, 28 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>https://mengfeisword.github.io/chapter1/4/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/create-page/homepage/</guid>
+      <description>To tell Hugo-theme-docdock to consider a page as homepage&amp;rsquo;s content, just create a content file named _index.md in content folder.</description>
     </item>
     
     <item>
-      <title>Chapter 2-0 (weight: no set)</title>
-      <link>https://mengfeisword.github.io/chapter2/5/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      <title>About images</title>
+      <link>/create-page/page-images/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>https://mengfeisword.github.io/chapter2/5/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/create-page/page-images/</guid>
+      <description>Images have a similar syntax to links but include a preceding exclamation point.
+![agence](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg)Resizing image Add HTTP parameters width and/or height to the link image to resize the image. Values are CSS values (default is auto).
+![Hackathon](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg?height=80px)Add CSS classes Add a HTTP classes parameter to the link image to add CSS classes. shadow and border are available but you could define other ones.
+![s](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg?classes=border,shadow)</description>
     </item>
     
     <item>
-      <title>Chapter 3-1</title>
-      <link>https://mengfeisword.github.io/chapter3/1/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      <title>My Slide ! fullscreen</title>
+      <link>/create-page/myslide/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>https://mengfeisword.github.io/chapter3/1/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/create-page/myslide/</guid>
+      <description>In the morning Getting up Turn off alarm Get out of bed Breakfast Eat eggs Drink coffee In the evening Dinner Eat spaghetti Drink wine Going to sleep Get in bed Count sheep </description>
     </item>
     
     <item>
-      <title>Chapter 3-2-1</title>
-      <link>https://mengfeisword.github.io/chapter3/chapter3-2/1/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      <title>Present a Slide</title>
+      <link>/create-page/page-slide/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>https://mengfeisword.github.io/chapter3/chapter3-2/1/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/create-page/page-slide/</guid>
+      <description>A basic md content page can be rendered as a reveal.js presentation full screen.
+You can, also, embed presentation in a page as a small box, using the revealjs shortcode in your md file.Formating Use your common Markdown syntax you use in Hugo, don&amp;rsquo;t forget, you can put html tags too.
+Special syntax (in html comment) is available for adding attributes to Markdown elements. This is useful for fragments, amongst other things.</description>
     </item>
     
     <item>
-      <title>Chapter 3-2-2</title>
-      <link>https://mengfeisword.github.io/chapter3/chapter3-2/2/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/chapter3/chapter3-2/2/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/readme/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Chapter 3-2-3</title>
-      <link>https://mengfeisword.github.io/chapter3/chapter3-2/3/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/dart%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/chapter3/chapter3-2/3/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/dart%E5%9F%BA%E7%A1%80/</guid>
+      <description>dart官网 Flutter学习笔记&amp;ndash;Dart基础
+一.数据类型 Dart中所有东西都是对象, 包括数字、函数等 它们都继承自Object, 并且默认值都是null(包括数字)因此数字、字符串都可以调用各种方法
+注意： 默认值 dart中未初始化的值都是null，即使是数字也是一个对象。 fianl 和 const 当你不想让变量可以再次改变的时候用final或const修饰，如下：
+String 一组UTF-16单元序列. 字符串赋值的时候, 可以使用单引号, 也可以使用双引号 使用三个单引号或者三个双引号可以多行字符串赋值
+Number int：整数值不大于64位 double：64位双精度浮点数
+Boolean 使用bool类型表示布尔值.
+List 列表, 也叫数组, 常见的添加、索引、删除等方法
+Set 集合在Dart中无序的, 并且每个元素具有唯一性, 因为它是无序的, 因此不能像List那样用索引来访问元素
+Map 映射, 也称之为字典, Map是一个无序的键值对容器
+7.Runes UTF-32字符集的字符串对象
+8.符号 Symbols 在Dart程序中，Symbol对象表示声明运算符或标识符。您可能从来不会使用到Symbol，但是它们在按名字引用标识符的API非常有用，因为缩小到改变标识符名称而不更改标识符。 获取标识符的symbol，使用sybol表达式，只需#号后跟标识符：
+二.函数
+函数定义 函数也是对象, 当没有指定返回值的时候, 函数返回null
+函数别名 普通的函数定义. 在赋值之后, 会丢失函数签名信息
+可选参数 Dart中支持两种可选参数: 命名可选参数和位置可选参数, 但是两种可选参数不能同时使用 命名可选参数使用大括号{}, 大括号外的参数是必填参数, 大括号内的参数可以指定0个或多个, 并与顺序无关, 在调用函数的时候需要指明参数名, 没有赋值的参数为null 位置可选参数使用中括号[], 在位置可选参数的函数中, 中括号内的参数可以指定0个或多个, 在调用的时候, 参数值会依次按顺序赋值
+4.闭包 特性： 1、一个 闭包 是一个方法对象。 2、闭包定义在其他方法的内部，一般通过return将其作为返回值返回。 3、不管闭包对象（方法返回的）在何处被调用，该对象都可以访问其（即闭包所在的方法）作用域内的变量，并持有其状态。</description>
     </item>
     
     <item>
-      <title>Chapter 3-2-4</title>
-      <link>https://mengfeisword.github.io/chapter3/chapter3-2/4/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/flutter%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/chapter3/chapter3-2/4/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/flutter%E5%AE%89%E8%A3%85/</guid>
+      <description>1. [!] Android toolchain - develop for Android devices (Android SDK 28.0.3)问题解决
+解决办法
+cd 到自己sdk的路径 例如 cd /Users/admin/dev/Android/sdk cd tools cd bin // 以上三行是进入到自己到sdk目录文件夹下 //执行这句才是关键，它会提示你去允许认证 sdkmanager &amp;ndash;licenses 然后一路按y
+還需要在用户环境变量下把 路径为 自己 sdk路径 名字为 ANDROID_HOME
+然后重启 再创建一个模拟器 ，这样四项都为 - [ ✔ ] 最后在检查下flutter doctor 就ok了
+vim ~/.zshrc source ~/.zshrc
+#AndroidSdk export ANDROID_HOME=/Volumes/macdata/andriod/sdk
+2. ✗ CocoaPods not installed. sudo gem install cocoapods
+3. ERROR: Error installing cocoapods:
+iOS：解决pod的Insecure world writable dir问题 sudo chmod go-w /Volumes/macdata/go</description>
     </item>
     
     <item>
-      <title>Chapter 3-3</title>
-      <link>https://mengfeisword.github.io/chapter3/3/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/chapter3/3/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/</guid>
+      <description>#1.GoWorld – 用Golang写一个分布式可扩展、可热更的游戏服务器 https://github.com/xiaonanln/goworld
+2.golang Leaf 游戏服务器框架简介 https://blog.csdn.net/kaitiren/article/details/78442454 https://github.com/name5566/leafserver
+3.cellnet cellnet好像使用callback回调方式, 直接pass. https://studygolang.com/p/cellnet
+4.mqant mqant使用了mqtt协议, 感觉写了太多, 有点复杂, 也pass了. https://golangtc.com/t/58b4e772b09ecc2e18000305 http://www.mqant.com/topic/58d4c895cf36add6408d2c0e https://github.com/liangdas/mqantserver
+5.nano https://github.com/lonng/nano nanoserver 有房卡麻将例子 https://github.com/lonng/nanoserver
+6.中小型手机棋牌网络游戏服务端架构设计 https://github.com/panshiqu/framework https://blog.csdn.net/panshiqu/article/details/74572133 https://blog.csdn.net/panshiqu/article/details/70160325
+7.基于Go语言的棋牌游戏框架 https://github.com/gochenzl/chess
+8.房卡麻将棋牌解决方案 https://github.com/shuimuliang https://my.oschina.net/u/3653577/blog/1512057 https://github.com/shuimuliang/qnmahjongserver https://github.com/shuimuliang/qnmahjongclient
+9.railgun https://blog.csdn.net/easy_mind/article/details/53260574 https://github.com/3zheng/railgun
+10.为互联网IT人打造的中文版awesome-go https://github.com/hackstoic/golang-open-source-projects
+11.网络框架之-thrift http://thrift.apache.org/tutorial/go
+12.awesome-go:一个很全的go语言框架，库，软件合集 http://hao.jobbole.com/awesome-go/
+13. https://github.com/yinjimmy/chessAndCard-2dx https://github.com/shuimuliang/qnmahjongserver
+agones agones 源码 官网网站 agones 中文文档 gaming-agones-demo agones
+go 开源游戏服务器框架 Agones 浅谈Go语言自研的分布式游戏服务器架构 云原生项目实践DevOps(GitOps)+K8S+BPF+SRE，从0到1使用Golang开发生产级麻将游戏服务器—第2篇 go-mahjong-server
+golang Leaf 游戏服务器框架简介
+my-github-repos 一些开源库 Go netpoller 原生网络模型之源码全面揭秘 gnet</description>
     </item>
     
     <item>
-      <title>Chapter 3-4</title>
-      <link>https://mengfeisword.github.io/chapter3/4/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/chapter3/4/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
+      <description>系统中断信号注册 通道接收多个返回值 go context reflect 通过反射，我们可以获取一个结构体类型的字段,也可以获取一个类型的导出方法，这样我们就可以在运行时了解一个类型的结构，这是一个非常强大的功能。 另外 Golang 有一些特别先进的特性，需要说道说道。
+✔ 用户态线程 / 绿色线程 / 协程（goroutine） ✔ 语言级多路复用（select） ✔ 信道（channel） ✔ 通信顺序进程 (CSP) ✔ 读写锁（RWMutex） ✔ context、defer ✔ 组合继承 ✔ 函数多返回值</description>
     </item>
     
     <item>
-      <title>Hello_world</title>
-      <link>https://mengfeisword.github.io/archives/hello_world/</link>
-      <pubDate>Tue, 17 Oct 2017 14:00:45 +0000</pubDate>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E8%AF%AD%E8%A8%80%E5%87%A0%E4%B8%AA%E6%9C%80%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9%E7%9A%84%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/archives/hello_world/</guid>
-      <description>aaaaaa
-vvvv
-aaa</description>
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E8%AF%AD%E8%A8%80%E5%87%A0%E4%B8%AA%E6%9C%80%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9%E7%9A%84%E6%80%BB%E7%BB%93/</guid>
+      <description>3.channel channel通道主要是为了进行同步，当一个资源需要共享时用channel就可以在goroutine之间确保同步交换数据。 channel有两种：无缓冲通道和有缓冲通道，区别还得从它的创建开始讲。
+在go中使用到make函数的地方主要就是： 1：slice的创建 2：map的创建 3：channel的创建
+无缓冲通道只有在发送，接受同时准备好的时侯才能实现操作，否则会导致先执行的操作阻塞等待。
+互斥锁 读写互斥锁</description>
     </item>
     
     <item>
-      <title>Hello_world</title>
-      <link>https://mengfeisword.github.io/blog/hello_world/</link>
-      <pubDate>Tue, 17 Oct 2017 14:00:45 +0000</pubDate>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/blog/hello_world/</guid>
-      <description>aaaaaa
-vvvv
-aaa</description>
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86/</guid>
+      <description>知识体系可以从字段，函数，结构体入手，再到详细编码的逻辑结构，也就是面向过程进行加深。然后是指针，异常机制，IO，并发等。有了基本架构之后才是网络，后台等高级特性。
+字段： 1.数据操作。包括基本数据类型的定义以及操作，运算，切片等。注意指针。 2.字段在结构体中可以是匿名字段。 3.array，map，slice是高级结构体。array是数组，而slice针对数组进行的切片处理。map是映射。使用range遍历。 4.平行赋值i,j=i+1,j+1.这个一般用在if中。
+结构体： 1.结构体的定义。在go中类是结构体与函数叠加而成。而结构体就是算法与结构中的“结构”。 2.type用于重定义数据，定义结构体，接口。 3.go更加接近理论，所以在go中类，方法，变量，被叫做结构体，函数，字段。.
+函数： 1.函数的定义。在go中都是函数，而属于结构体的函数可以称为方法。 2.函数有匿名函数。 3.func funcName(input1 type1, input2 type2) (output1 type1, output2 type2) { //这里是处理逻辑代码 //返回多个值 return value1, value2 } 字段和返回字段可以简化。如input1,input2 type。这其实就是如果当前没有就往后面找。 4.注意变参func（arg&amp;hellip;int）
+流程控制： 1.if参照了for，可以使用；分号隔开，前面的是变量声明。 2.switch的case后面自带break，想要往下执行需要使用fallthrough。switch跟的语句如果没有添加，那么就是true。 3.for格式如果省略了分号，那么就相当于while。for range可以用于读取slice和map的数据。 4.goto是跳转语句。
+指针： 1.string,slice,map都是基于指针的机制了，可以直接传递，不需要再取地址传指针操作。但是注意slice的长度发生变化的话，仍需取地址传指针。 2.结构体指针函数的使用需要注意。
+表达式： 1.go不支持三元表达式。也就是说一个n:=expr?trueV:falseV在这里不能使用。
+异常： 1.go中，异常处理使用panic()，recover()，defer联合使用。panic抛出异常中断，如果想要回复，可以在defer中使用recover恢复。但是go中，尽量少用异常处理。
+IO： 1.go中使用make()创建切片，映射，程道。返回对象，而new()返回的是指针。 2.chan分为有缓冲和无缓冲两种。 3.chan作为线程件通信的IO通道。 4.常使用select，case，default组合chan进行操作。
+并发： 1.并发里面主要是多线程以及常用的辅助类等。 2.并发的内容一般包含： （1）线程的初始化。线程的实现是go xxx，这个过程叫做gorutine。 （2）线程的通信。通过channel进行通信。注意，这里channel本身是具有锁功能的，往往作为最简单常用的锁进行使用 （3）线程对于资源的操作。这里主要是同步异步，阻塞和非阻塞等概念。 同步异步的关键在于互斥，而阻塞和非阻塞关键在于锁。但是两者其实很接近。 所以往往出现的是互斥锁。这里常用的是sync.Mutext.Lock()实现互斥锁。使用lock.Lock()实现锁。runtime模块往往用于运行时候的一些操作，帮助线程实现让出时间片，线程退出等操作。atomic模块是原子操作。其他的一些类和函数是基于这些概念进行的扩展。 （4）defer使用 defer func_name(param-list) 当一个函数调用前有关键字 defer 时, 那么这个函数的执行会推迟到包含这个 defer 语句的函数即将返回前才执行 defer 调用的函数参数的值在 defer 定义时就确定了, 而 defer 函数内部所使用的变量的值需要在这个函数运行时才确定。defer 函数调用的执行时机是外层函数设置返回值之后, 并且在即将返回之前</description>
     </item>
     
     <item>
-      <title>Hello_world</title>
-      <link>https://mengfeisword.github.io/entry/hello_world/</link>
-      <pubDate>Tue, 17 Oct 2017 14:00:45 +0000</pubDate>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/entry/hello_world/</guid>
-      <description>aaaaaa
-vvvv
-aaa</description>
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/</guid>
+      <description>Golang面试题41道 1.什么是golang? go是一个开源的编程语言，由谷歌开发的。这门语言是设计用来做系统级的编程的。
+2.为什么要用golang? 简单点说就是go是一个开源的编程语言，它很容易用来编写简单, 可靠，有效的软件。
+3.是谁开发了go语言？ Robert Griesemer, Rob Pike, Ken Thompson.
+4.go编程中的packages是什么？ Go语言的最小集合就是package，它的程序入口是main package。
+Go语言是否支持generic编程? 不支持。
+go语言是大小写敏感的编程语言吗？ 是的。
+7.go语言里面字符串的语法是怎样的？ go语言里有两种字符串语法。 一种是原始字符串语法raw string literals。使用back quotes来包含一系列的字符集。支持多行。 另一种是interpreted string literals。用双引号括起来。不支持多行。
+Go语言的work space是指什么? Work space用来包含go语言的代码，有三个主要的文件目录, src, pkg, bin。 9.go语言中布尔类型的缺省值是什么？ false
+10.Gopath环境变量是什么? Gopath来指定工作空间的位置。在做go语言编程的时候，这个变量设置是必须的。
+第11题，go语言编程的好处是什么？ 编译和运行都很快。 在语言层级支持并行操作。 有垃圾处理器。 内置字符串和maps。 函数是go语言的最基本编程单位。 第12题，go语言里比较常用的功能模块。 Container, container list, container heap. Web server, net/http Cryptography, Crypto/md5, crypto/sha1. Compression, compress/gzip. Database, database/sql. 第13题，goroutine是什么？ 一个goroutine是可以跟其他函数并行运行的函数。如果想停止一个goroutine，你可以通过一个signal channel传值进去。 第14题，如何写多行的字符串？ raw string literal 第15题, go语言里的break是干什么用的？</description>
     </item>
     
     <item>
-      <title>About Hugo</title>
-      <link>https://mengfeisword.github.io/about/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/about/</guid>
-      <description>Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:
-Cobra Viper J Walter Weatherman Cast Learn more and contribute on GitHub.</description>
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/</guid>
+      <description>golang面试题整理
+1.go的调度 2.go struct能不能比较 因为是强类型语言，所以不同类型的结构不能作比较，但是同一类型的实例值是可以比较的，实例不可以比较，因为是指针类型 3.go defer（for defer），先进后出，后进先出 func b() { for i := 0; i &amp;lt; 4; i++ { defer fmt.Print(i) } } 4.select可以用于什么，常用语gorotine的完美退出 golang 的 select 就是监听 IO 操作，当 IO 操作发生时，触发相应的动作每个case语句里必须是一个IO操作，确切的说，应该是一个面向channel的IO操作
+5.context包的用途 Context通常被译作上下文，它是一个比较抽象的概念，其本质，是【上下上下】存在上下层的传递，上会把内容传递给下。在Go语言中，程序单元也就指的是Goroutine
+6.client如何实现长连接 server是设置超时时间，for循环遍历的
+7.主协程如何等其余协程完再操作 使用channel进行通信，context,select
+8.slice，len，cap，共享，扩容 append函数，因为slice底层数据结构是，由数组、len、cap组成，所以，在使用append扩容时，会查看数组后面有没有连续内存快，有就在后面添加，没有就重新生成一个大的素组
+9.map如何顺序读取 map不能顺序读取，是因为他是无序的，想要有序读取，首先的解决的问题就是，把ｋｅｙ变为有序，所以可以把key放入切片，对切片进行排序，遍历切片，通过key取值。
+10.实现set
+11.实现消息队列（多生产者，多消费者） 使用切片加锁可以实现
+12.大文件排序 归并排序，分而治之,拆分为小文件，在排序
+13.基本排序，哪些是稳定的
+14.http get跟head HEAD和GET本质是一样的，区别在于HEAD不含有呈现数据，而仅仅是HTTP头信息。有的人可能觉得这个方法没什么用，其实不是这样的。想象一个业务情景：欲判断某个资源是否存在，我们通常使用GET，但这里用HEAD则意义更加明确。
+15.http 401,403 400 bad request，请求报文存在语法错误 401 unauthorized，表示发送的请求需要有通过 HTTP 认证的认证信息 403 forbidden，表示对请求资源的访问被服务器拒绝 404 not found，表示在服务器上没有找到请求的资源
+16.http keep-alive client发出的HTTP请求头需要增加Connection:keep-alive字段 Web-Server端要能识别Connection:keep-alive字段，并且在http的response里指定Connection:keep-alive字段，告诉client，我能提供keep-alive服务，并且&amp;quot;应允&amp;quot;client我暂时不会关闭socket连接</description>
     </item>
     
     <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://mengfeisword.github.io/post/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/post/goisforlovers/</guid>
-      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
-This document is a brief primer on using Go templates.</description>
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>#基础 go基础 地鼠文档 Go 语言设计与实现 Go 语言中文开源图书、资料或文档 go语言中文文档 基础视频教学 Go 语言高性能编程 Golang应该掌握哪些必要的知识点才能算掌握golang这门语言？
+#sync Go 语言设计与实现-6.2 同步原语与锁 sync - 处理同步需求 golang的sync包 浅谈 Golang sync 包的相关使用方法
+go开源仓库
+#面试题 golang面试题整理 Golang面试题41道 golang 面试题整理 Go 语言笔试面试题汇总 golang 关键知识点 golang知识点整理(持续更新)
+#好的站点 综合博客</description>
     </item>
     
     <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://mengfeisword.github.io/post/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mengfeisword.github.io/post/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at Install Hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
-Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313 Corresponding pseudo commands:</description>
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/ants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/ants/</guid>
+      <description>#ants ##地址:https://github.com/panjf2000/ants https://github.com/panjf2000
+📖 简介 高性能的 goroutine 池 ##文件
+文件 描述 说明 ants.go 主结构 主要是配置 pool.go 工作池结构 工作主入口，管理池 pool_func.go 带函数池 管理带函数的池子 worker_func.go 带函数工作接口 管理带函数的工作 worker_array.go 工作组接口 创建方式为栈或队列，返回的是接口 worker.go 工作接口 处理工作函数 worker_stack.go 工作栈 栈的实现方式，使用的二分法 worker_loop_queue.go 工作池队列 队列方式实现 ##经验 1.sync 包的使用 2.goroutine 池的管理和设计(带函数和不带函数)
+#技术包 ##技术包 ###技术包 #####技术包 ######技术包 #######技术包
+技术包
+但是发 发发发撒发
+阿但是发撒都发撒啊阿啊
+第一项 第二项 第三项 sdfa sdfa sdfa sdfa sdfa dfsaa asdf
+dsfasdafsdfasdfadsaffadfsfaasdffasfdafsadfhttps://www.runoob.com 表头 表头 都发撒 单元格 单元格 sdffas 单元格 都发撒发撒 sdfsafas graph LRA[方形] --&amp;gt;B(圆角)B --&amp;gt; C{条件a}C --&amp;gt;|a=1| D[结果1]C --&amp;gt;|a=2| E[结果2]F[横向流程图] Title: 标题：复杂使用对象A-&amp;gt;对象B: 对象B你好吗?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/bytebufferpool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/bytebufferpool/</guid>
+      <description>#ants ##地址:https://github.com/valyala/bytebufferpool
+📖 简介 字节缓冲池
+文件 描述 说明 bytebuffer.go 字节缓存 字符串，IO，数组等的写入缓存 pool.go 缓存管理 缓存空间管理 ##文件
+##经验 1.切片的使用 2.sync.Pool使用</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gev/</guid>
+      <description>gev 地址:https://github.com/Allenxuxu/gev.git Go 网络库并发对比 https://blog.csdn.net/meiyoudao_jiushidao/article/details/102657231</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gnet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gnet/</guid>
+      <description>gnet 地址:https://github.com/panjf2000/gnet 📖 简介 字节缓冲池
+文件 描述 说明 ringbuffer 循环缓冲 构造循环缓冲基本 pool 线程池 缓存池的使用 internal 内部 缓存空间管理 acceptor 接收 接受连接 codec 编解码 编解码 connection 连接 网络连接 errors.go 错误处理 eventloop_group 事件循环组 gnet.go 主结构 listener 监听 loop 循环事件 reactor server 服务 网络服务器 文件 经验 1.循环池的设计使用 2.sync.Pool 使用</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/json%E6%8F%92%E4%BB%B6/%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/json%E6%8F%92%E4%BB%B6/%E6%8F%92%E4%BB%B6/</guid>
+      <description>#json json库 Golang使用标签表达式校验结构体字段的有效性 GO&amp;ndash;Json tag标签的作用，json用法讲解</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>开源主地址 swaggo源码
+swag简体中文说明
+#要详细查看使用方法
+Golang – Gin &amp;amp; Swaggo 使用方法</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E8%AF%B4%E6%98%8E/</guid>
+      <description>#安装swag命令行 $ go get -u github.com/swaggo/swag/cmd/swag
+1.16 及以上版本 $ go install github.com/swaggo/swag/cmd/swag@latest
+#运行swag init 查询参数 swag init -h
+#支持的Web框架 gin echo buffalo net/http
+#与Gin集成 ##1.导入包 import &amp;ldquo;github.com/swaggo/gin-swagger&amp;rdquo; // gin-swagger middleware import &amp;ldquo;github.com/swaggo/files&amp;rdquo; // swagger embed files
+##2.在main.go源代码中添加通用的API注释： ##3.在Handler代码中添加API操作注释： ##4.swag init ##5.运行程序，然后在浏览器中访问 http://localhost:8080/swagger/index.html
+#声明式注释格式
+通用API信息
+注释 说明 示例 title 必填 应用程序的名称。 // @title Swagger Example API version 必填 提供应用程序API的版本。 // @version 1.0 description 应用程序的简短描述。 // @description This is a sample server celler server.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%85%B3%E9%94%AE%E5%AD%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%85%B3%E9%94%AE%E5%AD%97/</guid>
+      <description>#json
+json: &amp;quot;-&amp;quot; // 表示不进行序列化，该字段总是在序列化被省略。 json: &amp;quot;xxx,omitempty&amp;quot; //表示如果字段具有空值则该字段应从编码中省略
+go中json序列化使用标签来进行拓展： 1、忽略空值： type Person struct { Id int64 json:&amp;quot;id, omitempty&amp;quot; }
+2、忽略字段（不论是否为空值）： type Person struct { Id int64 json:&amp;quot;-&amp;quot; }
+3、指定数据类型： type Person struct { Id int64 json:&amp;quot;id,string&amp;quot; }
+#xml
+#Protobuf</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>聊一聊golang的结构体标签
+Go 结构体标签详解
+Golang使用标签表达式校验结构体字段的有效性
+Go语言结构体标签
+go json 标签 默认值_Go Gin 系列三：开发标签模块
+go encoding/json包数据处理详解
+golang 如何验证struct字段的数据格式
+golang数据校验</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/ziyuan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/ziyuan/</guid>
+      <description>https://gowalker.org/</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/</guid>
+      <description>学习路线 GO每日一库 Golang分类 一些插件案例 一些源码析</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%9D%82%E9%A1%B9%E8%B5%84%E6%BA%90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%9D%82%E9%A1%B9%E8%B5%84%E6%BA%90/</guid>
+      <description>#资源 基于gnet网络框架编写的各种常见服务端server程序，可以用来学习和快速使用 一款基于gnet开发的RPC微服务框架 rpc服务在游戏中的简单运用 大型多人在线游戏服务器架构设计 大型多人在线游戏服务器架构设计 origin 一个协议驱动的游戏服务器架构设计 开源游戏服务器框架NoahFrame分享：第一章 游戏服务器的进化 游戏服务端究竟解决了什么问题？ 游戏通信协议设计文档 游戏服务器设计 游戏开发—协议设计</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/css/</guid>
+      <description>#CSS讲解 CSS 教程 看这一篇就够了,css选择器知识汇总 前端 -＞ js原生选择器,jQuery选择器 基本选择器(ID选择器,元素选择器,类名选择器,复合选择器,通配符选择器) css思维导图及简单知识点 CSS思维导图 CSS思维导图(自己梳理)
+##JS JS所有类型选择器,包括父子兄弟等</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>#文档
+Rust布道者张汉东倾授，入门Rust初学者都要攻破哪些难点？ Rust 程序设计语言 简体中文版 Rust宏编程新手指南
+区块链技术书单推荐，最后一本值得推荐给所有程序员阅读
+通过例子学 Rust</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>#参考文档
+官方网站 vue.js_v3教程 视频教程</description>
+    </item>
+    
+    <item>
+      <title>alert</title>
+      <link>/shortcodes/alert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/alert/</guid>
+      <description>The alert shortcode allow you to highlight information in your page. They create a colored box surrounding your text, like this:
+This is an alert !Usage Parameter Default Description theme info success, info,warning,danger Tips : setting only the theme as argument works too : {{%alert warning%}} instead of {{%alert theme=&amp;quot;warning&amp;quot;%}}
+Basic examples {{% alert theme=&amp;quot;info&amp;quot; %}}**this** is a text{{% /alert %}}{{% alert theme=&amp;quot;success&amp;quot; %}}**Yeahhh !** is a text{{% /alert %}}{{% alert theme=&amp;quot;warning&amp;quot; %}}**Be carefull** is a text{{% /alert %}}{{% alert theme=&amp;quot;danger&amp;quot; %}}**Beware !</description>
+    </item>
+    
+    <item>
+      <title>attachments</title>
+      <link>/shortcodes/attachments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/attachments/</guid>
+      <description>The Attachments shortcode displays a list of files attached to a page. Example : AttachmentsBachGavotteShort.mp3(357 kB)Carroll_AliceAuPaysDesMerveilles.pdf(175 kB)adivorciarsetoca00cape.pdf(361 kB)hugo.png(17 kB)movieselectricsheep-flock-244-32500-2.mp4(340 kB)Usage The shortcurt lists files found in a specific folder. Currently, it support two implementations for pages
+If your page is a markdown file, attachements must be place in a folder named like your page and ending with .files.
+content _index.</description>
+    </item>
+    
+    <item>
+      <title>button</title>
+      <link>/shortcodes/button/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/button/</guid>
+      <description>Display an actionable button in your page.
+This is a warning button Usage Parameter Default Description href &amp;quot;&amp;quot; The location href to link to align &amp;ldquo;center&amp;rdquo; horizontal align button on page theme primary default, primary , success,info,warning,danger The inner text you place in short code will be displayed as the button text
+Demo {{&amp;lt; button href=&amp;quot;https://google.com&amp;quot; &amp;gt;}} go to google {{&amp;lt; /button &amp;gt;}}{{&amp;lt; button href=&amp;quot;https://google.com&amp;quot; theme=&amp;quot;success&amp;quot; &amp;gt;}} Success {{&amp;lt; /button &amp;gt;}}{{&amp;lt; button href=&amp;quot;https://google.</description>
+    </item>
+    
+    <item>
+      <title>Credits</title>
+      <link>/credits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/credits/</guid>
+      <description>github contributors @vjeantet247 commits@matcornic45 commits@W-Floyd24 commits@Pilskalns24 commits@lierdakil16 commits@Marthym13 commits@gwleclerc9 commits@jose-oc8 commits@siamkreative6 commits@Xipas5 commits@FMuro2 commits@joepvd2 commits@EnigmaCurry2 commits@Yoann-M2 commits@aral2 commits@adamlamar1 commits@byzheng1 commits@zivbk11 commits@danielfbm1 commits@damoon1 commits@vielmetti1 commits@erikjasiak1 commits@giuliov1 commits@farmergreg1 commits@JOduMonT1 commits@tarpdalton1 commits@jamestharpe1 commits@JohnBlood1 commits@kamilchm1 commits@lgfischer1 commits@ripienaar1 commits@rsanderscybraics1 commits@shazic1 commits@viertaxa1 commits@uweschaefer1 commits@rabadiw1 commits@wshayes1 commits@eyoder1 commits@ivan-danilov1 commits@karlmacklin1 commits@petzi531 commits@remi310001 commits@tonivj51 commitsOther contribution @bepsupports and advices@facette.</description>
+    </item>
+    
+    <item>
+      <title>Disable features</title>
+      <link>/content-organisation/customize-style/disable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/content-organisation/customize-style/disable/</guid>
+      <description>You can disable feature in docdock by changing some params in config.toml
+hide Next / Prev Chevrons [params]disableNavChevron = true hide Search box in side menu [params]disableSearch = true hide the icon in side bar [params]disableHomeIcon = true </description>
+    </item>
+    
+    <item>
+      <title>Docdock-built Sites</title>
+      <link>/showcase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/showcase/</guid>
+      <description>https://invincible.site/ by @shazic https://bitfan.io/ by @vjeantet </description>
+    </item>
+    
+    <item>
+      <title>excerpt</title>
+      <link>/shortcodes/excerpt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/excerpt/</guid>
+      <description>The Excerpt shortcode is used to mark a part of a page&amp;rsquo;s content for re-use. Defining an excerpt enables other shortcodes, such as the excerpt-include shortcode, to display the marked content elsewhere.
+You can only define one excerpt per page. In other words, you can only add the Excerpt shortcode once to a page.Usage Parameter Default Description hidden &amp;ldquo;false&amp;rdquo; Controls whether the page content contained in the Excerpt shortcode placeholder is displayed on the page.</description>
+    </item>
+    
+    <item>
+      <title>excerpt-include</title>
+      <link>/shortcodes/excerpt-include/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/excerpt-include/</guid>
+      <description>The Excerpt Include shortcode is used to display &amp;rsquo;excerpted&amp;rsquo; (that is, a segment of) content from one page in another. Before you can use this shortcode, the excerpt must have been defined using the Excerpt shortcode. Note that you can have more than one Excerpt Include shortcode on a page (although you can have only one Excerpt shortcode on a page).Usage Parameter Default Description filename required Type the filename of the page that contains the excerpt to be displayed.</description>
+    </item>
+    
+    <item>
+      <title>expand</title>
+      <link>/shortcodes/expand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/expand/</guid>
+      <description>The Expand shortcode displays an expandable/collapsible section of text on your page. Here is an example
+Expand me...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>icon</title>
+      <link>/shortcodes/icon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/icon/</guid>
+      <description>Display an icon like It uses :
+glyphicons library (bootstrap).more info here fontawesome library more info here This icon shortcode will display an icon in your page.
+Usage Parameter Default Description name required name of icon (see bellow) size none size of icon, medium, xx-small, x-small, small, large, x-large, xx-large, 11px, 2em, 20%&amp;hellip;. Tips : setting only the name as argument works too : {{&amp;lt;icon film&amp;gt;}} instead of {{&amp;lt;icon name=&amp;quot;film&amp;quot;&amp;gt;}}</description>
+    </item>
+    
+    <item>
+      <title>mermaid</title>
+      <link>/shortcodes/mermaid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/mermaid/</guid>
+      <description>Flowchart example Show code ...{{}}graph LR;A[Hard edge] --&gt;|Link text| B(Round edge)B --&gt; C{Decision}C --&gt;|One| D[Result one]C --&gt;|Two| E[Result two]{{&lt; /mermaid &gt;}}graph LR;A[Hard edge] --&gt;|Link text| B(Round edge)B --&gt; C{Decision}C --&gt;|One| D[Result one]C --&gt;|Two| E[Result two]With sub-graphs and some style Show code...{{}}graph LR;X --&gt; YlinkStyle 0 stroke:#f00,stroke-width:4px;Y --&gt; ZZ --&gt; XlinkStyle 1,2 interpolate basis stroke:#0f0,stroke-width:2px;X --&gt; A1subgraph rightA2 --&gt; B2B2 --&gt; C2endsubgraph leftA1 --&gt; B1B1 --&gt; C1endC1 --&gt; XZ --&gt; A2C2 --&gt; Zstyle Y fill:#f9f,stroke:#333,stroke-width:4pxclassDef left fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5class A1,B1,C1 left{{&amp;lt; /mermaid &amp;gt;}}graph LR;X --&gt; YlinkStyle 0 stroke:#f00,stroke-width:4px;Y --&gt; ZZ --&gt; XlinkStyle 1,2 interpolate basis stroke:#0f0,stroke-width:2px;X --&gt; A1subgraph rightA2 --&gt; B2B2 --&gt; C2endsubgraph leftA1 --&gt; B1B1 --&gt; C1endC1 --&gt; XZ --&gt; A2C2 --&gt; Zstyle Y fill:#f9f,stroke:#333,stroke-width:4pxclassDef left fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5class A1,B1,C1 leftSequence example Show code .</description>
+    </item>
+    
+    <item>
+      <title>notice</title>
+      <link>/shortcodes/notice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/notice/</guid>
+      <description>The notice shortcode shows 4 types of disclaimers to help you structure your page.
+Note {{% notice note %}}A notice disclaimer{{% /notice %}}renders as
+A notice disclaimer
+Info {{% notice info %}}An information disclaimer{{% /notice %}}renders as
+An information disclaimer
+Tip {{% notice tip %}}A tip disclaimer{{% /notice %}}renders as
+A tip disclaimer
+Warning {{% notice warning %}}An warning disclaimer{{% /notice %}}renders as</description>
+    </item>
+    
+    <item>
+      <title>page test</title>
+      <link>/shortcodes/children/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/children/test/</guid>
+      <description>This is a test demo child page</description>
+    </item>
+    
+    <item>
+      <title>page test 3</title>
+      <link>/shortcodes/children/children-2/test3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/children/children-2/test3/</guid>
+      <description>This is a test 3 demo child page</description>
+    </item>
+    
+    <item>
+      <title>panel</title>
+      <link>/shortcodes/panel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/panel/</guid>
+      <description>The panel shortcodeAllow you to highlight information or put it in a box. They create a colored box surrounding your textUsage Parameter Default Description header none The title of the panel. If specified, this title will be displayed in its own header row. footer none the footer of the panel. If specified, this text will be displayed in its own row theme primary default,primary,info,success,warning,danger Basic example By default :</description>
+    </item>
+    
+    <item>
+      <title>revealjs</title>
+      <link>/shortcodes/revealjs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/revealjs/</guid>
+      <description>This shortcode will format the enclosed markdow to render it with reveal.js at runtime (client-side)
+Read more on revealjs github repo.
+Usage revealjs can use the following named parameters :
+theme
+transition
+controls
+progress
+history
+center
+ImportantEven if the enclosed content is a mardown, use `&lt;` shortcode notation instead of the `%` notation Content formating and slide delimiters read more on this here
+Demo # In the morning___## Getting up- Turn off alarm- Get out of bed___## Breakfast- Eat eggs- Drink coffee---# In the evening___## Dinner- Eat spaghetti- Drink wine___## Going to sleep- Get in bed- Count sheepSee it fullscreenSource : Show code .</description>
+    </item>
+    
+    <item>
+      <title>Theme styles</title>
+      <link>/content-organisation/customize-style/themestyle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/content-organisation/customize-style/themestyle/</guid>
+      <description>In site configuration file, you can set a subtheme name of this theme to load a specific css.
+add a param themeStyle = &amp;quot;STYLE_NAME&amp;quot; in the [params] part of config.toml file.
+Style &amp;ldquo;original&amp;rdquo; [params]themeStyle = &amp;#34;original&amp;#34; Style &amp;ldquo;flex&amp;rdquo; (work in progress) [params]themeStyle = &amp;#34;flex&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>Theme variants</title>
+      <link>/content-organisation/customize-style/theme-variants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/content-organisation/customize-style/theme-variants/</guid>
+      <description>In site configuration file, you can set a variant name of this theme to load a specific css, with different color specifications.
+add a param themeVariant = &amp;quot;VARIANT_NAME&amp;quot; in the [params] part of config.toml file.
+Available variants change only colors at this momentVariant &amp;ldquo;gray&amp;rdquo; [params]themeVariant = &amp;#34;gray&amp;#34; Variant &amp;ldquo;gold&amp;rdquo; [params]themeVariant = &amp;#34;gold&amp;#34; Variant &amp;ldquo;green&amp;rdquo; [params]themeVariant = &amp;#34;green&amp;#34;` </description>
     </item>
     
   </channel>
