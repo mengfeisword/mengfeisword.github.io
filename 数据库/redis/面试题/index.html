@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="revised" content="2023-03-02T19:09:02 CST">
-<title> :: DocDock Documentation</title>
+<title>数据类型 :: DocDock Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
 
     
   </head>
-  <body data-url="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/flutter%E5%AE%89%E8%A3%85/">
+  <body data-url="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E9%9D%A2%E8%AF%95%E9%A2%98/">
     
       <header>
   <div class="logo">
@@ -760,33 +760,22 @@
     <option value="/%E5%B7%A5%E5%85%B7/" >
    工具</option>
     <option value="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" >
-   编程语言</option> 
-    <option value="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/" >
-  - 
-   C</option>
-    <option value="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/" >
-  - 
-   dart_flutter</option> 
-      <option value="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/dart%E5%9F%BA%E7%A1%80/" >-- </option>
-      <option value="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/flutter%E5%AE%89%E8%A3%85/"  selected>-- </option>
-  
-    <option value="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/" >
-  - 
-   golang</option>
-    <option value="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/" >
-  - 
-   html</option>
-    <option value="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/" >
-  - 
-   rust</option>
-    <option value="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/" >
-  - 
-   Vue</option>
-  
+   编程语言</option>
     <option value="/content-organisation/" >
    Content Organisation</option>
     <option value="/%E6%95%B0%E6%8D%AE%E5%BA%93/" >
-   数据库</option>
+   数据库</option> 
+    <option value="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/" >
+  - 
+   redis</option> 
+      <option value="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/redis/" >-- k-v</option>
+    <option value="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%85%B6%E4%BB%96%E6%80%BB%E7%BB%93/" >
+  -- 
+   其他总结</option>
+      <option value="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" >-- 参考资料</option>
+      <option value="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E9%9D%A2%E8%AF%95%E9%A2%98/"  selected>-- 数据类型</option>
+  
+  
     <option value="/shortcodes/" >
    Shortcodes</option>
     <option value="/search/" >
@@ -804,62 +793,85 @@
       </div>
     
 
-    <h1></h1>
+    <h1>数据类型</h1>
     
     
     
-    <p>1.
-[!] Android toolchain - develop for Android devices (Android SDK 28.0.3)问题解决</p>
-<p>解决办法</p>
-<p>cd 到自己sdk的路径 例如   cd /Users/admin/dev/Android/sdk
-cd tools
-cd bin
-// 以上三行是进入到自己到sdk目录文件夹下
-//执行这句才是关键，它会提示你去允许认证
-sdkmanager &ndash;licenses
-然后一路按y</p>
-<p>還需要在用户环境变量下把   路径为  自己 sdk路径   名字为 ANDROID_HOME</p>
-<p>然后重启  再创建一个模拟器 ，这样四项都为  - [ ✔ ]
-最后在检查下flutter doctor 就ok了</p>
-<p>vim ~/.zshrc
-source ~/.zshrc</p>
-<p>#AndroidSdk
-export ANDROID_HOME=/Volumes/macdata/andriod/sdk</p>
-<p>2.
-✗ CocoaPods not installed.
-sudo gem install cocoapods</p>
-<p>3.
-ERROR:  Error installing cocoapods:</p>
-<p>iOS：解决pod的Insecure world writable dir问题
-sudo chmod go-w /Volumes/macdata/go</p>
-<p><a href="https://www.jianshu.com/p/43aa50b0ed70">https://www.jianshu.com/p/43aa50b0ed70</a></p>
-<p><a href="https://www.jianshu.com/p/c2f2c7aa5cf6">https://www.jianshu.com/p/c2f2c7aa5cf6</a></p>
-<p>4.</p>
-<p>Failed to connect to raw.githubusercontent.com port 443 解决方案
-原因
-由于某些你懂的因素，导致GitHub的raw.githubusercontent.com域名解析被污染了。</p>
-<p>查询真实IP</p>
-<p>在https://www.ipaddress.com/查询raw.githubusercontent.com的真实IP。</p>
-<p>通过修改hosts解决此问题</p>
-<p>1
-199.232.28.133 raw.githubusercontent.com</p>
-<p>5.解决国内上github
-<a href="https://blog.csdn.net/weixin_42121805/article/details/107711983">https://blog.csdn.net/weixin_42121805/article/details/107711983</a></p>
-<p><a href="https://www.jianshu.com/p/c2f2c7aa5cf6">2021 升级Big Sur后cocoapods的安装方法</a></p>
-<p>export PATH=/Users/用户名/Documents/flutter/flutter/bin:$PATH
-export ANDROID_HOME=&quot;/Users/用户名/Documents/android_sdk&quot; //android sdk目录，替换为你自己的即可
-export PATH=${PATH}:${ANDROID_HOME}/tools
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
-export PUB_HOSTED_URL=https://pub.flutter-io.cn
-export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn</p>
+    <p>Redis支持的数据类型？</p>
+<p>1、Redis基本数据结构
+2、Redis的List用过吗？底层怎么实现的？知道但是没用过，不知道怎么实现
+3、redis排行榜数据结构（跳跃表），查询时间复杂度
+4、redis分布式，如何减少同步延迟</p>
+<p>９８、redis的数据类型</p>
+<p>１２４、redis容灾，备份，扩容</p>
+<p>什么是Redis持久化？Redis有哪几种持久化方式？优缺点是什么？</p>
+<p>刚刚上面你有提到redis通讯协议(RESP )，能解释下什么是RESP？有什么特点？（可以看到很多面试其实都是连环炮，面试官其实在等着你回答到这个点，如果你答上了对你的评价就又加了一分）</p>
+<p>Redis 有哪些架构模式？讲讲各自的特点</p>
+<p>什么是一致性哈希算法？什么是哈希槽？
+Redis常用命令？
+使用过Redis分布式锁么，它是怎么实现的？
+使用过Redis做异步队列么，你是怎么用的？有什么缺点？
+什么是缓存穿透？如何避免？什么是缓存雪崩？何如避免？</p>
+<p>///////////////
+1、什么是Redis？
+2、Redis有哪些数据结构？
+3、Redis相比memcached有哪些优势？
+4、Redis有哪些适合的场景？
+5、Redis有哪几种数据淘汰策略？
+6、使用过Redis分布式锁么，它是什么回事？
+7、假如Redis里面有1亿个key，其中有10w个key是以某个固定的已知的前缀开头的，如何将它们全部找出来？
+8、由7接着问：如果这个redis正在给线上的业务提供服务，那使用keys指令会有什么问题？
+9、如果有大量的key需要设置同一时间过期，一般需要注意什么？
+10、如何处理redis集群中big key和hot key？
+11、MySQL里有2000w数据，redis中只存20w的数据，如何保证redis中的数据都是热点数据？
+12、使用过Redis做异步队列么，你是怎么用的？
+13、如果对方追问redis如何实现延时队列？
+14、说说Redis哈希槽的概念？
+15、Redis中的Pipeline有什么好处，为什么要用pipeline？
+16、Redis与其他key-value存储有什么不同？
+17、Redis和Redisson有什么关系？
+18、Jedis与Redisson对比有什么优缺点？
+19、支持一致性哈希的客户端有哪些？
+20、Twemproxy是什么？
+21、怎么理解Redis事务？
+22、Redis回收进程如何工作的？
+23、Redis回收使用的是什么算法？
+24、Redis如何做大量数据插入？
+25、为什么要做Redis分区？
+26、你知道有哪些Redis分区实现方案？
+27、Redis分区有什么缺点？
+28、为什么Redis需要把所有数据放到内存中？
+29、Redis的内存占用情况怎么样？
+30、都有哪些办法可以降低Redis的内存使用情况呢？
+31、Redis的内存用完了会发生什么？
+32、Redis如何做内存优化？
+33、Redis如何做持久化的？
+34、对方追问bgsave的原理是什么？
+35、Redis提供了哪几种持久化方式？
+36、如何选择合适的持久化方式？
+37、Redis是单线程的，如何提高多核CPU的利用率？
+38、Redis常见性能问题和解决方案？
+39、修改配置不重启Redis会实时生效吗？
+40、Redis的同步机制了解么？
+41、是否使用过Redis集群，集群的原理是什么？
+42、Redis集群方案应该怎么做？都有哪些方案？
+43、Redis集群方案什么情况下会导致整个集群不可用？
+44、Redis集群的主从复制模型是怎样的？
+44、Redis的集群方案之间都有哪些区别，其优点和缺点是什么？
+45、Redis集群会有写操作丢失吗？为什么？
+46、Redis集群之间是如何复制的？
+47、Redis集群最大节点个数是多少？
+48、一个Redis实例最多能存放多少的keys？List、Set、Sorted Set他们最多能存放多少元素？
+49、Redis持久化数据和缓存怎么做扩容？
+50、分布式Redis是前期做还是后期规模上来了再做好？为什么？</p>
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/dart%E5%9F%BA%E7%A1%80/" title=""> <i class="fa fa-chevron-left"></i><label></label></a>
-    <a class="nav nav-next" href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/" title="golang" style="margin-right: 0px;"><label>golang</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" title="参考资料"> <i class="fa fa-chevron-left"></i><label>参考资料</label></a>
+    <a class="nav nav-next" href="/shortcodes/" title="Shortcodes" style="margin-right: 0px;"><label>Shortcodes</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -876,7 +888,7 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn</p>
 
     
     <div class="github-link">
-      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/%e7%bc%96%e7%a8%8b%e8%af%ad%e8%a8%80/dart_flutter/flutter%e5%ae%89%e8%a3%85.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/%e6%95%b0%e6%8d%ae%e5%ba%93/redis/%e9%9d%a2%e8%af%95%e9%a2%98.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
     
