@@ -1,5 +1,33 @@
 [
 {
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/",
+	"title": "golang",
+	"tags": [],
+	"description": "",
+	"content": "golang语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E5%B7%A5%E5%85%B7/hexo/",
+	"title": "hexo",
+	"tags": [],
+	"description": "",
+	"content": "各类编程语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E5%B7%A5%E5%85%B7/",
+	"title": "工具",
+	"tags": [],
+	"description": "",
+	"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/",
+	"title": "编程语言",
+	"tags": [],
+	"description": "",
+	"content": "各类编程语言的总结和复习资料\n"
+},
+{
 	"uri": "/content-organisation/logo/",
 	"title": "Logo placeholder",
 	"tags": [],
@@ -19,6 +47,20 @@
 	"tags": [],
 	"description": "",
 	"content": "HUGO v0.32 minimum required to use this theme\rThe following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.\nInstallation We assume that all changes to Hugo content and customizations are going to be tracked by git (GitHub, Bitbucket etc.). Develop locally, build on remote system.\nBefore start real work:\nInitialize Hugo Install DocDock theme Configure DocDock and Hugo Prepare empty Hugo site Create empty directory, which will be root of your Hugo project. Navigate there and let Hugo to create minimal required directory structure:\n$ hugo new site . AFTER that, initialize this as git directory where to track further changes\n$ git init Next, there are at least three ways to install DocDock (first recommended):\nAs git submodule As git clone As direct copy (from ZIP) Navigate to your themes folder in your Hugo site and use perform one of following scenarios.\n1. Install DocDock as git submodule DocDock will be added like a dependency repo to original project. When using CI tools like Netlify, Jenkins etc., submodule method is required, or you will get theme not found issues. Same applies when building site on remote server trough SSH.\nIf submodule is no-go, use 3rd option.\nOn your root of Hugo execute:\n$ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock Next initialize submodule for parent git repo:\n$ git submodule init\r$ git submodule update Now you are ready to add content and customize looks. Do not change any file inside theme directory.\nIf you want to freeze changes to DocDock theme itself and use still submodules, fork private copy of DocDock and use that as submodule. When you are ready to update theme, just pull changes from origin to your private fork.\n2. Install DocDock simply as git clone This method results that files are checked out locally, but won\u0026rsquo;t be visible from parent git repo. Probably you will build site locally with hugo command and use result from public/ on your own.\n$ git clone https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock 3. Install DocDock from ZIP All files from theme will be tracked inside parent repo, to update it, have to override files in theme. download following zip and extract inside themes/.\nhttps://github.com/vjeantet/hugo-theme-docdock/archive/master.zip Name of theme in next step will be hugo-theme-docdock-master, can rename as you wish.\nConfiguration Follow instructions here\n"
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/",
+	"title": "redis",
+	"tags": [],
+	"description": "",
+	"content": "导图总览 持久化 复制 缓存设计 哨兵 阻塞 "
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/",
+	"title": "数据库",
+	"tags": [],
+	"description": "",
+	"content": "数据库知识\n"
 },
 {
 	"uri": "/content-organisation/extramenu/",
@@ -63,13 +105,6 @@
 	"content": "dart_flutter语言的总结和复习资料\n"
 },
 {
-	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/",
-	"title": "golang",
-	"tags": [],
-	"description": "",
-	"content": "golang语言的总结和复习资料\n"
-},
-{
 	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/",
 	"title": "golang",
 	"tags": [],
@@ -82,13 +117,6 @@
 	"tags": [],
 	"description": "",
 	"content": "dart_flutter语言的总结和复习资料\n"
-},
-{
-	"uri": "/%E5%B7%A5%E5%85%B7/hexo/",
-	"title": "hexo",
-	"tags": [],
-	"description": "",
-	"content": "各类编程语言的总结和复习资料\n"
 },
 {
 	"uri": "/%E5%B7%A5%E5%85%B7/hexo/hexo/",
@@ -126,13 +154,6 @@
 	"content": " 官网 下载 主题 1.安装 1.解压 2.添加到环境变量 3.验证 hugo version 2.新建站点 hugo new site myblog 3.下载主题 git到theme文件夹 启动 hugo server -t hugo-theme-techdoc http://localhost:1313 hugo server -t hugo-theme-techdoc 4.修改配置 发布 hugo\n"
 },
 {
-	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/_index-copy/",
-	"title": "hugo",
-	"tags": [],
-	"description": "",
-	"content": "各类编程语言的总结和复习资料\n"
-},
-{
 	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/",
 	"title": "hugo",
 	"tags": [],
@@ -168,20 +189,6 @@
 	"content": "各类编程语言的总结和复习资料\n"
 },
 {
-	"uri": "/%E5%B7%A5%E5%85%B7/",
-	"title": "工具",
-	"tags": [],
-	"description": "",
-	"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
-},
-{
-	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/",
-	"title": "编程语言",
-	"tags": [],
-	"description": "",
-	"content": "各类编程语言的总结和复习资料\n"
-},
-{
 	"uri": "/%E5%B7%A5%E5%85%B7/hexo/hexo%E9%83%A8%E7%BD%B2%E5%88%B0git/",
 	"title": "部署到git",
 	"tags": [],
@@ -196,25 +203,11 @@
 	"content": "With Hugo, pages are the core of your site. Organize your site like any other Hugo project. Magic occurs with the nested sections implemention done in v0.22 of hugo (congrats @bep).\nWith docdock, Each content page composes the menu, they shape the structure of your website.\nTo link pages to each other, place them in a folders hierarchy\ncontent\r├── level-one\r│ ├── level-two\r│ │ ├── level-three\r│ │ │ ├── level-four\r│ │ │ │ ├── _index.md\r│ │ │ │ ├── page-4-a.md\r│ │ │ │ ├── page-4-b.md\r│ │ │ │ └── page-4-c.md\r│ │ │ ├── _index.md\r│ │ │ ├── page-3-a.md\r│ │ │ ├── page-3-b.md\r│ │ │ └── page-3-c.md\r│ │ ├── _index.md\r│ │ ├── page-2-a.md\r│ │ ├── page-2-b.md\r│ │ └── page-2-c.md\r│ ├── _index.md\r│ ├── page-1-a.md\r│ ├── page-1-b.md\r│ └── page-1-c.md\r├── _index.md\r└── page-top.md _index.md is required in each folder, it\u0026rsquo;s your \u0026ldquo;folder home page\u0026rdquo;\rAdd header to a menu entry in the page frontmatter, add a head param to insert any HTML code before the menu entry:\nexample to display a \u0026ldquo;Hello\u0026rdquo;\n+++\rtitle = \u0026quot;Github repo\u0026quot;\rhead =\u0026quot;\u0026lt;label\u0026gt;Hello\u0026lt;/label\u0026gt; \u0026quot;\r+++\rAdd icon to a menu entry in the page frontmatter, add a pre param to insert any HTML code before the menu label:\nexample to display a github icon\n+++\rtitle = \u0026quot;Github repo\u0026quot;\rpre =\u0026quot;\u0026lt;i class='fa fa-github'\u0026gt;\u0026lt;/i\u0026gt; \u0026quot;\r+++\rOrder sibling menu/page entries in your frontmatter add weight param with a number to order.\n+++\rtitle=\u0026quot;My page\u0026quot;\rweight = 4\r+++\radd `ordersectionsby = \"title\"` in your config.toml to order menu entries by title\rHide a menu entry in your frontmatter add hidden=true param.\n+++\rtitle=\u0026quot;My page\u0026quot;\rhidden = true\r+++\rUnfolded menu entry by default One or more menuentries can be displayed unfolded by default. (like the \u0026ldquo;Getting start\u0026rdquo; menu entry in this website)\nin your frontmatter add alwaysopen=true param. example :\ntitle = \u0026#34;Getting start\u0026#34;\rdescription = \u0026#34;\u0026#34;\rweight = 1\ralwaysopen = true Folder structure and file name Content organization is your content folder structure.\nHomepage Find out how to customize homepage\n"
 },
 {
-	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/",
-	"title": "redis",
-	"tags": [],
-	"description": "",
-	"content": "导图总览 持久化 复制 缓存设计 哨兵 阻塞 "
-},
-{
 	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/",
 	"title": "参考资料",
 	"tags": [],
 	"description": "",
 	"content": " Redis思维导图\nRedis命令参考\nRedis中文站\nRedis中文\nRedis教程\nRedis5.0数据淘汰策略详解（最新版本，面试常问）\nRedis 教程\n通过思维导图整理redis的重要知识点\nRedis思维导图\nredis知识点最详细的总结，\u0026ndash;数据类型，相关配置\n一个能看懂的Redis思维导图\nRedis校招面经知识整理 133条目！很全！（xmind思维导图格式，便于记忆和理解）下载\nRedis思维导图\nRedis学习笔记\nredis知识点总结\n缓存 缓存穿透、缓存击穿、缓存雪崩区别和解决方案\n应对缓存击穿的解决方法\n帮你解读什么是Redis缓存穿透和缓存雪崩(包含解决方案)\nRedis知识点本文就够 降低redis内存使用与减少请求延迟\n面试题 Redis面试题(2020最新版) Redis常见面试题 50道Redis面试题及答案整理，史上最全！ 史上最全Redis面试题及答案 Redis面试题和答案完全解读 史上最全redis面试题及答案吊打面试官 应用场景 Redis 的 8 大应用场景！ Redis常见的应用场景解析 Redis应用场景 redis应用场景及实例 Redis的7个应用场景 redis文档 Redis 命令参考 思维导图学 Redis —— 《Redis设计与实现》 #Redis# 利用思维导图整理的redis重要知识点 Redis好资料 Redis 设计与实现 "
-},
-{
-	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/",
-	"title": "数据库",
-	"tags": [],
-	"description": "",
-	"content": "数据库知识\n"
 },
 {
 	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/",
