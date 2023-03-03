@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>结构体标签 on DocDock Documentation</title>
+    <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/</link>
+    <description>Recent content in 结构体标签 on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关键字</title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%85%B3%E9%94%AE%E5%AD%97/</link>
+      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%85%B3%E9%94%AE%E5%AD%97/</guid>
+      <description>#json
+json: &amp;quot;-&amp;quot; // 表示不进行序列化，该字段总是在序列化被省略。 json: &amp;quot;xxx,omitempty&amp;quot; //表示如果字段具有空值则该字段应从编码中省略
+go中json序列化使用标签来进行拓展： 1、忽略空值： type Person struct { Id int64 json:&amp;quot;id, omitempty&amp;quot; }
+2、忽略字段（不论是否为空值）： type Person struct { Id int64 json:&amp;quot;-&amp;quot; }
+3、指定数据类型： type Person struct { Id int64 json:&amp;quot;id,string&amp;quot; }
+#xml
+#Protobuf</description>
+    </item>
+    
+  </channel>
+</rss>

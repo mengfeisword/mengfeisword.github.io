@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>swaggo on DocDock Documentation</title>
+    <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/</link>
+    <description>Recent content in swaggo on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E8%AF%B4%E6%98%8E/</guid>
+      <description>#安装swag命令行 $ go get -u github.com/swaggo/swag/cmd/swag
+1.16 及以上版本 $ go install github.com/swaggo/swag/cmd/swag@latest
+#运行swag init 查询参数 swag init -h
+#支持的Web框架 gin echo buffalo net/http
+#与Gin集成 ##1.导入包 import &amp;ldquo;github.com/swaggo/gin-swagger&amp;rdquo; // gin-swagger middleware import &amp;ldquo;github.com/swaggo/files&amp;rdquo; // swagger embed files
+##2.在main.go源代码中添加通用的API注释： ##3.在Handler代码中添加API操作注释： ##4.swag init ##5.运行程序，然后在浏览器中访问 http://localhost:8080/swagger/index.html
+#声明式注释格式
+通用API信息
+注释 说明 示例 title 必填 应用程序的名称。 // @title Swagger Example API version 必填 提供应用程序API的版本。 // @version 1.0 description 应用程序的简短描述。 // @description This is a sample server celler server.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -9,94 +9,42 @@
     <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/</link>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/</guid>
-      <description>#1.GoWorld – 用Golang写一个分布式可扩展、可热更的游戏服务器 https://github.com/xiaonanln/goworld
-2.golang Leaf 游戏服务器框架简介 https://blog.csdn.net/kaitiren/article/details/78442454 https://github.com/name5566/leafserver
-3.cellnet cellnet好像使用callback回调方式, 直接pass. https://studygolang.com/p/cellnet
-4.mqant mqant使用了mqtt协议, 感觉写了太多, 有点复杂, 也pass了. https://golangtc.com/t/58b4e772b09ecc2e18000305 http://www.mqant.com/topic/58d4c895cf36add6408d2c0e https://github.com/liangdas/mqantserver
-5.nano https://github.com/lonng/nano nanoserver 有房卡麻将例子 https://github.com/lonng/nanoserver
-6.中小型手机棋牌网络游戏服务端架构设计 https://github.com/panshiqu/framework https://blog.csdn.net/panshiqu/article/details/74572133 https://blog.csdn.net/panshiqu/article/details/70160325
-7.基于Go语言的棋牌游戏框架 https://github.com/gochenzl/chess
-8.房卡麻将棋牌解决方案 https://github.com/shuimuliang https://my.oschina.net/u/3653577/blog/1512057 https://github.com/shuimuliang/qnmahjongserver https://github.com/shuimuliang/qnmahjongclient
-9.railgun https://blog.csdn.net/easy_mind/article/details/53260574 https://github.com/3zheng/railgun
-10.为互联网IT人打造的中文版awesome-go https://github.com/hackstoic/golang-open-source-projects
-11.网络框架之-thrift http://thrift.apache.org/tutorial/go
-12.awesome-go:一个很全的go语言框架，库，软件合集 http://hao.jobbole.com/awesome-go/
-13. https://github.com/yinjimmy/chessAndCard-2dx https://github.com/shuimuliang/qnmahjongserver
-agones agones 源码 官网网站 agones 中文文档 gaming-agones-demo agones
-go 开源游戏服务器框架 Agones 浅谈Go语言自研的分布式游戏服务器架构 云原生项目实践DevOps(GitOps)+K8S+BPF+SRE，从0到1使用Golang开发生产级麻将游戏服务器—第2篇 go-mahjong-server
-golang Leaf 游戏服务器框架简介
-my-github-repos 一些开源库 Go netpoller 原生网络模型之源码全面揭秘 gnet</description>
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/</guid>
+      <description>Golang面试题41道 1.什么是golang? go是一个开源的编程语言，由谷歌开发的。这门语言是设计用来做系统级的编程的。
+2.为什么要用golang? 简单点说就是go是一个开源的编程语言，它很容易用来编写简单, 可靠，有效的软件。
+3.是谁开发了go语言？ Robert Griesemer, Rob Pike, Ken Thompson.
+4.go编程中的packages是什么？ Go语言的最小集合就是package，它的程序入口是main package。
+Go语言是否支持generic编程? 不支持。
+go语言是大小写敏感的编程语言吗？ 是的。
+7.go语言里面字符串的语法是怎样的？ go语言里有两种字符串语法。 一种是原始字符串语法raw string literals。使用back quotes来包含一系列的字符集。支持多行。 另一种是interpreted string literals。用双引号括起来。不支持多行。
+Go语言的work space是指什么? Work space用来包含go语言的代码，有三个主要的文件目录, src, pkg, bin。 9.go语言中布尔类型的缺省值是什么？ false
+10.Gopath环境变量是什么? Gopath来指定工作空间的位置。在做go语言编程的时候，这个变量设置是必须的。
+第11题，go语言编程的好处是什么？ 编译和运行都很快。 在语言层级支持并行操作。 有垃圾处理器。 内置字符串和maps。 函数是go语言的最基本编程单位。 第12题，go语言里比较常用的功能模块。 Container, container list, container heap. Web server, net/http Cryptography, Crypto/md5, crypto/sha1. Compression, compress/gzip. Database, database/sql. 第13题，goroutine是什么？ 一个goroutine是可以跟其他函数并行运行的函数。如果想停止一个goroutine，你可以通过一个signal channel传值进去。 第14题，如何写多行的字符串？ raw string literal 第15题, go语言里的break是干什么用的？</description>
     </item>
     
     <item>
       <title></title>
-      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
-      <description>系统中断信号注册 通道接收多个返回值 go context reflect 通过反射，我们可以获取一个结构体类型的字段,也可以获取一个类型的导出方法，这样我们就可以在运行时了解一个类型的结构，这是一个非常强大的功能。 另外 Golang 有一些特别先进的特性，需要说道说道。
-✔ 用户态线程 / 绿色线程 / 协程（goroutine） ✔ 语言级多路复用（select） ✔ 信道（channel） ✔ 通信顺序进程 (CSP) ✔ 读写锁（RWMutex） ✔ context、defer ✔ 组合继承 ✔ 函数多返回值</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E8%AF%AD%E8%A8%80%E5%87%A0%E4%B8%AA%E6%9C%80%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9%E7%9A%84%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E8%AF%AD%E8%A8%80%E5%87%A0%E4%B8%AA%E6%9C%80%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9%E7%9A%84%E6%80%BB%E7%BB%93/</guid>
-      <description>3.channel channel通道主要是为了进行同步，当一个资源需要共享时用channel就可以在goroutine之间确保同步交换数据。 channel有两种：无缓冲通道和有缓冲通道，区别还得从它的创建开始讲。
-在go中使用到make函数的地方主要就是： 1：slice的创建 2：map的创建 3：channel的创建
-无缓冲通道只有在发送，接受同时准备好的时侯才能实现操作，否则会导致先执行的操作阻塞等待。
-互斥锁 读写互斥锁</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/golang%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86/</guid>
-      <description>知识体系可以从字段，函数，结构体入手，再到详细编码的逻辑结构，也就是面向过程进行加深。然后是指针，异常机制，IO，并发等。有了基本架构之后才是网络，后台等高级特性。
-字段： 1.数据操作。包括基本数据类型的定义以及操作，运算，切片等。注意指针。 2.字段在结构体中可以是匿名字段。 3.array，map，slice是高级结构体。array是数组，而slice针对数组进行的切片处理。map是映射。使用range遍历。 4.平行赋值i,j=i+1,j+1.这个一般用在if中。
-结构体： 1.结构体的定义。在go中类是结构体与函数叠加而成。而结构体就是算法与结构中的“结构”。 2.type用于重定义数据，定义结构体，接口。 3.go更加接近理论，所以在go中类，方法，变量，被叫做结构体，函数，字段。.
-函数： 1.函数的定义。在go中都是函数，而属于结构体的函数可以称为方法。 2.函数有匿名函数。 3.func funcName(input1 type1, input2 type2) (output1 type1, output2 type2) { //这里是处理逻辑代码 //返回多个值 return value1, value2 } 字段和返回字段可以简化。如input1,input2 type。这其实就是如果当前没有就往后面找。 4.注意变参func（arg&amp;hellip;int）
-流程控制： 1.if参照了for，可以使用；分号隔开，前面的是变量声明。 2.switch的case后面自带break，想要往下执行需要使用fallthrough。switch跟的语句如果没有添加，那么就是true。 3.for格式如果省略了分号，那么就相当于while。for range可以用于读取slice和map的数据。 4.goto是跳转语句。
-指针： 1.string,slice,map都是基于指针的机制了，可以直接传递，不需要再取地址传指针操作。但是注意slice的长度发生变化的话，仍需取地址传指针。 2.结构体指针函数的使用需要注意。
-表达式： 1.go不支持三元表达式。也就是说一个n:=expr?trueV:falseV在这里不能使用。
-异常： 1.go中，异常处理使用panic()，recover()，defer联合使用。panic抛出异常中断，如果想要回复，可以在defer中使用recover恢复。但是go中，尽量少用异常处理。
-IO： 1.go中使用make()创建切片，映射，程道。返回对象，而new()返回的是指针。 2.chan分为有缓冲和无缓冲两种。 3.chan作为线程件通信的IO通道。 4.常使用select，case，default组合chan进行操作。
-并发： 1.并发里面主要是多线程以及常用的辅助类等。 2.并发的内容一般包含： （1）线程的初始化。线程的实现是go xxx，这个过程叫做gorutine。 （2）线程的通信。通过channel进行通信。注意，这里channel本身是具有锁功能的，往往作为最简单常用的锁进行使用 （3）线程对于资源的操作。这里主要是同步异步，阻塞和非阻塞等概念。 同步异步的关键在于互斥，而阻塞和非阻塞关键在于锁。但是两者其实很接近。 所以往往出现的是互斥锁。这里常用的是sync.Mutext.Lock()实现互斥锁。使用lock.Lock()实现锁。runtime模块往往用于运行时候的一些操作，帮助线程实现让出时间片，线程退出等操作。atomic模块是原子操作。其他的一些类和函数是基于这些概念进行的扩展。 （4）defer使用 defer func_name(param-list) 当一个函数调用前有关键字 defer 时, 那么这个函数的执行会推迟到包含这个 defer 语句的函数即将返回前才执行 defer 调用的函数参数的值在 defer 定义时就确定了, 而 defer 函数内部所使用的变量的值需要在这个函数运行时才确定。defer 函数调用的执行时机是外层函数设置返回值之后, 并且在即将返回之前</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/ziyuan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/ziyuan/</guid>
-      <description>https://gowalker.org/</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83/</guid>
-      <description>学习路线 GO每日一库 Golang分类 一些插件案例 一些源码析</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%9D%82%E9%A1%B9%E8%B5%84%E6%BA%90/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%9D%82%E9%A1%B9%E8%B5%84%E6%BA%90/</guid>
-      <description>#资源 基于gnet网络框架编写的各种常见服务端server程序，可以用来学习和快速使用 一款基于gnet开发的RPC微服务框架 rpc服务在游戏中的简单运用 大型多人在线游戏服务器架构设计 大型多人在线游戏服务器架构设计 origin 一个协议驱动的游戏服务器架构设计 开源游戏服务器框架NoahFrame分享：第一章 游戏服务器的进化 游戏服务端究竟解决了什么问题？ 游戏通信协议设计文档 游戏服务器设计 游戏开发—协议设计</description>
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/</guid>
+      <description>golang面试题整理
+1.go的调度 2.go struct能不能比较 因为是强类型语言，所以不同类型的结构不能作比较，但是同一类型的实例值是可以比较的，实例不可以比较，因为是指针类型 3.go defer（for defer），先进后出，后进先出 func b() { for i := 0; i &amp;lt; 4; i++ { defer fmt.Print(i) } } 4.select可以用于什么，常用语gorotine的完美退出 golang 的 select 就是监听 IO 操作，当 IO 操作发生时，触发相应的动作每个case语句里必须是一个IO操作，确切的说，应该是一个面向channel的IO操作
+5.context包的用途 Context通常被译作上下文，它是一个比较抽象的概念，其本质，是【上下上下】存在上下层的传递，上会把内容传递给下。在Go语言中，程序单元也就指的是Goroutine
+6.client如何实现长连接 server是设置超时时间，for循环遍历的
+7.主协程如何等其余协程完再操作 使用channel进行通信，context,select
+8.slice，len，cap，共享，扩容 append函数，因为slice底层数据结构是，由数组、len、cap组成，所以，在使用append扩容时，会查看数组后面有没有连续内存快，有就在后面添加，没有就重新生成一个大的素组
+9.map如何顺序读取 map不能顺序读取，是因为他是无序的，想要有序读取，首先的解决的问题就是，把ｋｅｙ变为有序，所以可以把key放入切片，对切片进行排序，遍历切片，通过key取值。
+10.实现set
+11.实现消息队列（多生产者，多消费者） 使用切片加锁可以实现
+12.大文件排序 归并排序，分而治之,拆分为小文件，在排序
+13.基本排序，哪些是稳定的
+14.http get跟head HEAD和GET本质是一样的，区别在于HEAD不含有呈现数据，而仅仅是HTTP头信息。有的人可能觉得这个方法没什么用，其实不是这样的。想象一个业务情景：欲判断某个资源是否存在，我们通常使用GET，但这里用HEAD则意义更加明确。
+15.http 401,403 400 bad request，请求报文存在语法错误 401 unauthorized，表示发送的请求需要有通过 HTTP 认证的认证信息 403 forbidden，表示对请求资源的访问被服务器拒绝 404 not found，表示在服务器上没有找到请求的资源
+16.http keep-alive client发出的HTTP请求头需要增加Connection:keep-alive字段 Web-Server端要能识别Connection:keep-alive字段，并且在http的response里指定Connection:keep-alive字段，告诉client，我能提供keep-alive服务，并且&amp;quot;应允&amp;quot;client我暂时不会关闭socket连接</description>
     </item>
     
   </channel>

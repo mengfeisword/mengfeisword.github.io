@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on DocDock Documentation</title>
+    <title>资料 on DocDock Documentation</title>
     <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/</link>
-    <description>Recent content in hugo on DocDock Documentation</description>
+    <description>Recent content in 资料 on DocDock Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/</guid>
+      <description>学习参考 学习路线 GO每日一库 Golang分类 一些插件案例 一些源码析
+资源 基于gnet网络框架编写的各种常见服务端server程序，可以用来学习和快速使用 一款基于gnet开发的RPC微服务框架 rpc服务在游戏中的简单运用 大型多人在线游戏服务器架构设计 大型多人在线游戏服务器架构设计 origin 一个协议驱动的游戏服务器架构设计 开源游戏服务器框架NoahFrame分享：第一章 游戏服务器的进化 游戏服务端究竟解决了什么问题？ 游戏通信协议设计文档 游戏服务器设计 游戏开发—协议设计
+#1.GoWorld – 用Golang写一个分布式可扩展、可热更的游戏服务器 https://github.com/xiaonanln/goworld
+2.golang Leaf 游戏服务器框架简介 https://blog.csdn.net/kaitiren/article/details/78442454 https://github.com/name5566/leafserver
+3.cellnet cellnet好像使用callback回调方式, 直接pass. https://studygolang.com/p/cellnet
+4.mqant mqant使用了mqtt协议, 感觉写了太多, 有点复杂, 也pass了. https://golangtc.com/t/58b4e772b09ecc2e18000305 http://www.mqant.com/topic/58d4c895cf36add6408d2c0e https://github.com/liangdas/mqantserver
+5.nano https://github.com/lonng/nano nanoserver 有房卡麻将例子 https://github.com/lonng/nanoserver
+6.中小型手机棋牌网络游戏服务端架构设计 https://github.com/panshiqu/framework https://blog.csdn.net/panshiqu/article/details/74572133 https://blog.csdn.net/panshiqu/article/details/70160325
+7.基于Go语言的棋牌游戏框架 https://github.com/gochenzl/chess
+8.房卡麻将棋牌解决方案 https://github.com/shuimuliang https://my.oschina.net/u/3653577/blog/1512057 https://github.com/shuimuliang/qnmahjongserver https://github.com/shuimuliang/qnmahjongclient
+9.railgun https://blog.csdn.net/easy_mind/article/details/53260574 https://github.com/3zheng/railgun
+10.为互联网IT人打造的中文版awesome-go https://github.com/hackstoic/golang-open-source-projects
+11.网络框架之-thrift http://thrift.apache.org/tutorial/go
+12.awesome-go:一个很全的go语言框架，库，软件合集 http://hao.jobbole.com/awesome-go/
+13. https://github.com/yinjimmy/chessAndCard-2dx https://github.com/shuimuliang/qnmahjongserver
+agones agones 源码 官网网站 agones 中文文档 gaming-agones-demo agones</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/ziyuan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/ziyuan/</guid>
+      <description>https://gowalker.org/</description>
+    </item>
+    
   </channel>
 </rss>
