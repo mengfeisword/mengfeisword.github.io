@@ -35,11 +35,32 @@
 	"content": "Create a _header.md page in content folder. Its content is what you get in the logo placeholder (top left of the screen).\nTip : you can add a image, a combobox with links to other documentation\u0026hellip;.\rTip 2 : look at extra static menu if you want to add links to other website in this sidebar\r"
 },
 {
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/",
+	"title": "C",
+	"tags": [],
+	"description": "",
+	"content": "C语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/",
+	"title": "dart_flutter",
+	"tags": [],
+	"description": "",
+	"content": "dart_flutter语言的总结和复习资料\n"
+},
+{
 	"uri": "/getting-start/",
 	"title": "Getting started",
 	"tags": [],
 	"description": "",
 	"content": "Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\nInstallation\nHUGO v0.32 minimum required to use this theme\rThe following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.\nConfiguration\nWhen building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/",
+	"title": "html",
+	"tags": [],
+	"description": "",
+	"content": "html语言的总结和复习资料\n"
 },
 {
 	"uri": "/getting-start/installation/",
@@ -56,11 +77,32 @@
 	"content": "导图总览 持久化 复制 缓存设计 哨兵 阻塞 "
 },
 {
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/",
+	"title": "rust",
+	"tags": [],
+	"description": "",
+	"content": "rust语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/",
+	"title": "Vue",
+	"tags": [],
+	"description": "",
+	"content": "各类编程语言的总结和复习资料\n"
+},
+{
 	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/",
 	"title": "数据库",
 	"tags": [],
 	"description": "",
 	"content": "数据库知识\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/",
+	"title": "语言",
+	"tags": [],
+	"description": "",
+	"content": "基础 学习线路图 "
 },
 {
 	"uri": "/content-organisation/extramenu/",
@@ -91,27 +133,6 @@
 	"content": "Hugo-theme-docdock defines two types of pages. Default and Slide.\nDefault is the common page like the current one you are reading. Slide is a page that use the full screen to display its markdown content as a reveals.js presentation. HomePage is a special content that will be displayed as home page content. To tell Hugo-theme-docdock to consider a page as a slide, just add a type=\u0026quot;slide\u0026quot;in then frontmatter of your file. read more on page as slide\nHugo-theme-docdock provides archetypes to help you create this kind of pages.\nFront Matter Each Hugo page has to define a Front Matter in yaml, toml or json.\nHugo-theme-docdock uses the following parameters on top of the existing ones :\n+++\r# Type of content, set \u0026quot;slide\u0026quot; to display it fullscreen with reveal.js\rtype=\u0026quot;page\u0026quot;\r# Creator's Display name\rcreatordisplayname = \u0026quot;Valere JEANTET\u0026quot;\r# Creator's Email\rcreatoremail = \u0026quot;valere.jeantet@gmail.com\u0026quot;\r# LastModifier's Display name\rlastmodifierdisplayname = \u0026quot;Valere JEANTET\u0026quot;\r# LastModifier's Email\rlastmodifieremail = \u0026quot;valere.jeantet@gmail.com\u0026quot;\r+++\rOrdering Hugo provides a flexible way to handle order for your pages.\nThe simplest way is to use weight parameter in the front matter of your page.\nRead more on content organization\n"
 },
 {
-	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/",
-	"title": "C",
-	"tags": [],
-	"description": "",
-	"content": "C语言的总结和复习资料\n"
-},
-{
-	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/",
-	"title": "dart_flutter",
-	"tags": [],
-	"description": "",
-	"content": "dart_flutter语言的总结和复习资料\n"
-},
-{
-	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/",
-	"title": "golang",
-	"tags": [],
-	"description": "",
-	"content": "dart_flutter语言的总结和复习资料\n"
-},
-{
 	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/",
 	"title": "golang",
 	"tags": [],
@@ -131,13 +152,6 @@
 	"tags": [],
 	"description": "",
 	"content": "安装 1.Node.js 官网\n验证 node -v npm -v\n2.Git 官网\ntips：Git Bash 相当于Linux中的终端窗口\n验证 git version\n3.hexo npm install -g hexo-cli 验证 hexo -v 4.创建案例 hexo init blog cd blog npm install\n5.运行测试 hexo clean #用来清理缓存文件 hexo g #生成文件 hexo s #运行本地服务器 hexo d #上传到服务器\n运行 hexo g hexo s\n打开网站 localhost:4000\n"
-},
-{
-	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/",
-	"title": "html",
-	"tags": [],
-	"description": "",
-	"content": "html语言的总结和复习资料\n"
 },
 {
 	"uri": "/%E5%B7%A5%E5%85%B7/hugo/",
@@ -170,20 +184,6 @@
 {
 	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/",
 	"title": "hugo",
-	"tags": [],
-	"description": "",
-	"content": "各类编程语言的总结和复习资料\n"
-},
-{
-	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/",
-	"title": "rust",
-	"tags": [],
-	"description": "",
-	"content": "rust语言的总结和复习资料\n"
-},
-{
-	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/",
-	"title": "Vue",
 	"tags": [],
 	"description": "",
 	"content": "各类编程语言的总结和复习资料\n"
@@ -343,34 +343,6 @@
 	"content": "知识体系可以从字段，函数，结构体入手，再到详细编码的逻辑结构，也就是面向过程进行加深。然后是指针，异常机制，IO，并发等。有了基本架构之后才是网络，后台等高级特性。\n字段： 1.数据操作。包括基本数据类型的定义以及操作，运算，切片等。注意指针。 2.字段在结构体中可以是匿名字段。 3.array，map，slice是高级结构体。array是数组，而slice针对数组进行的切片处理。map是映射。使用range遍历。 4.平行赋值i,j=i+1,j+1.这个一般用在if中。\n结构体： 1.结构体的定义。在go中类是结构体与函数叠加而成。而结构体就是算法与结构中的“结构”。 2.type用于重定义数据，定义结构体，接口。 3.go更加接近理论，所以在go中类，方法，变量，被叫做结构体，函数，字段。.\n函数： 1.函数的定义。在go中都是函数，而属于结构体的函数可以称为方法。 2.函数有匿名函数。 3.func funcName(input1 type1, input2 type2) (output1 type1, output2 type2) { //这里是处理逻辑代码 //返回多个值 return value1, value2 } 字段和返回字段可以简化。如input1,input2 type。这其实就是如果当前没有就往后面找。 4.注意变参func（arg\u0026hellip;int）\n流程控制： 1.if参照了for，可以使用；分号隔开，前面的是变量声明。 2.switch的case后面自带break，想要往下执行需要使用fallthrough。switch跟的语句如果没有添加，那么就是true。 3.for格式如果省略了分号，那么就相当于while。for range可以用于读取slice和map的数据。 4.goto是跳转语句。\n指针： 1.string,slice,map都是基于指针的机制了，可以直接传递，不需要再取地址传指针操作。但是注意slice的长度发生变化的话，仍需取地址传指针。 2.结构体指针函数的使用需要注意。\n表达式： 1.go不支持三元表达式。也就是说一个n:=expr?trueV:falseV在这里不能使用。\n异常： 1.go中，异常处理使用panic()，recover()，defer联合使用。panic抛出异常中断，如果想要回复，可以在defer中使用recover恢复。但是go中，尽量少用异常处理。\nIO： 1.go中使用make()创建切片，映射，程道。返回对象，而new()返回的是指针。 2.chan分为有缓冲和无缓冲两种。 3.chan作为线程件通信的IO通道。 4.常使用select，case，default组合chan进行操作。\n并发： 1.并发里面主要是多线程以及常用的辅助类等。 2.并发的内容一般包含： （1）线程的初始化。线程的实现是go xxx，这个过程叫做gorutine。 （2）线程的通信。通过channel进行通信。注意，这里channel本身是具有锁功能的，往往作为最简单常用的锁进行使用 （3）线程对于资源的操作。这里主要是同步异步，阻塞和非阻塞等概念。 同步异步的关键在于互斥，而阻塞和非阻塞关键在于锁。但是两者其实很接近。 所以往往出现的是互斥锁。这里常用的是sync.Mutext.Lock()实现互斥锁。使用lock.Lock()实现锁。runtime模块往往用于运行时候的一些操作，帮助线程实现让出时间片，线程退出等操作。atomic模块是原子操作。其他的一些类和函数是基于这些概念进行的扩展。 （4）defer使用 defer func_name(param-list) 当一个函数调用前有关键字 defer 时, 那么这个函数的执行会推迟到包含这个 defer 语句的函数即将返回前才执行 defer 调用的函数参数的值在 defer 定义时就确定了, 而 defer 函数内部所使用的变量的值需要在这个函数运行时才确定。defer 函数调用的执行时机是外层函数设置返回值之后, 并且在即将返回之前\n（5）sync mutex互斥锁 有两个方法，lock()和unlock() 上锁和解锁 对数据进行上锁，防止数据被其它线程更改。Mutex是一个互斥锁，可以作为struct的一部分，这样这个struct就会防止被多线程更改数据。 注意：执行加锁后，在执行完操作后记得解锁，不然会有错误。常常defer关键字与解锁共用。\n"
 },
 {
-	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/",
-	"title": "",
-	"tags": [],
-	"description": "",
-	"content": "Golang面试题41道 1.什么是golang? go是一个开源的编程语言，由谷歌开发的。这门语言是设计用来做系统级的编程的。\n2.为什么要用golang? 简单点说就是go是一个开源的编程语言，它很容易用来编写简单, 可靠，有效的软件。\n3.是谁开发了go语言？ Robert Griesemer, Rob Pike, Ken Thompson.\n4.go编程中的packages是什么？ Go语言的最小集合就是package，它的程序入口是main package。\nGo语言是否支持generic编程? 不支持。\ngo语言是大小写敏感的编程语言吗？ 是的。\n7.go语言里面字符串的语法是怎样的？ go语言里有两种字符串语法。 一种是原始字符串语法raw string literals。使用back quotes来包含一系列的字符集。支持多行。 另一种是interpreted string literals。用双引号括起来。不支持多行。\nGo语言的work space是指什么? Work space用来包含go语言的代码，有三个主要的文件目录, src, pkg, bin。 9.go语言中布尔类型的缺省值是什么？ false\n10.Gopath环境变量是什么? Gopath来指定工作空间的位置。在做go语言编程的时候，这个变量设置是必须的。\n第11题，go语言编程的好处是什么？ 编译和运行都很快。 在语言层级支持并行操作。 有垃圾处理器。 内置字符串和maps。 函数是go语言的最基本编程单位。 第12题，go语言里比较常用的功能模块。 Container, container list, container heap. Web server, net/http Cryptography, Crypto/md5, crypto/sha1. Compression, compress/gzip. Database, database/sql. 第13题，goroutine是什么？ 一个goroutine是可以跟其他函数并行运行的函数。如果想停止一个goroutine，你可以通过一个signal channel传值进去。 第14题，如何写多行的字符串？ raw string literal 第15题, go语言里的break是干什么用的？\n"
-},
-{
-	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/",
-	"title": "",
-	"tags": [],
-	"description": "",
-	"content": "golang面试题整理\n1.go的调度 2.go struct能不能比较 因为是强类型语言，所以不同类型的结构不能作比较，但是同一类型的实例值是可以比较的，实例不可以比较，因为是指针类型 3.go defer（for defer），先进后出，后进先出 func b() { for i := 0; i \u0026lt; 4; i++ { defer fmt.Print(i) } } 4.select可以用于什么，常用语gorotine的完美退出 golang 的 select 就是监听 IO 操作，当 IO 操作发生时，触发相应的动作每个case语句里必须是一个IO操作，确切的说，应该是一个面向channel的IO操作\n5.context包的用途 Context通常被译作上下文，它是一个比较抽象的概念，其本质，是【上下上下】存在上下层的传递，上会把内容传递给下。在Go语言中，程序单元也就指的是Goroutine\n6.client如何实现长连接 server是设置超时时间，for循环遍历的\n7.主协程如何等其余协程完再操作 使用channel进行通信，context,select\n8.slice，len，cap，共享，扩容 append函数，因为slice底层数据结构是，由数组、len、cap组成，所以，在使用append扩容时，会查看数组后面有没有连续内存快，有就在后面添加，没有就重新生成一个大的素组\n9.map如何顺序读取 map不能顺序读取，是因为他是无序的，想要有序读取，首先的解决的问题就是，把ｋｅｙ变为有序，所以可以把key放入切片，对切片进行排序，遍历切片，通过key取值。\n10.实现set\n11.实现消息队列（多生产者，多消费者） 使用切片加锁可以实现\n12.大文件排序 归并排序，分而治之,拆分为小文件，在排序\n13.基本排序，哪些是稳定的\n14.http get跟head HEAD和GET本质是一样的，区别在于HEAD不含有呈现数据，而仅仅是HTTP头信息。有的人可能觉得这个方法没什么用，其实不是这样的。想象一个业务情景：欲判断某个资源是否存在，我们通常使用GET，但这里用HEAD则意义更加明确。\n15.http 401,403 400 bad request，请求报文存在语法错误 401 unauthorized，表示发送的请求需要有通过 HTTP 认证的认证信息 403 forbidden，表示对请求资源的访问被服务器拒绝 404 not found，表示在服务器上没有找到请求的资源\n16.http keep-alive client发出的HTTP请求头需要增加Connection:keep-alive字段 Web-Server端要能识别Connection:keep-alive字段，并且在http的response里指定Connection:keep-alive字段，告诉client，我能提供keep-alive服务，并且\u0026quot;应允\u0026quot;client我暂时不会关闭socket连接\n17.http能不能一次连接多次请求，不等后端返回 http本质上市使用socket连接，因此发送请求，接写入tcp缓冲，是可以多次进行的，这也是http是无状态的原因\n18.tcp与udp区别，udp优点，适用场景 tcp传输的是数据流，而udp是数据包，tcp会进过三次握手，udp不需要\n１９、time-wait的作用\n２０、数据库如何建索引\n２１、孤儿进程，僵尸进程 ２２、死锁条件，如何避免 ２３、linux命令，查看端口占用，cpu负载，内存占用，如何发送信号给一个进程 ２４、git文件版本，使用顺序，merge跟rebase\n２６、Slice与数组区别，Slice底层结构 ２７、项目里的微信支付这块，在支付完微信通知这里，收到两次微信相同的支付通知，怎么防止重复消费（类似接口的幂等性），说了借助Redis或者数据库的事务 ２８、项目里的消息推送怎么做的（业务有关） ２９、Go的反射包怎么找到对应的方法（这里忘记怎么问的，直接说不会，只用了DeepEqual，简单讲了DeepEqual） ３０、Redis基本数据结构 ３１、Redis的List用过吗？底层怎么实现的？知道但是没用过，不知道怎么实现 ３２、Mysql的索引有几种，时间复杂度 ３３、InnoDb是表锁还是行锁，为什么（这里答不出来为什么，只说了行锁） ３４、Go的channel（有缓冲和无缓冲） ３５、退出程序时怎么防止channel没有消费完，这里一开始有点没清楚面试官问的，然后说了监听中断信号，做退出前的处理，然后面试官说不是这个意思，然后说发送前先告知长度，长度要是不知道呢？close channel下游会受到0值，可以利用这点（这里也有点跟面试官说不明白） ３６、用过什么消息中间件之类吗？没有 ３７、有什么问题吗？评价？后面还有面试，后面再问吧\n３８、生产者消费者模式，手写代码（Go直接使用channel实现很简单，还想着面试官会不会不让用channel实现，不用channel的可以使用数组加条件变量），channel缓冲长度怎么决定，怎么控制上游生产速度过快，这里没说出解决方案，只是简单说了channel长度可以与上下游的速度比例成线性关系，面试官说这是一种解决方案 ３９、手写循环队列 ４０、写的循环队列是不是线程安全，不是，怎么保证线程安全，加锁，效率有点低啊，然后面试官就提醒Go推崇原子操作和channel ４１、写完代码面试官说后面问的问题回答就可以，不知道的话没关系 ４２、Linux会不会，只会几个命令，面试官就说一共也就一百多个命令 ４３、TimeWait和CloseWait原因 ４４、线段树了解吗？不了解，字典树？了解 ４５、看过啥源码，nsq（Go的消息中间件），简单问了我里面的waitgroup包证明我看过 ４６、sync.Pool用过吗，为什么使用，对象池，避免频繁分配对象（GC有关），那里面的对象是固定的吗？不清楚，没看过这个的源码 ４７、有什么问题吗？评价？基础不错，Linux尚缺，Go的理解不够深入，高级数据结构不了解，优点是看源码 ４８、后面面试官讲了他们做的东西，主要是广告部分，说日均数据量至少百万以上，多达上亿，高并发使用Go支撑，有微服务，服务治理，说我需要学的东西挺多的\n４９、证明二叉树的叶子节点跟度数为2的节点的关系 ５０、唯一索引和主键索引 ５１、智能指针 ５２、字符串解析为数字（考虑浮点型）\n５３、单点登录，tcp粘包 ５４、手写洗牌 ５５、处理粘包断包实现，面试官以为是negle算法有关，解释了下negle跟糊涂窗口综合征有关，然后面试官觉得其他项目是crud就没问了 ５６、goroutine调度用了什么系统调用，这个不会，面试官想从go问到操作系统，然后以为***作系统基础不好，就问了操作系统问题 ５７、进程虚拟空间分布，全局变量放哪里？答上来了，操作系统就不问了 ５８、有没有网络编程，有，怎么看连接状态？netstat，有哪些？ESTABLISHED，LISTEN等等，有异常情况吗？TIME_WAIT很多，为什么？大量短链接 ５９、几种基本排序算法说一下，问了堆的时间复杂度，稳定性，为什么不稳定 ６０、 topk问题，海量数据topk（回答成切分多次加载内存，然后用维持k长度的有序链表，然后被说时间复杂度不好，提示说还是用堆，然后哦哦哦对） 最长连续字串和，这里我说的解决方案没用dp（对dp不熟），面试官一直引导我dp，还是不会 ６１、什么是主键 ６２、联合索引和唯一索引 ６２、越多的索引越好吗？ ６３、建立索引要注意什么？ ６４、进程和线程区别？ ６５、死锁？ ６６、tcp三次握手 ６７、http，https ６８、状态码401,301,302,201 ６９、项目我说只有一台机子，所以用的单机部署，面试官说单机也可以部署多个，有什么方法吗？我说docker，问docker有哪些网络，不熟，dockerfile关键字，只答几个。顺便扯了下nginx转发。\n７０、数据库隔离级别，提交读会造成什么 ７１、go调度 ７２、 goroutine泄漏有没有处理，设置timeout，select加定时器\n７３、mysql高可用的方案 ７４、进程线程区别\n７５、排序算法以及时间复杂度 ７６、怎么学习go ７７、go的线程，给他讲了跟goroutine调度 ７８、io模型，同步阻塞，同步非阻塞，异步 ７９、cookie和session\n８０、接口kps测试 ８１、redis排行榜数据结构（跳跃表），查询时间复杂度 ８２、redis分布式，如何减少同步延迟 ８３、mysql能实现redis的功能吗 ８４、平时怎么学习？ ８５、看什么书？ ８６、兴趣爱好 ８７、看过google四篇分布式论文吗，没看过 ８９、cap理论，举例 ９０、LRU算法，LFU ９１、讲讲怎么理解网络编程\n９２、go使用踩过什么坑（for range，数据库连接defer close） ９３、go优缺点 ９５、go的值传递和引用 ９６、慢查询 ９７、为什么使用pg ９８、redis的数据类型\n９９、所有左叶子节点的和 １００、m个n大小的有序数组求并集，一开始是2路归并，求时间复杂度，后来在面试官提醒直接m路归并，求时间复杂度 １０１、static关键字，还有其他关键字吗 １０２、hash表设计，线程安全？ １０３、 线程自己独享什么 １０４、网络编程过程 １０５、select、epoll １０６、看什么书\n１０７、排行榜怎么实现 １０８、go的锁如何实现，用了什么cpu指令 １０９、go的runtime如何实现 １１０、看过sql的连接池实现吗 １１１、ctx包了解吗？有什么用？ １１２、go什么情况下会发生内存泄漏？（他说ctx没有cancel的时候，这个真不知道） １１３、怎么实现协程完美退出？ １１４、智力题：1000瓶酒中有1瓶毒酒，10只老鼠，7天后毒性才发作，第8天要卖了，怎么求那瓶毒酒？ １１５、简单dp题，n*n矩阵从左上角到右下角有多少种走法（只限往下和往右走） １１６、用channel实现定时器？（实际上是两个协程同步） １１７、go为什么高并发好？讲了go的调度模型\n１１８、操作系统内存管理？进程通讯，为什么共享存储区效率最高 １１９、实现一个hashmap，解决hash冲突的方法，解决hash倾斜的方法 １２０、怎么理解go的interface １２１、100亿个数选top5，小根堆 １２２、数组和为n的数组对 １２３、最大连续子数组和 １２４、redis容灾，备份，扩容 １２５、跳跃表，为什么使用跳跃表而不使用红黑树 １２６、输入url后涉及什么 １２７、tcp怎么找到哪个套接字 １２８、ipc方式，共享存储区原理 １３０、进程虚拟空间布局 １３１、进程状态转换 １３２、线程的栈在哪里分配 １３３、多个线程读，一个线程写一个int32会不会有问题，int64呢（这里面试官后来说了要看数据总线的位数，32位的话写int32没问题，int64就有问题） １３４、判断二叉树是否为满二叉树 １３５、lru实现 １３６、一个大整数（字符串形式表示的），移动字符求比它大的数中最小的 １３７、点赞系统设计\n"
-},
-{
-	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/",
-	"title": "",
-	"tags": [],
-	"description": "",
-	"content": "#基础 go基础 地鼠文档 Go 语言设计与实现 Go 语言中文开源图书、资料或文档 go语言中文文档 基础视频教学 Go 语言高性能编程 Golang应该掌握哪些必要的知识点才能算掌握golang这门语言？\n#sync Go 语言设计与实现-6.2 同步原语与锁 sync - 处理同步需求 golang的sync包 浅谈 Golang sync 包的相关使用方法\ngo开源仓库\n#面试题 golang面试题整理 Golang面试题41道 golang 面试题整理 Go 语言笔试面试题汇总 golang 关键知识点 golang知识点整理(持续更新)\n#好的站点 综合博客\n"
-},
-{
-	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/languge/%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/",
-	"title": "",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/ants/",
 	"title": "",
 	"tags": [],
@@ -455,6 +427,27 @@
 	"content": "#资源 基于gnet网络框架编写的各种常见服务端server程序，可以用来学习和快速使用 一款基于gnet开发的RPC微服务框架 rpc服务在游戏中的简单运用 大型多人在线游戏服务器架构设计 大型多人在线游戏服务器架构设计 origin 一个协议驱动的游戏服务器架构设计 开源游戏服务器框架NoahFrame分享：第一章 游戏服务器的进化 游戏服务端究竟解决了什么问题？ 游戏通信协议设计文档 游戏服务器设计 游戏开发—协议设计\n"
 },
 {
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "Golang面试题41道 1.什么是golang? go是一个开源的编程语言，由谷歌开发的。这门语言是设计用来做系统级的编程的。\n2.为什么要用golang? 简单点说就是go是一个开源的编程语言，它很容易用来编写简单, 可靠，有效的软件。\n3.是谁开发了go语言？ Robert Griesemer, Rob Pike, Ken Thompson.\n4.go编程中的packages是什么？ Go语言的最小集合就是package，它的程序入口是main package。\nGo语言是否支持generic编程? 不支持。\ngo语言是大小写敏感的编程语言吗？ 是的。\n7.go语言里面字符串的语法是怎样的？ go语言里有两种字符串语法。 一种是原始字符串语法raw string literals。使用back quotes来包含一系列的字符集。支持多行。 另一种是interpreted string literals。用双引号括起来。不支持多行。\nGo语言的work space是指什么? Work space用来包含go语言的代码，有三个主要的文件目录, src, pkg, bin。 9.go语言中布尔类型的缺省值是什么？ false\n10.Gopath环境变量是什么? Gopath来指定工作空间的位置。在做go语言编程的时候，这个变量设置是必须的。\n第11题，go语言编程的好处是什么？ 编译和运行都很快。 在语言层级支持并行操作。 有垃圾处理器。 内置字符串和maps。 函数是go语言的最基本编程单位。 第12题，go语言里比较常用的功能模块。 Container, container list, container heap. Web server, net/http Cryptography, Crypto/md5, crypto/sha1. Compression, compress/gzip. Database, database/sql. 第13题，goroutine是什么？ 一个goroutine是可以跟其他函数并行运行的函数。如果想停止一个goroutine，你可以通过一个signal channel传值进去。 第14题，如何写多行的字符串？ raw string literal 第15题, go语言里的break是干什么用的？\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "golang面试题整理\n1.go的调度 2.go struct能不能比较 因为是强类型语言，所以不同类型的结构不能作比较，但是同一类型的实例值是可以比较的，实例不可以比较，因为是指针类型 3.go defer（for defer），先进后出，后进先出 func b() { for i := 0; i \u0026lt; 4; i++ { defer fmt.Print(i) } } 4.select可以用于什么，常用语gorotine的完美退出 golang 的 select 就是监听 IO 操作，当 IO 操作发生时，触发相应的动作每个case语句里必须是一个IO操作，确切的说，应该是一个面向channel的IO操作\n5.context包的用途 Context通常被译作上下文，它是一个比较抽象的概念，其本质，是【上下上下】存在上下层的传递，上会把内容传递给下。在Go语言中，程序单元也就指的是Goroutine\n6.client如何实现长连接 server是设置超时时间，for循环遍历的\n7.主协程如何等其余协程完再操作 使用channel进行通信，context,select\n8.slice，len，cap，共享，扩容 append函数，因为slice底层数据结构是，由数组、len、cap组成，所以，在使用append扩容时，会查看数组后面有没有连续内存快，有就在后面添加，没有就重新生成一个大的素组\n9.map如何顺序读取 map不能顺序读取，是因为他是无序的，想要有序读取，首先的解决的问题就是，把ｋｅｙ变为有序，所以可以把key放入切片，对切片进行排序，遍历切片，通过key取值。\n10.实现set\n11.实现消息队列（多生产者，多消费者） 使用切片加锁可以实现\n12.大文件排序 归并排序，分而治之,拆分为小文件，在排序\n13.基本排序，哪些是稳定的\n14.http get跟head HEAD和GET本质是一样的，区别在于HEAD不含有呈现数据，而仅仅是HTTP头信息。有的人可能觉得这个方法没什么用，其实不是这样的。想象一个业务情景：欲判断某个资源是否存在，我们通常使用GET，但这里用HEAD则意义更加明确。\n15.http 401,403 400 bad request，请求报文存在语法错误 401 unauthorized，表示发送的请求需要有通过 HTTP 认证的认证信息 403 forbidden，表示对请求资源的访问被服务器拒绝 404 not found，表示在服务器上没有找到请求的资源\n16.http keep-alive client发出的HTTP请求头需要增加Connection:keep-alive字段 Web-Server端要能识别Connection:keep-alive字段，并且在http的response里指定Connection:keep-alive字段，告诉client，我能提供keep-alive服务，并且\u0026quot;应允\u0026quot;client我暂时不会关闭socket连接\n17.http能不能一次连接多次请求，不等后端返回 http本质上市使用socket连接，因此发送请求，接写入tcp缓冲，是可以多次进行的，这也是http是无状态的原因\n18.tcp与udp区别，udp优点，适用场景 tcp传输的是数据流，而udp是数据包，tcp会进过三次握手，udp不需要\n１９、time-wait的作用\n２０、数据库如何建索引\n２１、孤儿进程，僵尸进程 ２２、死锁条件，如何避免 ２３、linux命令，查看端口占用，cpu负载，内存占用，如何发送信号给一个进程 ２４、git文件版本，使用顺序，merge跟rebase\n２６、Slice与数组区别，Slice底层结构 ２７、项目里的微信支付这块，在支付完微信通知这里，收到两次微信相同的支付通知，怎么防止重复消费（类似接口的幂等性），说了借助Redis或者数据库的事务 ２８、项目里的消息推送怎么做的（业务有关） ２９、Go的反射包怎么找到对应的方法（这里忘记怎么问的，直接说不会，只用了DeepEqual，简单讲了DeepEqual） ３０、Redis基本数据结构 ３１、Redis的List用过吗？底层怎么实现的？知道但是没用过，不知道怎么实现 ３２、Mysql的索引有几种，时间复杂度 ３３、InnoDb是表锁还是行锁，为什么（这里答不出来为什么，只说了行锁） ３４、Go的channel（有缓冲和无缓冲） ３５、退出程序时怎么防止channel没有消费完，这里一开始有点没清楚面试官问的，然后说了监听中断信号，做退出前的处理，然后面试官说不是这个意思，然后说发送前先告知长度，长度要是不知道呢？close channel下游会受到0值，可以利用这点（这里也有点跟面试官说不明白） ３６、用过什么消息中间件之类吗？没有 ３７、有什么问题吗？评价？后面还有面试，后面再问吧\n３８、生产者消费者模式，手写代码（Go直接使用channel实现很简单，还想着面试官会不会不让用channel实现，不用channel的可以使用数组加条件变量），channel缓冲长度怎么决定，怎么控制上游生产速度过快，这里没说出解决方案，只是简单说了channel长度可以与上下游的速度比例成线性关系，面试官说这是一种解决方案 ３９、手写循环队列 ４０、写的循环队列是不是线程安全，不是，怎么保证线程安全，加锁，效率有点低啊，然后面试官就提醒Go推崇原子操作和channel ４１、写完代码面试官说后面问的问题回答就可以，不知道的话没关系 ４２、Linux会不会，只会几个命令，面试官就说一共也就一百多个命令 ４３、TimeWait和CloseWait原因 ４４、线段树了解吗？不了解，字典树？了解 ４５、看过啥源码，nsq（Go的消息中间件），简单问了我里面的waitgroup包证明我看过 ４６、sync.Pool用过吗，为什么使用，对象池，避免频繁分配对象（GC有关），那里面的对象是固定的吗？不清楚，没看过这个的源码 ４７、有什么问题吗？评价？基础不错，Linux尚缺，Go的理解不够深入，高级数据结构不了解，优点是看源码 ４８、后面面试官讲了他们做的东西，主要是广告部分，说日均数据量至少百万以上，多达上亿，高并发使用Go支撑，有微服务，服务治理，说我需要学的东西挺多的\n４９、证明二叉树的叶子节点跟度数为2的节点的关系 ５０、唯一索引和主键索引 ５１、智能指针 ５２、字符串解析为数字（考虑浮点型）\n５３、单点登录，tcp粘包 ５４、手写洗牌 ５５、处理粘包断包实现，面试官以为是negle算法有关，解释了下negle跟糊涂窗口综合征有关，然后面试官觉得其他项目是crud就没问了 ５６、goroutine调度用了什么系统调用，这个不会，面试官想从go问到操作系统，然后以为***作系统基础不好，就问了操作系统问题 ５７、进程虚拟空间分布，全局变量放哪里？答上来了，操作系统就不问了 ５８、有没有网络编程，有，怎么看连接状态？netstat，有哪些？ESTABLISHED，LISTEN等等，有异常情况吗？TIME_WAIT很多，为什么？大量短链接 ５９、几种基本排序算法说一下，问了堆的时间复杂度，稳定性，为什么不稳定 ６０、 topk问题，海量数据topk（回答成切分多次加载内存，然后用维持k长度的有序链表，然后被说时间复杂度不好，提示说还是用堆，然后哦哦哦对） 最长连续字串和，这里我说的解决方案没用dp（对dp不熟），面试官一直引导我dp，还是不会 ６１、什么是主键 ６２、联合索引和唯一索引 ６２、越多的索引越好吗？ ６３、建立索引要注意什么？ ６４、进程和线程区别？ ６５、死锁？ ６６、tcp三次握手 ６７、http，https ６８、状态码401,301,302,201 ６９、项目我说只有一台机子，所以用的单机部署，面试官说单机也可以部署多个，有什么方法吗？我说docker，问docker有哪些网络，不熟，dockerfile关键字，只答几个。顺便扯了下nginx转发。\n７０、数据库隔离级别，提交读会造成什么 ７１、go调度 ７２、 goroutine泄漏有没有处理，设置timeout，select加定时器\n７３、mysql高可用的方案 ７４、进程线程区别\n７５、排序算法以及时间复杂度 ７６、怎么学习go ７７、go的线程，给他讲了跟goroutine调度 ７８、io模型，同步阻塞，同步非阻塞，异步 ７９、cookie和session\n８０、接口kps测试 ８１、redis排行榜数据结构（跳跃表），查询时间复杂度 ８２、redis分布式，如何减少同步延迟 ８３、mysql能实现redis的功能吗 ８４、平时怎么学习？ ８５、看什么书？ ８６、兴趣爱好 ８７、看过google四篇分布式论文吗，没看过 ８９、cap理论，举例 ９０、LRU算法，LFU ９１、讲讲怎么理解网络编程\n９２、go使用踩过什么坑（for range，数据库连接defer close） ９３、go优缺点 ９５、go的值传递和引用 ９６、慢查询 ９７、为什么使用pg ９８、redis的数据类型\n９９、所有左叶子节点的和 １００、m个n大小的有序数组求并集，一开始是2路归并，求时间复杂度，后来在面试官提醒直接m路归并，求时间复杂度 １０１、static关键字，还有其他关键字吗 １０２、hash表设计，线程安全？ １０３、 线程自己独享什么 １０４、网络编程过程 １０５、select、epoll １０６、看什么书\n１０７、排行榜怎么实现 １０８、go的锁如何实现，用了什么cpu指令 １０９、go的runtime如何实现 １１０、看过sql的连接池实现吗 １１１、ctx包了解吗？有什么用？ １１２、go什么情况下会发生内存泄漏？（他说ctx没有cancel的时候，这个真不知道） １１３、怎么实现协程完美退出？ １１４、智力题：1000瓶酒中有1瓶毒酒，10只老鼠，7天后毒性才发作，第8天要卖了，怎么求那瓶毒酒？ １１５、简单dp题，n*n矩阵从左上角到右下角有多少种走法（只限往下和往右走） １１６、用channel实现定时器？（实际上是两个协程同步） １１７、go为什么高并发好？讲了go的调度模型\n１１８、操作系统内存管理？进程通讯，为什么共享存储区效率最高 １１９、实现一个hashmap，解决hash冲突的方法，解决hash倾斜的方法 １２０、怎么理解go的interface １２１、100亿个数选top5，小根堆 １２２、数组和为n的数组对 １２３、最大连续子数组和 １２４、redis容灾，备份，扩容 １２５、跳跃表，为什么使用跳跃表而不使用红黑树 １２６、输入url后涉及什么 １２７、tcp怎么找到哪个套接字 １２８、ipc方式，共享存储区原理 １３０、进程虚拟空间布局 １３１、进程状态转换 １３２、线程的栈在哪里分配 １３３、多个线程读，一个线程写一个int32会不会有问题，int64呢（这里面试官后来说了要看数据总线的位数，32位的话写int32没问题，int64就有问题） １３４、判断二叉树是否为满二叉树 １３５、lru实现 １３６、一个大整数（字符串形式表示的），移动字符求比它大的数中最小的 １３７、点赞系统设计\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/css/",
 	"title": "",
 	"tags": [],
@@ -508,7 +501,7 @@
 	"title": "children",
 	"tags": [],
 	"description": "List the child pages of a page",
-	"content": "Use the children shortcode to list the child pages of a page and the further descendants (children\u0026rsquo;s children). By default, the shortcode displays links to the child pages.\nUsage Parameter Default Description page current Specify the page name (section name) to display children for style \u0026ldquo;li\u0026rdquo; Choose the style used to display descendants. It could be any HTML tag name, use \u0026ldquo;card\u0026rdquo; to display children pages as cards showhidden \u0026ldquo;false\u0026rdquo; When true, child pages hidden from the menu will be displayed description \u0026ldquo;false\u0026rdquo; Allows you to include a short text under each page in the list.when no description exists for the page, children shortcode takes the first 70 words of your content. read more info about summaries on gohugo.io depth 1 Enter a number to specify the depth of descendants to display. For example, if the value is 2, the shortcode will display 2 levels of child pages. Tips: set 999 to get all descendants\rsort none Sort Children By\nWeight - to sort on menu orderName - to sort alphabetically on menu labelIdentifier - to sort alphabetically on identifier set in frontmatterURL - URL Demo {{% children %}}\rpage 1 page 2 page 3 page test {{% children description=\u0026quot;true\u0026quot; %}}\rpage 1\nThis is a demo child page\npage 2\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\npage 3\nThis is a demo child page\npage test\nThis is a page test\n{{% children depth=\u0026quot;3\u0026quot; showhidden=\u0026quot;true\u0026quot; %}}\rpage 1 page 1-1 page 1-1-1 page 2 page test 3 page 3 page 4 page test {{% children style=\u0026quot;h2\u0026quot; depth=\u0026quot;3\u0026quot; description=\u0026quot;true\u0026quot; %}}\rpage 1\nThis is a demo child page\npage 1-1\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\npage 1-1-1\nThis is a demo child page\npage 2\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\npage test 3\nThis is a page test\npage 3\nThis is a demo child page\npage test\nThis is a page test\n{{% children style=\u0026quot;div\u0026quot; depth=\u0026quot;999\u0026quot; %}}\rpage 1 page 1-1 page 1-1-1 page 1-1-1-1 page 1-1-1-1-1 page 2 page test 3 page 3 page test {{% children style=\u0026quot;card\u0026quot; depth=\u0026quot;2\u0026quot; description=\u0026quot;true\u0026quot; %}}\rpage 1\nThis is a demo child page\npage 1-1\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\npage 2\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\npage test 3\nThis is a page test\npage 3\nThis is a demo child page\npage test\nThis is a page test\n"
+	"content": "Use the children shortcode to list the child pages of a page and the further descendants (children\u0026rsquo;s children). By default, the shortcode displays links to the child pages.\nUsage Parameter Default Description page current Specify the page name (section name) to display children for style \u0026ldquo;li\u0026rdquo; Choose the style used to display descendants. It could be any HTML tag name, use \u0026ldquo;card\u0026rdquo; to display children pages as cards showhidden \u0026ldquo;false\u0026rdquo; When true, child pages hidden from the menu will be displayed description \u0026ldquo;false\u0026rdquo; Allows you to include a short text under each page in the list.when no description exists for the page, children shortcode takes the first 70 words of your content. read more info about summaries on gohugo.io depth 1 Enter a number to specify the depth of descendants to display. For example, if the value is 2, the shortcode will display 2 levels of child pages. Tips: set 999 to get all descendants\rsort none Sort Children By\nWeight - to sort on menu orderName - to sort alphabetically on menu labelIdentifier - to sort alphabetically on identifier set in frontmatterURL - URL Demo {{% children %}}\rpage 1 page 2 page 3 page test {{% children description=\u0026quot;true\u0026quot; %}}\rpage 1\nThis is a demo child page\npage 2\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\npage 3\nThis is a demo child page\npage test\nThis is a page test\n{{% children depth=\u0026quot;3\u0026quot; showhidden=\u0026quot;true\u0026quot; %}}\rpage 1 page 2 page test 3 page 3 page 4 page test {{% children style=\u0026quot;h2\u0026quot; depth=\u0026quot;3\u0026quot; description=\u0026quot;true\u0026quot; %}}\rpage 1\nThis is a demo child page\npage 2\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\npage test 3\nThis is a page test\npage 3\nThis is a demo child page\npage test\nThis is a page test\n{{% children style=\u0026quot;div\u0026quot; depth=\u0026quot;999\u0026quot; %}}\rpage 1 page 1-1 page 1-1-1 page 1-1-1-1 page 1-1-1-1-1 page 2 page test 3 page 3 page test {{% children style=\u0026quot;card\u0026quot; depth=\u0026quot;2\u0026quot; description=\u0026quot;true\u0026quot; %}}\rpage 1\nThis is a demo child page\npage 1-1\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\npage 2\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\npage test 3\nThis is a page test\npage 3\nThis is a demo child page\npage test\nThis is a page test\n"
 },
 {
 	"uri": "/credits/",
@@ -651,6 +644,13 @@
 	"content": "\rThe panel shortcodeAllow you to highlight information or put it in a box. They create a colored box surrounding your text\rUsage Parameter Default Description header none The title of the panel. If specified, this title will be displayed in its own header row. footer none the footer of the panel. If specified, this text will be displayed in its own row theme primary default,primary,info,success,warning,danger Basic example By default :\n{{% panel %}}this is a panel text{{% /panel %}}\rthis is a panel text\rPanel with heading Easily add a heading container to your panel with header parameter. You may apply any theme.\n{{% panel theme=\u0026quot;danger\u0026quot; header=\u0026quot;panel title\u0026quot; %}}this is a panel text{{% /panel %}}\rpanel titlethis is a panel text\r{{% panel theme=\u0026quot;success\u0026quot; header=\u0026quot;panel title\u0026quot; %}}this is a panel text{{% /panel %}}\rpanel titlethis is a panel text\rPanel with footer Wrap a secondary text in footer.\n{{% panel footer=\u0026quot;panel footer\u0026quot; %}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{{% /panel %}}\rLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\npanel footer\rThemes Success themethis is a panel text\rdefault themethis is a panel text\rprimary themethis is a panel text\rinfo themethis is a panel text\rwarning themethis is a panel text\rdanger themethis is a panel text\r"
 },
 {
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/qqq/",
+	"title": "qqqq",
+	"tags": [],
+	"description": "来自于网络",
+	"content": "1.需要修改接收者中的值 2.接收者是拷贝代价比较大的大对象 3.保证一致性，如果有某个方法使用了指针接收者，那么其他的方法也应该使用指针接收者。\n"
+},
+{
 	"uri": "/shortcodes/revealjs/",
 	"title": "revealjs",
 	"tags": [],
@@ -670,4 +670,11 @@
 	"tags": [],
 	"description": "change theme style/colors",
 	"content": "In site configuration file, you can set a variant name of this theme to load a specific css, with different color specifications.\nadd a param themeVariant = \u0026quot;VARIANT_NAME\u0026quot; in the [params] part of config.toml file.\nAvailable variants change only colors at this moment\rVariant \u0026ldquo;gray\u0026rdquo; [params]\rthemeVariant = \u0026#34;gray\u0026#34; Variant \u0026ldquo;gold\u0026rdquo; [params]\rthemeVariant = \u0026#34;gold\u0026#34; Variant \u0026ldquo;green\u0026rdquo; [params]\rthemeVariant = \u0026#34;green\u0026#34;` "
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/",
+	"title": "参考文档",
+	"tags": [],
+	"description": "来自于网络",
+	"content": "基础 地鼠文档 Go 语言设计与实现 Go 语言中文开源图书、资料或文档 go语言中文文档 基础视频教学 Go 语言高性能编程 Golang应该掌握哪些必要的知识点才能算掌握golang这门语言？ sync Go 语言设计与实现-6.2 同步原语与锁\nsync - 处理同步需求\ngolang的sync包\n浅谈 Golang sync 包的相关使用方法\ngo开源仓库\n面试题 golang面试题整理 Golang面试题41道 golang 面试题整理 Go 语言笔试面试题汇总 golang 关键知识点 golang知识点整理(持续更新) 好的站点 综合博客 "
 }]
