@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DocDock Documentation</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2023-03-15T16:24:13 CST">
+<title>k8s :: DocDock Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79101-13', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    
+  </head>
+  <body data-url="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="/">DocDock Documentation</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/vjeantet/hugo-theme-docdock"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Github repo</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip"  rel="noopener">
+                  <i class='fa fa-cloud-download'></i> <label>Download</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://gohugo.io/"  rel="noopener">
+                  <i class='fa fa-bookmark'></i> <label>Hugo Documentation</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="/credits"  rel="noopener">
+                  <i class='fa fa-bullhorn'></i> <label>Credits</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/%E5%B7%A5%E5%85%B7/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%B7%A5%E5%85%B7/">工具</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E5%B7%A5%E5%85%B7/hexo/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%B7%A5%E5%85%B7/hexo/">hexo</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E5%B7%A5%E5%85%B7/hexo/hexo/" class="dd-item">
+        <div>
+          <a href="/%E5%B7%A5%E5%85%B7/hexo/hexo/">
+            hexo
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%B7%A5%E5%85%B7/hexo/hexo%E5%AE%89%E8%A3%85/" class="dd-item">
+        <div>
+          <a href="/%E5%B7%A5%E5%85%B7/hexo/hexo%E5%AE%89%E8%A3%85/">
+            hexo安装
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%B7%A5%E5%85%B7/hexo/hexo%E9%83%A8%E7%BD%B2%E5%88%B0git/" class="dd-item">
+        <div>
+          <a href="/%E5%B7%A5%E5%85%B7/hexo/hexo%E9%83%A8%E7%BD%B2%E5%88%B0git/">
+            部署到git
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E5%B7%A5%E5%85%B7/hugo/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%B7%A5%E5%85%B7/hugo/">hugo</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E5%B7%A5%E5%85%B7/hugo/hugo/" class="dd-item">
+        <div>
+          <a href="/%E5%B7%A5%E5%85%B7/hugo/hugo/">
+            hugo
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">编程语言</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/">golang</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/tl/" class="dd-item
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/tl/">tl 资料</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/">语言</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/golang%E8%AF%AD%E8%A8%80%E5%87%A0%E4%B8%AA%E6%9C%80%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9%E7%9A%84%E6%80%BB%E7%BB%93/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/golang%E8%AF%AD%E8%A8%80%E5%87%A0%E4%B8%AA%E6%9C%80%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9%E7%9A%84%E6%80%BB%E7%BB%93/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/qqq/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/qqq/">
+            qqqq
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            参考文档
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E7%9F%A5%E8%AF%86%E7%82%B9/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E7%9F%A5%E8%AF%86%E7%82%B9/">
+            知识点
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86/">
+            重点知识
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E9%87%8D%E7%82%B9%E8%A7%A3%E6%9E%90/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E9%87%8D%E7%82%B9%E8%A7%A3%E6%9E%90/">
+            重点解析
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/">资料</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/ziyuan/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/ziyuan/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/">插件</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/json%E6%8F%92%E4%BB%B6/" class="dd-item
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/json%E6%8F%92%E4%BB%B6/">json插件</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/">swaggo</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E8%AF%B4%E6%98%8E/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E8%AF%B4%E6%98%8E/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/">结构体标签</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%85%B3%E9%94%AE%E5%AD%97/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%85%B3%E9%94%AE%E5%AD%97/">
+            关键字
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/">源码解读</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/ants/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/ants/">
+            ants
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/bytebufferpool/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/bytebufferpool/">
+            bytebufferpool
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gev/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gev/">
+            gev
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gnet/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gnet/">
+            gnet
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/">C</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/readme/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/readme/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/">dart_flutter</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/dart%E5%9F%BA%E7%A1%80/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/dart%E5%9F%BA%E7%A1%80/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/flutter%E5%AE%89%E8%A3%85/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/flutter%E5%AE%89%E8%A3%85/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/">html</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/css/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/css/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/">rust</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/">Vue</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/getting-start/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="/getting-start/">Getting started</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/getting-start/installation/" class="dd-item">
+        <div>
+          <a href="/getting-start/installation/">
+            Installation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/getting-start/configuration/" class="dd-item">
+        <div>
+          <a href="/getting-start/configuration/">
+            Configuration
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/">开发框架</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/">docker</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/compose%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/compose%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/">
+            compose命令详解
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/docker-save%E4%B8%8Edocker-export%E7%9A%84%E5%8C%BA%E5%88%AB/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/docker-save%E4%B8%8Edocker-export%E7%9A%84%E5%8C%BA%E5%88%AB/">
+            docker save与docker export的区别
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            参考文档
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E8%B5%84%E6%96%99/dockermssql/create_qpsqldbbase/%E8%AF%B4%E6%98%8E/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E8%B5%84%E6%96%99/dockermssql/create_qpsqldbbase/%E8%AF%B4%E6%98%8E/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E8%B5%84%E6%96%99/docker%E7%9A%84etcd3%E7%9A%84%E6%90%AD%E5%BB%BA/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E8%B5%84%E6%96%99/docker%E7%9A%84etcd3%E7%9A%84%E6%90%AD%E5%BB%BA/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/">etcd</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/etcd%E5%AE%89%E8%A3%85/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/etcd%E5%AE%89%E8%A3%85/">
+            etcd安装
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/linux%E5%91%BD%E4%BB%A4/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/linux%E5%91%BD%E4%BB%A4/">
+            linux命令
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/">gin</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            参考文档
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/%E6%8F%92%E4%BB%B6/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/%E6%8F%92%E4%BB%B6/">
+            插件
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/goframe/" class="dd-item
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/goframe/">GoFrame</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/">k8s</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s/">
+            k8s
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/">
+            k8s常见面试题
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E7%AE%80%E4%BB%8B/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E7%AE%80%E4%BB%8B/">
+            k8s简介
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%91%E5%B8%83%E6%9C%8D%E5%8A%A1/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%91%E5%B8%83%E6%9C%8D%E5%8A%A1/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E7%94%A8%E9%80%94/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E7%94%A8%E9%80%94/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/">kafka</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/">
+            Kafka常见面试题总结
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafaka%E7%AE%80%E4%BB%8B/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafaka%E7%AE%80%E4%BB%8B/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/">ElasticSearch</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            参考文档
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E8%AF%B4%E6%98%8E/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E8%AF%B4%E6%98%8E/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/">mongo</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%9D%A2%E8%AF%95%E9%A2%98/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+            mysql面试题
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            参考文档
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/mongodb%E6%9F%A5%E8%AF%A2%E6%A1%88%E4%BE%8B/mac%E5%AE%89%E8%A3%85/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/mongodb%E6%9F%A5%E8%AF%A2%E6%A1%88%E4%BE%8B/mac%E5%AE%89%E8%A3%85/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/replicaset/replicaset/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/replicaset/replicaset/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/setpwd/%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/setpwd/%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/">mysql</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%87%8D%E7%82%B9/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%87%8D%E7%82%B9/">
+            mysql重点
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/">
+            mysql面试题
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/">
+            参考资料
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/">redis</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/">
+            参考资料
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+            数据结构
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E9%9D%A2%E8%AF%95%E9%97%AE%E7%AD%94/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E9%9D%A2%E8%AF%95%E9%97%AE%E7%AD%94/">
+            面试问答
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/couchdb/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/couchdb/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/create-page/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/create-page/"><i class='fa fa-edit' ></i> Create Page</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/create-page/homepage/" class="dd-item">
+        <div>
+          <a href="/create-page/homepage/">
+            Home page
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/create-page/page-images/" class="dd-item">
+        <div>
+          <a href="/create-page/page-images/">
+            About images
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/create-page/page-slide/" class="dd-item">
+        <div>
+          <a href="/create-page/page-slide/">
+            Present a Slide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/content-organisation/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/content-organisation/">Content Organisation</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/content-organisation/logo/" class="dd-item">
+        <div>
+          <a href="/content-organisation/logo/">
+            Logo placeholder
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/content-organisation/extramenu/" class="dd-item">
+        <div>
+          <a href="/content-organisation/extramenu/">
+            Extra menu entries
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+    <li data-nav-id="/content-organisation/customize-style/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/content-organisation/customize-style/">Customize website look and feel</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/content-organisation/customize-style/disable/" class="dd-item">
+        <div>
+          <a href="/content-organisation/customize-style/disable/">
+            Disable features
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/content-organisation/customize-style/themestyle/" class="dd-item">
+        <div>
+          <a href="/content-organisation/customize-style/themestyle/">
+            Theme styles
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/content-organisation/customize-style/theme-variants/" class="dd-item">
+        <div>
+          <a href="/content-organisation/customize-style/theme-variants/">
+            Theme variants
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/shortcodes/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/shortcodes/">Shortcodes</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/shortcodes/alert/" class="dd-item">
+        <div>
+          <a href="/shortcodes/alert/">
+            alert
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/attachments/" class="dd-item">
+        <div>
+          <a href="/shortcodes/attachments/">
+            attachments
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/button/" class="dd-item">
+        <div>
+          <a href="/shortcodes/button/">
+            button
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+    <li data-nav-id="/shortcodes/children/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/shortcodes/children/">children</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/shortcodes/children/children-1/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/shortcodes/children/children-1/">page 1</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/shortcodes/children/children-1/children-1-1/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/shortcodes/children/children-1/children-1-1/">page 1-1</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/shortcodes/children/children-1/children-1-1/children-1-1-1/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/shortcodes/children/children-1/children-1-1/children-1-1-1/">page 1-1-1</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/">page 1-1-1-1</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/" class="dd-item
+        ">
+      <div>
+      <a href="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/">page 1-1-1-1-1</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/shortcodes/children/children-2/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/shortcodes/children/children-2/">page 2</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/shortcodes/children/children-2/test3/" class="dd-item">
+        <div>
+          <a href="/shortcodes/children/children-2/test3/">
+            page test 3
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/shortcodes/children/children-3/" class="dd-item
+        ">
+      <div>
+      <a href="/shortcodes/children/children-3/">page 3</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+      <li data-nav-id="/shortcodes/children/test/" class="dd-item">
+        <div>
+          <a href="/shortcodes/children/test/">
+            page test
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/shortcodes/excerpt/" class="dd-item">
+        <div>
+          <a href="/shortcodes/excerpt/">
+            excerpt
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/excerpt-include/" class="dd-item">
+        <div>
+          <a href="/shortcodes/excerpt-include/">
+            excerpt-include
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/expand/" class="dd-item">
+        <div>
+          <a href="/shortcodes/expand/">
+            expand
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/icon/" class="dd-item">
+        <div>
+          <a href="/shortcodes/icon/">
+            icon
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/mermaid/" class="dd-item">
+        <div>
+          <a href="/shortcodes/mermaid/">
+            mermaid
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/notice/" class="dd-item">
+        <div>
+          <a href="/shortcodes/notice/">
+            notice
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/panel/" class="dd-item">
+        <div>
+          <a href="/shortcodes/panel/">
+            panel
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/revealjs/" class="dd-item">
+        <div>
+          <a href="/shortcodes/revealjs/">
+            revealjs
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/search/" class="dd-item
+        ">
+      <div>
+      <a href="/search/">About the Search Engine</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+
+
+
+
+    </ul>
+    <section><center>
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download vjeantet/hugo-theme-docdock on GitHub">Download</a>
+
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock" data-icon="octicon-star" data-show-count="false" aria-label="Star vjeantet/hugo-theme-docdock on GitHub">Star</a>
+
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork vjeantet/hugo-theme-docdock on GitHub">Fork</a>
+
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/%E5%B7%A5%E5%85%B7/" >
+   工具</option>
+    <option value="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" >
+   编程语言</option>
+    <option value="/getting-start/" >
+   Getting started</option> 
+      <option value="/getting-start/installation/" >- Installation</option>
+      <option value="/getting-start/configuration/" >- Configuration</option>
+  
+    <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/" >
+   开发框架</option> 
+    <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/" >
+  - 
+   docker</option>
+    <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/" >
+  - 
+   etcd</option>
+    <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/" >
+  - 
+   gin</option>
+    <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/goframe/" >
+  - 
+   GoFrame</option>
+    <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/" >
+  - 
+   k8s</option> 
+      <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s/"  selected>-- k8s</option>
+      <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" >-- k8s常见面试题</option>
+      <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E7%AE%80%E4%BB%8B/" >-- k8s简介</option>
+      <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/" >-- </option>
+      <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" >-- </option>
+      <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%91%E5%B8%83%E6%9C%8D%E5%8A%A1/" >-- </option>
+      <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E7%94%A8%E9%80%94/" >-- </option>
+  
+    <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/" >
+  - 
+   kafka</option>
+  
+    <option value="/%E6%95%B0%E6%8D%AE%E5%BA%93/" >
+   数据库</option>
+    <option value="/create-page/" >
+   Create Page</option>
+    <option value="/content-organisation/" >
+   Content Organisation</option>
+    <option value="/shortcodes/" >
+   Shortcodes</option>
+    <option value="/search/" >
+   About the Search Engine</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+      </div>
+    
+
+    <h1>k8s</h1>
+    
+    
+    
+    <p>k8s
+<a href="https://juejin.im/post/6844903811341893640">k8s 简介</a>
+<a href="http://docs.kubernetes.org.cn/312.html">Kubernetes Pod概述</a>
+<a href="http://ddrv.cn/a/548935">K8s 学习者绝对不能错过的最全知识图谱（内含 58个知识点链接）</a></p>
+<p>1.master(控制系统)
+etcd: k-v 数据库（用于配置共享和服务发现） 只与 apiserver 通信
+scheduler: 调度 简单点说就是给一个 pod 找一个 node(合理的平衡)
+controller manager: 核心，负责将现在的状态调整为 etcd 上应该的状态，包含了所有的实现逻辑
+apiserver: 可以理解为 etcd 的前置过滤器（理解为中心处理器，分发到各个连接的模块）</p>
+<p>2.node(s)
+kubelet: 负责和 master 连接，注册 node, listen-watch 本 node 的任务等
+kube-proxy: 用于 k8s service 对象。在 K8s 集群中微服务的负载均衡是由 Kube-proxy 实现的，它是 K8s 集群内部的负载均衡器，也是一个分布式代理服务器，在 K8s 的每个节点上都有一个，这一设计体现了它的伸缩性优势，需要访问服务的节点越多，提供负载均衡能力的 Kube-proxy 就越多，高可用节点也随之增多。
+容器运行时: 除了 docker k8s 还支持 rkt 等容器实现</p>
+<p>负责为 pod 提供代理。它会定期从 etcd 获取所有的 service，并根据 service 信息创建代理。</p>
+<p>3.插件
+DNS（服务注册发现）
+CNI（容器网络接口实现, ex：fannel）</p>
+<p>4.Pod(可管理的一个实体)
+pod 是 k8s 管理的最小对象，是一组共享 uts, network, ipc namespace 的容器(也支持共享 pid,默认不开启)
+每个 pod 会有一个 infrastructure 容器，volumne, network 其实都是共用的这个容器的 network 和 volumne
+pod 使逻辑上紧密相关的进程适当的隔离，保持一定的相关：</p>
+<p>一些进程必须在相同而主机上运行
+扩容需要保持一致
+等等</p>
+<p>集群中的 Pod 主要有两种用法：
+运行单个容器的 Pod
+运行多个协同工作的容器的 Pod</p>
+<p>Pod 天生地为其成员容器提供了两种共享资源：网络和 存储。</p>
+<p>Deployment
+StatefulSets
+DaemonSet</p>
+<p>静态 Pod：直接由特定节点上的 kubelet 守护进程管理， 不需要 API 服务器看到它们 比如:Heapster(由每个节点上运行的 Kubelet 提供的集群范围的数据聚合器。此容器管理工具在 Kubernetes 集群上本机支持，并作为 pod 运行，就像集群中的任何其他 pod 一样)</p>
+<p>除了 rc, rs 之外，还有 deamonSet, job, cronjob 等 controller</p>
+<p>5.管理 Pod
+<a href="https://segmentfault.com/a/1190000005999238">k8s如何管理Pod</a>
+Replica Set 使用基于集合的选择器，而 Replication Controller 使用基于权限的选择器。(判断逻辑在这些插件上</p>
+<p><a href="https://zhuanlan.zhihu.com/p/115826751">Kubernetes 面试题（一）</a></p>
+<h2 id="kubelet">kubelet</h2>
+<p>####container runtime</p>
+<p>##kube-proxy</p>
+<h2 id="heading"></h2>
+<p>kublet:主进程
+kubadmin:客户端（管理人员）
+kubctl:客户端（使用人员）</p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/" title="k8s"> <i class="fa fa-chevron-left"></i><label>k8s</label></a>
+    <a class="nav nav-next" href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" title="k8s常见面试题" style="margin-right: 0px;"><label>k8s常见面试题</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+    <div class="github-link">
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6/k8s/k8s.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+    
+  </div>
+
+
+	<div>
+
+
+  
+    Create a content/_footer.md file to customize the footer content
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script src="/js/clipboard.min.js"></script>
+<script src="/js/featherlight.min.js"></script>
+
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/auto-complete.js"></script>
+<script type="text/javascript" src="/js/search.js"></script>
+<script src="/theme-flex/script.js"></script>
+
+
+
+
+<script src="/js/scripts.min.js"></script>
+    
+
+    
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ElasticSearch on DocDock Documentation</title>
+    <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/</link>
+    <description>Recent content in ElasticSearch on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>参考文档</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>网站 官网 Elasticsearch中文文档 Elasticsearch中文社区 ElasticSearch使用场景 Elasticsearch入门指南 Elasticsearch+logstash+kibana实现日志分析（实验） Elasticsearch 思维导图集锦 日志系统 从零学Elasticsearch系列——搭建ELK Nginx日志分析平台 Elasticsearch+logstash+kibana实现日志分析（实验） docker-compose一键部署elasticsearch+logstash+kibana ELK日志系统：Elasticsearch + Logstash + Kibana 搭建教程 ElasticSearch使用场景 用Kibana和logstash快速搭建实时日志查询、收集与分析系统 如何快速搭建一个简易的ELK日志分析系统 快速搭建ELK日志分析系统 快速搭建一套elk日志系统 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E8%AF%B4%E6%98%8E/</guid>
+      <description>#存储和查询文本 ElasticSearch</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,5 +1,0 @@
-https://github.com/Termina1/tlhydra
-https://github.com/igungor/tl
-https://hexdocs.pm/telegram_tl/readme.html
-https://gitlab.com/Fnux/elixir-tdlib
-

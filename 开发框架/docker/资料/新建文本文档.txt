@@ -1,0 +1,8 @@
+环境变量
+
+
+$Env:DOCKER_TLS_VERIFY = "1"
+$Env:DOCKER_HOST = "tcp://192.168.182.128:2376"
+$Env:DOCKER_CERT_PATH = "C:\Users\Administrator\.docker\machine\machines\dev"
+$Env:DOCKER_MACHINE_NAME = "dev"
+$Env:COMPOSE_CONVERT_WINDOWS_PATHS = "true"

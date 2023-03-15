@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>etcd on DocDock Documentation</title>
+    <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/</link>
+    <description>Recent content in etcd on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>etcd安装</title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/etcd%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/etcd%E5%AE%89%E8%A3%85/</guid>
+      <description>1.etec 安装 https://blog.csdn.net/Axela30W/article/details/84558730#t2 https://cizixs.com/2016/08/02/intro-to-etcd/ https://blog.csdn.net/huwh_/article/details/80225902 https://tonydeng.github.io/2015/10/19/etcd-application-scenarios/
+https://tonydeng.github.io/categories/
+etcdctl &amp;ndash;endpoints=[192.168.1.9:2389] get / &amp;ndash;prefix &amp;ndash;keys-only
+看见候选包 brew search etcd
+安装 brew install etcd
+etcd 查询 ETCDCTL_API=3 etcdctl &amp;ndash;endpoints=http://192.168.1.19:2379 &amp;ndash;prefix &amp;ndash;keys-only=true get / ETCDCTL_API=3 etcdctl &amp;ndash;endpoints=http://192.168.1.19:2379 get + keys 查询键信息。
+获取集群成员 ETCDCTL_API=3 etcdctl &amp;ndash;endpoints=http://127.0.0.1:30001 member list
+设置数据 ETCDCTL_API=3 etcdctl &amp;ndash;endpoints=http://127.0.0.1:30001 put /root/test/keyOne &amp;ldquo;Hello etcd&amp;rdquo;
+ETCDCTL_API=3 etcdctl &amp;ndash;endpoints=http://127.0.0.1:30001 &amp;ndash;prefix &amp;ndash;keys-only=true get / ETCDCTL_API=3 etcdctl &amp;ndash;endpoints=http://127.0.0.1:30001 get /root/test/keyOne</description>
+    </item>
+    
+    <item>
+      <title>linux命令</title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/linux%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/linux%E5%91%BD%E4%BB%A4/</guid>
+      <description>linux 命令 1.解压缩命令 解压 tar zxvf 文件名.tar.gz 压缩 tar zcvf 文件名.tar.gz 待压缩的文件名
+2.从 linux 下载命令
+scp /home/work/source.txt work@192.168.0.10:/home/work/ #把本地的 source.txt 文件拷贝到 192.168.0.10 机器上的/home/work 目录下
+scp work@192.168.0.10:/home/work/source.txt /home/work/ #把 192.168.0.10 机器上的 source.txt 文件拷贝到本地的/home/work 目录下
+scp work@192.168.0.10:/home/work/source.txt work@192.168.0.11:/home/work/ #把 192.168.0.10 机器上的 source.txt 文件拷贝到 192.168.0.11 机器的/home/work 目录下
+scp -r /home/work/sourcedir work@192.168.0.10:/home/work/ #拷贝文件夹，加-r 参数
+//下砸到本地 scp root@192.168.1.19:/home/server/go/serverb.tar.gz
+scp root@192.168.1.19:/home/server/go/ssss.tar.gz
+scp root@43.247.164.19:/home/server/go/ssss.tar.gzz /Users/mac/Desktop
+3.复制文件 cp -i file1 file2 cp file1 file2
+4.删除 &amp;ldquo;rm -f&amp;rdquo; 强行删除，忽略不存在的文件，不提示确认。(f 为 force 的意思) &amp;ldquo;rm -i&amp;rdquo; 进行交互式删除，即删除时会提示确认。(i 为 interactive 的意思) &amp;ldquo;rm -r&amp;rdquo; 将参数中列出的全部目录和子目录进行递归删除。(r 为 recursive 的意思) &amp;ldquo;rm -v&amp;rdquo; 详细显示删除操作进行的步骤。(v 为 verbose 的意思)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,13 @@
+version: "3"
+services:
+    qpsqldbbase:
+        image: microsoft/mssql-server-linux:latest
+        ports:
+            - "2048:1433"
+        container_name: qpsqldbbase
+        environment:
+            - ACCEPT_EULA=Y
+            - SA_PASSWORD=QpAdmin1
+            - MSSQL_PID=Enterprise
+        volumes:
+            - ./Data/:/var/opt/qpdata

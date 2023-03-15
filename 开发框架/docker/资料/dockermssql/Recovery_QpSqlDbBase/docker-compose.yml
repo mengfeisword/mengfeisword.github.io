@@ -1,0 +1,9 @@
+version: "3"
+services:
+    qpsqldb:
+        image: qpsqldbbase-backup:latest
+        container_name: qpsqldb       
+        ports:
+            - "2045:1433"
+        volumes:
+            - ./Data/:/var/opt/qpdata

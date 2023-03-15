@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mysql on DocDock Documentation</title>
+    <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/</link>
+    <description>Recent content in mysql on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql重点</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%87%8D%E7%82%B9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%87%8D%E7%82%B9/</guid>
+      <description>设计优化 一,设计
+数据库统计 1.时间换空间(分时统计) 一定时间统计一次(统计到别的数据库,进行查询) 2.处理死数据和激活数据
+二，索引优化
+三.锁优化 表级锁 行级锁 页面锁
+四 查询优化 减少 IO 减少网络</description>
+    </item>
+    
+    <item>
+      <title>mysql面试题</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+      <description>1.事务 原子性 隔离性 一直性 持久性
+2.MyISAM和InnoDB区别 MyISAM不支持外键和事务，innodb支持 MyISAM锁的粒度是表级，而InnoDB支持行级锁定 MyISAM支持全文类型索引，而InnoDB不支持全文索引。 MyISAM相对简单，所以在效率上要优于InnoDB，小型应用可以考虑使用MyISAM MyISAM创建表生成三个文件：.frm数据表结构 .myd数据文件 .myi索引文件，Innodb只生成一个frm文件，数据存放在ibdata1.log MyISAM使用delete语句删除后并不会立刻清理磁盘空间，需要定时清理，命令：OPTIMIZE table dept;
+3.delete drop truncate区别 truncate 和 delete只删除数据，不删除表结构 ,drop删除表结构，并且释放所占的空间。 删除数据的速度，一般来说: drop&amp;gt; truncate &amp;gt; delete delete属于DML语言，需要事务管理，commit之后才能生效。drop和truncate属于DDL语言，操作立刻生效，不可回滚 使用场合： 当你不再需要该表时， 用 drop; 当你仍要保留该表，但要删除所有记录时， 用 truncate; 当你要删除部分记录时（always with a where clause), 用 delete. 注意： 对于有主外键关系的表，不能使用truncate而应该使用不带where子句的delete语句，由于truncate不记录在日志中，不能够激活触发器
+4.索引 MyISAM引擎使用B+Tree作为索引结构，叶节点的data域存放的是数据记录的地址。 InnoDB也使用B+Tree作为索引结构。InnoDB的数据文件本身就是索引文件。
+索引种类 主键索引（把某列设为主键，则该列就是索引，主键不能重复） 唯一索引（unique），该列具有唯一性，同时又是索引 index 普通索引 全文索引 （fulltext） 只有MyISAM存储引擎支持 （注：mysql 5.6之后，Innodb也开始支持全文索引，mysql5.6较之前版本有较大更新，有兴趣的小伙伴可以去查一查）
+5.适合加索引的列： 经常查询的列上加索引 唯一性太差的列不要加索引（重复太多），相反唯一性比较好的列适合加索引 不经常修改的列适合加。经常修改的列不要加索引（列修改，索引也要改） 因为索引的创建和更改是有开销的。
+6.mysql优化 1.数据表的优化（符合3范式） 1.1范式：1NF是对属性的原子性约束，要求属性具有原子性，不可再分解；(只要是关系型数据库都满足1NF)2.2范式：2NF是对记录的惟一性约束，要求记录有惟一标识，即实体的惟一性；3.3范式：3NF是对字段冗余性的约束，即任何字段不能由其他字段派生出来，它要求字段没有冗余。没有冗余的数据库设计可以做到4.但是，没有冗余的数据库未必是最好的数据库，有时为了提高运行效率，就必须降低范式标准，适当保留冗余数据。具体做法是：在概念数据模型设计时遵守第三范式，降低范式标准的工作放到物理数据模型设计时考虑。降低范式就是增加字段，允许冗余。2.sql语句优化 索引 3.</description>
+    </item>
+    
+    <item>
+      <title>参考资料</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/</guid>
+      <description>#mysql 是关系型数据库 mysql总结(一)：思维导图
+mysql总结 高性能MySQL系统思维导图 MySql之增删改查总结 MySQL存储过程
+#面试资料 MySQL 面试之必会知识点 史上最详细的一线大厂Mysql面试题详解 Mysql面试知识点总结(进阶篇) MySQL 分库分表方案，总结的非常好！ 干货！MySql DAL中间件总结
+#数据库优化 万字总结：学习MySQL优化原理，这一篇就够了！ 记录一次MySQL两千万数据的大表优化解决过程，提供三种解决方案 史上最详细的一线大厂Mysql面试题详解 MySQL 的优化方案总结</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

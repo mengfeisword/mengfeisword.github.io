@@ -1,0 +1,10 @@
+Windows 10安装了Hyper-V以后VMware会提示不能共存，要求删除Hyper-V，这里有个简单的处理方法可以让两者共存。首先，管理员身份运行cmd，然后执行下面两条命令。
+bcdedit /copy {default} /d "Windows 10 Without Hyper-V" 
+bcdedit /set {xxxxx} hypervisorlaunchtype off
+
+
+执行完第一条命令会得到一串id，把id替换到第二个命令中的xxxxx即可。
+
+然后运行msconfig，在引导的设置里把超时时间设置到3~5秒以上即可。
+
+重启选择Without Hyper-V那一项，即可运行VMware，但Hyper-V就无法在本次启动后运行了，如果需要Hyper-V需要重启选择默认的启动项。

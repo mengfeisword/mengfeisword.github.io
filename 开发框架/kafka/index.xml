@@ -7,11 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafaka2/</link>
+      <title>Kafka常见面试题总结</title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafaka2/</guid>
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
+      <description>Kafka 是什么？主要应用场景有哪些？ Kafka 是一个分布式流式处理平台。这到底是什么意思呢？
+流平台具有三个关键功能：
+消息队列：发布和订阅消息流，这个功能类似于消息队列，这也是 Kafka 也被归类为消息队列的原因。 容错的持久方式存储记录消息流： Kafka 会把消息持久化到磁盘，有效避免了消息丢失的风险。 流式处理平台： 在消息发布的时候进行处理，Kafka 提供了一个完整的流式处理类库。 Kafka 主要有两大应用场景：
+消息队列 ：建立实时流数据管道，以可靠地在系统或应用程序之间获取数据。 数据处理： 构建实时的流数据处理程序来转换或处理数据流。 和其他消息队列相比,Kafka的优势在哪里？ 我们现在经常提到 Kafka 的时候就已经默认它是一个非常优秀的消息队列了，我们也会经常拿它跟 RocketMQ、RabbitMQ 对比。我觉得 Kafka 相比其他消息队列主要的优势如下：
+极致的性能 ：基于 Scala 和 Java 语言开发，设计中大量使用了批量处理和异步的思想，最高可以每秒处理千万级别的消息。 生态系统兼容性无可匹敌 ：Kafka 与周边生态系统的兼容性是最好的没有之一，尤其在大数据和流计算领域。 实际上在早期的时候 Kafka 并不是一个合格的消息队列，早期的 Kafka 在消息队列领域就像是一个衣衫褴褛的孩子一样，功能不完备并且有一些小问题比如丢失消息、不保证消息可靠性等等。当然，这也和 LinkedIn 最早开发 Kafka 用于处理海量的日志有很大关系，哈哈哈，人家本来最开始就不是为了作为消息队列滴，谁知道后面误打误撞在消息队列领域占据了一席之地。
+随着后续的发展，这些短板都被 Kafka 逐步修复完善。所以，Kafka 作为消息队列不可靠这个说法已经过时！
+队列模型了解吗？Kafka 的消息模型知道吗？ 题外话：早期的 JMS 和 AMQP 属于消息服务领域权威组织所做的相关的标准，我在 JavaGuide的 《消息队列其实很简单》这篇文章中介绍过。但是，这些标准的进化跟不上消息队列的演进速度，这些标准实际上已经属于废弃状态。所以，可能存在的情况是：不同的消息队列都有自己的一套消息模型。
+队列模型：早期的消息模型 使用队列（Queue）作为消息通信载体，满足生产者与消费者模式，一条消息只能被一个消费者使用，未被消费的消息在队列中保留直到被消费或超时。 比如：我们生产者发送 100 条消息的话，两个消费者来消费一般情况下两个消费者会按照消息发送的顺序各自消费一半（也就是你一个我一个的消费。）
+队列模型存在的问题：
+假如我们存在这样一种情况：我们需要将生产者产生的消息分发给多个消费者，并且每个消费者都能接收到完整的消息内容。
+这种情况，队列模型就不好解决了。很多比较杠精的人就说：我们可以为每个消费者创建一个单独的队列，让生产者发送多份。这是一种非常愚蠢的做法，浪费资源不说，还违背了使用消息队列的目的。
+发布-订阅模型:Kafka 消息模型 发布-订阅模型主要是为了解决队列模型存在的问题。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafaka%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafaka%E7%AE%80%E4%BB%8B/</guid>
       <description>https://github.com/Snailclimb/JavaGuide/blob/master/docs/system-design/data-communication/Kafka%E5%85%A5%E9%97%A8%E7%9C%8B%E8%BF%99%E4%B8%80%E7%AF%87%E5%B0%B1%E5%A4%9F%E4%BA%86.md
 Kafka 简介 Kafka 是一种分布式的，基于发布 / 订阅的消息系统。
 主要设计目标如下：
@@ -53,18 +73,6 @@ Kafka主要设计目标如下：
 3.4　ActiveMQ ActiveMQ是Apache下的一个子项目。 类似于ZeroMQ，它能够以代理人和点对点的技术实现队列。同时类似于RabbitMQ，它少量代码就可以高效地实现高级应用场景。
 3.5　Kafka/Jafka Kafka是Apache下的一个子项目，是一个高性能跨语言分布式发布/订阅消息队列系统，而Jafka是在Kafka之上孵化而来的，即Kafka的一个升级版。具有以下特性：快速持久化，可以在O(1)的系统开销下进行消息持久化；高吞吐，在一台普通的服务器上既可以达到10W/s的吞吐速率；完全的分布式系统，Broker、Producer、Consumer都原生自动支持分布式，自动实现负载均衡；支持Hadoop数据并行加载，对于像Hadoop的一样的日志数据和离线分析系统，但又要求实时处理的限制，这是一个可行的解决方案。Kafka通过Hadoop的并行加载机制统一了在线和离线的消息处理。Apache Kafka相对于ActiveMQ是一个非常轻量级的消息系统，除了性能非常好之外，还是一个工作良好的分布式系统。
 四、Kafka中的术语解释 4.1　概述 在深入理解Kafka之前，先介绍一下Kafka中的术语。下图展示了Kafka的相关术语以及之间的关系：</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka3/</guid>
-      <description>#消息队列Kafka及其应用场景
-消息队列Kafka及其应用场景 Kafka集群在马蜂窝大数据平台的优化与应用扩展
-#参考 参考资料 Kafka面试题总结
-Kafka入门看这一篇就够了</description>
     </item>
     
   </channel>

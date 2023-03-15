@@ -1,0 +1,55 @@
+# $ cat docker-compose.yaml
+version: "2"
+networks:
+    byfn:
+
+services:
+    etcd1:
+        # image: quay.io/coreos/etcd
+        image: "bitnami/etcd:latest"
+        container_name: etcd111
+        environment:
+            - ALLOW_NONE_AUTHENTICATION=yes
+            - ETCD_ADVERTISE_CLIENT_URLS=http://0.0.0.0:2379
+            - BITNAMI_APP_NAME=etcd1
+            - ETCD_LISTEN_CLIENT_URLS=http://0.0.0.0:2379
+            - ETCD_INITIAL_CLUSTER_TOKEN=etcd-cluster
+        # command: etcd -name etcd1 -advertise-client-urls http://0.0.0.0:2379 -listen-client-urls http://0.0.0.0:2379 -listen-peer-urls http://0.0.0.0:2380 -initial-cluster-token etcd-cluster -initial-cluster "etcd1=http://etcd1:2380,etcd2=http://etcd2:2380,etcd3=http://etcd3:2380" -initial-cluster-state new
+        ports:
+            - 2379
+            - 2380
+        networks:
+            - byfn
+
+    etcd2:
+        # image: quay.io/coreos/etcd
+        image: "bitnami/etcd:latest"
+        container_name: etcd222
+        environment:
+            - ALLOW_NONE_AUTHENTICATION=yes
+            - ETCD_ADVERTISE_CLIENT_URLS=http://0.0.0.0:2379
+            - BITNAMI_APP_NAME=etcd2
+            - ETCD_LISTEN_CLIENT_URLS=http://0.0.0.0:2379
+
+        # command: etcd -name etcd2 -advertise-client-urls http://0.0.0.0:2379 -listen-client-urls http://0.0.0.0:2379 -listen-peer-urls http://0.0.0.0:2380 -initial-cluster-token etcd-cluster -initial-cluster "etcd1=http://etcd1:2380,etcd2=http://etcd2:2380,etcd3=http://etcd3:2380" -initial-cluster-state new
+        ports:
+            - 2379
+            - 2380
+        networks:
+            - byfn
+
+    etcd3:
+        # image: quay.io/coreos/etcd
+        image: "bitnami/etcd:latest"
+        container_name: etcd333
+        environment:
+            - ALLOW_NONE_AUTHENTICATION=yes
+            - ETCD_ADVERTISE_CLIENT_URLS=http://0.0.0.0:2379
+            - BITNAMI_APP_NAME=etcd3
+            - ETCD_LISTEN_CLIENT_URLS=http://0.0.0.0:2379
+        # command: etcd -name etcd3 -advertise-client-urls http://0.0.0.0:2379 -listen-client-urls http://0.0.0.0:2379 -listen-peer-urls http://0.0.0.0:2380 -initial-cluster-token etcd-cluster -initial-cluster "etcd1=http://etcd1:2380,etcd2=http://etcd2:2380,etcd3=http://etcd3:2380" -initial-cluster-state new
+        ports:
+            - 2379
+            - 2380
+        networks:
+            - byfn

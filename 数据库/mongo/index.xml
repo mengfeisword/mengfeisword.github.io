@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mongo on DocDock Documentation</title>
+    <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/</link>
+    <description>Recent content in mongo on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql面试题</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+      <description>MongoDB高频面试题 1）解释什么是MongoDB？ 2）什么是MongoDB中的“命名空间”？ 3）MongoDB中的分片是什么？ 4）查看Mongos使用的连接？ 5）解释什么是副本集？ 6）复制在MongoDB中如何工作？ 7）在MongoDB中创建模式时，需要考虑哪些要点？ 8）在MongoDB中创建集合并将其删除的语法是什么？ 9）说明Profiler在MongoDB中的作用是什么？ 10）解释一下您可以将旧文件移动到moveChunk目录中吗？ 11）要进行安全备份，可以使用MongoDB中的功能是什么？ 12）提及Objecld由什么组成？ 13）提及插入文档的命令语法是什么？ 14）提到如何检查函数的源代码？ 15）查看是否在主服务器上的命令语法是什么？MongoDB允许多少个主机？ 16）提到用于查看Mongo的命令语法正在使用链接吗？ 17）解释一下MongoDB中的索引是什么？ 18）提到在MongoDB中使用索引的基本语法是什么？ 19）解释什么是MongoDB中的GridFS？ 20）MongoDB相似的产品有哪些？ Cassandra，CouchDB，Redis，Riak，Hbase等。</description>
+    </item>
+    
+    <item>
+      <title>参考文档</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>MongoDB中文手册|官方文档中文版
+MongoDB
+mongodb学习笔记
+MongoDB(思维导图)
+思维导图学《Mongo 官方文档》
+MongoDB初学知识思维导图
+Mongodb思维导图
+面试挂在数据库？莫慌，我赠你全套笔记（MySQL+redis+MongoDB）
+Mongodb思维导图
+MongoDB 教程
+mongodb学习总结
+MongoDB架构学习笔记
+mongodb中文文档
+mongodb中文手册
+面试文档 95道MongoDB面试题（含答案），1万字详细解析 快2020年了，赶紧收藏起MongoDB面试题轻松面对BAT灵魂式的拷问 MongoDB高频面试题 28个MongoDB经典面试题 MongoDB面试题和答案全集解析 MongoDB面试题问题以及参考答案 #MongoDB相似的产品有哪些？ Cassandra，CouchDB，Redis，Riak，Hbase等。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/mongodb%E6%9F%A5%E8%AF%A2%E6%A1%88%E4%BE%8B/mac%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/mongodb%E6%9F%A5%E8%AF%A2%E6%A1%88%E4%BE%8B/mac%E5%AE%89%E8%A3%85/</guid>
+      <description>一. 安装 下载 mongodb-macos-x86_64-4.2.3.tgz
+1. 解压文件 tar -zxvf mongodb-macos-x86_64-4.2.3.tgz
+2. 新建mongodb文件夹 mkdir -p mongodb
+3. 将mongodb拷贝到新文件夹 cp -R -n /Users/mac/work/mongodb
+安装默认路径：/Users/mac/work/mongodb
+二. 运行 1.创建数据库存储目录/Users/mac/work/mgdb： sudo mkdir -p /Users/mac/work/mgdb
+2.启动mongod mongod
+如果上一步自定义了存储路径则需要使用 &amp;ndash;dbpath ，例如 mongod &amp;ndash;dbpath /Users/mac/work/mgdb
+如果没有创建全局路径 PATH，需要进入以下目录 cd /Users/mac/work/mongodb/bin &amp;amp;&amp;amp; ./mgdb
+#三.安装软件 Studio 3T https://segmentfault.com/a/1190000021033718</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/replicaset/replicaset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/replicaset/replicaset/</guid>
+      <description>1.三台服务器
+服务器1:211.149.189.65:47007 服务器2:211.149.189.65:47008 服务器3:211.149.189.65:47009
+2.对应三个配置 mongodb_p.conf mongodb_s1.conf mongodb_s2.conf
+3.启动 ./mongod -f /opt/mongodb5/mongodb_p.conf ./mongod -f /opt/mongodb5/mongodb_s1.conf ./mongod -f /opt/mongodb5/mongodb_s2.conf
+4.初始化 链接数据库 ./mongod mongodb://211.149.189.65:47007
+1.配置replica set节点
+config = {_id:&amp;ldquo;repmore&amp;rdquo;,members:[{_id:0,host:&amp;lsquo;211.149.189.65:47007&amp;rsquo;,priority :2},{_id:1,host:&amp;lsquo;211.149.189.65:47008&amp;rsquo;,priority:1},{_id:2,host:&amp;lsquo;211.149.189.65:47009&amp;rsquo;,priority:1}]}
+2.初始化replica set
+rs.initiate(config);
+3.查看replica set各节点状态
+rs.status();
+5. 生成key
+sudo openssl rand -base64 741 &amp;raquo; mt.key
+修改权限 chmod 600 mt.key
+写到配置文件 auth=true keyFile=/opt/mongodb5/mt.key</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/setpwd/%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/setpwd/%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/</guid>
+      <description>地址
+1. show dbs 在mongodb新版本里并没有admin数据库，但是并不妨碍第2步操作。
+2. use admin 进入admin数据库
+3. 创建管理员账户
+db.createUser({ user: &amp;ldquo;mtadmin&amp;rdquo;, pwd: &amp;ldquo;adminmt&amp;rdquo;, roles: [{ role: &amp;ldquo;userAdminAnyDatabase&amp;rdquo;, db: &amp;ldquo;admin&amp;rdquo; }] })
+mongodb中的用户是基于身份role的，该管理员账户的 role是 userAdminAnyDatabase。 ‘userAdmin’代表用户管理身份，’AnyDatabase’ 代表可以管理任何数据库。
+4. 验证第3步用户添加是否成功
+db.auth(&amp;ldquo;mtadmin&amp;rdquo;, &amp;ldquo;adminmt&amp;rdquo;) 如果返回1，则表示成功。 exit退出系统
+db.auth()方法理解为 用户的验证功能
+5. 修改配置
+sudo vi /etc/mongod.conf 找到#security: 取消注释，修改为：
+authorization: enabled #注意缩进，缩进参照配置文件其他配置。缩进错误可能第6步重启不成功。
+6. 重启 mongodb sudo service mongod restart
+7. 进入mongodb,用第3步的 管理员账户登录，用该账户创建其他数据库管理员账号 db.auth(&amp;ldquo;mtadmin&amp;rdquo;, &amp;ldquo;adminmt&amp;rdquo;)
+8. 新建你需要管理的mongodb 数据的账号密码。 db.createUser({ user: &amp;ldquo;appadmin&amp;rdquo;, pwd: &amp;ldquo;cluNPP2P6JR5ogKB&amp;rdquo;, roles: [{ role: &amp;ldquo;dbOwner&amp;rdquo;, db: &amp;ldquo;app&amp;rdquo; }] })</description>
+    </item>
+    
+  </channel>
+</rss>

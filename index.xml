@@ -18,6 +18,49 @@ Tip : you can add a image, a combobox with links to other documentation&amp;hell
     </item>
     
     <item>
+      <title>compose命令详解</title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/compose%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/compose%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/</guid>
+      <description> build(构建yml中某个服务的镜像) 如上，web这个服务是依赖于镜像build的。在本地 也存在Dockerfile文件。 可以使用docker-compose build来构建服务的镜像。 ps(查看已经启动的服务状态） kill(停止某个服务） logs(可以查看某个服务的log） port(打印绑定的public port） pull(pull服务镜像) up(启动yml定义的所有服务） stop(停止yml中定义的所有服务） start(启动被停止的yml中的所有服务） kill(强行停止yml中定义的所有服务） rm（删除yml中定义的所有服务） restart(重启yml中定义的所有服务） scale(扩展某个服务的个数，可以向上或向下） migrate-to-labels(这个没有实际尝试。根据介绍是将服务从1.2迁移到1.3带labels的版本。docker之前不支持label） version（查看compose的版本） </description>
+    </item>
+    
+    <item>
+      <title>docker save与docker export的区别</title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/docker-save%E4%B8%8Edocker-export%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/docker-save%E4%B8%8Edocker-export%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>docker save与docker export的区别 一.docker save 1.docker save是用来将一个或多个image打包保存的工具。 docker save -o images.tar postgres:9.6 mongo:3.4
+2.docker save如果指定的是container，docker save将保存的是容器背后的image。 docker save -o b.tar postgres
+3.将打包后的镜像载入进来使用docker load docker load -i images.tar
+4.docker save的应用场景是,如果你的应用是使用docker-compose.yml编排的多个镜像组合,但你要部署的客户服务器并不能连外网.这时,你可以使用docker save将用到的镜像打个包,然后拷贝到客户服务器上使用docker load载入.
+二.docker export 1.docker export是用来将container的文件系统进行打包的 docker export需要指定container，不能像docker save那样指定image或container都可以。 docker export -o postgres-export.tar postgres
+2.将打包的container载入进来使用docker import docker import将container导入后会成为一个image，而不是恢复为一个container。 docker import postgres-export.tar postgres:latest
+另外一点是，docker import可以指定IMAGE[:TAG]，说明我们可以为镜像指定新名称。如果本地镜像库中已经存在同名的镜像，则原有镜像的名称将会被剥夺，赋给新的镜像。原有镜像将成为孤魂野鬼，只能通过IMAGE ID进行操作。
+docker export的应用场景主要用来制作基础镜像，比如你从一个ubuntu镜像启动一个容器，然后安装一些软件和进行一些设置后，使用docker export保存为一个基础镜像。然后，把这个镜像分发给其他人使用，比如作为基础的开发环境。
+三.docker save和docker export的区别 1.docker save保存的是镜像（image），docker export保存的是容器（container）； 2.docker load用来载入镜像包，docker import用来载入容器包，但两者都会恢复为镜像； 3.docker load不能对载入的镜像重命名，而docker import可以为镜像指定新名称。 </description>
+    </item>
+    
+    <item>
+      <title>etcd安装</title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/etcd%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/etcd%E5%AE%89%E8%A3%85/</guid>
+      <description>1.etec 安装 https://blog.csdn.net/Axela30W/article/details/84558730#t2 https://cizixs.com/2016/08/02/intro-to-etcd/ https://blog.csdn.net/huwh_/article/details/80225902 https://tonydeng.github.io/2015/10/19/etcd-application-scenarios/
+https://tonydeng.github.io/categories/
+etcdctl &amp;ndash;endpoints=[192.168.1.9:2389] get / &amp;ndash;prefix &amp;ndash;keys-only
+看见候选包 brew search etcd
+安装 brew install etcd
+etcd 查询 ETCDCTL_API=3 etcdctl &amp;ndash;endpoints=http://192.168.1.19:2379 &amp;ndash;prefix &amp;ndash;keys-only=true get / ETCDCTL_API=3 etcdctl &amp;ndash;endpoints=http://192.168.1.19:2379 get + keys 查询键信息。
+获取集群成员 ETCDCTL_API=3 etcdctl &amp;ndash;endpoints=http://127.0.0.1:30001 member list
+设置数据 ETCDCTL_API=3 etcdctl &amp;ndash;endpoints=http://127.0.0.1:30001 put /root/test/keyOne &amp;ldquo;Hello etcd&amp;rdquo;
+ETCDCTL_API=3 etcdctl &amp;ndash;endpoints=http://127.0.0.1:30001 &amp;ndash;prefix &amp;ndash;keys-only=true get / ETCDCTL_API=3 etcdctl &amp;ndash;endpoints=http://127.0.0.1:30001 get /root/test/keyOne</description>
+    </item>
+    
+    <item>
       <title>Installation</title>
       <link>/getting-start/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -29,17 +72,104 @@ Tip : you can add a image, a combobox with links to other documentation&amp;hell
     </item>
     
     <item>
+      <title>k8s</title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s/</guid>
+      <description>k8s k8s 简介 Kubernetes Pod概述 K8s 学习者绝对不能错过的最全知识图谱（内含 58个知识点链接）
+1.master(控制系统) etcd: k-v 数据库（用于配置共享和服务发现） 只与 apiserver 通信 scheduler: 调度 简单点说就是给一个 pod 找一个 node(合理的平衡) controller manager: 核心，负责将现在的状态调整为 etcd 上应该的状态，包含了所有的实现逻辑 apiserver: 可以理解为 etcd 的前置过滤器（理解为中心处理器，分发到各个连接的模块）
+2.node(s) kubelet: 负责和 master 连接，注册 node, listen-watch 本 node 的任务等 kube-proxy: 用于 k8s service 对象。在 K8s 集群中微服务的负载均衡是由 Kube-proxy 实现的，它是 K8s 集群内部的负载均衡器，也是一个分布式代理服务器，在 K8s 的每个节点上都有一个，这一设计体现了它的伸缩性优势，需要访问服务的节点越多，提供负载均衡能力的 Kube-proxy 就越多，高可用节点也随之增多。 容器运行时: 除了 docker k8s 还支持 rkt 等容器实现
+负责为 pod 提供代理。它会定期从 etcd 获取所有的 service，并根据 service 信息创建代理。</description>
+    </item>
+    
+    <item>
+      <title>k8s常见面试题</title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+      <description>k8s常见面试题 如何在 Kubernetes 中实现负载均衡？ 在生产中，你如何实现 Kubernetes 自动化？ 你如何扩展 Kubernetes 集群？ 你能解释 Deployment、ReplicaSets、StatefulSets、Pod、CronJob 的不同用途吗？ Kubernetes 如何处理持久性？ 服务和 ingress 的作用是什么？ 你何时会使用像 ConfigMap 或 secret 这样的东西？ Pod 亲和性作用是什么？ 你能举例说明何时使用 Init Container 么？ 什么是 sidecar 容器？你能给出一个用例，说明你为什么要使用它么？ 在构建和管理生产集群时遇到的主要问题是什么？ 为什么你会建议公司在云中构建自己的 K8S 集群而不是使用托管服务？ 什么是 Istio 和 Linkerd？ 什么是 Kubernetes Operator？ kubernetes包含几个组件。 各个组件的功能是什么。组件之间是如何交互的。 k8s的pause容器有什么用。是否可以去掉。 k8s中的pod内几个容器之间的关系是什么。 一个经典pod的完整生命周期。 k8s的service和ep是如何关联和相互影响的。 详述kube-proxy原理, -个请求是如何经过层层转发落到某个pod.上的整个过程。请求可能来自pod也可能来自外部。 rc/rs功能是怎么实现的。详述从API接收到-一个创建rc/rs的请求,到最终在节点上创建pod的全过程,尽可能详细。另外,当-个pod失效时，kubernetes是如何发现并重启另一个pod的? deployment/rs有什么区别。 其使用方式使用条件和原理是什么。 cgroup中的cpu有哪几种限制方式。 k8s是如何使用实现request和limit的。</description>
+    </item>
+    
+    <item>
+      <title>k8s简介</title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E7%AE%80%E4%BB%8B/</guid>
+      <description>一..k8s是什么，我们为啥要用 容器管理系统，提供部署，管理，扩展等机制，管理容器夸机器的应用 主要功能： 1.使用docker对应用包装，实例化，运行 2.以集群方式运行，管理跨机器的容器 3.解决docker跨机器容器之间的通讯问题 4.kubernetes的自我修复机制使得容器集群重视运行在用户期望的状态
+为什么使用： 1.开发人员各司其职，轻装上整 2.全面拥抱微服务框架 3.使用kubernetes系统可以随时整体迁移 4.kubernetes系统具备超强的横向扩展功能
+二，基本概念 1.功能组件 master apiserver：供 HTTP Rest 接口的关键服务程序，kubernets里所有资源增、删、改、查等操作的唯一入口，也是集群控制的入口进程 scheduler（调度）：资源调度(pod)的进程 controller-manager：负责管理各种控制，所有资源对象的自动化控制中心（资源对象的大总管） etcd：k-v数据库。所有资源对象全部保存在这里,支持服务与发现
+node kebulet： pod对应容器的创建、暂停等任务 proxy：负责为pod提供代理。它会定期从etcd获取所有的service，并根据service信息创建代理。。k8s service 的通信与负载均衡机制的重要组件（主要对外支持的） docker：本机容器的管理与创建
+2.操作对象 1.pod 最小部署单元，包含一个或多个容器，连接在一起的容器共享volue和网络，由kubernetes统一创建，调度，管理。可以直接创建，但是推荐使用rc 2.service pod的访问代理抽象 抽象服务出口，基础版本的负载均衡 3.replication controllers 管理pods的生命周期确保指定数量的pods会一直运行，实现资源收缩 一共4点
+总体结构 1.master组件 apiserver： etcd：k-v数据库,系统的所有资源对象都保存在这里。支持服务注册与服务发现,微服务中常用的组件 scheduler（调度）：集群资源调度，分配pod的创建 controller-manager：管理rc，EndPointControl等各种控制器
+2.node组件 kublet.负责管控docker容器,如，启动，停止等 proxy：负责为pod提供代理。定期从etcd获取service，并根据serveice创建代理
+公共组件 etcd： flannel：网络协议</description>
+    </item>
+    
+    <item>
+      <title>Kafka常见面试题总结</title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
+      <description>Kafka 是什么？主要应用场景有哪些？ Kafka 是一个分布式流式处理平台。这到底是什么意思呢？
+流平台具有三个关键功能：
+消息队列：发布和订阅消息流，这个功能类似于消息队列，这也是 Kafka 也被归类为消息队列的原因。 容错的持久方式存储记录消息流： Kafka 会把消息持久化到磁盘，有效避免了消息丢失的风险。 流式处理平台： 在消息发布的时候进行处理，Kafka 提供了一个完整的流式处理类库。 Kafka 主要有两大应用场景：
+消息队列 ：建立实时流数据管道，以可靠地在系统或应用程序之间获取数据。 数据处理： 构建实时的流数据处理程序来转换或处理数据流。 和其他消息队列相比,Kafka的优势在哪里？ 我们现在经常提到 Kafka 的时候就已经默认它是一个非常优秀的消息队列了，我们也会经常拿它跟 RocketMQ、RabbitMQ 对比。我觉得 Kafka 相比其他消息队列主要的优势如下：
+极致的性能 ：基于 Scala 和 Java 语言开发，设计中大量使用了批量处理和异步的思想，最高可以每秒处理千万级别的消息。 生态系统兼容性无可匹敌 ：Kafka 与周边生态系统的兼容性是最好的没有之一，尤其在大数据和流计算领域。 实际上在早期的时候 Kafka 并不是一个合格的消息队列，早期的 Kafka 在消息队列领域就像是一个衣衫褴褛的孩子一样，功能不完备并且有一些小问题比如丢失消息、不保证消息可靠性等等。当然，这也和 LinkedIn 最早开发 Kafka 用于处理海量的日志有很大关系，哈哈哈，人家本来最开始就不是为了作为消息队列滴，谁知道后面误打误撞在消息队列领域占据了一席之地。
+随着后续的发展，这些短板都被 Kafka 逐步修复完善。所以，Kafka 作为消息队列不可靠这个说法已经过时！
+队列模型了解吗？Kafka 的消息模型知道吗？ 题外话：早期的 JMS 和 AMQP 属于消息服务领域权威组织所做的相关的标准，我在 JavaGuide的 《消息队列其实很简单》这篇文章中介绍过。但是，这些标准的进化跟不上消息队列的演进速度，这些标准实际上已经属于废弃状态。所以，可能存在的情况是：不同的消息队列都有自己的一套消息模型。
+队列模型：早期的消息模型 使用队列（Queue）作为消息通信载体，满足生产者与消费者模式，一条消息只能被一个消费者使用，未被消费的消息在队列中保留直到被消费或超时。 比如：我们生产者发送 100 条消息的话，两个消费者来消费一般情况下两个消费者会按照消息发送的顺序各自消费一半（也就是你一个我一个的消费。）
+队列模型存在的问题：
+假如我们存在这样一种情况：我们需要将生产者产生的消息分发给多个消费者，并且每个消费者都能接收到完整的消息内容。
+这种情况，队列模型就不好解决了。很多比较杠精的人就说：我们可以为每个消费者创建一个单独的队列，让生产者发送多份。这是一种非常愚蠢的做法，浪费资源不说，还违背了使用消息队列的目的。
+发布-订阅模型:Kafka 消息模型 发布-订阅模型主要是为了解决队列模型存在的问题。</description>
+    </item>
+    
+    <item>
+      <title>linux命令</title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/linux%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/linux%E5%91%BD%E4%BB%A4/</guid>
+      <description>linux 命令 1.解压缩命令 解压 tar zxvf 文件名.tar.gz 压缩 tar zcvf 文件名.tar.gz 待压缩的文件名
+2.从 linux 下载命令
+scp /home/work/source.txt work@192.168.0.10:/home/work/ #把本地的 source.txt 文件拷贝到 192.168.0.10 机器上的/home/work 目录下
+scp work@192.168.0.10:/home/work/source.txt /home/work/ #把 192.168.0.10 机器上的 source.txt 文件拷贝到本地的/home/work 目录下
+scp work@192.168.0.10:/home/work/source.txt work@192.168.0.11:/home/work/ #把 192.168.0.10 机器上的 source.txt 文件拷贝到 192.168.0.11 机器的/home/work 目录下
+scp -r /home/work/sourcedir work@192.168.0.10:/home/work/ #拷贝文件夹，加-r 参数
+//下砸到本地 scp root@192.168.1.19:/home/server/go/serverb.tar.gz
+scp root@192.168.1.19:/home/server/go/ssss.tar.gz
+scp root@43.247.164.19:/home/server/go/ssss.tar.gzz /Users/mac/Desktop
+3.复制文件 cp -i file1 file2 cp file1 file2
+4.删除 &amp;ldquo;rm -f&amp;rdquo; 强行删除，忽略不存在的文件，不提示确认。(f 为 force 的意思) &amp;ldquo;rm -i&amp;rdquo; 进行交互式删除，即删除时会提示确认。(i 为 interactive 的意思) &amp;ldquo;rm -r&amp;rdquo; 将参数中列出的全部目录和子目录进行递归删除。(r 为 recursive 的意思) &amp;ldquo;rm -v&amp;rdquo; 详细显示删除操作进行的步骤。(v 为 verbose 的意思)</description>
+    </item>
+    
+    <item>
+      <title>参考文档</title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>参考文档 docker中文 kubernetes kubernetes编排器 kubernetes中文文档 Portainer Portainer 轻量级的 Docker 管理 UI Portainer安装，设置等 docker可视化管理——Portainer安装教程 Docker安装 Mac平台上Docker安装与使用
+mac安装docker图形界面
+docker的etcd3的搭建</description>
+    </item>
+    
+    <item>
       <title>参考文档</title>
       <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
-      <description>参考文档 全网最详细的gin源码解析 Gin框架介绍及使用&amp;ndash;李文周的博客 httprouter Gin框架中文文档
-第三方库 tg验证库 学会gin参数校验之validator库，看这一篇就足够了 validator库参数校验若干实用技巧 Gin请求参数校验
+      <description>参考文档 全网最详细的gin源码解析 Gin框架介绍及使用&amp;ndash;李文周的博客 httprouter Gin框架中文文档 第三方库 tg验证库
+学会gin参数校验之validator库，看这一篇就足够了
+validator库参数校验若干实用技巧
+Gin请求参数校验
 Golang-Gin-API
-例子 Golang Gin 实践 gin官方例子 GinLearn
-参考 基础知识点 gin中文文档 Gin中文文档
-源码 重要文档 GIN框架 Gin 框架中文文档 gin中文文档 使用 Gin web 框架的知名项目</description>
+例子 Golang Gin 实践 gin官方例子 GinLearn 参考 基础知识点 gin中文文档 Gin中文文档 源码 重要文档 GIN框架 Gin 框架中文文档 gin中文文档 使用 Gin web 框架的知名项目 </description>
     </item>
     
     <item>
@@ -48,8 +178,7 @@ Golang-Gin-API
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/%E6%8F%92%E4%BB%B6/</guid>
-      <description>Gin实战技巧篇之云插件化开发 plugins-gin go-gin-api Gin-Gonic
-中间件 限流中间件</description>
+      <description> Gin实战技巧篇之云插件化开发 plugins-gin go-gin-api Gin-Gonic 中间件 限流中间件 </description>
     </item>
     
     <item>
@@ -182,6 +311,87 @@ go中json序列化使用标签来进行拓展： 1、忽略空值： type Person
     </item>
     
     <item>
+      <title>mysql重点</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%87%8D%E7%82%B9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%87%8D%E7%82%B9/</guid>
+      <description>设计优化 一,设计
+数据库统计 1.时间换空间(分时统计) 一定时间统计一次(统计到别的数据库,进行查询) 2.处理死数据和激活数据
+二，索引优化
+三.锁优化 表级锁 行级锁 页面锁
+四 查询优化 减少 IO 减少网络</description>
+    </item>
+    
+    <item>
+      <title>mysql面试题</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+      <description>MongoDB高频面试题 1）解释什么是MongoDB？ 2）什么是MongoDB中的“命名空间”？ 3）MongoDB中的分片是什么？ 4）查看Mongos使用的连接？ 5）解释什么是副本集？ 6）复制在MongoDB中如何工作？ 7）在MongoDB中创建模式时，需要考虑哪些要点？ 8）在MongoDB中创建集合并将其删除的语法是什么？ 9）说明Profiler在MongoDB中的作用是什么？ 10）解释一下您可以将旧文件移动到moveChunk目录中吗？ 11）要进行安全备份，可以使用MongoDB中的功能是什么？ 12）提及Objecld由什么组成？ 13）提及插入文档的命令语法是什么？ 14）提到如何检查函数的源代码？ 15）查看是否在主服务器上的命令语法是什么？MongoDB允许多少个主机？ 16）提到用于查看Mongo的命令语法正在使用链接吗？ 17）解释一下MongoDB中的索引是什么？ 18）提到在MongoDB中使用索引的基本语法是什么？ 19）解释什么是MongoDB中的GridFS？ 20）MongoDB相似的产品有哪些？ Cassandra，CouchDB，Redis，Riak，Hbase等。</description>
+    </item>
+    
+    <item>
+      <title>mysql面试题</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+      <description>1.事务 原子性 隔离性 一直性 持久性
+2.MyISAM和InnoDB区别 MyISAM不支持外键和事务，innodb支持 MyISAM锁的粒度是表级，而InnoDB支持行级锁定 MyISAM支持全文类型索引，而InnoDB不支持全文索引。 MyISAM相对简单，所以在效率上要优于InnoDB，小型应用可以考虑使用MyISAM MyISAM创建表生成三个文件：.frm数据表结构 .myd数据文件 .myi索引文件，Innodb只生成一个frm文件，数据存放在ibdata1.log MyISAM使用delete语句删除后并不会立刻清理磁盘空间，需要定时清理，命令：OPTIMIZE table dept;
+3.delete drop truncate区别 truncate 和 delete只删除数据，不删除表结构 ,drop删除表结构，并且释放所占的空间。 删除数据的速度，一般来说: drop&amp;gt; truncate &amp;gt; delete delete属于DML语言，需要事务管理，commit之后才能生效。drop和truncate属于DDL语言，操作立刻生效，不可回滚 使用场合： 当你不再需要该表时， 用 drop; 当你仍要保留该表，但要删除所有记录时， 用 truncate; 当你要删除部分记录时（always with a where clause), 用 delete. 注意： 对于有主外键关系的表，不能使用truncate而应该使用不带where子句的delete语句，由于truncate不记录在日志中，不能够激活触发器
+4.索引 MyISAM引擎使用B+Tree作为索引结构，叶节点的data域存放的是数据记录的地址。 InnoDB也使用B+Tree作为索引结构。InnoDB的数据文件本身就是索引文件。
+索引种类 主键索引（把某列设为主键，则该列就是索引，主键不能重复） 唯一索引（unique），该列具有唯一性，同时又是索引 index 普通索引 全文索引 （fulltext） 只有MyISAM存储引擎支持 （注：mysql 5.6之后，Innodb也开始支持全文索引，mysql5.6较之前版本有较大更新，有兴趣的小伙伴可以去查一查）
+5.适合加索引的列： 经常查询的列上加索引 唯一性太差的列不要加索引（重复太多），相反唯一性比较好的列适合加索引 不经常修改的列适合加。经常修改的列不要加索引（列修改，索引也要改） 因为索引的创建和更改是有开销的。
+6.mysql优化 1.数据表的优化（符合3范式） 1.1范式：1NF是对属性的原子性约束，要求属性具有原子性，不可再分解；(只要是关系型数据库都满足1NF)2.2范式：2NF是对记录的惟一性约束，要求记录有惟一标识，即实体的惟一性；3.3范式：3NF是对字段冗余性的约束，即任何字段不能由其他字段派生出来，它要求字段没有冗余。没有冗余的数据库设计可以做到4.但是，没有冗余的数据库未必是最好的数据库，有时为了提高运行效率，就必须降低范式标准，适当保留冗余数据。具体做法是：在概念数据模型设计时遵守第三范式，降低范式标准的工作放到物理数据模型设计时考虑。降低范式就是增加字段，允许冗余。2.sql语句优化 索引 3.</description>
+    </item>
+    
+    <item>
+      <title>参考文档</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>网站 官网 Elasticsearch中文文档 Elasticsearch中文社区 ElasticSearch使用场景 Elasticsearch入门指南 Elasticsearch+logstash+kibana实现日志分析（实验） Elasticsearch 思维导图集锦 日志系统 从零学Elasticsearch系列——搭建ELK Nginx日志分析平台 Elasticsearch+logstash+kibana实现日志分析（实验） docker-compose一键部署elasticsearch+logstash+kibana ELK日志系统：Elasticsearch + Logstash + Kibana 搭建教程 ElasticSearch使用场景 用Kibana和logstash快速搭建实时日志查询、收集与分析系统 如何快速搭建一个简易的ELK日志分析系统 快速搭建ELK日志分析系统 快速搭建一套elk日志系统 </description>
+    </item>
+    
+    <item>
+      <title>参考文档</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>MongoDB中文手册|官方文档中文版
+MongoDB
+mongodb学习笔记
+MongoDB(思维导图)
+思维导图学《Mongo 官方文档》
+MongoDB初学知识思维导图
+Mongodb思维导图
+面试挂在数据库？莫慌，我赠你全套笔记（MySQL+redis+MongoDB）
+Mongodb思维导图
+MongoDB 教程
+mongodb学习总结
+MongoDB架构学习笔记
+mongodb中文文档
+mongodb中文手册
+面试文档 95道MongoDB面试题（含答案），1万字详细解析 快2020年了，赶紧收藏起MongoDB面试题轻松面对BAT灵魂式的拷问 MongoDB高频面试题 28个MongoDB经典面试题 MongoDB面试题和答案全集解析 MongoDB面试题问题以及参考答案 #MongoDB相似的产品有哪些？ Cassandra，CouchDB，Redis，Riak，Hbase等。</description>
+    </item>
+    
+    <item>
+      <title>参考资料</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/</guid>
+      <description>#mysql 是关系型数据库 mysql总结(一)：思维导图
+mysql总结 高性能MySQL系统思维导图 MySql之增删改查总结 MySQL存储过程
+#面试资料 MySQL 面试之必会知识点 史上最详细的一线大厂Mysql面试题详解 Mysql面试知识点总结(进阶篇) MySQL 分库分表方案，总结的非常好！ 干货！MySql DAL中间件总结
+#数据库优化 万字总结：学习MySQL优化原理，这一篇就够了！ 记录一次MySQL两千万数据的大表优化解决过程，提供三种解决方案 史上最详细的一线大厂Mysql面试题详解 MySQL 的优化方案总结</description>
+    </item>
+    
+    <item>
       <title>参考资料</title>
       <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -284,10 +494,77 @@ Special syntax (in html comment) is available for adding attributes to Markdown 
     
     <item>
       <title></title>
-      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafaka2/</link>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E8%B5%84%E6%96%99/dockermssql/create_qpsqldbbase/%E8%AF%B4%E6%98%8E/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafaka2/</guid>
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E8%B5%84%E6%96%99/dockermssql/create_qpsqldbbase/%E8%AF%B4%E6%98%8E/</guid>
+      <description>Docker for Windows 使用 VMware WorkStation
+登录dev实例 docker-machine ssh dev
+查看容器 docker ps
+创建快照 docker commit -p e5a5689d08ac qpsqldbbase-backup
+查看镜像 docker images
+保存镜像 docker save -o qpsqldbbase-backup.tar qpsqldbbase-backup
+恢复镜像 docker load -i qpsqldbbase-backup.tar
+netstat -aon|findstr &amp;ldquo;2048&amp;rdquo;
+$ docker ps // 查看所有正在运行容器 $ docker stop containerId // containerId 是容器的ID
+$ docker ps -a // 查看所有容器 $ docker ps -a -q // 查看所有容器ID
+$ docker stop $(docker ps -a -q) // stop停止所有容器 $ docker rm $(docker ps -a -q) // remove删除所有容器</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E8%B5%84%E6%96%99/docker%E7%9A%84etcd3%E7%9A%84%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E8%B5%84%E6%96%99/docker%E7%9A%84etcd3%E7%9A%84%E6%90%AD%E5%BB%BA/</guid>
+      <description>docker的etcd3的搭建</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/</guid>
+      <description>服务与发现技术 etcd:注册发现 内部有事务和监听机制 分组 zookeeper consul eureka</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/</guid>
+      <description>#文档参考 Kubernetes中文社区 | 中文文档 十分钟带你理解Kubernetes核心概念 k8s资料 Kubernetes 介绍
+#思维导图 k8s思维导图 男孩周末班-k8s-思维导图</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%91%E5%B8%83%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%91%E5%B8%83%E6%9C%8D%E5%8A%A1/</guid>
+      <description>kubernetes核心组件kube-proxy - 运维笔记
+在 K8s 集群中微服务的负载均衡是由 Kube-proxy 实现的，它是 K8s 集群内部的负载均衡器，也是一个分布式代理服务器，在 K8s 的每个节点上都有一个，这一设计体现了它的伸缩性优势，需要访问服务的节点越多，提供负载均衡能力的 Kube-proxy 就越多，高可用节点也随之增多。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E7%94%A8%E9%80%94/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E7%94%A8%E9%80%94/</guid>
+      <description>1.你能解释 Deployment、ReplicaSets、StatefulSets、Pod、CronJob 的不同用途吗？ Deployment:开发更新 ReplicaSets:集合控制 StatefulSets:状态集合 Pod:虚拟的实体 CronJob:运行自动化 2.Kubernetes 如何处理持久性？ 服务和 ingress 的作用是什么？ 你何时会使用像 ConfigMap 或 secret 这样的东西？ Pod 亲和性作用是什么？ 你能举例说明何时使用 Init Container 么？ 什么是 sidecar 容器？你能给出一个用例，说明你为什么要使用它么？
+https://jimmysong.io/kubernetes-handbook/practice/service-discovery-and-loadbalancing.html</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafaka%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafaka%E7%AE%80%E4%BB%8B/</guid>
       <description>https://github.com/Snailclimb/JavaGuide/blob/master/docs/system-design/data-communication/Kafka%E5%85%A5%E9%97%A8%E7%9C%8B%E8%BF%99%E4%B8%80%E7%AF%87%E5%B0%B1%E5%A4%9F%E4%BA%86.md
 Kafka 简介 Kafka 是一种分布式的，基于发布 / 订阅的消息系统。
 主要设计目标如下：
@@ -333,14 +610,93 @@ Kafka主要设计目标如下：
     
     <item>
       <title></title>
-      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka3/</link>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/couchdb/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka3/</guid>
-      <description>#消息队列Kafka及其应用场景
-消息队列Kafka及其应用场景 Kafka集群在马蜂窝大数据平台的优化与应用扩展
-#参考 参考资料 Kafka面试题总结
-Kafka入门看这一篇就够了</description>
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/couchdb/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/</guid>
+      <description>CouchDB允许多个主服务器</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E8%AF%B4%E6%98%8E/</guid>
+      <description>#存储和查询文本 ElasticSearch</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/mongodb%E6%9F%A5%E8%AF%A2%E6%A1%88%E4%BE%8B/mac%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/mongodb%E6%9F%A5%E8%AF%A2%E6%A1%88%E4%BE%8B/mac%E5%AE%89%E8%A3%85/</guid>
+      <description>一. 安装 下载 mongodb-macos-x86_64-4.2.3.tgz
+1. 解压文件 tar -zxvf mongodb-macos-x86_64-4.2.3.tgz
+2. 新建mongodb文件夹 mkdir -p mongodb
+3. 将mongodb拷贝到新文件夹 cp -R -n /Users/mac/work/mongodb
+安装默认路径：/Users/mac/work/mongodb
+二. 运行 1.创建数据库存储目录/Users/mac/work/mgdb： sudo mkdir -p /Users/mac/work/mgdb
+2.启动mongod mongod
+如果上一步自定义了存储路径则需要使用 &amp;ndash;dbpath ，例如 mongod &amp;ndash;dbpath /Users/mac/work/mgdb
+如果没有创建全局路径 PATH，需要进入以下目录 cd /Users/mac/work/mongodb/bin &amp;amp;&amp;amp; ./mgdb
+#三.安装软件 Studio 3T https://segmentfault.com/a/1190000021033718</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/replicaset/replicaset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/replicaset/replicaset/</guid>
+      <description>1.三台服务器
+服务器1:211.149.189.65:47007 服务器2:211.149.189.65:47008 服务器3:211.149.189.65:47009
+2.对应三个配置 mongodb_p.conf mongodb_s1.conf mongodb_s2.conf
+3.启动 ./mongod -f /opt/mongodb5/mongodb_p.conf ./mongod -f /opt/mongodb5/mongodb_s1.conf ./mongod -f /opt/mongodb5/mongodb_s2.conf
+4.初始化 链接数据库 ./mongod mongodb://211.149.189.65:47007
+1.配置replica set节点
+config = {_id:&amp;ldquo;repmore&amp;rdquo;,members:[{_id:0,host:&amp;lsquo;211.149.189.65:47007&amp;rsquo;,priority :2},{_id:1,host:&amp;lsquo;211.149.189.65:47008&amp;rsquo;,priority:1},{_id:2,host:&amp;lsquo;211.149.189.65:47009&amp;rsquo;,priority:1}]}
+2.初始化replica set
+rs.initiate(config);
+3.查看replica set各节点状态
+rs.status();
+5. 生成key
+sudo openssl rand -base64 741 &amp;raquo; mt.key
+修改权限 chmod 600 mt.key
+写到配置文件 auth=true keyFile=/opt/mongodb5/mt.key</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/setpwd/%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/setpwd/%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/</guid>
+      <description>地址
+1. show dbs 在mongodb新版本里并没有admin数据库，但是并不妨碍第2步操作。
+2. use admin 进入admin数据库
+3. 创建管理员账户
+db.createUser({ user: &amp;ldquo;mtadmin&amp;rdquo;, pwd: &amp;ldquo;adminmt&amp;rdquo;, roles: [{ role: &amp;ldquo;userAdminAnyDatabase&amp;rdquo;, db: &amp;ldquo;admin&amp;rdquo; }] })
+mongodb中的用户是基于身份role的，该管理员账户的 role是 userAdminAnyDatabase。 ‘userAdmin’代表用户管理身份，’AnyDatabase’ 代表可以管理任何数据库。
+4. 验证第3步用户添加是否成功
+db.auth(&amp;ldquo;mtadmin&amp;rdquo;, &amp;ldquo;adminmt&amp;rdquo;) 如果返回1，则表示成功。 exit退出系统
+db.auth()方法理解为 用户的验证功能
+5. 修改配置
+sudo vi /etc/mongod.conf 找到#security: 取消注释，修改为：
+authorization: enabled #注意缩进，缩进参照配置文件其他配置。缩进错误可能第6步重启不成功。
+6. 重启 mongodb sudo service mongod restart
+7. 进入mongodb,用第3步的 管理员账户登录，用该账户创建其他数据库管理员账号 db.auth(&amp;ldquo;mtadmin&amp;rdquo;, &amp;ldquo;adminmt&amp;rdquo;)
+8. 新建你需要管理的mongodb 数据的账号密码。 db.createUser({ user: &amp;ldquo;appadmin&amp;rdquo;, pwd: &amp;ldquo;cluNPP2P6JR5ogKB&amp;rdquo;, roles: [{ role: &amp;ldquo;dbOwner&amp;rdquo;, db: &amp;ldquo;app&amp;rdquo; }] })</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -779,6 +1135,19 @@ go开源仓库
 异常： 1.go中，异常处理使用panic()，recover()，defer联合使用。panic抛出异常中断，如果想要回复，可以在defer中使用recover恢复。但是go中，尽量少用异常处理。
 IO： 1.go中使用make()创建切片，映射，程道。返回对象，而new()返回的是指针。 2.chan分为有缓冲和无缓冲两种。 3.chan作为线程件通信的IO通道。 4.常使用select，case，default组合chan进行操作。
 并发： 1.并发里面主要是多线程以及常用的辅助类等。 2.并发的内容一般包含： （1）线程的初始化。线程的实现是go xxx，这个过程叫做gorutine。 （2）线程的通信。通过channel进行通信。注意，这里channel本身是具有锁功能的，往往作为最简单常用的锁进行使用 （3）线程对于资源的操作。这里主要是同步异步，阻塞和非阻塞等概念。 同步异步的关键在于互斥，而阻塞和非阻塞关键在于锁。但是两者其实很接近。 所以往往出现的是互斥锁。这里常用的是sync.Mutext.Lock()实现互斥锁。使用lock.Lock()实现锁。runtime模块往往用于运行时候的一些操作，帮助线程实现让出时间片，线程退出等操作。atomic模块是原子操作。其他的一些类和函数是基于这些概念进行的扩展。 （4）defer使用 defer func_name(param-list) 当一个函数调用前有关键字 defer 时, 那么这个函数的执行会推迟到包含这个 defer 语句的函数即将返回前才执行 defer 调用的函数参数的值在 defer 定义时就确定了, 而 defer 函数内部所使用的变量的值需要在这个函数运行时才确定。defer 函数调用的执行时机是外层函数设置返回值之后, 并且在即将返回之前</description>
+    </item>
+    
+    <item>
+      <title>重点解析</title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E9%87%8D%E7%82%B9%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E9%87%8D%E7%82%B9%E8%A7%A3%E6%9E%90/</guid>
+      <description>channal channel 数据结构 阻塞、非阻塞操作 多路select 1.channel 是结构 2.channel 结构里包含一个循环缓冲区 3.channel 有等待队列
+4.channel 的阻塞与非阻塞操作 5.多路的select 处理逻辑
+Golang合辑
+Golang深入理解GPM模型
+https://github.com/aceld 1.调度器由来 2.调度器GMP模型设计思想 3.调度器GMP调度场景的调度全过程分析 4.掌握go调度器原理</description>
     </item>
     
   </channel>

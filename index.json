@@ -14,6 +14,13 @@
 	"content": "各类编程语言的总结和复习资料\n"
 },
 {
+	"uri": "/%E5%B7%A5%E5%85%B7/hugo/",
+	"title": "hugo",
+	"tags": [],
+	"description": "",
+	"content": "各类编程语言的总结和复习资料\n"
+},
+{
 	"uri": "/%E5%B7%A5%E5%85%B7/",
 	"title": "工具",
 	"tags": [],
@@ -42,11 +49,53 @@
 	"content": "C语言的总结和复习资料\n"
 },
 {
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/compose%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/",
+	"title": "compose命令详解",
+	"tags": [],
+	"description": "",
+	"content": " build(构建yml中某个服务的镜像) 如上，web这个服务是依赖于镜像build的。在本地 也存在Dockerfile文件。 可以使用docker-compose build来构建服务的镜像。 ps(查看已经启动的服务状态） kill(停止某个服务） logs(可以查看某个服务的log） port(打印绑定的public port） pull(pull服务镜像) up(启动yml定义的所有服务） stop(停止yml中定义的所有服务） start(启动被停止的yml中的所有服务） kill(强行停止yml中定义的所有服务） rm（删除yml中定义的所有服务） restart(重启yml中定义的所有服务） scale(扩展某个服务的个数，可以向上或向下） migrate-to-labels(这个没有实际尝试。根据介绍是将服务从1.2迁移到1.3带labels的版本。docker之前不支持label） version（查看compose的版本） "
+},
+{
 	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/",
 	"title": "dart_flutter",
 	"tags": [],
 	"description": "",
 	"content": "dart_flutter语言的总结和复习资料\n"
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/",
+	"title": "docker",
+	"tags": [],
+	"description": "",
+	"content": "官方 docker中文 思维导图 "
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/docker-save%E4%B8%8Edocker-export%E7%9A%84%E5%8C%BA%E5%88%AB/",
+	"title": "docker save与docker export的区别",
+	"tags": [],
+	"description": "",
+	"content": "docker save与docker export的区别 一.docker save 1.docker save是用来将一个或多个image打包保存的工具。 docker save -o images.tar postgres:9.6 mongo:3.4\n2.docker save如果指定的是container，docker save将保存的是容器背后的image。 docker save -o b.tar postgres\n3.将打包后的镜像载入进来使用docker load docker load -i images.tar\n4.docker save的应用场景是,如果你的应用是使用docker-compose.yml编排的多个镜像组合,但你要部署的客户服务器并不能连外网.这时,你可以使用docker save将用到的镜像打个包,然后拷贝到客户服务器上使用docker load载入.\n二.docker export 1.docker export是用来将container的文件系统进行打包的 docker export需要指定container，不能像docker save那样指定image或container都可以。 docker export -o postgres-export.tar postgres\n2.将打包的container载入进来使用docker import docker import将container导入后会成为一个image，而不是恢复为一个container。 docker import postgres-export.tar postgres:latest\n另外一点是，docker import可以指定IMAGE[:TAG]，说明我们可以为镜像指定新名称。如果本地镜像库中已经存在同名的镜像，则原有镜像的名称将会被剥夺，赋给新的镜像。原有镜像将成为孤魂野鬼，只能通过IMAGE ID进行操作。\ndocker export的应用场景主要用来制作基础镜像，比如你从一个ubuntu镜像启动一个容器，然后安装一些软件和进行一些设置后，使用docker export保存为一个基础镜像。然后，把这个镜像分发给其他人使用，比如作为基础的开发环境。\n三.docker save和docker export的区别 1.docker save保存的是镜像（image），docker export保存的是容器（container）； 2.docker load用来载入镜像包，docker import用来载入容器包，但两者都会恢复为镜像； 3.docker load不能对载入的镜像重命名，而docker import可以为镜像指定新名称。 "
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/",
+	"title": "ElasticSearch",
+	"tags": [],
+	"description": "",
+	"content": "导图总览 "
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/",
+	"title": "etcd",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/etcd%E5%AE%89%E8%A3%85/",
+	"title": "etcd安装",
+	"tags": [],
+	"description": "",
+	"content": "1.etec 安装 https://blog.csdn.net/Axela30W/article/details/84558730#t2 https://cizixs.com/2016/08/02/intro-to-etcd/ https://blog.csdn.net/huwh_/article/details/80225902 https://tonydeng.github.io/2015/10/19/etcd-application-scenarios/\nhttps://tonydeng.github.io/categories/\netcdctl \u0026ndash;endpoints=[192.168.1.9:2389] get / \u0026ndash;prefix \u0026ndash;keys-only\n看见候选包 brew search etcd\n安装 brew install etcd\netcd 查询 ETCDCTL_API=3 etcdctl \u0026ndash;endpoints=http://192.168.1.19:2379 \u0026ndash;prefix \u0026ndash;keys-only=true get / ETCDCTL_API=3 etcdctl \u0026ndash;endpoints=http://192.168.1.19:2379 get + keys 查询键信息。\n获取集群成员 ETCDCTL_API=3 etcdctl \u0026ndash;endpoints=http://127.0.0.1:30001 member list\n设置数据 ETCDCTL_API=3 etcdctl \u0026ndash;endpoints=http://127.0.0.1:30001 put /root/test/keyOne \u0026ldquo;Hello etcd\u0026rdquo;\nETCDCTL_API=3 etcdctl \u0026ndash;endpoints=http://127.0.0.1:30001 \u0026ndash;prefix \u0026ndash;keys-only=true get / ETCDCTL_API=3 etcdctl \u0026ndash;endpoints=http://127.0.0.1:30001 get /root/test/keyOne\n"
 },
 {
 	"uri": "/getting-start/",
@@ -63,6 +112,13 @@
 	"content": "官方 中文官网 官方中文文档 gin源码地址 gin官方例子 思维导图 "
 },
 {
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/goframe/",
+	"title": "GoFrame",
+	"tags": [],
+	"description": "",
+	"content": "GoFrame源码 GoFrame源码地址 重要文档 GoFrame开发框架的官方网站 GoFrame社区团队 "
+},
+{
 	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/",
 	"title": "html",
 	"tags": [],
@@ -77,11 +133,67 @@
 	"content": "HUGO v0.32 minimum required to use this theme\rThe following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.\nInstallation We assume that all changes to Hugo content and customizations are going to be tracked by git (GitHub, Bitbucket etc.). Develop locally, build on remote system.\nBefore start real work:\nInitialize Hugo Install DocDock theme Configure DocDock and Hugo Prepare empty Hugo site Create empty directory, which will be root of your Hugo project. Navigate there and let Hugo to create minimal required directory structure:\n$ hugo new site . AFTER that, initialize this as git directory where to track further changes\n$ git init Next, there are at least three ways to install DocDock (first recommended):\nAs git submodule As git clone As direct copy (from ZIP) Navigate to your themes folder in your Hugo site and use perform one of following scenarios.\n1. Install DocDock as git submodule DocDock will be added like a dependency repo to original project. When using CI tools like Netlify, Jenkins etc., submodule method is required, or you will get theme not found issues. Same applies when building site on remote server trough SSH.\nIf submodule is no-go, use 3rd option.\nOn your root of Hugo execute:\n$ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock Next initialize submodule for parent git repo:\n$ git submodule init\r$ git submodule update Now you are ready to add content and customize looks. Do not change any file inside theme directory.\nIf you want to freeze changes to DocDock theme itself and use still submodules, fork private copy of DocDock and use that as submodule. When you are ready to update theme, just pull changes from origin to your private fork.\n2. Install DocDock simply as git clone This method results that files are checked out locally, but won\u0026rsquo;t be visible from parent git repo. Probably you will build site locally with hugo command and use result from public/ on your own.\n$ git clone https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock 3. Install DocDock from ZIP All files from theme will be tracked inside parent repo, to update it, have to override files in theme. download following zip and extract inside themes/.\nhttps://github.com/vjeantet/hugo-theme-docdock/archive/master.zip Name of theme in next step will be hugo-theme-docdock-master, can rename as you wish.\nConfiguration Follow instructions here\n"
 },
 {
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/",
+	"title": "k8s",
+	"tags": [],
+	"description": "",
+	"content": "思维导图 k8s拓补图 "
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s/",
+	"title": "k8s",
+	"tags": [],
+	"description": "",
+	"content": "k8s k8s 简介 Kubernetes Pod概述 K8s 学习者绝对不能错过的最全知识图谱（内含 58个知识点链接）\n1.master(控制系统) etcd: k-v 数据库（用于配置共享和服务发现） 只与 apiserver 通信 scheduler: 调度 简单点说就是给一个 pod 找一个 node(合理的平衡) controller manager: 核心，负责将现在的状态调整为 etcd 上应该的状态，包含了所有的实现逻辑 apiserver: 可以理解为 etcd 的前置过滤器（理解为中心处理器，分发到各个连接的模块）\n2.node(s) kubelet: 负责和 master 连接，注册 node, listen-watch 本 node 的任务等 kube-proxy: 用于 k8s service 对象。在 K8s 集群中微服务的负载均衡是由 Kube-proxy 实现的，它是 K8s 集群内部的负载均衡器，也是一个分布式代理服务器，在 K8s 的每个节点上都有一个，这一设计体现了它的伸缩性优势，需要访问服务的节点越多，提供负载均衡能力的 Kube-proxy 就越多，高可用节点也随之增多。 容器运行时: 除了 docker k8s 还支持 rkt 等容器实现\n负责为 pod 提供代理。它会定期从 etcd 获取所有的 service，并根据 service 信息创建代理。\n3.插件 DNS（服务注册发现） CNI（容器网络接口实现, ex：fannel）\n4.Pod(可管理的一个实体) pod 是 k8s 管理的最小对象，是一组共享 uts, network, ipc namespace 的容器(也支持共享 pid,默认不开启) 每个 pod 会有一个 infrastructure 容器，volumne, network 其实都是共用的这个容器的 network 和 volumne pod 使逻辑上紧密相关的进程适当的隔离，保持一定的相关：\n一些进程必须在相同而主机上运行 扩容需要保持一致 等等\n集群中的 Pod 主要有两种用法： 运行单个容器的 Pod 运行多个协同工作的容器的 Pod\nPod 天生地为其成员容器提供了两种共享资源：网络和 存储。\nDeployment StatefulSets DaemonSet\n静态 Pod：直接由特定节点上的 kubelet 守护进程管理， 不需要 API 服务器看到它们 比如:Heapster(由每个节点上运行的 Kubelet 提供的集群范围的数据聚合器。此容器管理工具在 Kubernetes 集群上本机支持，并作为 pod 运行，就像集群中的任何其他 pod 一样)\n除了 rc, rs 之外，还有 deamonSet, job, cronjob 等 controller\n5.管理 Pod k8s如何管理Pod Replica Set 使用基于集合的选择器，而 Replication Controller 使用基于权限的选择器。(判断逻辑在这些插件上\nKubernetes 面试题（一）\nkubelet ####container runtime\n##kube-proxy\nkublet:主进程 kubadmin:客户端（管理人员） kubctl:客户端（使用人员）\n"
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/",
+	"title": "k8s常见面试题",
+	"tags": [],
+	"description": "",
+	"content": "k8s常见面试题 如何在 Kubernetes 中实现负载均衡？ 在生产中，你如何实现 Kubernetes 自动化？ 你如何扩展 Kubernetes 集群？ 你能解释 Deployment、ReplicaSets、StatefulSets、Pod、CronJob 的不同用途吗？ Kubernetes 如何处理持久性？ 服务和 ingress 的作用是什么？ 你何时会使用像 ConfigMap 或 secret 这样的东西？ Pod 亲和性作用是什么？ 你能举例说明何时使用 Init Container 么？ 什么是 sidecar 容器？你能给出一个用例，说明你为什么要使用它么？ 在构建和管理生产集群时遇到的主要问题是什么？ 为什么你会建议公司在云中构建自己的 K8S 集群而不是使用托管服务？ 什么是 Istio 和 Linkerd？ 什么是 Kubernetes Operator？ kubernetes包含几个组件。 各个组件的功能是什么。组件之间是如何交互的。 k8s的pause容器有什么用。是否可以去掉。 k8s中的pod内几个容器之间的关系是什么。 一个经典pod的完整生命周期。 k8s的service和ep是如何关联和相互影响的。 详述kube-proxy原理, -个请求是如何经过层层转发落到某个pod.上的整个过程。请求可能来自pod也可能来自外部。 rc/rs功能是怎么实现的。详述从API接收到-一个创建rc/rs的请求,到最终在节点上创建pod的全过程,尽可能详细。另外,当-个pod失效时，kubernetes是如何发现并重启另一个pod的? deployment/rs有什么区别。 其使用方式使用条件和原理是什么。 cgroup中的cpu有哪几种限制方式。 k8s是如何使用实现request和limit的。\n"
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E7%AE%80%E4%BB%8B/",
+	"title": "k8s简介",
+	"tags": [],
+	"description": "",
+	"content": "一..k8s是什么，我们为啥要用 容器管理系统，提供部署，管理，扩展等机制，管理容器夸机器的应用 主要功能： 1.使用docker对应用包装，实例化，运行 2.以集群方式运行，管理跨机器的容器 3.解决docker跨机器容器之间的通讯问题 4.kubernetes的自我修复机制使得容器集群重视运行在用户期望的状态\n为什么使用： 1.开发人员各司其职，轻装上整 2.全面拥抱微服务框架 3.使用kubernetes系统可以随时整体迁移 4.kubernetes系统具备超强的横向扩展功能\n二，基本概念 1.功能组件 master apiserver：供 HTTP Rest 接口的关键服务程序，kubernets里所有资源增、删、改、查等操作的唯一入口，也是集群控制的入口进程 scheduler（调度）：资源调度(pod)的进程 controller-manager：负责管理各种控制，所有资源对象的自动化控制中心（资源对象的大总管） etcd：k-v数据库。所有资源对象全部保存在这里,支持服务与发现\nnode kebulet： pod对应容器的创建、暂停等任务 proxy：负责为pod提供代理。它会定期从etcd获取所有的service，并根据service信息创建代理。。k8s service 的通信与负载均衡机制的重要组件（主要对外支持的） docker：本机容器的管理与创建\n2.操作对象 1.pod 最小部署单元，包含一个或多个容器，连接在一起的容器共享volue和网络，由kubernetes统一创建，调度，管理。可以直接创建，但是推荐使用rc 2.service pod的访问代理抽象 抽象服务出口，基础版本的负载均衡 3.replication controllers 管理pods的生命周期确保指定数量的pods会一直运行，实现资源收缩 一共4点\n总体结构 1.master组件 apiserver： etcd：k-v数据库,系统的所有资源对象都保存在这里。支持服务注册与服务发现,微服务中常用的组件 scheduler（调度）：集群资源调度，分配pod的创建 controller-manager：管理rc，EndPointControl等各种控制器\n2.node组件 kublet.负责管控docker容器,如，启动，停止等 proxy：负责为pod提供代理。定期从etcd获取service，并根据serveice创建代理\n公共组件 etcd： flannel：网络协议\n"
+},
+{
 	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/",
 	"title": "kafka",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "参考文档 真的，关于 Kafka 入门看这一篇就够了 真的！Kafka入门，学这一篇就够了 真的，关于 Kafka 入门看这一篇就够了 入门 Kafka，看这一篇就对了，图文并茂 消息队列Kafka及其应用场景 消息队列Kafka及其应用场景 Kafka集群在马蜂窝大数据平台的优化与应用扩展 参考 参考资料\nKafka面试题总结\nKafka入门看这一篇就够了\n"
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/",
+	"title": "Kafka常见面试题总结",
+	"tags": [],
+	"description": "消息队列",
+	"content": "Kafka 是什么？主要应用场景有哪些？ Kafka 是一个分布式流式处理平台。这到底是什么意思呢？\n流平台具有三个关键功能：\n消息队列：发布和订阅消息流，这个功能类似于消息队列，这也是 Kafka 也被归类为消息队列的原因。 容错的持久方式存储记录消息流： Kafka 会把消息持久化到磁盘，有效避免了消息丢失的风险。 流式处理平台： 在消息发布的时候进行处理，Kafka 提供了一个完整的流式处理类库。 Kafka 主要有两大应用场景：\n消息队列 ：建立实时流数据管道，以可靠地在系统或应用程序之间获取数据。 数据处理： 构建实时的流数据处理程序来转换或处理数据流。 和其他消息队列相比,Kafka的优势在哪里？ 我们现在经常提到 Kafka 的时候就已经默认它是一个非常优秀的消息队列了，我们也会经常拿它跟 RocketMQ、RabbitMQ 对比。我觉得 Kafka 相比其他消息队列主要的优势如下：\n极致的性能 ：基于 Scala 和 Java 语言开发，设计中大量使用了批量处理和异步的思想，最高可以每秒处理千万级别的消息。 生态系统兼容性无可匹敌 ：Kafka 与周边生态系统的兼容性是最好的没有之一，尤其在大数据和流计算领域。 实际上在早期的时候 Kafka 并不是一个合格的消息队列，早期的 Kafka 在消息队列领域就像是一个衣衫褴褛的孩子一样，功能不完备并且有一些小问题比如丢失消息、不保证消息可靠性等等。当然，这也和 LinkedIn 最早开发 Kafka 用于处理海量的日志有很大关系，哈哈哈，人家本来最开始就不是为了作为消息队列滴，谁知道后面误打误撞在消息队列领域占据了一席之地。\n随着后续的发展，这些短板都被 Kafka 逐步修复完善。所以，Kafka 作为消息队列不可靠这个说法已经过时！\n队列模型了解吗？Kafka 的消息模型知道吗？ 题外话：早期的 JMS 和 AMQP 属于消息服务领域权威组织所做的相关的标准，我在 JavaGuide的 《消息队列其实很简单》这篇文章中介绍过。但是，这些标准的进化跟不上消息队列的演进速度，这些标准实际上已经属于废弃状态。所以，可能存在的情况是：不同的消息队列都有自己的一套消息模型。\n队列模型：早期的消息模型 使用队列（Queue）作为消息通信载体，满足生产者与消费者模式，一条消息只能被一个消费者使用，未被消费的消息在队列中保留直到被消费或超时。 比如：我们生产者发送 100 条消息的话，两个消费者来消费一般情况下两个消费者会按照消息发送的顺序各自消费一半（也就是你一个我一个的消费。）\n队列模型存在的问题：\n假如我们存在这样一种情况：我们需要将生产者产生的消息分发给多个消费者，并且每个消费者都能接收到完整的消息内容。\n这种情况，队列模型就不好解决了。很多比较杠精的人就说：我们可以为每个消费者创建一个单独的队列，让生产者发送多份。这是一种非常愚蠢的做法，浪费资源不说，还违背了使用消息队列的目的。\n发布-订阅模型:Kafka 消息模型 发布-订阅模型主要是为了解决队列模型存在的问题。\n发布订阅模型（Pub-Sub） 使用主题（Topic） 作为消息通信载体，类似于广播模式；发布者发布一条消息，该消息通过主题传递给所有的订阅者，在一条消息广播之后才订阅的用户则是收不到该条消息的。\n在发布 - 订阅模型中，如果只有一个订阅者，那它和队列模型就基本是一样的了。所以说，发布 - 订阅模型在功能层面上是可以兼容队列模型的。\nKafka 采用的就是发布 - 订阅模型。\nRocketMQ 的消息模型和 Kafka 基本是完全一样的。唯一的区别是 Kafka 中没有队列这个概念，与之对应的是 Partition（分区）。\n什么是Producer、Consumer、Broker、Topic、Partition？ Kafka 将生产者发布的消息发送到 Topic（主题） 中，需要这些消息的消费者可以订阅这些 Topic（主题），如下图所示：\n上面这张图也为我们引出了，Kafka 比较重要的几个概念：\nProducer（生产者） : 产生消息的一方。 Consumer（消费者） : 消费消息的一方。 Broker（代理） : 可以看作是一个独立的 Kafka 实例。多个 Kafka Broker 组成一个 Kafka Cluster。 同时，你一定也注意到每个 Broker 中又包含了 Topic 以及 Partition 这两个重要的概念：\nTopic（主题） : Producer 将消息发送到特定的主题，Consumer 通过订阅特定的 Topic(主题) 来消费消息。 Partition（分区） : Partition 属于 Topic 的一部分。一个 Topic 可以有多个 Partition ，并且同一 Topic 下的 Partition 可以分布在不同的 Broker 上，这也就表明一个 Topic 可以横跨多个 Broker 。这正如我上面所画的图一样。 划重点：Kafka 中的 Partition（分区） 实际上可以对应成为消息队列中的队列。这样是不是更好理解一点？\nKafka 的多副本机制了解吗？带来了什么好处？ 还有一点我觉得比较重要的是 Kafka 为分区（Partition）引入了多副本（Replica）机制。分区（Partition）中的多个副本之间会有一个叫做 leader 的家伙，其他副本称为 follower。我们发送的消息会被发送到 leader 副本，然后 follower 副本才能从 leader 副本中拉取消息进行同步。\n生产者和消费者只与 leader 副本交互。你可以理解为其他副本只是 leader 副本的拷贝，它们的存在只是为了保证消息存储的安全性。当 leader 副本发生故障时会从 follower 中选举出一个 leader,但是 follower 中如果有和 leader 同步程度达不到要求的参加不了 leader 的竞选。\nKafka 的多分区（Partition）以及多副本（Replica）机制有什么好处呢？\nKafka 通过给特定 Topic 指定多个 Partition, 而各个 Partition 可以分布在不同的 Broker 上, 这样便能提供比较好的并发能力（负载均衡）。 Partition 可以指定对应的 Replica 数, 这也极大地提高了消息存储的安全性, 提高了容灾能力，不过也相应的增加了所需要的存储空间。 Zookeeper 在 Kafka 中的作用知道吗？ 要想搞懂 zookeeper 在 Kafka 中的作用 一定要自己搭建一个 Kafka 环境然后自己进 zookeeper 去看一下有哪些文件夹和 Kafka 有关，每个节点又保存了什么信息。 一定不要光看不实践，这样学来的也终会忘记！这部分内容参考和借鉴了这篇文章：https://www.jianshu.com/p/a036405f989c 。\n下图就是我的本地 Zookeeper ，它成功和我本地的 Kafka 关联上（以下文件夹结构借助 idea 插件 Zookeeper tool 实现）。\nZooKeeper 主要为 Kafka 提供元数据的管理的功能。\n从图中我们可以看出，Zookeeper 主要为 Kafka 做了下面这些事情：\nBroker 注册 ：在 Zookeeper 上会有一个专门用来进行 Broker 服务器列表记录的节点。每个 Broker 在启动时，都会到 Zookeeper 上进行注册，即到 /brokers/ids 下创建属于自己的节点。每个 Broker 就会将自己的 IP 地址和端口等信息记录到该节点中去 Topic 注册 ： 在 Kafka 中，同一个Topic 的消息会被分成多个分区并将其分布在多个 Broker 上，这些分区信息及与 Broker 的对应关系也都是由 Zookeeper 在维护。比如我创建了一个名字为 my-topic 的主题并且它有两个分区，对应到 zookeeper 中会创建这些文件夹：/brokers/topics/my-topic/Partitions/0、/brokers/topics/my-topic/Partitions/1 负载均衡 ：上面也说过了 Kafka 通过给特定 Topic 指定多个 Partition, 而各个 Partition 可以分布在不同的 Broker 上, 这样便能提供比较好的并发能力。 对于同一个 Topic 的不同 Partition，Kafka 会尽力将这些 Partition 分布到不同的 Broker 服务器上。当生产者产生消息后也会尽量投递到不同 Broker 的 Partition 里面。当 Consumer 消费的时候，Zookeeper 可以根据当前的 Partition 数量以及 Consumer 数量来实现动态负载均衡。 \u0026hellip;\u0026hellip; Kafka 如何保证消息的消费顺序？ 我们在使用消息队列的过程中经常有业务场景需要严格保证消息的消费顺序，比如我们同时发了 2 个消息，这 2 个消息对应的操作分别对应的数据库操作是：\n更改用户会员等级。 根据会员等级计算订单价格。 假如这两条消息的消费顺序不一样造成的最终结果就会截然不同。\n我们知道 Kafka 中 Partition(分区)是真正保存消息的地方，我们发送的消息都被放在了这里。而我们的 Partition(分区) 又存在于 Topic(主题) 这个概念中，并且我们可以给特定 Topic 指定多个 Partition。\n每次添加消息到 Partition(分区) 的时候都会采用尾加法，如上图所示。 Kafka 只能为我们保证 Partition(分区) 中的消息有序。\n消息在被追加到 Partition(分区)的时候都会分配一个特定的偏移量（offset）。Kafka 通过偏移量（offset）来保证消息在分区内的顺序性。\n所以，我们就有一种很简单的保证消息消费顺序的方法：1 个 Topic 只对应一个 Partition。这样当然可以解决问题，但是破坏了 Kafka 的设计初衷。\nKafka 中发送 1 条消息的时候，可以指定 topic, partition, key,data（数据） 4 个参数。如果你发送消息的时候指定了 Partition 的话，所有消息都会被发送到指定的 Partition。并且，同一个 key 的消息可以保证只发送到同一个 partition，这个我们可以采用表/对象的 id 来作为 key 。\n总结一下，对于如何保证 Kafka 中消息消费的顺序，有了下面两种方法：\n1 个 Topic 只对应一个 Partition。 （推荐）发送消息的时候指定 key/Partition。 当然不仅仅只有上面两种方法，上面两种方法是我觉得比较好理解的，\nKafka 如何保证消息不丢失 生产者丢失消息的情况 生产者(Producer) 调用send方法发送消息之后，消息可能因为网络问题并没有发送过去。\n所以，我们不能默认在调用send方法发送消息之后消息发送成功了。为了确定消息是发送成功，我们要判断消息发送的结果。但是要注意的是 Kafka 生产者(Producer) 使用 send 方法发送消息实际上是异步的操作，我们可以通过 get()方法获取调用结果，但是这样也让它变为了同步操作，示例代码如下：\n详细代码见我的这篇文章：Kafka系列第三篇！10 分钟学会如何在 Spring Boot 程序中使用 Kafka 作为消息队列?\nSendResult\u0026lt;String, Object\u0026gt; sendResult = kafkaTemplate.send(topic, o).get(); if (sendResult.getRecordMetadata() != null) { logger.info(\u0026#34;生产者成功发送消息到\u0026#34; + sendResult.getProducerRecord().topic() + \u0026#34;-\u0026gt; \u0026#34; + sendRe sult.getProducerRecord().value().toString()); } 但是一般不推荐这么做！可以采用为其添加回调函数的形式，示例代码如下：\nListenableFuture\u0026lt;SendResult\u0026lt;String, Object\u0026gt;\u0026gt; future = kafkaTemplate.send(topic, o); future.addCallback(result -\u0026gt; logger.info(\u0026#34;生产者成功发送消息到topic:{} partition:{}的消息\u0026#34;, result.getRecordMetadata().topic(), result.getRecordMetadata().partition()), ex -\u0026gt; logger.error(\u0026#34;生产者发送消失败，原因：{}\u0026#34;, ex.getMessage())); 如果消息发送失败的话，我们检查失败的原因之后重新发送即可！\n另外这里推荐为 Producer 的retries （重试次数）设置一个比较合理的值，一般是 3 ，但是为了保证消息不丢失的话一般会设置比较大一点。设置完成之后，当出现网络问题之后能够自动重试消息发送，避免消息丢失。另外，建议还要设置重试间隔，因为间隔太小的话重试的效果就不明显了，网络波动一次你3次一下子就重试完了\n消费者丢失消息的情况 我们知道消息在被追加到 Partition(分区)的时候都会分配一个特定的偏移量（offset）。偏移量（offset)表示 Consumer 当前消费到的 Partition(分区)的所在的位置。Kafka 通过偏移量（offset）可以保证消息在分区内的顺序性。\n当消费者拉取到了分区的某个消息之后，消费者会自动提交了 offset。自动提交的话会有一个问题，试想一下，当消费者刚拿到这个消息准备进行真正消费的时候，突然挂掉了，消息实际上并没有被消费，但是 offset 却被自动提交了。\n解决办法也比较粗暴，我们手动关闭自动提交 offset，每次在真正消费完消息之后再自己手动提交 offset 。 但是，细心的朋友一定会发现，这样会带来消息被重新消费的问题。比如你刚刚消费完消息之后，还没提交 offset，结果自己挂掉了，那么这个消息理论上就会被消费两次。\nKafka 弄丢了消息 我们知道 Kafka 为分区（Partition）引入了多副本（Replica）机制。分区（Partition）中的多个副本之间会有一个叫做 leader 的家伙，其他副本称为 follower。我们发送的消息会被发送到 leader 副本，然后 follower 副本才能从 leader 副本中拉取消息进行同步。生产者和消费者只与 leader 副本交互。你可以理解为其他副本只是 leader 副本的拷贝，它们的存在只是为了保证消息存储的安全性。\n试想一种情况：假如 leader 副本所在的 broker 突然挂掉，那么就要从 follower 副本重新选出一个 leader ，但是 leader 的数据还有一些没有被 follower 副本的同步的话，就会造成消息丢失。\n设置 acks = all\n解决办法就是我们设置 acks = all。acks 是 Kafka 生产者(Producer) 很重要的一个参数。\nacks 的默认值即为1，代表我们的消息被leader副本接收之后就算被成功发送。当我们配置 acks = all 表示只有所有 ISR 列表的副本全部收到消息时，生产者才会接收到来自服务器的响应. 这种模式是最高级别的，也是最安全的，可以确保不止一个 Broker 接收到了消息. 该模式的延迟会很高.\n设置 replication.factor \u0026gt;= 3\n为了保证 leader 副本能有 follower 副本能同步消息，我们一般会为 topic 设置 replication.factor \u0026gt;= 3。这样就可以保证每个 分区(partition) 至少有 3 个副本。虽然造成了数据冗余，但是带来了数据的安全性。\n设置 min.insync.replicas \u0026gt; 1\n一般情况下我们还需要设置 min.insync.replicas\u0026gt; 1 ，这样配置代表消息至少要被写入到 2 个副本才算是被成功发送。min.insync.replicas 的默认值为 1 ，在实际生产中应尽量避免默认值 1。\n但是，为了保证整个 Kafka 服务的高可用性，你需要确保 replication.factor \u0026gt; min.insync.replicas 。为什么呢？设想一下假如两者相等的话，只要是有一个副本挂掉，整个分区就无法正常工作了。这明显违反高可用性！一般推荐设置成 replication.factor = min.insync.replicas + 1。\n设置 unclean.leader.election.enable = false\nKafka 0.11.0.0版本开始 unclean.leader.election.enable 参数的默认值由原来的true 改为false\n我们最开始也说了我们发送的消息会被发送到 leader 副本，然后 follower 副本才能从 leader 副本中拉取消息进行同步。多个 follower 副本之间的消息同步情况不一样，当我们配置了 unclean.leader.election.enable = false 的话，当 leader 副本发生故障时就不会从 follower 副本中和 leader 同步程度达不到要求的副本中选择出 leader ，这样降低了消息丢失的可能性。\nKafka 如何保证消息不重复消费 kafka出现消息重复消费的原因：\n服务端侧已经消费的数据没有成功提交 offset（根本原因）。 Kafka 侧 由于服务端处理业务时间长或者网络链接等等原因让 Kafka 认为服务假死，触发了分区 rebalance。 解决方案：\n消费消息服务做幂等校验，比如 Redis 的set、MySQL 的主键等天然的幂等功能。这种方法最有效。 将 enable.auto.commit 参数设置为 false，关闭自动提交，开发者在代码中手动提交 offset。那么这里会有个问题：什么时候提交offset合适？ 处理完消息再提交：依旧有消息重复消费的风险，和自动提交一样 拉取到消息即提交：会有消息丢失的风险。允许消息延时的场景，一般会采用这种方式。然后，通过定时任务在业务不繁忙（比如凌晨）的时候做数据兜底。 Reference Kafka 官方文档： https://kafka.apache.org/documentation/ 极客时间—《Kafka核心技术与实战》第11节：无消息丢失配置怎么实现？ "
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/linux%E5%91%BD%E4%BB%A4/",
+	"title": "linux命令",
+	"tags": [],
+	"description": "",
+	"content": "linux 命令 1.解压缩命令 解压 tar zxvf 文件名.tar.gz 压缩 tar zcvf 文件名.tar.gz 待压缩的文件名\n2.从 linux 下载命令\nscp /home/work/source.txt work@192.168.0.10:/home/work/ #把本地的 source.txt 文件拷贝到 192.168.0.10 机器上的/home/work 目录下\nscp work@192.168.0.10:/home/work/source.txt /home/work/ #把 192.168.0.10 机器上的 source.txt 文件拷贝到本地的/home/work 目录下\nscp work@192.168.0.10:/home/work/source.txt work@192.168.0.11:/home/work/ #把 192.168.0.10 机器上的 source.txt 文件拷贝到 192.168.0.11 机器的/home/work 目录下\nscp -r /home/work/sourcedir work@192.168.0.10:/home/work/ #拷贝文件夹，加-r 参数\n//下砸到本地 scp root@192.168.1.19:/home/server/go/serverb.tar.gz\nscp root@192.168.1.19:/home/server/go/ssss.tar.gz\nscp root@43.247.164.19:/home/server/go/ssss.tar.gzz /Users/mac/Desktop\n3.复制文件 cp -i file1 file2 cp file1 file2\n4.删除 \u0026ldquo;rm -f\u0026rdquo; 强行删除，忽略不存在的文件，不提示确认。(f 为 force 的意思) \u0026ldquo;rm -i\u0026rdquo; 进行交互式删除，即删除时会提示确认。(i 为 interactive 的意思) \u0026ldquo;rm -r\u0026rdquo; 将参数中列出的全部目录和子目录进行递归删除。(r 为 recursive 的意思) \u0026ldquo;rm -v\u0026rdquo; 详细显示删除操作进行的步骤。(v 为 verbose 的意思)\n5.重命名\n6.运行服务器\nnohup ./skd \u0026amp;\n7.查看日志 tail -f nohup.out 看进程 netstat -tunlp\n1.启动 mongodb mongod \u0026ndash;dbpath /Users/mac/work/mgdb\n2.启动 etcd 命令: etcd\n3.启动 kafka cd /home/server/kafka/bin/ ./kafka-server-start.sh ../config/server.properties \u0026amp;\nroot mac.123\n"
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/",
+	"title": "mongo",
+	"tags": [],
+	"description": "",
+	"content": "导图总览 "
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/",
+	"title": "mysql",
+	"tags": [],
+	"description": "",
+	"content": "导图总览 "
 },
 {
 	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/",
@@ -112,11 +224,18 @@
 	"content": "各类编程语言的总结和复习资料\n"
 },
 {
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/",
+	"title": "参考文档",
+	"tags": [],
+	"description": "",
+	"content": "参考文档 docker中文 kubernetes kubernetes编排器 kubernetes中文文档 Portainer Portainer 轻量级的 Docker 管理 UI Portainer安装，设置等 docker可视化管理——Portainer安装教程 Docker安装 Mac平台上Docker安装与使用\nmac安装docker图形界面\ndocker的etcd3的搭建\n"
+},
+{
 	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/",
 	"title": "参考文档",
 	"tags": [],
 	"description": "",
-	"content": "参考文档 全网最详细的gin源码解析 Gin框架介绍及使用\u0026ndash;李文周的博客 httprouter Gin框架中文文档\n第三方库 tg验证库 学会gin参数校验之validator库，看这一篇就足够了 validator库参数校验若干实用技巧 Gin请求参数校验\nGolang-Gin-API\n例子 Golang Gin 实践 gin官方例子 GinLearn\n参考 基础知识点 gin中文文档 Gin中文文档\n源码 重要文档 GIN框架 Gin 框架中文文档 gin中文文档 使用 Gin web 框架的知名项目\n"
+	"content": "参考文档 全网最详细的gin源码解析 Gin框架介绍及使用\u0026ndash;李文周的博客 httprouter Gin框架中文文档 第三方库 tg验证库\n学会gin参数校验之validator库，看这一篇就足够了\nvalidator库参数校验若干实用技巧\nGin请求参数校验\nGolang-Gin-API\n例子 Golang Gin 实践 gin官方例子 GinLearn 参考 基础知识点 gin中文文档 Gin中文文档 源码 重要文档 GIN框架 Gin 框架中文文档 gin中文文档 使用 Gin web 框架的知名项目 "
 },
 {
 	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/",
@@ -130,7 +249,7 @@
 	"title": "插件",
 	"tags": [],
 	"description": "",
-	"content": "Gin实战技巧篇之云插件化开发 plugins-gin go-gin-api Gin-Gonic\n中间件 限流中间件\n"
+	"content": " Gin实战技巧篇之云插件化开发 plugins-gin go-gin-api Gin-Gonic 中间件 限流中间件 "
 },
 {
 	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/",
@@ -224,13 +343,6 @@
 	"content": "安装 1.Node.js 官网\n验证 node -v npm -v\n2.Git 官网\ntips：Git Bash 相当于Linux中的终端窗口\n验证 git version\n3.hexo npm install -g hexo-cli 验证 hexo -v 4.创建案例 hexo init blog cd blog npm install\n5.运行测试 hexo clean #用来清理缓存文件 hexo g #生成文件 hexo s #运行本地服务器 hexo d #上传到服务器\n运行 hexo g hexo s\n打开网站 localhost:4000\n"
 },
 {
-	"uri": "/%E5%B7%A5%E5%85%B7/hugo/",
-	"title": "hugo",
-	"tags": [],
-	"description": "",
-	"content": "各类编程语言的总结和复习资料\n"
-},
-{
 	"uri": "/%E5%B7%A5%E5%85%B7/hugo/hugo/",
 	"title": "hugo",
 	"tags": [],
@@ -292,6 +404,48 @@
 	"tags": [],
 	"description": "",
 	"content": "With Hugo, pages are the core of your site. Organize your site like any other Hugo project. Magic occurs with the nested sections implemention done in v0.22 of hugo (congrats @bep).\nWith docdock, Each content page composes the menu, they shape the structure of your website.\nTo link pages to each other, place them in a folders hierarchy\ncontent\r├── level-one\r│ ├── level-two\r│ │ ├── level-three\r│ │ │ ├── level-four\r│ │ │ │ ├── _index.md\r│ │ │ │ ├── page-4-a.md\r│ │ │ │ ├── page-4-b.md\r│ │ │ │ └── page-4-c.md\r│ │ │ ├── _index.md\r│ │ │ ├── page-3-a.md\r│ │ │ ├── page-3-b.md\r│ │ │ └── page-3-c.md\r│ │ ├── _index.md\r│ │ ├── page-2-a.md\r│ │ ├── page-2-b.md\r│ │ └── page-2-c.md\r│ ├── _index.md\r│ ├── page-1-a.md\r│ ├── page-1-b.md\r│ └── page-1-c.md\r├── _index.md\r└── page-top.md _index.md is required in each folder, it\u0026rsquo;s your \u0026ldquo;folder home page\u0026rdquo;\rAdd header to a menu entry in the page frontmatter, add a head param to insert any HTML code before the menu entry:\nexample to display a \u0026ldquo;Hello\u0026rdquo;\n+++\rtitle = \u0026quot;Github repo\u0026quot;\rhead =\u0026quot;\u0026lt;label\u0026gt;Hello\u0026lt;/label\u0026gt; \u0026quot;\r+++\rAdd icon to a menu entry in the page frontmatter, add a pre param to insert any HTML code before the menu label:\nexample to display a github icon\n+++\rtitle = \u0026quot;Github repo\u0026quot;\rpre =\u0026quot;\u0026lt;i class='fa fa-github'\u0026gt;\u0026lt;/i\u0026gt; \u0026quot;\r+++\rOrder sibling menu/page entries in your frontmatter add weight param with a number to order.\n+++\rtitle=\u0026quot;My page\u0026quot;\rweight = 4\r+++\radd `ordersectionsby = \"title\"` in your config.toml to order menu entries by title\rHide a menu entry in your frontmatter add hidden=true param.\n+++\rtitle=\u0026quot;My page\u0026quot;\rhidden = true\r+++\rUnfolded menu entry by default One or more menuentries can be displayed unfolded by default. (like the \u0026ldquo;Getting start\u0026rdquo; menu entry in this website)\nin your frontmatter add alwaysopen=true param. example :\ntitle = \u0026#34;Getting start\u0026#34;\rdescription = \u0026#34;\u0026#34;\rweight = 1\ralwaysopen = true Folder structure and file name Content organization is your content folder structure.\nHomepage Find out how to customize homepage\n"
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%87%8D%E7%82%B9/",
+	"title": "mysql重点",
+	"tags": [],
+	"description": "",
+	"content": "设计优化 一,设计\n数据库统计 1.时间换空间(分时统计) 一定时间统计一次(统计到别的数据库,进行查询) 2.处理死数据和激活数据\n二，索引优化\n三.锁优化 表级锁 行级锁 页面锁\n四 查询优化 减少 IO 减少网络\n"
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%9D%A2%E8%AF%95%E9%A2%98/",
+	"title": "mysql面试题",
+	"tags": [],
+	"description": "",
+	"content": "MongoDB高频面试题 1）解释什么是MongoDB？ 2）什么是MongoDB中的“命名空间”？ 3）MongoDB中的分片是什么？ 4）查看Mongos使用的连接？ 5）解释什么是副本集？ 6）复制在MongoDB中如何工作？ 7）在MongoDB中创建模式时，需要考虑哪些要点？ 8）在MongoDB中创建集合并将其删除的语法是什么？ 9）说明Profiler在MongoDB中的作用是什么？ 10）解释一下您可以将旧文件移动到moveChunk目录中吗？ 11）要进行安全备份，可以使用MongoDB中的功能是什么？ 12）提及Objecld由什么组成？ 13）提及插入文档的命令语法是什么？ 14）提到如何检查函数的源代码？ 15）查看是否在主服务器上的命令语法是什么？MongoDB允许多少个主机？ 16）提到用于查看Mongo的命令语法正在使用链接吗？ 17）解释一下MongoDB中的索引是什么？ 18）提到在MongoDB中使用索引的基本语法是什么？ 19）解释什么是MongoDB中的GridFS？ 20）MongoDB相似的产品有哪些？ Cassandra，CouchDB，Redis，Riak，Hbase等。\n"
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/",
+	"title": "mysql面试题",
+	"tags": [],
+	"description": "",
+	"content": "1.事务 原子性 隔离性 一直性 持久性\n2.MyISAM和InnoDB区别 MyISAM不支持外键和事务，innodb支持 MyISAM锁的粒度是表级，而InnoDB支持行级锁定 MyISAM支持全文类型索引，而InnoDB不支持全文索引。 MyISAM相对简单，所以在效率上要优于InnoDB，小型应用可以考虑使用MyISAM MyISAM创建表生成三个文件：.frm数据表结构 .myd数据文件 .myi索引文件，Innodb只生成一个frm文件，数据存放在ibdata1.log MyISAM使用delete语句删除后并不会立刻清理磁盘空间，需要定时清理，命令：OPTIMIZE table dept;\n3.delete drop truncate区别 truncate 和 delete只删除数据，不删除表结构 ,drop删除表结构，并且释放所占的空间。 删除数据的速度，一般来说: drop\u0026gt; truncate \u0026gt; delete delete属于DML语言，需要事务管理，commit之后才能生效。drop和truncate属于DDL语言，操作立刻生效，不可回滚 使用场合： 当你不再需要该表时， 用 drop; 当你仍要保留该表，但要删除所有记录时， 用 truncate; 当你要删除部分记录时（always with a where clause), 用 delete. 注意： 对于有主外键关系的表，不能使用truncate而应该使用不带where子句的delete语句，由于truncate不记录在日志中，不能够激活触发器\n4.索引 MyISAM引擎使用B+Tree作为索引结构，叶节点的data域存放的是数据记录的地址。 InnoDB也使用B+Tree作为索引结构。InnoDB的数据文件本身就是索引文件。\n索引种类 主键索引（把某列设为主键，则该列就是索引，主键不能重复） 唯一索引（unique），该列具有唯一性，同时又是索引 index 普通索引 全文索引 （fulltext） 只有MyISAM存储引擎支持 （注：mysql 5.6之后，Innodb也开始支持全文索引，mysql5.6较之前版本有较大更新，有兴趣的小伙伴可以去查一查）\n5.适合加索引的列： 经常查询的列上加索引 唯一性太差的列不要加索引（重复太多），相反唯一性比较好的列适合加索引 不经常修改的列适合加。经常修改的列不要加索引（列修改，索引也要改） 因为索引的创建和更改是有开销的。\n6.mysql优化 1.数据表的优化（符合3范式） 1.1范式：1NF是对属性的原子性约束，要求属性具有原子性，不可再分解；(只要是关系型数据库都满足1NF)\r2.2范式：2NF是对记录的惟一性约束，要求记录有惟一标识，即实体的惟一性；\r3.3范式：3NF是对字段冗余性的约束，即任何字段不能由其他字段派生出来，它要求字段没有冗余。没有冗余的数据库设计可以做到\r4.但是，没有冗余的数据库未必是最好的数据库，有时为了提高运行效率，就必须降低范式标准，适当保留冗余数据。具体做法是：在概念数据模型设计时遵守第三范式，降低范式标准的工作放到物理数据模型设计时考虑。降低范式就是增加字段，允许冗余。\r2.sql语句优化 索引 3.使用order by null禁用排序。group by 默认情况下会排序（file sorting），非常费时。 4.使用join代替子查询（子查询会默认创建临时表） 5.分表： 1.垂直分割：将字段分开\r2.水平分割：将记录分开\r6.读写分离 "
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/",
+	"title": "参考文档",
+	"tags": [],
+	"description": "",
+	"content": "网站 官网 Elasticsearch中文文档 Elasticsearch中文社区 ElasticSearch使用场景 Elasticsearch入门指南 Elasticsearch+logstash+kibana实现日志分析（实验） Elasticsearch 思维导图集锦 日志系统 从零学Elasticsearch系列——搭建ELK Nginx日志分析平台 Elasticsearch+logstash+kibana实现日志分析（实验） docker-compose一键部署elasticsearch+logstash+kibana ELK日志系统：Elasticsearch + Logstash + Kibana 搭建教程 ElasticSearch使用场景 用Kibana和logstash快速搭建实时日志查询、收集与分析系统 如何快速搭建一个简易的ELK日志分析系统 快速搭建ELK日志分析系统 快速搭建一套elk日志系统 "
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/",
+	"title": "参考文档",
+	"tags": [],
+	"description": "",
+	"content": " MongoDB中文手册|官方文档中文版\nMongoDB\nmongodb学习笔记\nMongoDB(思维导图)\n思维导图学《Mongo 官方文档》\nMongoDB初学知识思维导图\nMongodb思维导图\n面试挂在数据库？莫慌，我赠你全套笔记（MySQL+redis+MongoDB）\nMongodb思维导图\nMongoDB 教程\nmongodb学习总结\nMongoDB架构学习笔记\nmongodb中文文档\nmongodb中文手册\n面试文档 95道MongoDB面试题（含答案），1万字详细解析 快2020年了，赶紧收藏起MongoDB面试题轻松面对BAT灵魂式的拷问 MongoDB高频面试题 28个MongoDB经典面试题 MongoDB面试题和答案全集解析 MongoDB面试题问题以及参考答案 #MongoDB相似的产品有哪些？ Cassandra，CouchDB，Redis，Riak，Hbase等。\n"
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/",
+	"title": "参考资料",
+	"tags": [],
+	"description": "",
+	"content": "#mysql 是关系型数据库 mysql总结(一)：思维导图\nmysql总结 高性能MySQL系统思维导图 MySql之增删改查总结 MySQL存储过程\n#面试资料 MySQL 面试之必会知识点 史上最详细的一线大厂Mysql面试题详解 Mysql面试知识点总结(进阶篇) MySQL 分库分表方案，总结的非常好！ 干货！MySql DAL中间件总结\n#数据库优化 万字总结：学习MySQL优化原理，这一篇就够了！ 记录一次MySQL两千万数据的大表优化解决过程，提供三种解决方案 史上最详细的一线大厂Mysql面试题详解 MySQL 的优化方案总结\n"
 },
 {
 	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/",
@@ -385,7 +539,49 @@
 	"content": "A basic md content page can be rendered as a reveal.js presentation full screen.\nYou can, also, embed presentation in a page as a small box, using the revealjs shortcode in your md file.\rFormating Use your common Markdown syntax you use in Hugo, don\u0026rsquo;t forget, you can put html tags too.\nSpecial syntax (in html comment) is available for adding attributes to Markdown elements. This is useful for fragments, amongst other things.\nPlease read the doc from hakimel\nOptions In the frontmatter of your page file, set type and revealOptions params\nYour content will be served as a fullscreen revealjs presentation and revealOptions will be used to ajust its behaviour.\n+++\rtitle = \u0026quot;Test slide\u0026quot;\rtype=\u0026quot;slide\u0026quot;\rtheme = \u0026quot;league\u0026quot;\r[revealOptions]\rtransition= 'concave'\rcontrols= true\rprogress= true\rhistory= true\rcenter= true\r+++\rread more about reveal options here\nSlide Delimiters When creating the content for your slideshow presentation within content markdown file you need to be able to distinguish between one slide and the next. This is achieved very simply using a convention within Markdown that indicates the start of each new slide.\nAs both horizontal and vertical slides are supported by reveal.js each has it\u0026rsquo;s own unique delimiter.\nTo denote the start of a horizontal slide simply add the following delimiter (dashes) in your Markdown:\n---\rTo denote the start of a vertical slide simply add the following delimiter (underscores) in your Markdown:\n___\rBy using a combination of horizontal and vertical slides you can customize the navigation within your slideshow presentation. Typically vertical slides are used to present information below a top-level horizontal slide.\nFor example, a very simple slideshow presentation can be created as follows\n+++\rtitle = \u0026#34;test\u0026#34;\rdate = \u0026#34;2017-04-24T18:36:24+02:00\u0026#34;\rtype=\u0026#34;slide\u0026#34;\rtheme = \u0026#34;league\u0026#34;\r[revealOptions]\rtransition= \u0026#39;concave\u0026#39;\rcontrols= true\rprogress= true\rhistory= true\rcenter= true\r+++\r# In the morning\r___\r## Getting up\r- Turn off alarm\r- Get out of bed\r___\r## Breakfast\r- Eat eggs\r- Drink coffee\r---\r# In the evening\r___\r## Dinner\r- Eat spaghetti\r- Drink wine\r___\r## Going to sleep\r- Get in bed\r- Count sheep click here to view this page rendered\n"
 },
 {
-	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafaka2/",
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E8%B5%84%E6%96%99/dockermssql/create_qpsqldbbase/%E8%AF%B4%E6%98%8E/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "Docker for Windows 使用 VMware WorkStation\n登录dev实例 docker-machine ssh dev\n查看容器 docker ps\n创建快照 docker commit -p e5a5689d08ac qpsqldbbase-backup\n查看镜像 docker images\n保存镜像 docker save -o qpsqldbbase-backup.tar qpsqldbbase-backup\n恢复镜像 docker load -i qpsqldbbase-backup.tar\nnetstat -aon|findstr \u0026ldquo;2048\u0026rdquo;\n$ docker ps // 查看所有正在运行容器 $ docker stop containerId // containerId 是容器的ID\n$ docker ps -a // 查看所有容器 $ docker ps -a -q // 查看所有容器ID\n$ docker stop $(docker ps -a -q) // stop停止所有容器 $ docker rm $(docker ps -a -q) // remove删除所有容器\n"
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E8%B5%84%E6%96%99/docker%E7%9A%84etcd3%E7%9A%84%E6%90%AD%E5%BB%BA/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "docker的etcd3的搭建\n"
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "服务与发现技术 etcd:注册发现 内部有事务和监听机制 分组 zookeeper consul eureka\n"
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "#文档参考 Kubernetes中文社区 | 中文文档 十分钟带你理解Kubernetes核心概念 k8s资料 Kubernetes 介绍\n#思维导图 k8s思维导图 男孩周末班-k8s-思维导图\n"
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%91%E5%B8%83%E6%9C%8D%E5%8A%A1/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "kubernetes核心组件kube-proxy - 运维笔记\n在 K8s 集群中微服务的负载均衡是由 Kube-proxy 实现的，它是 K8s 集群内部的负载均衡器，也是一个分布式代理服务器，在 K8s 的每个节点上都有一个，这一设计体现了它的伸缩性优势，需要访问服务的节点越多，提供负载均衡能力的 Kube-proxy 就越多，高可用节点也随之增多。\n"
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E7%94%A8%E9%80%94/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "1.你能解释 Deployment、ReplicaSets、StatefulSets、Pod、CronJob 的不同用途吗？ Deployment:开发更新 ReplicaSets:集合控制 StatefulSets:状态集合 Pod:虚拟的实体 CronJob:运行自动化 2.Kubernetes 如何处理持久性？ 服务和 ingress 的作用是什么？ 你何时会使用像 ConfigMap 或 secret 这样的东西？ Pod 亲和性作用是什么？ 你能举例说明何时使用 Init Container 么？ 什么是 sidecar 容器？你能给出一个用例，说明你为什么要使用它么？\nhttps://jimmysong.io/kubernetes-handbook/practice/service-discovery-and-loadbalancing.html\n"
+},
+{
+	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafaka%E7%AE%80%E4%BB%8B/",
 	"title": "",
 	"tags": [],
 	"description": "",
@@ -399,11 +595,46 @@
 	"content": "Kafka是最初由Linkedin公司开发，是一个分布式、分区的、多副本的、多订阅者，基于zookeeper协调的分布式日志系统（也可以当做MQ系统），常见可以用于web/nginx日志、访问日志，消息服务等等，Linkedin于2010年贡献给了Apache基金会并成为顶级开源项目。\n主要应用场景是：日志收集系统和消息系统。\nKafka主要设计目标如下：\n以时间复杂度为O(1)的方式提供消息持久化能力，即使对TB级以上数据也能保证常数时间的访问性能。 高吞吐率。即使在非常廉价的商用机器上也能做到单机支持每秒100K条消息的传输。 支持Kafka Server间的消息分区，及分布式消费，同时保证每个partition内的消息顺序传输。 同时支持离线数据处理和实时数据处理。 Scale out:支持在线水平扩展\n1.2　消息系统介绍 一个消息系统负责将数据从一个应用传递到另外一个应用，应用只需关注于数据，无需关注数据在两个或多个应用间是如何传递的。分布式消息传递基于可靠的消息队列，在客户端应用和消息系统之间异步传递消息。有两种主要的消息传递模式：点对点传递模式、发布-订阅模式。大部分的消息系统选用发布-订阅模式。Kafka就是一种发布-订阅模式。\n1.3　点对点消息传递模式（ 生产消费模式,消费一次） 在点对点消息系统中，消息持久化到一个队列中。此时，将有一个或多个消费者消费队列中的数据。但是一条消息只能被消费一次。当一个消费者消费了队列中的某条数据之后，该条数据则从消息队列中删除。该模式即使有多个消费者同时消费数据，也能保证数据处理的顺序。这种架构描述示意图如下：\n1.4　发布-订阅消息传递模式 在发布-订阅消息系统中，消息被持久化到一个topic中。与点对点消息系统不同的是，消费者可以订阅一个或多个topic，消费者可以消费该topic中所有的数据，同一条数据可以被多个消费者消费，数据被消费后不会立马删除。在发布-订阅消息系统中，消息的生产者称为发布者，消费者称为订阅者。该模式的示例图如下：\n二、Kafka的优点 2.1　解耦 在项目启动之初来预测将来项目会碰到什么需求，是极其困难的。消息系统在处理过程中间插入了一个隐含的、基于数据的接口层，两边的处理过程都要实现这一接口。这允许你独立的扩展或修改两边的处理过程，只要确保它们遵守同样的接口约束。\n2.2　冗余（副本） 有些情况下，处理数据的过程会失败。除非数据被持久化，否则将造成丢失。消息队列把数据进行持久化直到它们已经被完全处理，通过这一方式规避了数据丢失风险。许多消息队列所采用的\u0026quot;插入-获取-删除\u0026quot;范式中，在把一个消息从队列中删除之前，需要你的处理系统明确的指出该消息已经被处理完毕，从而确保你的数据被安全的保存直到你使用完毕。\n2.3　扩展性 因为消息队列解耦了你的处理过程，所以增大消息入队和处理的频率是很容易的，只要另外增加处理过程即可。不需要改变代码、不需要调节参数。扩展就像调大电力按钮一样简单。\n2.4　灵活性\u0026amp;峰值处理能力 在访问量剧增的情况下，应用仍然需要继续发挥作用，但是这样的突发流量并不常见；如果为以能处理这类峰值访问为标准来投入资源随时待命无疑是巨大的浪费。使用消息队列能够使关键组件顶住突发的访问压力，而不会因为突发的超负荷的请求而完全崩溃。\n2.5　可恢复性 系统的一部分组件失效时，不会影响到整个系统。消息队列降低了进程间的耦合度，所以即使一个处理消息的进程挂掉，加入队列中的消息仍然可以在系统恢复后被处理。\n2.6　顺序保证 在大多使用场景下，数据处理的顺序都很重要。大部分消息队列本来就是排序的，并且能保证数据会按照特定的顺序来处理。Kafka保证一个Partition内的消息的有序性。\n2.7　缓冲 在任何重要的系统中，都会有需要不同的处理时间的元素。例如，加载一张图片比应用过滤器花费更少的时间。消息队列通过一个缓冲层来帮助任务最高效率的执行———写入队列的处理会尽可能的快速。该缓冲有助于控制和优化数据流经过系统的速度。\n2.8　异步通信 很多时候，用户不想也不需要立即处理消息。消息队列提供了异步处理机制，允许用户把一个消息放入队列，但并不立即处理它。想向队列中放入多少消息就放多少，然后在需要的时候再去处理它们。\n三、常用Message Queue对比 3.1　RabbitMQ RabbitMQ是使用Erlang编写的一个开源的消息队列，本身支持很多的协议：AMQP，XMPP, SMTP, STOMP，也正因如此，它非常重量级，更适合于企业级的开发。同时实现了Broker构架，这意味着消息在发送给客户端时先在中心队列排队。对路由，负载均衡或者数据持久化都有很好的支持。\n3.2　Redis Redis是一个基于Key-Value对的NoSQL数据库，开发维护很活跃。虽然它是一个Key-Value数据库存储系统，但它本身支持MQ功能，所以完全可以当做一个轻量级的队列服务来使用。对于RabbitMQ和Redis的入队和出队操作，各执行100万次，每10万次记录一次执行时间。测试数据分为128Bytes、512Bytes、1K和10K四个不同大小的数据。实验表明：入队时，当数据比较小时Redis的性能要高于RabbitMQ，而如果数据大小超过了10K，Redis则慢的无法忍受；出队时，无论数据大小，Redis都表现出非常好的性能，而RabbitMQ的出队性能则远低于Redis。\n3.3　ZeroMQ ZeroMQ号称最快的消息队列系统，尤其针对大吞吐量的需求场景。ZeroMQ能够实现RabbitMQ不擅长的高级/复杂的队列，但是开发人员需要自己组合多种技术框架，技术上的复杂度是对这MQ能够应用成功的挑战。ZeroMQ具有一个独特的非中间件的模式，你不需要安装和运行一个消息服务器或中间件，因为你的应用程序将扮演这个服务器角色。你只需要简单的引用ZeroMQ程序库，可以使用NuGet安装，然后你就可以愉快的在应用程序之间发送消息了。但是ZeroMQ仅提供非持久性的队列，也就是说如果宕机，数据将会丢失。其中，Twitter的Storm 0.9.0以前的版本中默认使用ZeroMQ作为数据流的传输（Storm从0.9版本开始同时支持ZeroMQ和Netty作为传输模块）。\n3.4　ActiveMQ ActiveMQ是Apache下的一个子项目。 类似于ZeroMQ，它能够以代理人和点对点的技术实现队列。同时类似于RabbitMQ，它少量代码就可以高效地实现高级应用场景。\n3.5　Kafka/Jafka Kafka是Apache下的一个子项目，是一个高性能跨语言分布式发布/订阅消息队列系统，而Jafka是在Kafka之上孵化而来的，即Kafka的一个升级版。具有以下特性：快速持久化，可以在O(1)的系统开销下进行消息持久化；高吞吐，在一台普通的服务器上既可以达到10W/s的吞吐速率；完全的分布式系统，Broker、Producer、Consumer都原生自动支持分布式，自动实现负载均衡；支持Hadoop数据并行加载，对于像Hadoop的一样的日志数据和离线分析系统，但又要求实时处理的限制，这是一个可行的解决方案。Kafka通过Hadoop的并行加载机制统一了在线和离线的消息处理。Apache Kafka相对于ActiveMQ是一个非常轻量级的消息系统，除了性能非常好之外，还是一个工作良好的分布式系统。\n四、Kafka中的术语解释 4.1　概述 在深入理解Kafka之前，先介绍一下Kafka中的术语。下图展示了Kafka的相关术语以及之间的关系：\n上图中一个topic配置了3个partition。Partition1有两个offset：0和1。Partition2有4个offset。Partition3有1个offset。副本的id和副本所在的机器的id恰好相同。\n如果一个topic的副本数为3，那么Kafka将在集群中为每个partition创建3个相同的副本。集群中的每个broker存储一个或多个partition。多个producer和consumer可同时生产和消费数据。\n4.2　broker Kafka 集群包含一个或多个服务器，服务器节点称为broker。\nbroker存储topic的数据。如果某topic有N个partition，集群有N个broker，那么每个broker存储该topic的一个partition。\n如果某topic有N个partition，集群有(N+M)个broker，那么其中有N个broker存储该topic的一个partition，剩下的M个broker不存储该topic的partition数据。\n如果某topic有N个partition，集群中broker数目少于N个，那么一个broker存储该topic的一个或多个partition。在实际生产环境中，尽量避免这种情况的发生，这种情况容易导致Kafka集群数据不均衡。\n4.3　Topic 每条发布到Kafka集群的消息都有一个类别，这个类别被称为Topic。（物理上不同Topic的消息分开存储，逻辑上一个Topic的消息虽然保存于一个或多个broker上但用户只需指定消息的Topic即可生产或消费数据而不必关心数据存于何处）\n类似于数据库的表名\n4.3　Partition topic中的数据分割为一个或多个partition。每个topic至少有一个partition。每个partition中的数据使用多个segment文件存储。partition中的数据是有序的，不同partition间的数据丢失了数据的顺序。如果topic有多个partition，消费数据时就不能保证数据的顺序。在需要严格保证消息的消费顺序的场景下，需要将partition数目设为1。\n4.4　Producer 生产者即数据的发布者，该角色将消息发布到Kafka的topic中。broker接收到生产者发送的消息后，broker将该消息追加到当前用于追加数据的segment文件中。生产者发送的消息，存储到一个partition中，生产者也可以指定数据存储的partition。\n4.5　Consumer 消费者可以从broker中读取数据。消费者可以消费多个topic中的数据。\n4.6　Consumer Group 每个Consumer属于一个特定的Consumer Group（可为每个Consumer指定group name，若不指定group name则属于默认的group）。\n4.7　Leader 每个partition有多个副本，其中有且仅有一个作为Leader，Leader是当前负责数据的读写的partition。\n4.8　Follower Follower跟随Leader，所有写请求都通过Leader路由，数据变更会广播给所有Follower，Follower与Leader保持数据同步。如果Leader失效，则从Follower中选举出一个新的Leader。当Follower与Leader挂掉、卡住或者同步太慢，leader会把这个follower从“in sync replicas”（ISR）列表中删除，重新创建一个Follower。\n"
 },
 {
-	"uri": "/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka3/",
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/couchdb/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/",
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": "#消息队列Kafka及其应用场景\n消息队列Kafka及其应用场景 Kafka集群在马蜂窝大数据平台的优化与应用扩展\n#参考 参考资料 Kafka面试题总结\nKafka入门看这一篇就够了\n"
+	"content": "CouchDB允许多个主服务器\n"
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E8%AF%B4%E6%98%8E/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "#存储和查询文本 ElasticSearch\n"
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/mongodb%E6%9F%A5%E8%AF%A2%E6%A1%88%E4%BE%8B/mac%E5%AE%89%E8%A3%85/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "一. 安装 下载 mongodb-macos-x86_64-4.2.3.tgz\n1. 解压文件 tar -zxvf mongodb-macos-x86_64-4.2.3.tgz\n2. 新建mongodb文件夹 mkdir -p mongodb\n3. 将mongodb拷贝到新文件夹 cp -R -n /Users/mac/work/mongodb\n安装默认路径：/Users/mac/work/mongodb\n二. 运行 1.创建数据库存储目录/Users/mac/work/mgdb： sudo mkdir -p /Users/mac/work/mgdb\n2.启动mongod mongod\n如果上一步自定义了存储路径则需要使用 \u0026ndash;dbpath ，例如 mongod \u0026ndash;dbpath /Users/mac/work/mgdb\n如果没有创建全局路径 PATH，需要进入以下目录 cd /Users/mac/work/mongodb/bin \u0026amp;\u0026amp; ./mgdb\n#三.安装软件 Studio 3T https://segmentfault.com/a/1190000021033718\n"
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/replicaset/replicaset/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "1.三台服务器\n服务器1:211.149.189.65:47007 服务器2:211.149.189.65:47008 服务器3:211.149.189.65:47009\n2.对应三个配置 mongodb_p.conf mongodb_s1.conf mongodb_s2.conf\n3.启动 ./mongod -f /opt/mongodb5/mongodb_p.conf ./mongod -f /opt/mongodb5/mongodb_s1.conf ./mongod -f /opt/mongodb5/mongodb_s2.conf\n4.初始化 链接数据库 ./mongod mongodb://211.149.189.65:47007\n1.配置replica set节点\nconfig = {_id:\u0026ldquo;repmore\u0026rdquo;,members:[{_id:0,host:\u0026lsquo;211.149.189.65:47007\u0026rsquo;,priority :2},{_id:1,host:\u0026lsquo;211.149.189.65:47008\u0026rsquo;,priority:1},{_id:2,host:\u0026lsquo;211.149.189.65:47009\u0026rsquo;,priority:1}]}\n2.初始化replica set\nrs.initiate(config);\n3.查看replica set各节点状态\nrs.status();\n5. 生成key\nsudo openssl rand -base64 741 \u0026raquo; mt.key\n修改权限 chmod 600 mt.key\n写到配置文件 auth=true keyFile=/opt/mongodb5/mt.key\n"
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/setpwd/%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "地址\n1. show dbs 在mongodb新版本里并没有admin数据库，但是并不妨碍第2步操作。\n2. use admin 进入admin数据库\n3. 创建管理员账户\ndb.createUser({ user: \u0026ldquo;mtadmin\u0026rdquo;, pwd: \u0026ldquo;adminmt\u0026rdquo;, roles: [{ role: \u0026ldquo;userAdminAnyDatabase\u0026rdquo;, db: \u0026ldquo;admin\u0026rdquo; }] })\nmongodb中的用户是基于身份role的，该管理员账户的 role是 userAdminAnyDatabase。 ‘userAdmin’代表用户管理身份，’AnyDatabase’ 代表可以管理任何数据库。\n4. 验证第3步用户添加是否成功\ndb.auth(\u0026ldquo;mtadmin\u0026rdquo;, \u0026ldquo;adminmt\u0026rdquo;) 如果返回1，则表示成功。 exit退出系统\ndb.auth()方法理解为 用户的验证功能\n5. 修改配置\nsudo vi /etc/mongod.conf 找到#security: 取消注释，修改为：\nauthorization: enabled #注意缩进，缩进参照配置文件其他配置。缩进错误可能第6步重启不成功。\n6. 重启 mongodb sudo service mongod restart\n7. 进入mongodb,用第3步的 管理员账户登录，用该账户创建其他数据库管理员账号 db.auth(\u0026ldquo;mtadmin\u0026rdquo;, \u0026ldquo;adminmt\u0026rdquo;)\n8. 新建你需要管理的mongodb 数据的账号密码。 db.createUser({ user: \u0026ldquo;appadmin\u0026rdquo;, pwd: \u0026ldquo;cluNPP2P6JR5ogKB\u0026rdquo;, roles: [{ role: \u0026ldquo;dbOwner\u0026rdquo;, db: \u0026ldquo;app\u0026rdquo; }] })\nrote:dbOwner 代表数据库所有者角色，拥有最高该数据库最高权限。比如新建索引等\ndb.auth(\u0026ldquo;appadmin\u0026rdquo;, \u0026ldquo;cluNPP2P6JR5ogKB\u0026rdquo;)\nmongodb://appadmin:cluNPP2P6JR5ogKB@211.149.189.65:47007,211.149.189.65:47008,211.149.189.65:47009/local?replicaSet=repmore\u0026amp;maxPoolSize=200\u0026amp;connectTimeout=30\n项目中没有使用下边\n9. 新建数据库读写账户 db.createUser({ user: \u0026ldquo;appadmin2\u0026rdquo;, pwd: \u0026ldquo;cluNPP2P6JR5ogKB2\u0026rdquo;, roles: [{ role: \u0026ldquo;readWrite\u0026rdquo;, db: \u0026ldquo;app\u0026rdquo; }] })\n该用户用于该数据的读写，只拥有读写权限。\n10.现在数据的用户名和密码就建好了。 可以使用：mongodb://appadmin2:cluNPP2P6JR5ogKB2@localhost/yourdatabase来链接\n"
+},
+{
+	"uri": "/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/readme/",
@@ -712,4 +943,11 @@
 	"tags": [],
 	"description": "来自于网络",
 	"content": "知识体系可以从字段，函数，结构体入手，再到详细编码的逻辑结构，也就是面向过程进行加深。然后是指针，异常机制，IO，并发等。有了基本架构之后才是网络，后台等高级特性。\n字段： 1.数据操作。包括基本数据类型的定义以及操作，运算，切片等。注意指针。 2.字段在结构体中可以是匿名字段。 3.array，map，slice是高级结构体。array是数组，而slice针对数组进行的切片处理。map是映射。使用range遍历。 4.平行赋值i,j=i+1,j+1.这个一般用在if中。\n结构体： 1.结构体的定义。在go中类是结构体与函数叠加而成。而结构体就是算法与结构中的“结构”。 2.type用于重定义数据，定义结构体，接口。 3.go更加接近理论，所以在go中类，方法，变量，被叫做结构体，函数，字段。.\n函数： 1.函数的定义。在go中都是函数，而属于结构体的函数可以称为方法。 2.函数有匿名函数。 3.func funcName(input1 type1, input2 type2) (output1 type1, output2 type2) { //这里是处理逻辑代码 //返回多个值 return value1, value2 } 字段和返回字段可以简化。如input1,input2 type。这其实就是如果当前没有就往后面找。 4.注意变参func（arg\u0026hellip;int）\n流程控制： 1.if参照了for，可以使用；分号隔开，前面的是变量声明。 2.switch的case后面自带break，想要往下执行需要使用fallthrough。switch跟的语句如果没有添加，那么就是true。 3.for格式如果省略了分号，那么就相当于while。for range可以用于读取slice和map的数据。 4.goto是跳转语句。\n指针： 1.string,slice,map都是基于指针的机制了，可以直接传递，不需要再取地址传指针操作。但是注意slice的长度发生变化的话，仍需取地址传指针。 2.结构体指针函数的使用需要注意。\n表达式： 1.go不支持三元表达式。也就是说一个n:=expr?trueV:falseV在这里不能使用。\n异常： 1.go中，异常处理使用panic()，recover()，defer联合使用。panic抛出异常中断，如果想要回复，可以在defer中使用recover恢复。但是go中，尽量少用异常处理。\nIO： 1.go中使用make()创建切片，映射，程道。返回对象，而new()返回的是指针。 2.chan分为有缓冲和无缓冲两种。 3.chan作为线程件通信的IO通道。 4.常使用select，case，default组合chan进行操作。\n并发： 1.并发里面主要是多线程以及常用的辅助类等。 2.并发的内容一般包含： （1）线程的初始化。线程的实现是go xxx，这个过程叫做gorutine。 （2）线程的通信。通过channel进行通信。注意，这里channel本身是具有锁功能的，往往作为最简单常用的锁进行使用 （3）线程对于资源的操作。这里主要是同步异步，阻塞和非阻塞等概念。 同步异步的关键在于互斥，而阻塞和非阻塞关键在于锁。但是两者其实很接近。 所以往往出现的是互斥锁。这里常用的是sync.Mutext.Lock()实现互斥锁。使用lock.Lock()实现锁。runtime模块往往用于运行时候的一些操作，帮助线程实现让出时间片，线程退出等操作。atomic模块是原子操作。其他的一些类和函数是基于这些概念进行的扩展。 （4）defer使用 defer func_name(param-list) 当一个函数调用前有关键字 defer 时, 那么这个函数的执行会推迟到包含这个 defer 语句的函数即将返回前才执行 defer 调用的函数参数的值在 defer 定义时就确定了, 而 defer 函数内部所使用的变量的值需要在这个函数运行时才确定。defer 函数调用的执行时机是外层函数设置返回值之后, 并且在即将返回之前\n（5）sync mutex互斥锁 有两个方法，lock()和unlock() 上锁和解锁 对数据进行上锁，防止数据被其它线程更改。Mutex是一个互斥锁，可以作为struct的一部分，这样这个struct就会防止被多线程更改数据。 注意：执行加锁后，在执行完操作后记得解锁，不然会有错误。常常defer关键字与解锁共用。\n"
+},
+{
+	"uri": "/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E9%87%8D%E7%82%B9%E8%A7%A3%E6%9E%90/",
+	"title": "重点解析",
+	"tags": [],
+	"description": "来自于网络",
+	"content": "channal channel 数据结构 阻塞、非阻塞操作 多路select 1.channel 是结构 2.channel 结构里包含一个循环缓冲区 3.channel 有等待队列\n4.channel 的阻塞与非阻塞操作 5.多路的select 处理逻辑\nGolang合辑\nGolang深入理解GPM模型\nhttps://github.com/aceld 1.调度器由来 2.调度器GMP模型设计思想 3.调度器GMP调度场景的调度全过程分析 4.掌握go调度器原理\n"
 }]
