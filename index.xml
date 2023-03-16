@@ -61,6 +61,93 @@ ETCDCTL_API=3 etcdctl &amp;ndash;endpoints=http://127.0.0.1:30001 &amp;ndash;pre
     </item>
     
     <item>
+      <title>Golang面试题41道</title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/</guid>
+      <description>Golang面试题41道
+什么是golang? go是一个开源的编程语言，由谷歌开发的。这门语言是设计用来做系统级的编程的。
+为什么要用golang? 简单点说就是go是一个开源的编程语言，它很容易用来编写简单, 可靠，有效的软件。
+是谁开发了go语言？ Robert Griesemer, Rob Pike, Ken Thompson.
+go编程中的packages是什么？ Go语言的最小集合就是package，它的程序入口是main package。
+Go语言是否支持generic编程? 不支持。
+go语言是大小写敏感的编程语言吗？ 是的。
+go语言里面字符串的语法是怎样的？ go语言里有两种字符串语法。 一种是原始字符串语法raw string literals。使用back quotes来包含一系列的字符集。支持多行。 另一种是interpreted string literals。用双引号括起来。不支持多行。
+Go语言的work space是指什么? Work space用来包含go语言的代码，有三个主要的文件目录, src, pkg, bin。
+go语言中布尔类型的缺省值是什么？ false
+Gopath环境变量是什么? Gopath来指定工作空间的位置。在做go语言编程的时候，这个变量设置是必须的。
+go语言编程的好处是什么？ 编译和运行都很快。 在语言层级支持并行操作。 有垃圾处理器。 内置字符串和maps。 函数是go语言的最基本编程单位。
+go语言里比较常用的功能模块。 Container, container list, container heap. Web server, net/http Cryptography, Crypto/md5, crypto/sha1. Compression, compress/gzip. Database, database/sql.
+goroutine是什么？ 一个goroutine是可以跟其他函数并行运行的函数。如果想停止一个goroutine，你可以通过一个signal channel传值进去。
+如何写多行的字符串？ raw string literal
+go语言里的break是干什么用的？ Break是用来终止当前的for loop或者switch的。</description>
+    </item>
+    
+    <item>
+      <title>golang面试题整理</title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/</guid>
+      <description>golang面试题整理
+go的调度
+go struct能不能比较 因为是强类型语言，所以不同类型的结构不能作比较，但是同一类型的实例值是可以比较的，实例不可以比较，因为是指针类型
+go defer（for defer），先进后出，后进先出 func b() { for i := 0; i &amp;lt; 4; i++ { defer fmt.Print(i) } }
+select可以用于什么，常用语gorotine的完美退出 golang 的 select 就是监听 IO 操作，当 IO 操作发生时，触发相应的动作每个case语句里必须是一个IO操作，确切的说，应该是一个面向channel的IO操作
+context包的用途 Context通常被译作上下文，它是一个比较抽象的概念，其本质，是【上下上下】存在上下层的传递，上会把内容传递给下。在Go语言中，程序单元也就指的是Goroutine
+client如何实现长连接 server是设置超时时间，for循环遍历的
+主协程如何等其余协程完再操作 使用channel进行通信，context,select
+slice，len，cap，共享，扩容 append 函数，因为slice底层数据结构是，由数组、len、cap组成，所以，在使用append扩容时，会查看数组后面有没有连续内存快，有就在后面添加，没有就重新生成一个大的素组
+map如何顺序读取 map不能顺序读取，是因为他是无序的，想要有序读取，首先的解决的问题就是，把ｋｅｙ变为有序，所以可以把key放入切片，对切片进行排序，遍历切片，通过key取值。
+实现set
+实现消息队列（多生产者，多消费者） 使用切片加锁可以实现
+大文件排序 归并排序，分而治之,拆分为小文件，再排序
+基本排序，哪些是稳定的
+http get跟head HEAD和GET本质是一样的，区别在于HEAD不含有呈现数据，而仅仅是HTTP头信息。有的人可能觉得这个方法没什么用，其实不是这样的。想象一个业务情景：欲判断某个资源是否存在，我们通常使用GET，但这里用HEAD则意义更加明确。
+http 401,403 400 bad request，请求报文存在语法错误 401 unauthorized，表示发送的请求需要有通过 HTTP 认证的认证信息 403 forbidden，表示对请求资源的访问被服务器拒绝 404 not found，表示在服务器上没有找到请求的资源
+http keep-alive client发出的HTTP请求头需要增加Connection:keep-alive字段 Web-Server端要能识别Connection:keep-alive字段，并且在http的response里指定Connection:keep-alive字段，告诉client，我能提供keep-alive服务，并且&amp;quot;应允&amp;quot;client我暂时不会关闭socket连接</description>
+    </item>
+    
+    <item>
+      <title>Golang面试题目全网超全超详细的口语化解答总结</title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%85%A8%E7%BD%91%E8%B6%85%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86%E7%9A%84%E5%8F%A3%E8%AF%AD%E5%8C%96%E8%A7%A3%E7%AD%94%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%85%A8%E7%BD%91%E8%B6%85%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86%E7%9A%84%E5%8F%A3%E8%AF%AD%E5%8C%96%E8%A7%A3%E7%AD%94%E6%80%BB%E7%BB%93/</guid>
+      <description>【2022版】Golang面试题目全网超全超详细的口语化解答总结 【2022版】 Golang面试题目全网超全总结
+1 特性篇 1.1 Golang 使用什么数据类型？ 布尔型、数值型(整型、浮点型)、字符串、指针、数组、结构体、切片、map、chan、接口、函数 1.2 字符串的小问题 ①可以用==比较 ②不可以通过下标的方式改变某个字符，字符串是只读的 ③不能和nil比较 1.3 数组定义问题 数组是可以以指定下标的方式定义的，例如： array := [...]int{1,2,3,9:34} 表示array[9]==34 则len(array)就是10 来看一道题目： 1.对 rune 字面量的理解和数组的语法 2.常量表达式这个规则应该了解下 package main import ( &amp;#34;fmt&amp;#34; ) func main() { m := [...]int{ &amp;#39;a&amp;#39;: 1, &amp;#39;b&amp;#39;: 2, &amp;#39;c&amp;#39;: 3, } m[&amp;#39;a&amp;#39;] = 3 fmt.Println(len(m)) } 输出：100 原因：以下标的方式定义数组内的元素，&amp;#39;c’的ascll为99，故长度为100。 1.4 内存四区 代码区：存放代码 全局区：常量+全局变量。最终在进程退出时，由操作系统回收。 堆区：空间充裕，数据存放时间较久。一般由开发者分配，启动Golang的GC由GC清除机制自动回收。 栈区：空间较小，要求数据读写性能高，数据存放时间较短暂。由编译器自动分配和释放，存放函数的参数值、局部变量、返回值等、局部变量等(局部变量如果产生逃逸现象，可能会挂在在堆区) 1.5 Go 支持什么形式的类型转换？ Go支持显示类型的转换，以满足严格的类型要求 1.6 空结构体的作用 不包含任何字段的结构体叫做空结构体 struct{} 定义： var et struct{} et := struct{}{} type ets struct {} / et := ets{} / var et ets 特性： 所有的空结构体的地址都是同一地址，都是zerobase的地址，且大小为0 使用场景： 1.</description>
+    </item>
+    
+    <item>
+      <title>Golang面试题目全网超全超详细的口语化解答总结</title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%85%A8%E7%BD%91%E8%B6%85%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86%E7%9A%84%E5%8F%A3%E8%AF%AD%E5%8C%96%E8%A7%A3%E7%AD%94%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%85%A8%E7%BD%91%E8%B6%85%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86%E7%9A%84%E5%8F%A3%E8%AF%AD%E5%8C%96%E8%A7%A3%E7%AD%94%E6%80%BB%E7%BB%93/</guid>
+      <description>【2022版】 Golang面试题目全网超全总结
+特性篇 1.1 Golang 使用什么数据类型？ 1.2 字符串的小问题 1.3 数组定义问题 1.4 内存四区 1.5 Go 支持什么形式的类型转换？ 1.6 空结构体的作用 1.7 单引号，双引号，反引号的区别？ 1.8 如何停止一个 Goroutine？ 1.9 Go 语言中 cap 函数可以作用于哪些内容？ 1.10 Printf()，Sprintf()，FprintF() 都是格式化输出，有什么不同？ 1.11 golang 中 make 和 new 的区别？（基本必问） 1.12 关于Go中值类型、引用类型、值传递、引用传递的疑惑 2.特性篇 2.1 for-range切片的时候，它的地址会发生变化么？ 2.2 context 使用场景和用途？ 2.3 常量计数器iota 2.4 defer特性相关 2.5 介绍下rune类型 2.6 interface相关问题 2.6.1 介绍一下interface 2.6.2 值接收者和指针接收者（值调用者和指针调用者） 2.6.3 接口的类型检查 2.6.3.1 方法 2.6.3.2 小题目 2.6.4 空接口 2.6.5 go语言如何实现面对对象编程 2.7. 反射的相关问题 2.7.1 Go的反射包怎么找到对应的方法 2.</description>
+    </item>
+    
+    <item>
+      <title>go语言面试要点</title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/go%E8%AF%AD%E8%A8%80%E9%9D%A2%E8%AF%95%E8%A6%81%E7%82%B9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/go%E8%AF%AD%E8%A8%80%E9%9D%A2%E8%AF%95%E8%A6%81%E7%82%B9/</guid>
+      <description>切片slice 通道channel(无缓冲和有缓冲) select 延迟defer 闭包 进程和线程，并发和并行，携程和线程 GPM 锁与同步 sync(5个)和atomic interface不是指针 结构 面向接口编程 Interface Goroutine (依赖于信号的、高并发低开销的并发模型，大概是Golang最大特色) Defer和Panic函数 CGO(Golang的底层沟通能力是非常强的,但要用好需要躲过很多坑) Golang自身的内存管理机制</description>
+    </item>
+    
+    <item>
+      <title>go语言面试题</title>
+      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/go%E8%AF%AD%E8%A8%80%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/go%E8%AF%AD%E8%A8%80%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+      <description>go语言面试题</description>
+    </item>
+    
+    <item>
       <title>Installation</title>
       <link>/getting-start/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -748,46 +835,6 @@ vim ~/.zshrc source ~/.zshrc
 2. ✗ CocoaPods not installed. sudo gem install cocoapods
 3. ERROR: Error installing cocoapods:
 iOS：解决pod的Insecure world writable dir问题 sudo chmod go-w /Volumes/macdata/go</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/</guid>
-      <description>Golang面试题41道 1.什么是golang? go是一个开源的编程语言，由谷歌开发的。这门语言是设计用来做系统级的编程的。
-2.为什么要用golang? 简单点说就是go是一个开源的编程语言，它很容易用来编写简单, 可靠，有效的软件。
-3.是谁开发了go语言？ Robert Griesemer, Rob Pike, Ken Thompson.
-4.go编程中的packages是什么？ Go语言的最小集合就是package，它的程序入口是main package。
-Go语言是否支持generic编程? 不支持。
-go语言是大小写敏感的编程语言吗？ 是的。
-7.go语言里面字符串的语法是怎样的？ go语言里有两种字符串语法。 一种是原始字符串语法raw string literals。使用back quotes来包含一系列的字符集。支持多行。 另一种是interpreted string literals。用双引号括起来。不支持多行。
-Go语言的work space是指什么? Work space用来包含go语言的代码，有三个主要的文件目录, src, pkg, bin。 9.go语言中布尔类型的缺省值是什么？ false
-10.Gopath环境变量是什么? Gopath来指定工作空间的位置。在做go语言编程的时候，这个变量设置是必须的。
-第11题，go语言编程的好处是什么？ 编译和运行都很快。 在语言层级支持并行操作。 有垃圾处理器。 内置字符串和maps。 函数是go语言的最基本编程单位。 第12题，go语言里比较常用的功能模块。 Container, container list, container heap. Web server, net/http Cryptography, Crypto/md5, crypto/sha1. Compression, compress/gzip. Database, database/sql. 第13题，goroutine是什么？ 一个goroutine是可以跟其他函数并行运行的函数。如果想停止一个goroutine，你可以通过一个signal channel传值进去。 第14题，如何写多行的字符串？ raw string literal 第15题, go语言里的break是干什么用的？</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/</guid>
-      <description>golang面试题整理
-1.go的调度 2.go struct能不能比较 因为是强类型语言，所以不同类型的结构不能作比较，但是同一类型的实例值是可以比较的，实例不可以比较，因为是指针类型 3.go defer（for defer），先进后出，后进先出 func b() { for i := 0; i &amp;lt; 4; i++ { defer fmt.Print(i) } } 4.select可以用于什么，常用语gorotine的完美退出 golang 的 select 就是监听 IO 操作，当 IO 操作发生时，触发相应的动作每个case语句里必须是一个IO操作，确切的说，应该是一个面向channel的IO操作
-5.context包的用途 Context通常被译作上下文，它是一个比较抽象的概念，其本质，是【上下上下】存在上下层的传递，上会把内容传递给下。在Go语言中，程序单元也就指的是Goroutine
-6.client如何实现长连接 server是设置超时时间，for循环遍历的
-7.主协程如何等其余协程完再操作 使用channel进行通信，context,select
-8.slice，len，cap，共享，扩容 append函数，因为slice底层数据结构是，由数组、len、cap组成，所以，在使用append扩容时，会查看数组后面有没有连续内存快，有就在后面添加，没有就重新生成一个大的素组
-9.map如何顺序读取 map不能顺序读取，是因为他是无序的，想要有序读取，首先的解决的问题就是，把ｋｅｙ变为有序，所以可以把key放入切片，对切片进行排序，遍历切片，通过key取值。
-10.实现set
-11.实现消息队列（多生产者，多消费者） 使用切片加锁可以实现
-12.大文件排序 归并排序，分而治之,拆分为小文件，在排序
-13.基本排序，哪些是稳定的
-14.http get跟head HEAD和GET本质是一样的，区别在于HEAD不含有呈现数据，而仅仅是HTTP头信息。有的人可能觉得这个方法没什么用，其实不是这样的。想象一个业务情景：欲判断某个资源是否存在，我们通常使用GET，但这里用HEAD则意义更加明确。
-15.http 401,403 400 bad request，请求报文存在语法错误 401 unauthorized，表示发送的请求需要有通过 HTTP 认证的认证信息 403 forbidden，表示对请求资源的访问被服务器拒绝 404 not found，表示在服务器上没有找到请求的资源
-16.http keep-alive client发出的HTTP请求头需要增加Connection:keep-alive字段 Web-Server端要能识别Connection:keep-alive字段，并且在http的response里指定Connection:keep-alive字段，告诉client，我能提供keep-alive服务，并且&amp;quot;应允&amp;quot;client我暂时不会关闭socket连接</description>
     </item>
     
     <item>

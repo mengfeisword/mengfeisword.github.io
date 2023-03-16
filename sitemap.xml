@@ -42,6 +42,20 @@
   </url><url>
     <loc>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/goframe/</loc>
   </url><url>
+    <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/</loc>
+  </url><url>
+    <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/</loc>
+  </url><url>
+    <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%85%A8%E7%BD%91%E8%B6%85%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86%E7%9A%84%E5%8F%A3%E8%AF%AD%E5%8C%96%E8%A7%A3%E7%AD%94%E6%80%BB%E7%BB%93/</loc>
+  </url><url>
+    <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%85%A8%E7%BD%91%E8%B6%85%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86%E7%9A%84%E5%8F%A3%E8%AF%AD%E5%8C%96%E8%A7%A3%E7%AD%94%E6%80%BB%E7%BB%93/</loc>
+  </url><url>
+    <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/go%E8%AF%AD%E8%A8%80%E9%9D%A2%E8%AF%95%E8%A6%81%E7%82%B9/</loc>
+  </url><url>
+    <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/go%E8%AF%AD%E8%A8%80%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
+  </url><url>
+    <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/</loc>
+  </url><url>
     <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/</loc>
   </url><url>
     <loc>/getting-start/installation/</loc>
@@ -85,6 +99,8 @@
     <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/</loc>
   </url><url>
     <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/</loc>
+  </url><url>
+    <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/</loc>
   </url><url>
     <loc>/content-organisation/extramenu/</loc>
     <lastmod>2017-04-29T18:36:24+02:00</lastmod>
@@ -221,10 +237,6 @@
     <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/dart%E5%9F%BA%E7%A1%80/</loc>
   </url><url>
     <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/flutter%E5%AE%89%E8%A3%85/</loc>
-  </url><url>
-    <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/</loc>
-  </url><url>
-    <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/go%E9%9D%A2%E8%AF%95%E9%A2%98/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/</loc>
   </url><url>
     <loc>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E8%AF%B4%E6%98%8E/</loc>
   </url><url>
