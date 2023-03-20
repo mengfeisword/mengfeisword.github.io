@@ -7,12 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>redis面试题</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E9%9D%A2%E8%AF%95%E7%9B%AE%E5%BD%95/redis%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E9%9D%A2%E8%AF%95%E7%9B%AE%E5%BD%95/redis%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/</guid>
+      <description>1 Redis 是一个基于内存的高性能key-value数据库。 2 Redis相比memcached有哪些优势： 3.Redis是单线程 4.Reids常用5种数据类型 6.Reids6种淘汰策略： 7.Redis的并发竞争问题如何解决? 8.Redis是使用c语言开发的。 9.Redis前端启动命令 10.Reids支持的语言： 11.Redis 持久化方案： 12.Redis 的主从复制 13.Redis是单线程的，但Redis为什么这么快？ 14 为什么Redis是单线程的？ 15 Redis info查看命令：info memory 16 Redis内存模型 17 Redis内存划分 18 Redis对象有5种类型 19.Redis没有直接使用C字符串 20.Reidis的SDS在C字符串的基础上加入了free和len字段 21.Reids主从复制 22.Redis哨兵 23.Reids持久化触发条件 24.Redis 开启AOF 25.AOF常用配置总结 26.RDB和AOF的优缺点 27.持久化策略选择 28.redis缓存被击穿处理机制 29.Redis还提供的高级工具 30.Redis常用管理命令 31.Reids工具命令 32.为什么需要持久化？ 33.判断key是否存在 34.删除key 35.缓存和数据库间数据一致性问题 36.布隆过滤器 37.缓存雪崩问题 38.缓存并发问题 39.Redis分布式 40.读写分离模型 41.数据分片模型 42. redis常见性能问题和解决方案： 43.redis通讯协议 44.Redis分布式锁实现 45.Redis做异步队列 46.Redis中海量数据的正确操作方式 47.SCAN系列命令注意事项 48.Redis 管道 Pipeline 49.事务不支持回滚 50.手写一个 LRU 算法 51.多节点 Redis 分布式锁：Redlock 算法 52.</description>
+    </item>
+    
+    <item>
       <title>参考资料</title>
       <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/</guid>
-      <description> Redis思维导图
+      <description>基础知识 Redis思维导图
 Redis命令参考
 Redis中文站
 Redis中文
@@ -27,6 +36,8 @@ Redis校招面经知识整理 133条目！很全！（xmind思维导图格式，
 Redis思维导图
 Redis学习笔记
 redis知识点总结
+Redis之面试篇：一文让你面试从唯唯诺诺到飞扬跋扈！
+Redis的RESP协议详解
 缓存 缓存穿透、缓存击穿、缓存雪崩区别和解决方案
 应对缓存击穿的解决方法
 帮你解读什么是Redis缓存穿透和缓存雪崩(包含解决方案)

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang服务器引擎 on DocDock Documentation</title>
+    <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E/</link>
+    <description>Recent content in golang服务器引擎 on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>golang服务器引擎</title>
+      <link>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/</guid>
+      <description>1.GoWorld 用Golang写一个分布式可扩展、可热更的游戏服务器 github
+2.Leaf github golang Leaf 游戏服务器框架简介
+3.cellnet cellnet好像使用callback回调方式, 直接pass. github cellnet 服务器网络库 cellnet
+4.mqant mqant使用了mqtt协议, 感觉写了太多, 有点复杂, 也pass了. github mqant框架Demo
+5.nano github nanoserver 有房卡麻将例子
+6.中小型手机棋牌网络游戏服务端架构设计 github 中小型手机棋牌网络游戏服务端架构设计 中小型棋牌类网络游戏服务端架构
+7.基于Go语言的棋牌游戏框架 github
+8.房卡麻将棋牌解决方案 https://github.com/shuimuliang https://my.oschina.net/u/3653577/blog/1512057 https://github.com/shuimuliang/qnmahjongserver https://github.com/shuimuliang/qnmahjongclient
+9.railgun github 简单的golang游戏服务器框架《railgun》的文档目录索引
+10.为互联网IT人打造的中文版awesome-go github
+11.网络框架之-thrift github
+12.awesome-go:一个很全的go语言框架，库，软件合集 github
+13.pitaya github
+14.goserver github</description>
+    </item>
+    
+  </channel>
+</rss>

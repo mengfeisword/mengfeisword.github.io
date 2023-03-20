@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>etcd on DocDock Documentation</title>
+    <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/</link>
+    <description>Recent content in etcd on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>参考资料</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/</guid>
+      <description>etcd简介
+ETCD介绍—etcd概念及原理方面分析
+Etcd功能介绍
+Etcd 使用入门
+etcd简介及集群安装部署使用
+etcd：从应用场景到实现原理的全方位解读
+etcd — 架构原理
+深入浅出的 etcd 系列在这里！
+面试题：为什么用etcd而不用Zookeeper？
+面试官：聊聊 etcd 中的 Raft 吧
+etcd — 架构原理</description>
+    </item>
+    
+    <item>
+      <title>面试题</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+      <description> Etcd——大厂面试问题集合 深入浅出的 etcd 系列在这里！ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/%E5%85%B3%E9%94%AE%E7%82%B9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/%E5%85%B3%E9%94%AE%E7%82%B9/</guid>
+      <description>1.etcd 使用场景
+场景一：服务发现（Service Discovery） 场景二：消息发布与订阅 场景三：负载均衡 场景四：分布式通知与协调 场景五：分布式锁、分布式队列 场景六：集群监控与Leader竞选举个最简单的例子，如果你需要一个分布式存储仓库来存储配置信息，并且希望这个仓库读写速度快、支持高可用、部署简单、支持http接口，那么就可以使用etcd。
+2.支持类型 3.Raft 算法
+直接把 etcd 的数据存储理解为一个有序的 map，它存储着 key-value 数据。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>restful api on DocDock Documentation</title>
+    <link>/%E6%8A%80%E6%9C%AF/restful-api/</link>
+    <description>Recent content in restful api on DocDock Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/%E6%8A%80%E6%9C%AF/restful-api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>面试试题</title>
+      <link>/%E6%8A%80%E6%9C%AF/restful-api/%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%8A%80%E6%9C%AF/restful-api/%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+      <description>18个Web前端RESTful API经典面试题和答案 9-3 前后端分离与 RESTful 常见面试题 Rest API 经典面试问题
+9-3 前后端分离与 RESTful 常见面试题 一、考点聚焦 什么是前后端分离？什么是RESTful 1.前后端分离的意义和方式 2.什么是RESTful 3.如何设计RESTful
+二、什么是前后端分离？有哪些优点？ 后端只负责提供数据接口，不再渲染模板，前端获取数据并呈现 1.前后端解耦，接口复用（前端和客户端公用接口），减少开发量 2.各司其职，前后端同步开发，提升工作效率。定义好接口规范。 3.更有利于调度（mock）、测试和运维部署 4.缺点是对于单页面不好做seo
+三、什么是RESTful Respresentational State Transfer 1.表现层状态转移，由HTTP协议的主要设计者Roy Fielding提出 2.资源(Resources)，表现层(Representation)，状态转化（State Transfer） 3.是一种以资源为中心的web软件架构风格，可以用Ajax和RESTful web服务构建应用
+RESTful解释 1.Resources(资源)：使用URI指向一个实体 2.Representation(表现层)：资源的表现形式，比如图片、HTML文本等 3.State Transer(状态转化)：GET、POST、PUT、DELETE HTTP动词来操作资源，实现资源状态的改变
+RESTful的准则 1.所有事物抽象为资源(resource)，资源对应唯一的标识(identifier) 2.资源通过接口进行操作实现状态转移，操作本身是无状态的 3.对uqdir操作不会改变资源的标识
+什么是RESTful API？ RESTful风格的API接口： 1.通过HTTP GET/POST/PUT/DELETE 获取/新建/更新/删除 资源 2.一般使用JSON格式返回数据 3.一般web框架都有相应的插件支持RESTful API
+四、如何设计RESTful API？ HTTP方法	URL	动作 GET	http://[hostname]/api/users	检索用户列表 GET	http://[hostname]/api/users/[user_id]	检索单个用户 POST	http://[hostname]/api/users	创建新用户 PUT	http://[hostname]/api/users/[user_id]	更新用户信息 DELETE	http://[hostname]/api/users/[user_id]	删除用户</description>
+    </item>
+    
+  </channel>
+</rss>

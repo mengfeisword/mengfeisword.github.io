@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DocDock Documentation</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2023-03-21T07:56:18 CST">
+<title>面试试题 :: DocDock Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79101-13', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    
+  </head>
+  <body data-url="/%E6%8A%80%E6%9C%AF/restful-api/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="/">DocDock Documentation</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/vjeantet/hugo-theme-docdock"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Github repo</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip"  rel="noopener">
+                  <i class='fa fa-cloud-download'></i> <label>Download</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://gohugo.io/"  rel="noopener">
+                  <i class='fa fa-bookmark'></i> <label>Hugo Documentation</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="/credits"  rel="noopener">
+                  <i class='fa fa-bullhorn'></i> <label>Credits</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/%E5%B7%A5%E5%85%B7/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%B7%A5%E5%85%B7/">工具</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E5%B7%A5%E5%85%B7/hexo/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%B7%A5%E5%85%B7/hexo/">hexo</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E5%B7%A5%E5%85%B7/hexo/hexo/" class="dd-item">
+        <div>
+          <a href="/%E5%B7%A5%E5%85%B7/hexo/hexo/">
+            hexo
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%B7%A5%E5%85%B7/hexo/hexo%E5%AE%89%E8%A3%85/" class="dd-item">
+        <div>
+          <a href="/%E5%B7%A5%E5%85%B7/hexo/hexo%E5%AE%89%E8%A3%85/">
+            hexo安装
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%B7%A5%E5%85%B7/hexo/hexo%E9%83%A8%E7%BD%B2%E5%88%B0git/" class="dd-item">
+        <div>
+          <a href="/%E5%B7%A5%E5%85%B7/hexo/hexo%E9%83%A8%E7%BD%B2%E5%88%B0git/">
+            部署到git
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E5%B7%A5%E5%85%B7/hugo/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%B7%A5%E5%85%B7/hugo/">hugo</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E5%B7%A5%E5%85%B7/hugo/hugo/" class="dd-item">
+        <div>
+          <a href="/%E5%B7%A5%E5%85%B7/hugo/hugo/">
+            hugo
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">编程语言</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/">golang</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/">go面试资料</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%9841%E9%81%93/">
+            Golang面试题41道
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/">
+            golang面试题整理
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%85%A8%E7%BD%91%E8%B6%85%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86%E7%9A%84%E5%8F%A3%E8%AF%AD%E5%8C%96%E8%A7%A3%E7%AD%94%E6%80%BB%E7%BB%93/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/golang%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%85%A8%E7%BD%91%E8%B6%85%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86%E7%9A%84%E5%8F%A3%E8%AF%AD%E5%8C%96%E8%A7%A3%E7%AD%94%E6%80%BB%E7%BB%93/">
+            Golang面试题目全网超全超详细的口语化解答总结
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/go%E8%AF%AD%E8%A8%80%E9%9D%A2%E8%AF%95%E8%A6%81%E7%82%B9/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/go%E8%AF%AD%E8%A8%80%E9%9D%A2%E8%AF%95%E8%A6%81%E7%82%B9/">
+            go语言面试要点
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/go%E8%AF%AD%E8%A8%80%E9%9D%A2%E8%AF%95%E9%A2%98/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/go%E8%AF%AD%E8%A8%80%E9%9D%A2%E8%AF%95%E9%A2%98/">
+            go语言面试题
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/tl/" class="dd-item
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/tl/">tl 资料</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/">语言</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/golang%E8%AF%AD%E8%A8%80%E5%87%A0%E4%B8%AA%E6%9C%80%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9%E7%9A%84%E6%80%BB%E7%BB%93/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/golang%E8%AF%AD%E8%A8%80%E5%87%A0%E4%B8%AA%E6%9C%80%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9%E7%9A%84%E6%80%BB%E7%BB%93/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/qqq/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/qqq/">
+            qqqq
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            参考文档
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E7%9F%A5%E8%AF%86%E7%82%B9/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E7%9F%A5%E8%AF%86%E7%82%B9/">
+            知识点
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86/">
+            重点知识
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E9%87%8D%E7%82%B9%E8%A7%A3%E6%9E%90/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E8%AF%AD%E8%A8%80/%E9%87%8D%E7%82%B9%E8%A7%A3%E6%9E%90/">
+            重点解析
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/">资料</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/ziyuan/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E6%96%87%E7%AB%A0/ziyuan/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/">面试题目</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/">
+            Golang面试题目全网超全超详细的口语化解答总结
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/">插件</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/json%E6%8F%92%E4%BB%B6/" class="dd-item
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/json%E6%8F%92%E4%BB%B6/">json插件</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/">swaggo</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E8%AF%B4%E6%98%8E/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/swaggo/%E8%AF%B4%E6%98%8E/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/">结构体标签</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%85%B3%E9%94%AE%E5%AD%97/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/third/%E7%BB%93%E6%9E%84%E4%BD%93%E6%A0%87%E7%AD%BE/%E5%85%B3%E9%94%AE%E5%AD%97/">
+            关键字
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/">源码解读</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/ants/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/ants/">
+            ants
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/bytebufferpool/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/bytebufferpool/">
+            bytebufferpool
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gev/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gev/">
+            gev
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gnet/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang/program_analy/gnet/">
+            gnet
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/">C</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/readme/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c/readme/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/">dart_flutter</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/dart%E5%9F%BA%E7%A1%80/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/dart%E5%9F%BA%E7%A1%80/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/flutter%E5%AE%89%E8%A3%85/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/dart_flutter/flutter%E5%AE%89%E8%A3%85/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/">html</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/css/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/css/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/lua/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/lua/">lua</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/lua/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/lua/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            参考文档
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/">rust</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/rust/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/">Vue</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/vue/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/getting-start/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="/getting-start/">Getting started</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/getting-start/installation/" class="dd-item">
+        <div>
+          <a href="/getting-start/installation/">
+            Installation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/getting-start/configuration/" class="dd-item">
+        <div>
+          <a href="/getting-start/configuration/">
+            Configuration
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/">开发框架</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/">docker</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/compose%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/compose%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/">
+            compose命令详解
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/docker-save%E4%B8%8Edocker-export%E7%9A%84%E5%8C%BA%E5%88%AB/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/docker-save%E4%B8%8Edocker-export%E7%9A%84%E5%8C%BA%E5%88%AB/">
+            docker save与docker export的区别
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            参考文档
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E8%B5%84%E6%96%99/dockermssql/create_qpsqldbbase/%E8%AF%B4%E6%98%8E/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E8%B5%84%E6%96%99/dockermssql/create_qpsqldbbase/%E8%AF%B4%E6%98%8E/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E8%B5%84%E6%96%99/docker%E7%9A%84etcd3%E7%9A%84%E6%90%AD%E5%BB%BA/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/docker/%E8%B5%84%E6%96%99/docker%E7%9A%84etcd3%E7%9A%84%E6%90%AD%E5%BB%BA/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/">etcd</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/etcd%E5%AE%89%E8%A3%85/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/etcd%E5%AE%89%E8%A3%85/">
+            etcd安装
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/linux%E5%91%BD%E4%BB%A4/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/etcd/linux%E5%91%BD%E4%BB%A4/">
+            linux命令
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/">gin</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/gin%E9%9D%A2%E8%AF%95%E9%A2%98/" class="dd-item
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/gin%E9%9D%A2%E8%AF%95%E9%A2%98/">gin面试题</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            参考文档
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/%E6%8F%92%E4%BB%B6/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/gin/%E6%8F%92%E4%BB%B6/">
+            插件
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/goframe/" class="dd-item
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/goframe/">GoFrame</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E/">golang服务器引擎</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E/golang%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%95%E6%93%8E%E4%BB%8B%E7%BB%8D/">
+            golang服务器引擎
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/">k8s</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s/">
+            k8s
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/">
+            k8s常见面试题
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E7%AE%80%E4%BB%8B/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/k8s%E7%AE%80%E4%BB%8B/">
+            k8s简介
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%91%E5%B8%83%E6%9C%8D%E5%8A%A1/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E5%8F%91%E5%B8%83%E6%9C%8D%E5%8A%A1/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E7%94%A8%E9%80%94/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/k8s/%E7%94%A8%E9%80%94/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/">kafka</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/">
+            Kafka常见面试题总结
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafaka%E7%AE%80%E4%BB%8B/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafaka%E7%AE%80%E4%BB%8B/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka/" class="dd-item">
+        <div>
+          <a href="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/kafka/kafka/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/">ElasticSearch</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            参考文档
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E8%AF%B4%E6%98%8E/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/elasticsearch/%E8%AF%B4%E6%98%8E/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/">etcd</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/">
+            参考资料
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/%E9%9D%A2%E8%AF%95%E9%A2%98/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+            面试题
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/%E5%85%B3%E9%94%AE%E7%82%B9/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/etcd/%E5%85%B3%E9%94%AE%E7%82%B9/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/memcached/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/memcached/">memcached</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/memcached/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/memcached/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/">
+            参考资料
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/">mongo</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%9D%A2%E8%AF%95%E9%A2%98/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+            mysql面试题
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3/">
+            参考文档
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/mongodb%E6%9F%A5%E8%AF%A2%E6%A1%88%E4%BE%8B/mac%E5%AE%89%E8%A3%85/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/mongodb%E6%9F%A5%E8%AF%A2%E6%A1%88%E4%BE%8B/mac%E5%AE%89%E8%A3%85/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/replicaset/replicaset/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/replicaset/replicaset/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/setpwd/%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mongo/%E9%83%A8%E7%BD%B2/setpwd/%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/">mysql</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%87%8D%E7%82%B9/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%87%8D%E7%82%B9/">
+            mysql重点
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/">
+            mysql面试题
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/">
+            参考资料
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/">redis</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/">面试资料</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/redis%E9%9D%A2%E8%AF%95%E9%A2%98/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99/redis%E9%9D%A2%E8%AF%95%E9%A2%98/">
+            redis面试题
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E9%9D%A2%E8%AF%95%E7%9B%AE%E5%BD%95/redis%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E9%9D%A2%E8%AF%95%E7%9B%AE%E5%BD%95/redis%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/">
+            redis面试题
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/">
+            参考资料
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+            数据结构
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E9%9D%A2%E8%AF%95%E9%97%AE%E7%AD%94/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E9%9D%A2%E8%AF%95%E9%97%AE%E7%AD%94/">
+            面试问答
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/%E6%95%B0%E6%8D%AE%E5%BA%93/couchdb/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/" class="dd-item">
+        <div>
+          <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/couchdb/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/create-page/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/create-page/"><i class='fa fa-edit' ></i> Create Page</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/create-page/homepage/" class="dd-item">
+        <div>
+          <a href="/create-page/homepage/">
+            Home page
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/create-page/page-images/" class="dd-item">
+        <div>
+          <a href="/create-page/page-images/">
+            About images
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/create-page/page-slide/" class="dd-item">
+        <div>
+          <a href="/create-page/page-slide/">
+            Present a Slide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/content-organisation/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/content-organisation/">Content Organisation</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/content-organisation/logo/" class="dd-item">
+        <div>
+          <a href="/content-organisation/logo/">
+            Logo placeholder
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/content-organisation/extramenu/" class="dd-item">
+        <div>
+          <a href="/content-organisation/extramenu/">
+            Extra menu entries
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+    <li data-nav-id="/content-organisation/customize-style/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/content-organisation/customize-style/">Customize website look and feel</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/content-organisation/customize-style/disable/" class="dd-item">
+        <div>
+          <a href="/content-organisation/customize-style/disable/">
+            Disable features
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/content-organisation/customize-style/themestyle/" class="dd-item">
+        <div>
+          <a href="/content-organisation/customize-style/themestyle/">
+            Theme styles
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/content-organisation/customize-style/theme-variants/" class="dd-item">
+        <div>
+          <a href="/content-organisation/customize-style/theme-variants/">
+            Theme variants
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/shortcodes/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/shortcodes/">Shortcodes</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/shortcodes/alert/" class="dd-item">
+        <div>
+          <a href="/shortcodes/alert/">
+            alert
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/attachments/" class="dd-item">
+        <div>
+          <a href="/shortcodes/attachments/">
+            attachments
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/button/" class="dd-item">
+        <div>
+          <a href="/shortcodes/button/">
+            button
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+    <li data-nav-id="/shortcodes/children/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/shortcodes/children/">children</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/shortcodes/children/children-1/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/shortcodes/children/children-1/">page 1</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/shortcodes/children/children-1/children-1-1/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/shortcodes/children/children-1/children-1-1/">page 1-1</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/shortcodes/children/children-1/children-1-1/children-1-1-1/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/shortcodes/children/children-1/children-1-1/children-1-1-1/">page 1-1-1</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/">page 1-1-1-1</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/" class="dd-item
+        ">
+      <div>
+      <a href="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/">page 1-1-1-1-1</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/shortcodes/children/children-2/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/shortcodes/children/children-2/">page 2</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/shortcodes/children/children-2/test3/" class="dd-item">
+        <div>
+          <a href="/shortcodes/children/children-2/test3/">
+            page test 3
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/shortcodes/children/children-3/" class="dd-item
+        ">
+      <div>
+      <a href="/shortcodes/children/children-3/">page 3</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+      <li data-nav-id="/shortcodes/children/test/" class="dd-item">
+        <div>
+          <a href="/shortcodes/children/test/">
+            page test
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/shortcodes/excerpt/" class="dd-item">
+        <div>
+          <a href="/shortcodes/excerpt/">
+            excerpt
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/excerpt-include/" class="dd-item">
+        <div>
+          <a href="/shortcodes/excerpt-include/">
+            excerpt-include
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/expand/" class="dd-item">
+        <div>
+          <a href="/shortcodes/expand/">
+            expand
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/icon/" class="dd-item">
+        <div>
+          <a href="/shortcodes/icon/">
+            icon
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/mermaid/" class="dd-item">
+        <div>
+          <a href="/shortcodes/mermaid/">
+            mermaid
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/notice/" class="dd-item">
+        <div>
+          <a href="/shortcodes/notice/">
+            notice
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/panel/" class="dd-item">
+        <div>
+          <a href="/shortcodes/panel/">
+            panel
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/shortcodes/revealjs/" class="dd-item">
+        <div>
+          <a href="/shortcodes/revealjs/">
+            revealjs
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/search/" class="dd-item
+        ">
+      <div>
+      <a href="/search/">About the Search Engine</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/%E6%8A%80%E6%9C%AF/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%8A%80%E6%9C%AF/">技术s</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/%E6%8A%80%E6%9C%AF/restful-api/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/%E6%8A%80%E6%9C%AF/restful-api/">restful api</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/%E6%8A%80%E6%9C%AF/restful-api/%E9%9D%A2%E8%AF%95%E9%A2%98/" class="dd-item">
+        <div>
+          <a href="/%E6%8A%80%E6%9C%AF/restful-api/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+            面试试题
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section><center>
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download vjeantet/hugo-theme-docdock on GitHub">Download</a>
+
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock" data-icon="octicon-star" data-show-count="false" aria-label="Star vjeantet/hugo-theme-docdock on GitHub">Star</a>
+
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork vjeantet/hugo-theme-docdock on GitHub">Fork</a>
+
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/%E5%B7%A5%E5%85%B7/" >
+   工具</option>
+    <option value="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" >
+   编程语言</option>
+    <option value="/getting-start/" >
+   Getting started</option> 
+      <option value="/getting-start/installation/" >- Installation</option>
+      <option value="/getting-start/configuration/" >- Configuration</option>
+  
+    <option value="/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/" >
+   开发框架</option>
+    <option value="/%E6%95%B0%E6%8D%AE%E5%BA%93/" >
+   数据库</option>
+    <option value="/create-page/" >
+   Create Page</option>
+    <option value="/content-organisation/" >
+   Content Organisation</option>
+    <option value="/shortcodes/" >
+   Shortcodes</option>
+    <option value="/search/" >
+   About the Search Engine</option>
+    <option value="/%E6%8A%80%E6%9C%AF/" >
+   技术s</option> 
+    <option value="/%E6%8A%80%E6%9C%AF/restful-api/" >
+  - 
+   restful api</option> 
+      <option value="/%E6%8A%80%E6%9C%AF/restful-api/%E9%9D%A2%E8%AF%95%E9%A2%98/"  selected>-- 面试试题</option>
+  
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+      </div>
+    
+
+    <h1>面试试题</h1>
+    
+    
+    
+    <p><a href="https://www.xiaohongshu.com/explore/6245e88a000000000102a714">18个Web前端RESTful API经典面试题和答案</a>
+<a href="https://blog.csdn.net/u014257214/article/details/117755597">9-3 前后端分离与 RESTful 常见面试题</a>
+<a href="https://www.modb.pro/db/532623">Rest API 经典面试问题</a></p>
+<h1 id="9-3-前后端分离与-restful-常见面试题">9-3 前后端分离与 RESTful 常见面试题</h1>
+<h2 id="一考点聚焦">一、考点聚焦</h2>
+<p>什么是前后端分离？什么是RESTful
+1.前后端分离的意义和方式
+2.什么是RESTful
+3.如何设计RESTful</p>
+<h2 id="二什么是前后端分离有哪些优点">二、什么是前后端分离？有哪些优点？</h2>
+<p>后端只负责提供数据接口，不再渲染模板，前端获取数据并呈现
+1.前后端解耦，接口复用（前端和客户端公用接口），减少开发量
+2.各司其职，前后端同步开发，提升工作效率。定义好接口规范。
+3.更有利于调度（mock）、测试和运维部署
+4.缺点是对于单页面不好做seo</p>
+<h3 id="三什么是restful">三、什么是RESTful</h3>
+<p>Respresentational State Transfer
+1.表现层状态转移，由HTTP协议的主要设计者Roy Fielding提出
+2.资源(Resources)，表现层(Representation)，状态转化（State Transfer）
+3.是一种以资源为中心的web软件架构风格，可以用Ajax和RESTful web服务构建应用</p>
+<h3 id="restful解释">RESTful解释</h3>
+<p>1.Resources(资源)：使用URI指向一个实体
+2.Representation(表现层)：资源的表现形式，比如图片、HTML文本等
+3.State Transer(状态转化)：GET、POST、PUT、DELETE HTTP动词来操作资源，实现资源状态的改变</p>
+<h3 id="restful的准则">RESTful的准则</h3>
+<p>1.所有事物抽象为资源(resource)，资源对应唯一的标识(identifier)
+2.资源通过接口进行操作实现状态转移，操作本身是无状态的
+3.对uqdir操作不会改变资源的标识</p>
+<h3 id="什么是restful-api">什么是RESTful API？</h3>
+<p>RESTful风格的API接口：
+1.通过HTTP GET/POST/PUT/DELETE 获取/新建/更新/删除 资源
+2.一般使用JSON格式返回数据
+3.一般web框架都有相应的插件支持RESTful API</p>
+<h2 id="四如何设计restful-api">四、如何设计RESTful API？</h2>
+<p>HTTP方法	URL	动作
+GET	http://[hostname]/api/users	检索用户列表
+GET	http://[hostname]/api/users/[user_id]	检索单个用户
+POST	http://[hostname]/api/users	创建新用户
+PUT	http://[hostname]/api/users/[user_id]	更新用户信息
+DELETE	http://[hostname]/api/users/[user_id]	删除用户</p>
+<h1 id="rest-api-经典面试问题">Rest API 经典面试问题</h1>
+<h2 id="1您对restful-web-services的理解是什么">1.您对RESTful Web Services的理解是什么？</h2>
+<p>RESTful Web 服务是那些遵循 REST 架构的服务。REST 代表 Representational State Transfer，使用 HTTP 协议（Web 协议）实现。这些服务是轻量级的，提供可维护性和可扩展性，并在以各种编程语言编写的应用程序之间进行通信。利用请求标头、请求正文、响应正文、状态代码等，它们为客户端提供通过 Web 浏览器对服务器托管资源的访问。</p>
+<h2 id="2-rest-中的无状态是什么意思">2. REST 中的“无状态”是什么意思？</h2>
+<p>REST 架构被称为无状态，因为它不会在服务器上保留任何与客户端会话相关的数据。本质上，会话状态仅在客户端维护。实际上，这被称为无国籍状态。</p>
+<p>它保证服务器不能利用任何保存的信息。但是，由于不保留任何数据，因此从客户端到服务器的每个请求都必须包含所有必需的请求信息。</p>
+<h2 id="3-什么是重要的-rest-特征">3. 什么是重要的 REST 特征？</h2>
+<p>REST 的一些最重要的特征是：</p>
+<p>由于 REST 是无状态的，因此 SERVER 没有状态。
+使用正确实施的 REST API，服务器可能会在调用之间重新启动，因为所有数据都发送给它。
+Web 服务通常使用 POST 方法来执行操作，而 REST 使用 GET 方法来检索资源。</p>
+<h2 id="4-你能概括一下-restful-web-服务的缺点吗">4. 你能概括一下 RESTful Web 服务的缺点吗？</h2>
+<p>缺点是：</p>
+<p>由于服务遵循无状态的概念，因此无法维持会话。客户端会话模拟负责传递会话 ID。
+REST 没有施加固有的安全约束。它继承了实现协议的安全预防措施。实施安全措施，例如集成基于 SSL/TLS 的身份验证等，必须谨慎执行。</p>
+<h2 id="5-可以在-rest-中实现传输层安全-tls-吗">5. 可以在 REST 中实现传输层安全 (TLS) 吗？</h2>
+<p>确实，我们可以。TLS 负责对 REST 客户端和服务器通信进行加密，并向客户端验证服务器。作为安全套接字层的继承者，它用于安全通信。HTTPS 与 TLS 和 SSL 兼容，因此可用于创建 RESTful Web 服务。值得注意的是，REST 协议继承了它实现的协议的属性。因此，安全措施取决于 REST 协议的实现。</p>
+<h2 id="6-rest-api-中无状态的优缺点是什么">6. REST API 中无状态的优缺点是什么？</h2>
+<p>无国籍的优点：</p>
+<p>因为它没有与会话相关的要求，并且可以在任何服务器上实现，所以无状态使 API 可以扩展到数百万并发用户。
+服务器知道每个客户端在应用程序中的“位置”，因为所有相关数据都随每个请求一起传输。
+无状态通过消除任何服务器端同步复杂性来简化 REST API。
+无国籍的缺点：</p>
+<p>每个客户请求都必须附带大量补充数据。
+这种重复的数据传输可能会降低网络效率
+无状态进一步降低了服务器端对程序行为的控制。</p>
+<h2 id="7-什么是-restful-web-服务中的寻址">7. 什么是 RESTful WEB 服务中的“寻址”？</h2>
+<p>识别服务器资源的方法称为寻址。URL 用于在 RESTful Web 服务中寻址这些资源。这些地址可能与单个资源或多个资源有关。</p>
+<p>////</p>
+<h2 id="8-幂等方法是什么意思">8. 幂等方法是什么意思？</h2>
+<p>无论执行相同请求的时间如何，幂等方法都提供相同的结果。</p>
+<p>由于客户端重复请求传输的频繁发生，这些方法是必不可少的。因此，必须采用幂等程序来防止此类错误。</p>
+<h2 id="9-rest-和-soap-有何不同">9. REST 和 SOAP 有何不同？</h2>
+<p>REST（表征状态转移）</p>
+<p>它是一种用于在线服务开发的设计模式。
+它更高效且可缓存。
+它仅继承已应用于协议的安全保护。</p>
+<p>SOAP（简单对象访问协议）</p>
+<p>它是一种用于构建安全 API 的紧密协议。
+它的速度较慢，无法缓存。
+它有能力建立自己的安全机制。</p>
+<h2 id="10-ajax-和-rest-有什么区别">10. AJAX 和 REST 有什么区别？</h2>
+<p>AJAX</p>
+<p>使用 XMLHttpRequest 对象，请求被传递到服务器。随后，Javascript 读取答案并动态修改页面。
+因为 AJAX 允许异步查询，所以它不需要持续的客户端-服务器交互
+AJAX 动态刷新用户界面而不刷新页面
+休息</p>
+<p>REST 使用 URL 和请求/响应模式访问资源。
+REST 需要持续的客户端-服务器交互
+REST 请求并更新来自服务器的数据或信息
+11、Web服务面临的主要安全问题有哪些？
+由于在线服务经常处理大量敏感数据，应用安全成为一个大问题。下面列出了一些需要牢记的事项。</p>
+<p>加密 – Web 服务可能有许多应用程序并且可能包含易受攻击的节点。因此，谨慎的做法是对数据进行加密，以便不惜一切代价保持隐私。
+身份验证 - 身份验证是管理大量用户群时发生的挑战。身份验证可防止未经授权访问用户数据并允许您监控用户行为。
+结论
+我们练习回答关于 RESTful Web 服务的最常见的面试问题。近年来，REST API 已成为软件开发领域的一项重要技术。可扩展且易于维护的 RESTful Web 服务很难获得，但它们的创建者是艺术大师。随着业界越来越多地使用 REST 架构，对精通 RESTful Web 服务开发的开发人员的需求预计将显着增加。文章的主要内容：</p>
+<p>REST 代表 Representational State Transfer
+REST 的发展使 API 变得更加平易近人，同时展示了其真正的力量和潜力。
+无论同一个请求执行了多少次，幂等方法都提供相同的响应。
+识别服务器资源称为寻址。
+这篇博文应该可以帮助您解决 REST API 面试问题。这些 REST API 面试问题可以帮助你在下一次面试中取得好成绩。</p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/%E6%8A%80%E6%9C%AF/restful-api/" title="restful api"> <i class="fa fa-chevron-left"></i><label>restful api</label></a>
+    <a class="nav nav-next" href="/%E5%B7%A5%E5%85%B7/" title="工具" style="margin-right: 0px;"><label>工具</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+    <div class="github-link">
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/%e6%8a%80%e6%9c%af/restful%20api/%e9%9d%a2%e8%af%95%e9%a2%98.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+    
+  </div>
+
+
+	<div>
+
+
+  
+    Create a content/_footer.md file to customize the footer content
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script src="/js/clipboard.min.js"></script>
+<script src="/js/featherlight.min.js"></script>
+
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/auto-complete.js"></script>
+<script type="text/javascript" src="/js/search.js"></script>
+<script src="/theme-flex/script.js"></script>
+
+
+
+
+<script src="/js/scripts.min.js"></script>
+    
+
+    
+    
+
+    
+  </body>
+</html>
